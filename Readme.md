@@ -1,6 +1,6 @@
 # gamedata_ag
 
-![](versions/CN.txt)
+![](versions/CN.svg)
 
 Some gamedata from Aether Gazer.
 
