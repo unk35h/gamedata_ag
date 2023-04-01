@@ -1,0 +1,8 @@
+return {
+	MAX = 100,
+	MAIL_CHALLENGE_COMPENSATE_ID = {
+		ABYSS = 5,
+		EQUIP_BREAK_THROUGH_MATERIAL = 4,
+		BOSS = 2
+	}
+}

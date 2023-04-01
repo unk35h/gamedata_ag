@@ -1,0 +1,506 @@
+{
+  "Data": [
+    {
+      "ID": 1,
+      "Icon": "icon_attack"
+    },
+    {
+      "ID": 2,
+      "Icon": "icon_defense"
+    },
+    {
+      "ID": 3,
+      "Icon": "icon_hp"
+    },
+    {
+      "ID": 4,
+      "Percent": 1
+    },
+    {
+      "ID": 5,
+      "Percent": 1
+    },
+    {
+      "ID": 6
+    },
+    {
+      "ID": 7
+    },
+    {
+      "ID": 11,
+      "Percent": 1
+    },
+    {
+      "ID": 12
+    },
+    {
+      "ID": 13,
+      "Percent": 1
+    },
+    {
+      "ID": 21,
+      "Percent": 1
+    },
+    {
+      "ID": 22
+    },
+    {
+      "ID": 23
+    },
+    {
+      "ID": 24,
+      "Percent": 1
+    },
+    {
+      "ID": 25,
+      "Percent": 1
+    },
+    {
+      "ID": 31,
+      "Percent": 1
+    },
+    {
+      "ID": 32
+    },
+    {
+      "ID": 41
+    },
+    {
+      "ID": 42,
+      "Percent": 1
+    },
+    {
+      "ID": 43
+    },
+    {
+      "ID": 44,
+      "Percent": 1
+    },
+    {
+      "ID": 51,
+      "Percent": 1
+    },
+    {
+      "ID": 52,
+      "Percent": 1
+    },
+    {
+      "ID": 53,
+      "Percent": 1
+    },
+    {
+      "ID": 54,
+      "Percent": 1
+    },
+    {
+      "ID": 55,
+      "Percent": 1
+    },
+    {
+      "ID": 56,
+      "Percent": 1
+    },
+    {
+      "ID": 57,
+      "Percent": 1
+    },
+    {
+      "ID": 58,
+      "Percent": 1
+    },
+    {
+      "ID": 81,
+      "Percent": 1,
+      "Icon": "icon_crit"
+    },
+    {
+      "ID": 82,
+      "Percent": 1,
+      "Icon": "icon_critdamage"
+    },
+    {
+      "ID": 83,
+      "Percent": 1
+    },
+    {
+      "ID": 84,
+      "Percent": 1
+    },
+    {
+      "ID": 101,
+      "Percent": 1
+    },
+    {
+      "ID": 102,
+      "Percent": 1
+    },
+    {
+      "ID": 111,
+      "Percent": 1
+    },
+    {
+      "ID": 112,
+      "Percent": 1
+    },
+    {
+      "ID": 121,
+      "Percent": 1
+    },
+    {
+      "ID": 122,
+      "Percent": 1
+    },
+    {
+      "ID": 123,
+      "Percent": 1
+    },
+    {
+      "ID": 124,
+      "Percent": 1
+    },
+    {
+      "ID": 125,
+      "Percent": 1
+    },
+    {
+      "ID": 126,
+      "Percent": 1
+    },
+    {
+      "ID": 131,
+      "Percent": 1
+    },
+    {
+      "ID": 132,
+      "Percent": 1
+    },
+    {
+      "ID": 133,
+      "Percent": 1
+    },
+    {
+      "ID": 134,
+      "Percent": 1
+    },
+    {
+      "ID": 135,
+      "Percent": 1
+    },
+    {
+      "ID": 136,
+      "Percent": 1
+    },
+    {
+      "ID": 151,
+      "Percent": 1
+    },
+    {
+      "ID": 152,
+      "Percent": 1
+    },
+    {
+      "ID": 153,
+      "Percent": 1
+    },
+    {
+      "ID": 154,
+      "Percent": 1
+    },
+    {
+      "ID": 155,
+      "Percent": 1
+    },
+    {
+      "ID": 156,
+      "Percent": 1
+    },
+    {
+      "ID": 157,
+      "Percent": 1
+    },
+    {
+      "ID": 158,
+      "Percent": 1
+    },
+    {
+      "ID": 159,
+      "Percent": 1
+    },
+    {
+      "ID": 161,
+      "Percent": 1
+    },
+    {
+      "ID": 162,
+      "Percent": 1
+    },
+    {
+      "ID": 163,
+      "Percent": 1
+    },
+    {
+      "ID": 164,
+      "Percent": 1
+    },
+    {
+      "ID": 165,
+      "Percent": 1
+    },
+    {
+      "ID": 166,
+      "Percent": 1
+    },
+    {
+      "ID": 167,
+      "Percent": 1
+    },
+    {
+      "ID": 168,
+      "Percent": 1
+    },
+    {
+      "ID": 169,
+      "Percent": 1
+    },
+    {
+      "ID": 201,
+      "Percent": 1
+    },
+    {
+      "ID": 202,
+      "Percent": 1
+    },
+    {
+      "ID": 203,
+      "Percent": 1
+    },
+    {
+      "ID": 211,
+      "Percent": 1
+    },
+    {
+      "ID": 212,
+      "Percent": 1
+    },
+    {
+      "ID": 213,
+      "Percent": 1
+    },
+    {
+      "ID": 221,
+      "Percent": 1
+    },
+    {
+      "ID": 222,
+      "Percent": 1
+    },
+    {
+      "ID": 231,
+      "Percent": 1
+    },
+    {
+      "ID": 232,
+      "Percent": 1
+    },
+    {
+      "ID": 301,
+      "Percent": 1
+    },
+    {
+      "ID": 302,
+      "Percent": 1
+    },
+    {
+      "ID": 303,
+      "Percent": 1
+    },
+    {
+      "ID": 311,
+      "Percent": 1
+    },
+    {
+      "ID": 312,
+      "Percent": 1
+    },
+    {
+      "ID": 313,
+      "Percent": 1
+    },
+    {
+      "ID": 314,
+      "Percent": 1
+    },
+    {
+      "ID": 315,
+      "Percent": 1
+    },
+    {
+      "ID": 316,
+      "Percent": 1
+    },
+    {
+      "ID": 317,
+      "Percent": 1
+    },
+    {
+      "ID": 318,
+      "Percent": 1
+    },
+    {
+      "ID": 319,
+      "Percent": 1
+    },
+    {
+      "ID": 320,
+      "Percent": 1
+    },
+    {
+      "ID": 401,
+      "Percent": 1
+    },
+    {
+      "ID": 402,
+      "Percent": 1
+    },
+    {
+      "ID": 421,
+      "Percent": 1
+    },
+    {
+      "ID": 450,
+      "Percent": 1
+    },
+    {
+      "ID": 460,
+      "Percent": 1
+    },
+    {
+      "ID": 500,
+      "Percent": 1
+    },
+    {
+      "ID": 511,
+      "Percent": 1
+    },
+    {
+      "ID": 512,
+      "Percent": 1
+    },
+    {
+      "ID": 513,
+      "Percent": 1
+    },
+    {
+      "ID": 521,
+      "Percent": 1
+    },
+    {
+      "ID": 522,
+      "Percent": 1
+    },
+    {
+      "ID": 600,
+      "Percent": 1
+    },
+    {
+      "ID": 701,
+      "Percent": 1
+    },
+    {
+      "ID": 702,
+      "Percent": 1
+    },
+    {
+      "ID": 703,
+      "Percent": 1
+    },
+    {
+      "ID": 1001,
+      "Percent": 1
+    },
+    {
+      "ID": 1002,
+      "Percent": 1
+    },
+    {
+      "ID": 1003,
+      "Percent": 1,
+      "Limit": 999
+    },
+    {
+      "ID": 1004,
+      "Percent": 1
+    },
+    {
+      "ID": 1005
+    },
+    {
+      "ID": 1006
+    },
+    {
+      "ID": 1101,
+      "Percent": 1
+    },
+    {
+      "ID": 1102,
+      "Percent": 1
+    },
+    {
+      "ID": 1103,
+      "Percent": 1
+    },
+    {
+      "ID": 1104,
+      "Percent": 1
+    },
+    {
+      "ID": 1105,
+      "Percent": 1
+    },
+    {
+      "ID": 1106,
+      "Percent": 1
+    },
+    {
+      "ID": 1107,
+      "Percent": 1
+    },
+    {
+      "ID": 1108,
+      "Percent": 1
+    },
+    {
+      "ID": 1109,
+      "Percent": 1
+    },
+    {
+      "ID": 1110,
+      "Percent": 1
+    },
+    {
+      "ID": 1111,
+      "Percent": 1
+    },
+    {
+      "ID": 1112
+    },
+    {
+      "ID": 1113
+    },
+    {
+      "ID": 1114
+    },
+    {
+      "ID": 1115
+    },
+    {
+      "ID": 1116
+    },
+    {
+      "ID": 1117
+    },
+    {
+      "ID": 10001
+    }
+  ]
+}

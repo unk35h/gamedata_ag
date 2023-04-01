@@ -1,0 +1,226 @@
+{
+  "Data": [
+    {
+      "ID": 1,
+      "SourceKey": "effect",
+      "Describe": "点击屏幕的反馈音，包括点击一般功能按钮（除开有绑音效的按钮以外的其他所有）"
+    },
+    {
+      "ID": 2,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "button",
+      "Describe": "点击通用按钮时的反馈音 "
+    },
+    {
+      "ID": 3,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "popupui",
+      "Describe": "包含所有：物品详情弹窗、快捷弹窗，等，出现时所带有的声音 "
+    },
+    {
+      "ID": 4,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "popupui_item",
+      "Describe": "获得奖励时候弹窗播放的音效 "
+    },
+    {
+      "ID": 5,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "popupui_confirm",
+      "Describe": "提示类，警告类的弹窗提示：提示弹窗、二次确认弹窗 "
+    },
+    {
+      "ID": 6,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "confirm",
+      "Describe": "二次确认弹窗：确定 "
+    },
+    {
+      "ID": 7,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "cancel",
+      "Describe": "二次确认弹窗：取消 "
+    },
+    {
+      "ID": 8,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "ban",
+      "Describe": "条件不足，比如什么前置关卡没过、材料不足什么的 "
+    },
+    {
+      "ID": 9,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "success",
+      "Describe": "成功提示，如购买成功、使用道具成功等 "
+    },
+    {
+      "ID": 10,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "page",
+      "Describe": "游戏中的分页选项卡 "
+    },
+    {
+      "ID": 11,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "openui",
+      "Describe": "打开系统界面时通用播放的音效 "
+    },
+    {
+      "ID": 12,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "closeui",
+      "Describe": "关闭界面时通用播放的音效 "
+    },
+    {
+      "ID": 13,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "choose",
+      "Describe": "勾选框。目前只出现在设置系统 "
+    },
+    {
+      "ID": 14,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "open_battel",
+      "Describe": "打开出击界面（含选关界面） "
+    },
+    {
+      "ID": 15,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "exp_add",
+      "Describe": "玩家升级加经验条 "
+    },
+    {
+      "ID": 16,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "exp_levelup",
+      "Describe": "结算界面玩家升级"
+    },
+    {
+      "ID": 17,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "hero_levelup",
+      "Describe": "修正者升级 "
+    },
+    {
+      "ID": 18,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "starsup",
+      "Describe": "超越成功（一般） "
+    },
+    {
+      "ID": 19,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "starsup_max",
+      "Describe": "超越成功（到顶） "
+    },
+    {
+      "ID": 20,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "sign_in",
+      "Describe": "签到打钩 "
+    },
+    {
+      "ID": 21,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "stage_slide",
+      "Describe": "关卡选项卡滑动 "
+    },
+    {
+      "ID": 22,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "equip_wear",
+      "Describe": "刻印成功装备或替换 "
+    },
+    {
+      "ID": 23,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "astrolabe_wear",
+      "Describe": "神格选择共鸣 "
+    },
+    {
+      "ID": 25,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "hero_change",
+      "Describe": "英雄切换"
+    },
+    {
+      "ID": 26,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "enterui",
+      "Describe": "打开界面"
+    },
+    {
+      "ID": 27,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "equip_edit",
+      "Describe": "进入装备刻印界面"
+    },
+    {
+      "ID": 28,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "levelup_animation",
+      "Describe": "玩家升级表现动画"
+    },
+    {
+      "ID": 29,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "equip_appear",
+      "Describe": "刻印轮盘出现动画"
+    },
+    {
+      "ID": 30,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "astrolabe_appear",
+      "Describe": "神格星盘出现动画"
+    },
+    {
+      "ID": 31,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "exp_add_skip",
+      "Describe": "跳过加经验条读条时的音效"
+    },
+    {
+      "ID": 32,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "starsup_small",
+      "Describe": "超越成功（计划）"
+    },
+    {
+      "ID": 33,
+      "SourceKey": "effect",
+      "CueSheet": "ui_system",
+      "CueName": "breakthrough",
+      "Describe": "修正者，权钥突破动效"
+    }
+  ]
+}

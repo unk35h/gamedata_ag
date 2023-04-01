@@ -1,0 +1,100 @@
+{
+  "Data": [
+    {
+      "ID": 1,
+      "Path": "../Function/public_attrib.csv",
+      "ExceptList": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "ID": 2,
+      "Path": "../Function/public_buff.csv",
+      "ExceptList": [
+        1,
+        2
+      ]
+    },
+    {
+      "ID": 3,
+      "Path": "../Function/public_buff_relation.csv"
+    },
+    {
+      "ID": 4,
+      "Path": "../Function/public_skill.csv"
+    },
+    {
+      "ID": 5,
+      "Path": "../Function/diffculty.csv"
+    },
+    {
+      "ID": 6,
+      "Path": "../Function/charactor_param.csv"
+    },
+    {
+      "ID": 7,
+      "Path": "../Function/equip_effect.csv"
+    },
+    {
+      "ID": 8,
+      "Path": "../Function/affix_type.csv"
+    },
+    {
+      "ID": 9,
+      "Path": "../Function/boss_appear_UI_text.csv"
+    },
+    {
+      "ID": 10,
+      "Path": "../Function/monster_standard.csv"
+    },
+    {
+      "ID": 11,
+      "Path": "../Function/description.csv"
+    },
+    {
+      "ID": 12,
+      "Path": "../Function/weapon_effect.csv",
+      "ExceptList": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "ID": 13,
+      "Path": "../Function/cooperate_unique_skill.csv"
+    },
+    {
+      "ID": 14,
+      "Path": "../Function/ai_chip.csv"
+    },
+    {
+      "ID": 15,
+      "Path": "../Function/e_SkillSubType.csv"
+    },
+    {
+      "ID": 16,
+      "Path": "../Function/battle_record_data_type.csv"
+    },
+    {
+      "ID": 17,
+      "Path": "../Function/equip_skill.csv"
+    },
+    {
+      "ID": 18,
+      "Path": "../Function/activity_tower_defense_tower.csv"
+    },
+    {
+      "ID": 19,
+      "Path": "../Function/activity_tower_defense_point.csv"
+    },
+    {
+      "ID": 20,
+      "Path": "../Function/public_strengthen_skill.csv"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+require("global")
+require("NetConfig")
+require("library/include")
+require("support/include")
+require("manager/include")
+require("game/include")

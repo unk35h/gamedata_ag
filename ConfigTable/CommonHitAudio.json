@@ -1,0 +1,954 @@
+{
+  "Data": [
+    {
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit",
+      "Describe": "暂时先配一个音效防止报错"
+    },
+    {
+      "ID": 100001,
+      "WeaponCategory": 1,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 100201,
+      "WeaponCategory": 1,
+      "DamageType": 2,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 100401,
+      "WeaponCategory": 1,
+      "DamageType": 4,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 100601,
+      "WeaponCategory": 1,
+      "DamageType": 6,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 100801,
+      "WeaponCategory": 1,
+      "DamageType": 8,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 101001,
+      "WeaponCategory": 1,
+      "DamageType": 10,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 101201,
+      "WeaponCategory": 1,
+      "DamageType": 12,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 101401,
+      "WeaponCategory": 1,
+      "DamageType": 14,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 100002,
+      "WeaponCategory": 1,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 100202,
+      "WeaponCategory": 1,
+      "DamageType": 2,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 100402,
+      "WeaponCategory": 1,
+      "DamageType": 4,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 100602,
+      "WeaponCategory": 1,
+      "DamageType": 6,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 100802,
+      "WeaponCategory": 1,
+      "DamageType": 8,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 101002,
+      "WeaponCategory": 1,
+      "DamageType": 10,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 101202,
+      "WeaponCategory": 1,
+      "DamageType": 12,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 101402,
+      "WeaponCategory": 1,
+      "DamageType": 14,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 100003,
+      "WeaponCategory": 1,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 100203,
+      "WeaponCategory": 1,
+      "DamageType": 2,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 100403,
+      "WeaponCategory": 1,
+      "DamageType": 4,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 100603,
+      "WeaponCategory": 1,
+      "DamageType": 6,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 100803,
+      "WeaponCategory": 1,
+      "DamageType": 8,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 101003,
+      "WeaponCategory": 1,
+      "DamageType": 10,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 101203,
+      "WeaponCategory": 1,
+      "DamageType": 12,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 101403,
+      "WeaponCategory": 1,
+      "DamageType": 14,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 200001,
+      "WeaponCategory": 2,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 200201,
+      "WeaponCategory": 2,
+      "DamageType": 2,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 200401,
+      "WeaponCategory": 2,
+      "DamageType": 4,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 200601,
+      "WeaponCategory": 2,
+      "DamageType": 6,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 200801,
+      "WeaponCategory": 2,
+      "DamageType": 8,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 201001,
+      "WeaponCategory": 2,
+      "DamageType": 10,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 201201,
+      "WeaponCategory": 2,
+      "DamageType": 12,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 201401,
+      "WeaponCategory": 2,
+      "DamageType": 14,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 200002,
+      "WeaponCategory": 2,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 200202,
+      "WeaponCategory": 2,
+      "DamageType": 2,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 200402,
+      "WeaponCategory": 2,
+      "DamageType": 4,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 200602,
+      "WeaponCategory": 2,
+      "DamageType": 6,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 200802,
+      "WeaponCategory": 2,
+      "DamageType": 8,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 201002,
+      "WeaponCategory": 2,
+      "DamageType": 10,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 201202,
+      "WeaponCategory": 2,
+      "DamageType": 12,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 201402,
+      "WeaponCategory": 2,
+      "DamageType": 14,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 200003,
+      "WeaponCategory": 2,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 200203,
+      "WeaponCategory": 2,
+      "DamageType": 2,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 200403,
+      "WeaponCategory": 2,
+      "DamageType": 4,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 200603,
+      "WeaponCategory": 2,
+      "DamageType": 6,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 200803,
+      "WeaponCategory": 2,
+      "DamageType": 8,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 201003,
+      "WeaponCategory": 2,
+      "DamageType": 10,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 201203,
+      "WeaponCategory": 2,
+      "DamageType": 12,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 201403,
+      "WeaponCategory": 2,
+      "DamageType": 14,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 300001,
+      "WeaponCategory": 3,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 300201,
+      "WeaponCategory": 3,
+      "DamageType": 2,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 300401,
+      "WeaponCategory": 3,
+      "DamageType": 4,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 300601,
+      "WeaponCategory": 3,
+      "DamageType": 6,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 300801,
+      "WeaponCategory": 3,
+      "DamageType": 8,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 301001,
+      "WeaponCategory": 3,
+      "DamageType": 10,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 301201,
+      "WeaponCategory": 3,
+      "DamageType": 12,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 301401,
+      "WeaponCategory": 3,
+      "DamageType": 14,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 300002,
+      "WeaponCategory": 3,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 300202,
+      "WeaponCategory": 3,
+      "DamageType": 2,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 300402,
+      "WeaponCategory": 3,
+      "DamageType": 4,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 300602,
+      "WeaponCategory": 3,
+      "DamageType": 6,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 300802,
+      "WeaponCategory": 3,
+      "DamageType": 8,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 301002,
+      "WeaponCategory": 3,
+      "DamageType": 10,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 301202,
+      "WeaponCategory": 3,
+      "DamageType": 12,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 301402,
+      "WeaponCategory": 3,
+      "DamageType": 14,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 300003,
+      "WeaponCategory": 3,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 300203,
+      "WeaponCategory": 3,
+      "DamageType": 2,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 300403,
+      "WeaponCategory": 3,
+      "DamageType": 4,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 300603,
+      "WeaponCategory": 3,
+      "DamageType": 6,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 300803,
+      "WeaponCategory": 3,
+      "DamageType": 8,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 301003,
+      "WeaponCategory": 3,
+      "DamageType": 10,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 301203,
+      "WeaponCategory": 3,
+      "DamageType": 12,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 301403,
+      "WeaponCategory": 3,
+      "DamageType": 14,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 400001,
+      "WeaponCategory": 4,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 400201,
+      "WeaponCategory": 4,
+      "DamageType": 2,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 400401,
+      "WeaponCategory": 4,
+      "DamageType": 4,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 400601,
+      "WeaponCategory": 4,
+      "DamageType": 6,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 400801,
+      "WeaponCategory": 4,
+      "DamageType": 8,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 401001,
+      "WeaponCategory": 4,
+      "DamageType": 10,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 401201,
+      "WeaponCategory": 4,
+      "DamageType": 12,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 401401,
+      "WeaponCategory": 4,
+      "DamageType": 14,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 400002,
+      "WeaponCategory": 4,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 400202,
+      "WeaponCategory": 4,
+      "DamageType": 2,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 400402,
+      "WeaponCategory": 4,
+      "DamageType": 4,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 400602,
+      "WeaponCategory": 4,
+      "DamageType": 6,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 400802,
+      "WeaponCategory": 4,
+      "DamageType": 8,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 401002,
+      "WeaponCategory": 4,
+      "DamageType": 10,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 401202,
+      "WeaponCategory": 4,
+      "DamageType": 12,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 401402,
+      "WeaponCategory": 4,
+      "DamageType": 14,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 400003,
+      "WeaponCategory": 4,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 400203,
+      "WeaponCategory": 4,
+      "DamageType": 2,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 400403,
+      "WeaponCategory": 4,
+      "DamageType": 4,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 400603,
+      "WeaponCategory": 4,
+      "DamageType": 6,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 400803,
+      "WeaponCategory": 4,
+      "DamageType": 8,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 401003,
+      "WeaponCategory": 4,
+      "DamageType": 10,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 401203,
+      "WeaponCategory": 4,
+      "DamageType": 12,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 401403,
+      "WeaponCategory": 4,
+      "DamageType": 14,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 500001,
+      "WeaponCategory": 5,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 500201,
+      "WeaponCategory": 5,
+      "DamageType": 2,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 500401,
+      "WeaponCategory": 5,
+      "DamageType": 4,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 500601,
+      "WeaponCategory": 5,
+      "DamageType": 6,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 500801,
+      "WeaponCategory": 5,
+      "DamageType": 8,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 501001,
+      "WeaponCategory": 5,
+      "DamageType": 10,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 501201,
+      "WeaponCategory": 5,
+      "DamageType": 12,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 501401,
+      "WeaponCategory": 5,
+      "DamageType": 14,
+      "RoleCategory": 1,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 500002,
+      "WeaponCategory": 5,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 500202,
+      "WeaponCategory": 5,
+      "DamageType": 2,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 500402,
+      "WeaponCategory": 5,
+      "DamageType": 4,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 500602,
+      "WeaponCategory": 5,
+      "DamageType": 6,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 500802,
+      "WeaponCategory": 5,
+      "DamageType": 8,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 501002,
+      "WeaponCategory": 5,
+      "DamageType": 10,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 501202,
+      "WeaponCategory": 5,
+      "DamageType": 12,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 501402,
+      "WeaponCategory": 5,
+      "DamageType": 14,
+      "RoleCategory": 2,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 500003,
+      "WeaponCategory": 5,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 500203,
+      "WeaponCategory": 5,
+      "DamageType": 2,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 500403,
+      "WeaponCategory": 5,
+      "DamageType": 4,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 500603,
+      "WeaponCategory": 5,
+      "DamageType": 6,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 500803,
+      "WeaponCategory": 5,
+      "DamageType": 8,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 501003,
+      "WeaponCategory": 5,
+      "DamageType": 10,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 501203,
+      "WeaponCategory": 5,
+      "DamageType": 12,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    },
+    {
+      "ID": 501403,
+      "WeaponCategory": 5,
+      "DamageType": 14,
+      "RoleCategory": 3,
+      "CueSheet": "c_1099",
+      "CueName": "c_1099_hit"
+    }
+  ]
+}

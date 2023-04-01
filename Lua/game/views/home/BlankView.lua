@@ -1,0 +1,1 @@
+return class("BlankView", ReduxView)

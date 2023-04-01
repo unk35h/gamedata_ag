@@ -1,0 +1,935 @@
+{
+  "Data": [
+    {
+      "ID": 1050101,
+      "HitDamagePec": [
+        18
+      ],
+      "HitDamageGrp": [
+        360
+      ],
+      "Condition": 105021
+    },
+    {
+      "ID": 1050102,
+      "HitDamagePec": [
+        25
+      ],
+      "HitDamageGrp": [
+        480
+      ],
+      "Condition": 105021
+    },
+    {
+      "ID": 1050103,
+      "HitDamagePec": [
+        15,
+        22
+      ],
+      "HitDamageGrp": [
+        288,
+        432
+      ],
+      "Condition": 105021
+    },
+    {
+      "ID": 1050104,
+      "HitDamagePec": [
+        21,
+        21
+      ],
+      "HitDamageGrp": [
+        420,
+        420
+      ],
+      "Condition": 105021
+    },
+    {
+      "ID": 1050105,
+      "HitDamagePec": [
+        28,
+        28
+      ],
+      "HitDamageGrp": [
+        540,
+        540
+      ],
+      "Condition": 105021
+    },
+    {
+      "ID": 1050201,
+      "HitDamagePec": [
+        49,
+        49,
+        65
+      ],
+      "HitDamageGrp": [
+        1261,
+        1261,
+        1682
+      ],
+      "Cd": 9000,
+      "EnergyChange": 1,
+      "Condition": 105022
+    },
+    {
+      "ID": 1050053,
+      "HitDamagePec": [
+        135,
+        135
+      ],
+      "HitDamageGrp": [
+        3461,
+        3461
+      ],
+      "Condition": 105023
+    },
+    {
+      "ID": 1050052,
+      "HitDamagePec": [
+        90,
+        90
+      ],
+      "HitDamageGrp": [
+        2307,
+        2307
+      ],
+      "Condition": 105041
+    },
+    {
+      "ID": 1050054,
+      "HitDamagePec": [
+        180
+      ],
+      "HitDamageGrp": [
+        4615
+      ],
+      "Condition": 105041
+    },
+    {
+      "ID": 1050051,
+      "HitDamagePec": [
+        360
+      ],
+      "HitDamageGrp": [
+        9230
+      ],
+      "Condition": 105024
+    },
+    {
+      "ID": 1050056,
+      "HitDamagePec": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "HitDamageGrp": [
+        769,
+        769,
+        769,
+        769
+      ],
+      "Condition": 105024
+    },
+    {
+      "ID": 1050057,
+      "HitDamagePec": [
+        24,
+        24,
+        48,
+        48,
+        48,
+        48
+      ],
+      "HitDamageGrp": [
+        615,
+        615,
+        1230,
+        1230,
+        1230,
+        1230
+      ],
+      "Condition": 105024
+    },
+    {
+      "ID": 1058101,
+      "HitDamagePec": [
+        43
+      ],
+      "HitDamageGrp": [
+        841
+      ],
+      "Condition": 105821
+    },
+    {
+      "ID": 1058102,
+      "HitDamagePec": [
+        56
+      ],
+      "HitDamageGrp": [
+        1081
+      ],
+      "Condition": 105821
+    },
+    {
+      "ID": 1058103,
+      "HitDamagePec": [
+        56
+      ],
+      "HitDamageGrp": [
+        1081
+      ],
+      "Condition": 105821
+    },
+    {
+      "ID": 1058104,
+      "HitDamagePec": [
+        68
+      ],
+      "HitDamageGrp": [
+        1322
+      ],
+      "Condition": 105821
+    },
+    {
+      "ID": 1058105,
+      "HitDamagePec": [
+        20,
+        48
+      ],
+      "HitDamageGrp": [
+        396,
+        925
+      ],
+      "Condition": 105821
+    },
+    {
+      "ID": 1058106,
+      "HitDamagePec": [
+        100
+      ],
+      "HitDamageGrp": [
+        1923
+      ],
+      "Condition": 105821
+    },
+    {
+      "ID": 1058107,
+      "HitDamagePec": [
+        43
+      ],
+      "HitDamageGrp": [
+        841
+      ],
+      "Condition": 105821
+    },
+    {
+      "ID": 1058108,
+      "HitDamagePec": [
+        56
+      ],
+      "HitDamageGrp": [
+        1081
+      ],
+      "Condition": 105821
+    },
+    {
+      "ID": 1058109,
+      "HitDamagePec": [
+        56
+      ],
+      "HitDamageGrp": [
+        1081
+      ],
+      "Condition": 105821
+    },
+    {
+      "ID": 1058110,
+      "HitDamagePec": [
+        68
+      ],
+      "HitDamageGrp": [
+        1322
+      ],
+      "Condition": 105821
+    },
+    {
+      "ID": 1058111,
+      "HitDamagePec": [
+        34,
+        34
+      ],
+      "HitDamageGrp": [
+        661,
+        661
+      ],
+      "Condition": 105821
+    },
+    {
+      "ID": 1058112,
+      "HitDamagePec": [
+        100
+      ],
+      "HitDamageGrp": [
+        1923
+      ],
+      "Condition": 105821
+    },
+    {
+      "ID": 1058201,
+      "HitDamagePec": [
+        100,
+        100
+      ],
+      "HitDamageGrp": [
+        2564,
+        2564
+      ],
+      "Cd": 12000,
+      "EnergyChange": -20,
+      "Condition": 105822
+    },
+    {
+      "ID": 1058211,
+      "HitDamagePec": [
+        600
+      ],
+      "HitDamageGrp": [
+        15384
+      ],
+      "Cd": 6000,
+      "EnergyChange": -30,
+      "Condition": 105833
+    },
+    {
+      "ID": 1058212,
+      "HitDamagePec": [
+        200,
+        200
+      ],
+      "HitDamageGrp": [
+        5128,
+        5128
+      ],
+      "Cd": 12000,
+      "EnergyChange": -30,
+      "Condition": 105822
+    },
+    {
+      "ID": 1058202,
+      "HitDamagePec": [
+        200
+      ],
+      "HitDamageGrp": [
+        5128
+      ],
+      "Cd": 12000,
+      "EnergyChange": -20,
+      "Condition": 105823
+    },
+    {
+      "ID": 1058221,
+      "HitDamagePec": [
+        300,
+        300
+      ],
+      "HitDamageGrp": [
+        7692,
+        7692
+      ],
+      "Cd": 6000,
+      "EnergyChange": -30,
+      "Condition": 105823
+    },
+    {
+      "ID": 1058222,
+      "HitDamagePec": [
+        400
+      ],
+      "HitDamageGrp": [
+        10256
+      ],
+      "Cd": 12000,
+      "EnergyChange": -30,
+      "Condition": 105823
+    },
+    {
+      "ID": 1058223,
+      "HitDamagePec": [
+        600,
+        600
+      ],
+      "HitDamageGrp": [
+        15384,
+        15384
+      ],
+      "Cd": 6000,
+      "EnergyChange": -30,
+      "Condition": 105823
+    },
+    {
+      "ID": 1058203,
+      "HitDamagePec": [
+        42
+      ],
+      "HitDamageGrp": [
+        1076
+      ],
+      "Cd": 24000,
+      "EnergyChange": -20,
+      "Condition": 105824
+    },
+    {
+      "ID": 1058231,
+      "HitDamagePec": [
+        108,
+        108,
+        144
+      ],
+      "HitDamageGrp": [
+        2769,
+        2769,
+        3692
+      ],
+      "Cd": 24000,
+      "EnergyChange": -20,
+      "Condition": 105832
+    },
+    {
+      "ID": 1058051,
+      "HitDamagePec": [
+        378
+      ],
+      "HitDamageGrp": [
+        9692
+      ],
+      "Condition": 105824
+    },
+    {
+      "ID": 1058053,
+      "HitDamagePec": [
+        1080
+      ],
+      "HitDamageGrp": [
+        27692
+      ],
+      "Condition": 105832
+    },
+    {
+      "ID": 1058054,
+      "HitDamagePec": [
+        1080
+      ],
+      "HitDamageGrp": [
+        27692
+      ],
+      "Condition": 105832
+    },
+    {
+      "ID": 1058055,
+      "HitDamagePec": [
+        1080
+      ],
+      "HitDamageGrp": [
+        27692
+      ],
+      "Condition": 105832
+    },
+    {
+      "ID": 1058056,
+      "HitDamagePec": [
+        600
+      ],
+      "HitDamageGrp": [
+        15384
+      ],
+      "Condition": 105833
+    },
+    {
+      "ID": 1058057,
+      "HitDamagePec": [
+        240
+      ],
+      "HitDamageGrp": [
+        6153
+      ],
+      "Condition": 105841
+    },
+    {
+      "ID": 1058058,
+      "HitDamagePec": [
+        360
+      ],
+      "HitDamageGrp": [
+        9230
+      ],
+      "Condition": 105841
+    },
+    {
+      "ID": 1084101,
+      "HitDamagePec": [
+        22
+      ],
+      "HitDamageGrp": [
+        432
+      ],
+      "Condition": 108421
+    },
+    {
+      "ID": 1084102,
+      "HitDamagePec": [
+        25
+      ],
+      "HitDamageGrp": [
+        480
+      ],
+      "Condition": 108421
+    },
+    {
+      "ID": 1084103,
+      "HitDamagePec": [
+        37
+      ],
+      "HitDamageGrp": [
+        721
+      ],
+      "Condition": 108421
+    },
+    {
+      "ID": 1084104,
+      "HitDamagePec": [
+        43
+      ],
+      "HitDamageGrp": [
+        841
+      ],
+      "Condition": 108421
+    },
+    {
+      "ID": 1084105,
+      "HitDamagePec": [
+        21,
+        40
+      ],
+      "HitDamageGrp": [
+        420,
+        781
+      ],
+      "Condition": 108421
+    },
+    {
+      "ID": 1084201,
+      "HitDamagePec": [
+        45,
+        45,
+        45,
+        45
+      ],
+      "HitDamageGrp": [
+        1153,
+        1153,
+        1153,
+        1153
+      ],
+      "Cd": 12000,
+      "Condition": 108422
+    },
+    {
+      "ID": 1084211,
+      "HitDamagePec": [
+        60,
+        60,
+        60,
+        60
+      ],
+      "HitDamageGrp": [
+        1538,
+        1538,
+        1538,
+        1538
+      ],
+      "Cd": 12000,
+      "Condition": 108422
+    },
+    {
+      "ID": 1084202,
+      "HitDamagePec": [
+        240,
+        60
+      ],
+      "HitDamageGrp": [
+        6153,
+        1538
+      ],
+      "Cd": 12000,
+      "Condition": 108423
+    },
+    {
+      "ID": 1084203,
+      "HitDamagePec": [
+        100,
+        100,
+        75,
+        75,
+        75,
+        75
+      ],
+      "HitDamageGrp": [
+        2564,
+        2564,
+        1923,
+        1923,
+        1923,
+        1923
+      ],
+      "Cd": 15000,
+      "Condition": 108424
+    },
+    {
+      "ID": 1084231,
+      "HitDamagePec": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "HitDamageGrp": [
+        1025,
+        1025,
+        1025,
+        1025
+      ],
+      "Condition": 108424
+    },
+    {
+      "ID": 1084232,
+      "HitDamagePec": [
+        640
+      ],
+      "HitDamageGrp": [
+        16410
+      ],
+      "Condition": 108424
+    },
+    {
+      "ID": 1032101,
+      "HitDamagePec": [
+        31
+      ],
+      "HitDamageGrp": [
+        600
+      ],
+      "Condition": 103221
+    },
+    {
+      "ID": 1032102,
+      "HitDamagePec": [
+        15,
+        15,
+        31
+      ],
+      "HitDamageGrp": [
+        300,
+        300,
+        600
+      ],
+      "Condition": 103221
+    },
+    {
+      "ID": 1032103,
+      "HitDamagePec": [
+        33,
+        41
+      ],
+      "HitDamageGrp": [
+        649,
+        793
+      ],
+      "Condition": 103221
+    },
+    {
+      "ID": 1032065,
+      "HitDamagePec": [
+        23,
+        23,
+        23,
+        23
+      ],
+      "HitDamageGrp": [
+        450,
+        450,
+        450,
+        450
+      ],
+      "Condition": 103221
+    },
+    {
+      "ID": 1032105,
+      "HitDamagePec": [
+        75
+      ],
+      "HitDamageGrp": [
+        1442
+      ],
+      "Condition": 103221
+    },
+    {
+      "ID": 1032106,
+      "HitDamagePec": [
+        50
+      ],
+      "HitDamageGrp": [
+        961
+      ],
+      "Condition": 103241
+    },
+    {
+      "ID": 1032107,
+      "HitDamagePec": [
+        16,
+        16
+      ],
+      "HitDamageGrp": [
+        317,
+        317
+      ],
+      "Condition": 103241
+    },
+    {
+      "ID": 1032071,
+      "HitDamagePec": [
+        42
+      ],
+      "HitDamageGrp": [
+        807
+      ],
+      "Condition": 103241
+    },
+    {
+      "ID": 1032072,
+      "HitDamagePec": [
+        50,
+        37,
+        37
+      ],
+      "HitDamageGrp": [
+        961,
+        721,
+        721
+      ],
+      "Condition": 103241
+    },
+    {
+      "ID": 1032109,
+      "HitDamagePec": [
+        43,
+        37,
+        43
+      ],
+      "HitDamageGrp": [
+        841,
+        721,
+        841
+      ],
+      "Condition": 103241
+    },
+    {
+      "ID": 1032064,
+      "HitDamagePec": [
+        100
+      ],
+      "HitDamageGrp": [
+        1923
+      ],
+      "Condition": 103241
+    },
+    {
+      "ID": 1032201,
+      "HitDamagePec": [
+        400
+      ],
+      "HitDamageGrp": [
+        10256
+      ],
+      "Cd": 7000,
+      "Condition": 103222
+    },
+    {
+      "ID": 1032211,
+      "HitDamagePec": [
+        400
+      ],
+      "HitDamageGrp": [
+        10256
+      ],
+      "Cd": 7000,
+      "Condition": 103222
+    },
+    {
+      "ID": 1032212,
+      "HitDamagePec": [
+        400
+      ],
+      "HitDamageGrp": [
+        10256
+      ],
+      "Cd": 7000,
+      "Condition": 103222
+    },
+    {
+      "ID": 1032051,
+      "HitDamagePec": [
+        800
+      ],
+      "HitDamageGrp": [
+        20512
+      ],
+      "Condition": 103222
+    },
+    {
+      "ID": 1032052,
+      "HitDamagePec": [
+        800
+      ],
+      "HitDamageGrp": [
+        20512
+      ],
+      "Condition": 103222
+    },
+    {
+      "ID": 1032053,
+      "HitDamagePec": [
+        800
+      ],
+      "HitDamageGrp": [
+        20512
+      ],
+      "Condition": 103222
+    },
+    {
+      "ID": 1032063,
+      "HitDamagePec": [
+        960
+      ],
+      "HitDamageGrp": [
+        24615
+      ],
+      "Condition": 103223
+    },
+    {
+      "ID": 1032223,
+      "HitDamagePec": [
+        960
+      ],
+      "HitDamageGrp": [
+        24615
+      ],
+      "Condition": 103223
+    },
+    {
+      "ID": 1032055,
+      "HitDamagePec": [
+        672,
+        288
+      ],
+      "HitDamageGrp": [
+        17230,
+        7384
+      ],
+      "Condition": 103223
+    },
+    {
+      "ID": 1032203,
+      "HitDamagePec": [
+        240
+      ],
+      "HitDamageGrp": [
+        6153
+      ],
+      "Cd": 12000,
+      "EnergyChange": -2,
+      "Condition": 103224
+    },
+    {
+      "ID": 1032056,
+      "HitDamagePec": [
+        1200
+      ],
+      "HitDamageGrp": [
+        30769
+      ],
+      "Condition": 103224
+    },
+    {
+      "ID": 1032057,
+      "HitDamagePec": [
+        1200
+      ],
+      "HitDamageGrp": [
+        30769
+      ],
+      "Condition": 103224
+    },
+    {
+      "ID": 1032058,
+      "HitDamagePec": [
+        1200
+      ],
+      "HitDamageGrp": [
+        30769
+      ],
+      "Condition": 103224
+    },
+    {
+      "ID": 1032059,
+      "HitDamagePec": [
+        900,
+        900
+      ],
+      "HitDamageGrp": [
+        23076,
+        23076
+      ],
+      "Condition": 103224
+    },
+    {
+      "ID": 1032060,
+      "HitDamagePec": [
+        900,
+        900
+      ],
+      "HitDamageGrp": [
+        23076,
+        23076
+      ],
+      "Condition": 103224
+    },
+    {
+      "ID": 1032061,
+      "HitDamagePec": [
+        900,
+        900
+      ],
+      "HitDamageGrp": [
+        23076,
+        23076
+      ],
+      "Condition": 103224
+    },
+    {
+      "ID": 1032062,
+      "HitDamagePec": [
+        840,
+        840,
+        1120
+      ],
+      "HitDamageGrp": [
+        21538,
+        21538,
+        28717
+      ],
+      "Condition": 103224
+    }
+  ]
+}

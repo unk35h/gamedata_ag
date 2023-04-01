@@ -1,0 +1,504 @@
+slot0 = require("protobuf")
+
+module("p46_pb")
+
+slot1 = slot0.Descriptor()
+slot2 = slot0.Descriptor()
+slot3 = slot0.FieldDescriptor()
+slot4 = slot0.Descriptor()
+slot5 = slot0.FieldDescriptor()
+slot6 = slot0.FieldDescriptor()
+slot7 = slot0.FieldDescriptor()
+slot8 = slot0.FieldDescriptor()
+slot9 = slot0.Descriptor()
+slot10 = slot0.FieldDescriptor()
+slot11 = slot0.FieldDescriptor()
+slot12 = slot0.FieldDescriptor()
+slot13 = slot0.Descriptor()
+slot14 = slot0.FieldDescriptor()
+slot15 = slot0.Descriptor()
+slot16 = slot0.FieldDescriptor()
+slot17 = slot0.FieldDescriptor()
+slot18 = slot0.Descriptor()
+slot19 = slot0.FieldDescriptor()
+slot20 = slot0.Descriptor()
+slot21 = slot0.FieldDescriptor()
+slot22 = slot0.FieldDescriptor()
+slot23 = slot0.FieldDescriptor()
+slot24 = slot0.Descriptor()
+slot25 = slot0.FieldDescriptor()
+slot26 = slot0.FieldDescriptor()
+slot27 = slot0.Descriptor()
+slot28 = slot0.FieldDescriptor()
+slot29 = slot0.Descriptor()
+slot30 = slot0.FieldDescriptor()
+slot31 = slot0.Descriptor()
+slot32 = slot0.FieldDescriptor()
+slot33 = slot0.Descriptor()
+slot34 = slot0.FieldDescriptor()
+slot35 = slot0.FieldDescriptor()
+slot36 = slot0.Descriptor()
+slot37 = slot0.FieldDescriptor()
+slot38 = slot0.Descriptor()
+slot39 = slot0.FieldDescriptor()
+slot40 = slot0.FieldDescriptor()
+slot41 = slot0.Descriptor()
+slot42 = slot0.FieldDescriptor()
+slot43 = slot0.FieldDescriptor()
+slot44 = slot0.Descriptor()
+slot45 = slot0.FieldDescriptor()
+slot46 = slot0.Descriptor()
+slot47 = slot0.FieldDescriptor()
+slot1.name = "cs_46010"
+slot1.full_name = ".p46.cs_46010"
+slot1.nested_types = {}
+slot1.enum_types = {}
+slot1.fields = {}
+slot1.is_extendable = false
+slot1.extensions = {}
+slot3.name = "servant_list"
+slot3.full_name = ".p46.sc_46011.servant_list"
+slot3.number = 1
+slot3.index = 0
+slot3.label = 3
+slot3.has_default_value = false
+slot3.default_value = {}
+slot3.message_type = slot4
+slot3.type = 11
+slot3.cpp_type = 10
+slot2.name = "sc_46011"
+slot2.full_name = ".p46.sc_46011"
+slot2.nested_types = {}
+slot2.enum_types = {}
+slot2.fields = {
+	slot3
+}
+slot2.is_extendable = false
+slot2.extensions = {}
+slot5.name = "uid"
+slot5.full_name = ".p46.weapon_servant_pb.uid"
+slot5.number = 1
+slot5.index = 0
+slot5.label = 2
+slot5.has_default_value = false
+slot5.default_value = 0
+slot5.type = 4
+slot5.cpp_type = 4
+slot6.name = "id"
+slot6.full_name = ".p46.weapon_servant_pb.id"
+slot6.number = 2
+slot6.index = 1
+slot6.label = 2
+slot6.has_default_value = false
+slot6.default_value = 0
+slot6.type = 13
+slot6.cpp_type = 3
+slot7.name = "stage"
+slot7.full_name = ".p46.weapon_servant_pb.stage"
+slot7.number = 3
+slot7.index = 2
+slot7.label = 2
+slot7.has_default_value = false
+slot7.default_value = 0
+slot7.type = 13
+slot7.cpp_type = 3
+slot8.name = "is_locked"
+slot8.full_name = ".p46.weapon_servant_pb.is_locked"
+slot8.number = 4
+slot8.index = 3
+slot8.label = 2
+slot8.has_default_value = false
+slot8.default_value = 0
+slot8.type = 13
+slot8.cpp_type = 3
+slot4.name = "weapon_servant_pb"
+slot4.full_name = ".p46.weapon_servant_pb"
+slot4.nested_types = {}
+slot4.enum_types = {}
+slot4.fields = {
+	slot5,
+	slot6,
+	slot7,
+	slot8
+}
+slot4.is_extendable = false
+slot4.extensions = {}
+slot10.name = "refined_type"
+slot10.full_name = ".p46.cs_46012.refined_type"
+slot10.number = 1
+slot10.index = 0
+slot10.label = 2
+slot10.has_default_value = false
+slot10.default_value = 0
+slot10.type = 13
+slot10.cpp_type = 3
+slot11.name = "uid"
+slot11.full_name = ".p46.cs_46012.uid"
+slot11.number = 2
+slot11.index = 1
+slot11.label = 2
+slot11.has_default_value = false
+slot11.default_value = 0
+slot11.type = 4
+slot11.cpp_type = 4
+slot12.name = "cost_uid"
+slot12.full_name = ".p46.cs_46012.cost_uid"
+slot12.number = 3
+slot12.index = 2
+slot12.label = 1
+slot12.has_default_value = false
+slot12.default_value = 0
+slot12.type = 4
+slot12.cpp_type = 4
+slot9.name = "cs_46012"
+slot9.full_name = ".p46.cs_46012"
+slot9.nested_types = {}
+slot9.enum_types = {}
+slot9.fields = {
+	slot10,
+	slot11,
+	slot12
+}
+slot9.is_extendable = false
+slot9.extensions = {}
+slot14.name = "result"
+slot14.full_name = ".p46.sc_46013.result"
+slot14.number = 1
+slot14.index = 0
+slot14.label = 2
+slot14.has_default_value = false
+slot14.default_value = 0
+slot14.type = 13
+slot14.cpp_type = 3
+slot13.name = "sc_46013"
+slot13.full_name = ".p46.sc_46013"
+slot13.nested_types = {}
+slot13.enum_types = {}
+slot13.fields = {
+	slot14
+}
+slot13.is_extendable = false
+slot13.extensions = {}
+slot16.name = "uid"
+slot16.full_name = ".p46.cs_46014.uid"
+slot16.number = 1
+slot16.index = 0
+slot16.label = 2
+slot16.has_default_value = false
+slot16.default_value = 0
+slot16.type = 4
+slot16.cpp_type = 4
+slot17.name = "is_lock"
+slot17.full_name = ".p46.cs_46014.is_lock"
+slot17.number = 2
+slot17.index = 1
+slot17.label = 2
+slot17.has_default_value = false
+slot17.default_value = 0
+slot17.type = 13
+slot17.cpp_type = 3
+slot15.name = "cs_46014"
+slot15.full_name = ".p46.cs_46014"
+slot15.nested_types = {}
+slot15.enum_types = {}
+slot15.fields = {
+	slot16,
+	slot17
+}
+slot15.is_extendable = false
+slot15.extensions = {}
+slot19.name = "result"
+slot19.full_name = ".p46.sc_46015.result"
+slot19.number = 1
+slot19.index = 0
+slot19.label = 2
+slot19.has_default_value = false
+slot19.default_value = 0
+slot19.type = 13
+slot19.cpp_type = 3
+slot18.name = "sc_46015"
+slot18.full_name = ".p46.sc_46015"
+slot18.nested_types = {}
+slot18.enum_types = {}
+slot18.fields = {
+	slot19
+}
+slot18.is_extendable = false
+slot18.extensions = {}
+slot21.name = "hero_id"
+slot21.full_name = ".p46.cs_46016.hero_id"
+slot21.number = 1
+slot21.index = 0
+slot21.label = 2
+slot21.has_default_value = false
+slot21.default_value = 0
+slot21.type = 13
+slot21.cpp_type = 3
+slot22.name = "material_list"
+slot22.full_name = ".p46.cs_46016.material_list"
+slot22.number = 2
+slot22.index = 1
+slot22.label = 3
+slot22.has_default_value = false
+slot22.default_value = {}
+slot22.message_type = slot24
+slot22.type = 11
+slot22.cpp_type = 10
+slot23.name = "servant_list"
+slot23.full_name = ".p46.cs_46016.servant_list"
+slot23.number = 3
+slot23.index = 2
+slot23.label = 3
+slot23.has_default_value = false
+slot23.default_value = {}
+slot23.type = 4
+slot23.cpp_type = 4
+slot20.name = "cs_46016"
+slot20.full_name = ".p46.cs_46016"
+slot20.nested_types = {}
+slot20.enum_types = {}
+slot20.fields = {
+	slot21,
+	slot22,
+	slot23
+}
+slot20.is_extendable = false
+slot20.extensions = {}
+slot25.name = "id"
+slot25.full_name = ".p46.material_net_rec.id"
+slot25.number = 1
+slot25.index = 0
+slot25.label = 2
+slot25.has_default_value = false
+slot25.default_value = 0
+slot25.type = 13
+slot25.cpp_type = 3
+slot26.name = "num"
+slot26.full_name = ".p46.material_net_rec.num"
+slot26.number = 2
+slot26.index = 1
+slot26.label = 2
+slot26.has_default_value = false
+slot26.default_value = 0
+slot26.type = 13
+slot26.cpp_type = 3
+slot24.name = "material_net_rec"
+slot24.full_name = ".p46.material_net_rec"
+slot24.nested_types = {}
+slot24.enum_types = {}
+slot24.fields = {
+	slot25,
+	slot26
+}
+slot24.is_extendable = false
+slot24.extensions = {}
+slot28.name = "result"
+slot28.full_name = ".p46.sc_46017.result"
+slot28.number = 1
+slot28.index = 0
+slot28.label = 2
+slot28.has_default_value = false
+slot28.default_value = 0
+slot28.type = 13
+slot28.cpp_type = 3
+slot27.name = "sc_46017"
+slot27.full_name = ".p46.sc_46017"
+slot27.nested_types = {}
+slot27.enum_types = {}
+slot27.fields = {
+	slot28
+}
+slot27.is_extendable = false
+slot27.extensions = {}
+slot30.name = "hero_id"
+slot30.full_name = ".p46.cs_46018.hero_id"
+slot30.number = 1
+slot30.index = 0
+slot30.label = 2
+slot30.has_default_value = false
+slot30.default_value = 0
+slot30.type = 13
+slot30.cpp_type = 3
+slot29.name = "cs_46018"
+slot29.full_name = ".p46.cs_46018"
+slot29.nested_types = {}
+slot29.enum_types = {}
+slot29.fields = {
+	slot30
+}
+slot29.is_extendable = false
+slot29.extensions = {}
+slot32.name = "result"
+slot32.full_name = ".p46.sc_46019.result"
+slot32.number = 1
+slot32.index = 0
+slot32.label = 2
+slot32.has_default_value = false
+slot32.default_value = 0
+slot32.type = 13
+slot32.cpp_type = 3
+slot31.name = "sc_46019"
+slot31.full_name = ".p46.sc_46019"
+slot31.nested_types = {}
+slot31.enum_types = {}
+slot31.fields = {
+	slot32
+}
+slot31.is_extendable = false
+slot31.extensions = {}
+slot34.name = "hero_id"
+slot34.full_name = ".p46.cs_46020.hero_id"
+slot34.number = 1
+slot34.index = 0
+slot34.label = 2
+slot34.has_default_value = false
+slot34.default_value = 0
+slot34.type = 13
+slot34.cpp_type = 3
+slot35.name = "servant_id"
+slot35.full_name = ".p46.cs_46020.servant_id"
+slot35.number = 2
+slot35.index = 1
+slot35.label = 2
+slot35.has_default_value = false
+slot35.default_value = 0
+slot35.type = 4
+slot35.cpp_type = 4
+slot33.name = "cs_46020"
+slot33.full_name = ".p46.cs_46020"
+slot33.nested_types = {}
+slot33.enum_types = {}
+slot33.fields = {
+	slot34,
+	slot35
+}
+slot33.is_extendable = false
+slot33.extensions = {}
+slot37.name = "result"
+slot37.full_name = ".p46.sc_46021.result"
+slot37.number = 1
+slot37.index = 0
+slot37.label = 2
+slot37.has_default_value = false
+slot37.default_value = 0
+slot37.type = 13
+slot37.cpp_type = 3
+slot36.name = "sc_46021"
+slot36.full_name = ".p46.sc_46021"
+slot36.nested_types = {}
+slot36.enum_types = {}
+slot36.fields = {
+	slot37
+}
+slot36.is_extendable = false
+slot36.extensions = {}
+slot39.name = "servant_id"
+slot39.full_name = ".p46.cs_46030.servant_id"
+slot39.number = 1
+slot39.index = 0
+slot39.label = 2
+slot39.has_default_value = false
+slot39.default_value = 0
+slot39.type = 4
+slot39.cpp_type = 4
+slot40.name = "cost_uid_list"
+slot40.full_name = ".p46.cs_46030.cost_uid_list"
+slot40.number = 2
+slot40.index = 1
+slot40.label = 3
+slot40.has_default_value = false
+slot40.default_value = {}
+slot40.type = 4
+slot40.cpp_type = 4
+slot38.name = "cs_46030"
+slot38.full_name = ".p46.cs_46030"
+slot38.nested_types = {}
+slot38.enum_types = {}
+slot38.fields = {
+	slot39,
+	slot40
+}
+slot38.is_extendable = false
+slot38.extensions = {}
+slot42.name = "result"
+slot42.full_name = ".p46.sc_46031.result"
+slot42.number = 1
+slot42.index = 0
+slot42.label = 2
+slot42.has_default_value = false
+slot42.default_value = 0
+slot42.type = 13
+slot42.cpp_type = 3
+slot43.name = "servant_uid"
+slot43.full_name = ".p46.sc_46031.servant_uid"
+slot43.number = 2
+slot43.index = 1
+slot43.label = 1
+slot43.has_default_value = false
+slot43.default_value = 0
+slot43.type = 4
+slot43.cpp_type = 4
+slot41.name = "sc_46031"
+slot41.full_name = ".p46.sc_46031"
+slot41.nested_types = {}
+slot41.enum_types = {}
+slot41.fields = {
+	slot42,
+	slot43
+}
+slot41.is_extendable = false
+slot41.extensions = {}
+slot45.name = "servant_list"
+slot45.full_name = ".p46.cs_46032.servant_list"
+slot45.number = 1
+slot45.index = 0
+slot45.label = 3
+slot45.has_default_value = false
+slot45.default_value = {}
+slot45.type = 4
+slot45.cpp_type = 4
+slot44.name = "cs_46032"
+slot44.full_name = ".p46.cs_46032"
+slot44.nested_types = {}
+slot44.enum_types = {}
+slot44.fields = {
+	slot45
+}
+slot44.is_extendable = false
+slot44.extensions = {}
+slot47.name = "result"
+slot47.full_name = ".p46.sc_46033.result"
+slot47.number = 1
+slot47.index = 0
+slot47.label = 2
+slot47.has_default_value = false
+slot47.default_value = 0
+slot47.type = 13
+slot47.cpp_type = 3
+slot46.name = "sc_46033"
+slot46.full_name = ".p46.sc_46033"
+slot46.nested_types = {}
+slot46.enum_types = {}
+slot46.fields = {
+	slot47
+}
+slot46.is_extendable = false
+slot46.extensions = {}
+cs_46010 = slot0.Message(slot1)
+cs_46012 = slot0.Message(slot9)
+cs_46014 = slot0.Message(slot15)
+cs_46016 = slot0.Message(slot20)
+cs_46018 = slot0.Message(slot29)
+cs_46020 = slot0.Message(slot33)
+cs_46030 = slot0.Message(slot38)
+cs_46032 = slot0.Message(slot44)
+material_net_rec = slot0.Message(slot24)
+sc_46011 = slot0.Message(slot2)
+sc_46013 = slot0.Message(slot13)
+sc_46015 = slot0.Message(slot18)
+sc_46017 = slot0.Message(slot27)
+sc_46019 = slot0.Message(slot31)
+sc_46021 = slot0.Message(slot36)
+sc_46031 = slot0.Message(slot41)
+sc_46033 = slot0.Message(slot46)
+weapon_servant_pb = slot0.Message(slot4)

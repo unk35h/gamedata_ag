@@ -1,0 +1,5 @@
+return {
+	MONTH_CARD_SIGN = 3,
+	NEWBIE_SIGN = 2,
+	FATIGUE = 1
+}

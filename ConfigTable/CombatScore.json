@@ -1,0 +1,115 @@
+{
+  "Data": [
+    {
+      "Describe": "无",
+      "CombatOff": 4000
+    },
+    {
+      "ID": 1,
+      "Describe": "C",
+      "FloorValue": 1,
+      "ScoreReduction": -100,
+      "CombatOff": 4000
+    },
+    {
+      "ID": 2,
+      "Describe": "B",
+      "FloorValue": 5000,
+      "ScoreReduction": -130,
+      "ExposedAdd": 10,
+      "AttackAdd": 2,
+      "CombatOff": 3000
+    },
+    {
+      "ID": 3,
+      "Describe": "A",
+      "FloorValue": 10000,
+      "ScoreReduction": -150,
+      "ExposedAdd": 30,
+      "AttackAdd": 5,
+      "CombatOff": 2000
+    },
+    {
+      "ID": 4,
+      "Describe": "S",
+      "FloorValue": 15000,
+      "ScoreReduction": -170,
+      "ExposedAdd": 60,
+      "AttackAdd": 10,
+      "CombatOff": 1000
+    },
+    {
+      "ID": 5,
+      "Describe": "MAX",
+      "FloorValue": 19999,
+      "ExposedAdd": 100,
+      "AttackAdd": 10,
+      "CombatOff": 9999999
+    },
+    {
+      "ID": 6,
+      "Describe": "COUNT",
+      "FloorValue": 20000,
+      "ScoreReduction": -170,
+      "ExposedAdd": 100,
+      "AttackAdd": 10,
+      "CombatOff": 1000
+    },
+    {
+      "ID": 10,
+      "Describe": "无",
+      "CombatOff": 4000
+    },
+    {
+      "ID": 11,
+      "Describe": "C",
+      "FloorValue": 1,
+      "ScoreReduction": -100,
+      "CombatOff": 4000
+    },
+    {
+      "ID": 12,
+      "Describe": "B",
+      "FloorValue": 5000,
+      "ScoreReduction": -130,
+      "ExposedAdd": 10,
+      "AttackAdd": 10,
+      "CombatOff": 3000
+    },
+    {
+      "ID": 13,
+      "Describe": "A",
+      "FloorValue": 10000,
+      "ScoreReduction": -150,
+      "ExposedAdd": 30,
+      "AttackAdd": 15,
+      "CombatOff": 2000
+    },
+    {
+      "ID": 14,
+      "Describe": "S",
+      "FloorValue": 15000,
+      "ScoreReduction": -170,
+      "ExposedAdd": 60,
+      "AttackAdd": 20,
+      "CombatOff": 1000
+    },
+    {
+      "ID": 15,
+      "Describe": "MAX",
+      "FloorValue": 19999,
+      "ExposedAdd": 100,
+      "AttackAdd": 25,
+      "CombatOff": 9999999
+    },
+    {
+      "ID": 16,
+      "Describe": "COUNT",
+      "FloorValue": 20000,
+      "ScoreReduction": -170,
+      "ExposedAdd": 100,
+      "AttackAdd": 25,
+      "CombatOff": 1000
+    }
+  ]
+}

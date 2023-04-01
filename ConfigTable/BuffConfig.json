@@ -1,0 +1,92 @@
+{
+  "Data": [
+    {
+      "ID": 1,
+      "Type": "BuffType_Buff",
+      "Name": "即死",
+      "Status": "BuffStatusType_Death",
+      "Target": "TargetCampType_Oneself",
+      "Count": 1,
+      "During": 430,
+      "TriggerRangeType": "RangeType_Roundness",
+      "DamageEffectType": "Slice"
+    },
+    {
+      "ID": 2,
+      "Type": "BuffType_Buff",
+      "Name": "燃烧",
+      "Status": "BuffStatusType_Firing",
+      "Target": "TargetCampType_Enemy",
+      "Count": 10,
+      "During": 5000,
+      "Tick": 1000,
+      "TriggerRangeType": "RangeType_Roundness",
+      "Range": 10000,
+      "DamageEffectType": "Dither",
+      "DamageEffectValue": 100
+    },
+    {
+      "ID": 3,
+      "Type": "BuffType_Buff",
+      "Name": "测试",
+      "Status": "BuffStatusType_Firing",
+      "Target": "TargetCampType_Oneself",
+      "Count": -1,
+      "During": 5000,
+      "Tick": -1,
+      "TriggerRangeType": "RangeType_Roundness",
+      "Range": 10000
+    },
+    {
+      "ID": 4,
+      "Type": "BuffType_Buff",
+      "Name": "护盾",
+      "Status": "BuffStatusType_Shield",
+      "Target": "TargetCampType_We",
+      "Count": -1,
+      "During": 6000,
+      "Tick": -1,
+      "TriggerRangeType": "RangeType_Roundness",
+      "Range": 10000,
+      "ShieldValue": 1000
+    },
+    {
+      "ID": 10,
+      "Type": "BuffType_Buff",
+      "Name": "无敌",
+      "Status": "BuffStatusType_Invincible",
+      "Target": "TargetCampType_Oneself",
+      "Count": -1,
+      "During": 5000,
+      "Tick": -1
+    },
+    {
+      "ID": 21,
+      "Type": "BuffType_Buff",
+      "Name": "吸血测试",
+      "Status": "BuffStatusType_LeechLife",
+      "Target": "TargetCampType_Enemy",
+      "Count": -1,
+      "During": 5000,
+      "Tick": -1,
+      "LeechLifeType": "ConversionType_Fixed",
+      "LeechLifeParam": 10
+    },
+    {
+      "ID": 23,
+      "Type": "BuffType_Buff",
+      "Name": "变身",
+      "Status": "BuffStatusType_Transform",
+      "Target": "TargetCampType_Oneself",
+      "Count": -1,
+      "During": 10000,
+      "Tick": -1,
+      "TransformSkillArr": [
+        1011203,
+        1011202,
+        1011201,
+        1011200
+      ]
+    }
+  ]
+}

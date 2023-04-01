@@ -1,0 +1,524 @@
+{
+  "Data": [
+    {
+      "ID": 1,
+      "CooperateRoleIds": [
+        1027,
+        1080
+      ],
+      "CooperateThrownIds": [
+        1027052,
+        1080053
+      ],
+      "PrefabPath": "comboskill_1027_1080",
+      "SkillId": 1027208,
+      "IconPath": "Textures/ComboSkill/1027208"
+    },
+    {
+      "ID": 2,
+      "CooperateRoleIds": [
+        1084,
+        1011
+      ],
+      "CooperateThrownIds": [
+        1084051,
+        1011052
+      ],
+      "PrefabPath": "comboskill_1011_1084",
+      "SkillId": 1011208,
+      "IconPath": "Textures/ComboSkill/1011208"
+    },
+    {
+      "ID": 3,
+      "CooperateRoleIds": [
+        1066,
+        1037
+      ],
+      "CooperateThrownIds": [
+        1066058,
+        1037053
+      ],
+      "PrefabPath": "comboskill_1037_1066",
+      "SkillId": 1037208,
+      "IconPath": "Textures/ComboSkill/1037208"
+    },
+    {
+      "ID": 4,
+      "CooperateRoleIds": [
+        1099,
+        1093
+      ],
+      "CooperateThrownIds": [
+        1099055,
+        1093060
+      ],
+      "PrefabPath": "comboskill_1099_1093",
+      "SkillId": 1093208,
+      "IconPath": "Textures/ComboSkill/1093208"
+    },
+    {
+      "ID": 5,
+      "CooperateRoleIds": [
+        1084,
+        1148,
+        1039
+      ],
+      "CooperateThrownIds": [
+        1084052,
+        1148058,
+        1039065
+      ],
+      "PrefabPath": "comboskill_1148_1084_1039",
+      "SkillId": 1039208,
+      "IconPath": "Textures/ComboSkill/1039208"
+    },
+    {
+      "ID": 6,
+      "CooperateRoleIds": [
+        1199,
+        1050
+      ],
+      "CooperateThrownIds": [
+        1199051,
+        1050055
+      ],
+      "PrefabPath": "comboskill_1199_1050",
+      "SkillId": 1050208,
+      "IconPath": "Textures/ComboSkill/1050208"
+    },
+    {
+      "ID": 7,
+      "CooperateRoleIds": [
+        1059,
+        1032
+      ],
+      "CooperateThrownIds": [
+        1059055,
+        1032070
+      ],
+      "PrefabPath": "comboskill_1032_1059",
+      "SkillId": 1032208,
+      "IconPath": "Textures/ComboSkill/1032208"
+    },
+    {
+      "ID": 8,
+      "CooperateRoleIds": [
+        1035,
+        1026
+      ],
+      "CooperateThrownIds": [
+        1035054,
+        1026056
+      ],
+      "PrefabPath": "comboskill_1035_1026",
+      "SkillId": 1026208,
+      "IconPath": "Textures/ComboSkill/1026208"
+    },
+    {
+      "ID": 9,
+      "CooperateRoleIds": [
+        1039,
+        1019
+      ],
+      "CooperateThrownIds": [
+        1039066,
+        1019054
+      ],
+      "PrefabPath": "comboskill_1039_1019",
+      "SkillId": 1019208,
+      "IconPath": "Textures/ComboSkill/1019208"
+    },
+    {
+      "ID": 10,
+      "CooperateRoleIds": [
+        1011,
+        1111
+      ],
+      "CooperateThrownIds": [
+        1011053,
+        1111056
+      ],
+      "PrefabPath": "comboskill_1011_1111",
+      "SkillId": 1011281,
+      "IconPath": "Textures/ComboSkill/1011281"
+    },
+    {
+      "ID": 11,
+      "CooperateRoleIds": [
+        1058,
+        1026
+      ],
+      "CooperateThrownIds": [
+        1058059,
+        1026057
+      ],
+      "PrefabPath": "comboskill_1058_1026",
+      "SkillId": 1026281,
+      "IconPath": "Textures/ComboSkill/1026281"
+    },
+    {
+      "ID": 12,
+      "CooperateRoleIds": [
+        1038,
+        1139
+      ],
+      "CooperateThrownIds": [
+        1038055,
+        1139059
+      ],
+      "PrefabPath": "comboskill_1139_1038",
+      "SkillId": 1038208,
+      "IconPath": "Textures/ComboSkill/1038208"
+    },
+    {
+      "ID": 13,
+      "CooperateRoleIds": [
+        1148,
+        1013
+      ],
+      "CooperateThrownIds": [
+        1148059,
+        1013069
+      ],
+      "PrefabPath": "comboskill_1013_1148",
+      "SkillId": 1013208,
+      "IconPath": "Textures/ComboSkill/1013208"
+    },
+    {
+      "ID": 14,
+      "CooperateRoleIds": [
+        1093,
+        1050
+      ],
+      "CooperateThrownIds": [
+        1093061,
+        1050058
+      ],
+      "PrefabPath": "comboskill_1093_1050",
+      "SkillId": 1050281,
+      "IconPath": "Textures/ComboSkill/1050281"
+    },
+    {
+      "ID": 15,
+      "CooperateRoleIds": [
+        1019,
+        1066
+      ],
+      "CooperateThrownIds": [
+        1019055,
+        1066059
+      ],
+      "PrefabPath": "comboskill_1019_1066",
+      "SkillId": 1019281,
+      "IconPath": "Textures/ComboSkill/1019281"
+    },
+    {
+      "ID": 16,
+      "CooperateRoleIds": [
+        1019,
+        1111
+      ],
+      "CooperateThrownIds": [
+        1019056,
+        1111057
+      ],
+      "PrefabPath": "comboskill_1019_1111",
+      "SkillId": 1019282,
+      "IconPath": "Textures/ComboSkill/1019282"
+    },
+    {
+      "ID": 17,
+      "CooperateRoleIds": [
+        1058,
+        1035
+      ],
+      "CooperateThrownIds": [
+        1058060,
+        1035055
+      ],
+      "PrefabPath": "comboskill_1058_1035",
+      "SkillId": 1035208,
+      "IconPath": "Textures/ComboSkill/1035208"
+    },
+    {
+      "ID": 18,
+      "CooperateRoleIds": [
+        1199,
+        1184
+      ],
+      "CooperateThrownIds": [
+        1199052,
+        1184055
+      ],
+      "PrefabPath": "comboskill_1199_1184",
+      "SkillId": 1184208,
+      "IconPath": "Textures/ComboSkill/1184208"
+    },
+    {
+      "ID": 19,
+      "CooperateRoleIds": [
+        1138,
+        1096
+      ],
+      "CooperateThrownIds": [
+        1138056,
+        1096051
+      ],
+      "PrefabPath": "comboskill_1138_1096",
+      "SkillId": 1096208,
+      "IconPath": "Textures/ComboSkill/1096208"
+    },
+    {
+      "ID": 20,
+      "CooperateRoleIds": [
+        1094,
+        1048
+      ],
+      "CooperateThrownIds": [
+        1094061,
+        1048055
+      ],
+      "PrefabPath": "comboskill_1094_1048",
+      "SkillId": 1048208,
+      "IconPath": "Textures/ComboSkill/1048208"
+    },
+    {
+      "ID": 21,
+      "CooperateRoleIds": [
+        1081,
+        1027
+      ],
+      "CooperateThrownIds": [
+        1081058,
+        1027053
+      ],
+      "PrefabPath": "comboskill_1081_1027",
+      "SkillId": 1027281,
+      "IconPath": "Textures/ComboSkill/1027281"
+    },
+    {
+      "ID": 22,
+      "CooperateRoleIds": [
+        1080,
+        1127
+      ],
+      "CooperateThrownIds": [
+        1080054,
+        1127062
+      ],
+      "PrefabPath": "comboskill_1080_1127",
+      "SkillId": 1080208,
+      "IconPath": "Textures/ComboSkill/1080208"
+    },
+    {
+      "ID": 23,
+      "CooperateRoleIds": [
+        1056,
+        1081
+      ],
+      "CooperateThrownIds": [
+        1056055,
+        1081061
+      ],
+      "PrefabPath": "comboskill_1081_1056",
+      "SkillId": 1056208,
+      "IconPath": "Textures/ComboSkill/1056208"
+    },
+    {
+      "ID": 24,
+      "CooperateRoleIds": [
+        1119,
+        1184
+      ],
+      "CooperateThrownIds": [
+        1119054,
+        1184056
+      ],
+      "PrefabPath": "comboskill_1119_1184",
+      "SkillId": 1119208,
+      "IconPath": "Textures/ComboSkill/1119208"
+    },
+    {
+      "ID": 25,
+      "CooperateRoleIds": [
+        1042,
+        1097
+      ],
+      "CooperateThrownIds": [
+        1042078,
+        1097058
+      ],
+      "PrefabPath": "comboskill_1042_1097",
+      "SkillId": 1042208,
+      "IconPath": "Textures/ComboSkill/1042208"
+    },
+    {
+      "ID": 26,
+      "CooperateRoleIds": [
+        1067,
+        1068
+      ],
+      "CooperateThrownIds": [
+        1067057,
+        1068069
+      ],
+      "PrefabPath": "comboskill_1067_1068",
+      "SkillId": 1067208,
+      "IconPath": "Textures/ComboSkill/1067208"
+    },
+    {
+      "ID": 27,
+      "CooperateRoleIds": [
+        1038,
+        1041
+      ],
+      "CooperateThrownIds": [
+        1038058,
+        1041054
+      ],
+      "PrefabPath": "comboskill_1041_1038",
+      "SkillId": 1038281,
+      "IconPath": "Textures/ComboSkill/1038281"
+    },
+    {
+      "ID": 28,
+      "CooperateRoleIds": [
+        1033,
+        1066
+      ],
+      "CooperateThrownIds": [
+        1033058,
+        1066060
+      ],
+      "PrefabPath": "comboskill_1066_1033",
+      "SkillId": 1033208,
+      "IconPath": "Textures/ComboSkill/1033208"
+    },
+    {
+      "ID": 29,
+      "CooperateRoleIds": [
+        1093,
+        1017
+      ],
+      "CooperateThrownIds": [
+        1093062,
+        1017053
+      ],
+      "PrefabPath": "comboskill_1093_1017",
+      "SkillId": 1017208,
+      "IconPath": "Textures/ComboSkill/1017208"
+    },
+    {
+      "ID": 30,
+      "CooperateRoleIds": [
+        1016,
+        1058
+      ],
+      "CooperateThrownIds": [
+        1016059,
+        1058061
+      ],
+      "PrefabPath": "comboskill_1058_1016",
+      "SkillId": 1016208,
+      "IconPath": "Textures/ComboSkill/1016208"
+    },
+    {
+      "ID": 31,
+      "CooperateRoleIds": [
+        1016,
+        1052
+      ],
+      "CooperateThrownIds": [
+        1016060,
+        1052070
+      ],
+      "PrefabPath": "comboskill_1052_1016",
+      "SkillId": 1016281,
+      "IconPath": "Textures/ComboSkill/1016281"
+    },
+    {
+      "ID": 32,
+      "CooperateRoleIds": [
+        1024,
+        1035
+      ],
+      "CooperateThrownIds": [
+        1024058,
+        1035056
+      ],
+      "PrefabPath": "comboskill_1024_1035",
+      "SkillId": 1024208,
+      "IconPath": "Textures/ComboSkill/1024208"
+    },
+    {
+      "ID": 33,
+      "CooperateRoleIds": [
+        1048,
+        1028
+      ],
+      "CooperateThrownIds": [
+        1048058,
+        1028054
+      ],
+      "PrefabPath": "comboskill_1028_1048",
+      "SkillId": 1028208,
+      "IconPath": "Textures/ComboSkill/1028208"
+    },
+    {
+      "ID": 34,
+      "CooperateRoleIds": [
+        1028,
+        1111
+      ],
+      "CooperateThrownIds": [
+        1028059,
+        1111059
+      ],
+      "PrefabPath": "comboskill_1028_1111",
+      "SkillId": 1028281,
+      "IconPath": "Textures/ComboSkill/1028281"
+    },
+    {
+      "ID": 35,
+      "CooperateRoleIds": [
+        1132,
+        1058
+      ],
+      "CooperateThrownIds": [
+        1132064,
+        1058062
+      ],
+      "PrefabPath": "comboskill_1132_1058",
+      "SkillId": 1058208,
+      "IconPath": "Textures/ComboSkill/1058208"
+    },
+    {
+      "ID": 36,
+      "CooperateRoleIds": [
+        1071,
+        1068
+      ],
+      "CooperateThrownIds": [
+        1071061,
+        1068073
+      ],
+      "PrefabPath": "comboskill_1071_1068",
+      "SkillId": 1068208,
+      "IconPath": "Textures/ComboSkill/1068208"
+    },
+    {
+      "ID": 37,
+      "CooperateRoleIds": [
+        1070,
+        1075
+      ],
+      "CooperateThrownIds": [
+        1070068,
+        1075056
+      ],
+      "PrefabPath": "comboskill_1075_1070",
+      "SkillId": 1070208,
+      "IconPath": "Textures/ComboSkill/1070208"
+    }
+  ]
+}

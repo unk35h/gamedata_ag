@@ -1,0 +1,25 @@
+{
+  "Data": [
+    {
+      "ID": 1028231,
+      "ModelID": 1028,
+      "YOriginalOrRootNode": 1,
+      "XZBakeIntoPose": 1,
+      "XZOriginalOrRootNode": 2
+    },
+    {
+      "ID": 1028232,
+      "ModelID": 1028,
+      "YOriginalOrRootNode": 1,
+      "XZBakeIntoPose": 1,
+      "XZOriginalOrRootNode": 1
+    },
+    {
+      "ID": 1028233,
+      "ModelID": 1028,
+      "YOriginalOrRootNode": 1,
+      "XZBakeIntoPose": 1,
+      "XZOriginalOrRootNode": 2
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "Data": [
+    {
+      "ID": 1000,
+      "WeaponCategory": 1,
+      "Path": "Effect/Battle/hiteffect/physics/fx_HIT_PHYSICS_1"
+    },
+    {
+      "ID": 2000,
+      "WeaponCategory": 2,
+      "Path": "Effect/Battle/hiteffect/physics/fx_HIT_PHYSICS_2"
+    },
+    {
+      "ID": 3000,
+      "WeaponCategory": 3,
+      "Path": "Effect/Battle/hiteffect/physics/fx_HIT_PHYSICS_3"
+    },
+    {
+      "ID": 4000,
+      "WeaponCategory": 4,
+      "Path": "Effect/Battle/hiteffect/physics/fx_HIT_PHYSICS_4"
+    },
+    {
+      "ID": 5000,
+      "WeaponCategory": 5,
+      "Path": "Effect/Battle/hiteffect/physics/fx_HIT_PHYSICS_5"
+    },
+    {
+      "ID": 1002,
+      "WeaponCategory": 1,
+      "DamageType": 2,
+      "Path": "Effect/Battle/hiteffect/wind/fx_HIT_WIND_1"
+    },
+    {
+      "ID": 2002,
+      "WeaponCategory": 2,
+      "DamageType": 2,
+      "Path": "Effect/Battle/hiteffect/wind/fx_HIT_WIND_2"
+    },
+    {
+      "ID": 3002,
+      "WeaponCategory": 3,
+      "DamageType": 2,
+      "Path": "Effect/Battle/hiteffect/wind/fx_HIT_WIND_3"
+    },
+    {
+      "ID": 4002,
+      "WeaponCategory": 4,
+      "DamageType": 2,
+      "Path": "Effect/Battle/hiteffect/wind/fx_HIT_WIND_4"
+    },
+    {
+      "ID": 5002,
+      "WeaponCategory": 5,
+      "DamageType": 2,
+      "Path": "Effect/Battle/hiteffect/wind/fx_HIT_WIND_5"
+    },
+    {
+      "ID": 1004,
+      "WeaponCategory": 1,
+      "DamageType": 4,
+      "Path": "Effect/Battle/hiteffect/fire/fx_HIT_FIRE_1"
+    },
+    {
+      "ID": 2004,
+      "WeaponCategory": 2,
+      "DamageType": 4,
+      "Path": "Effect/Battle/hiteffect/fire/fx_HIT_FIRE_2"
+    },
+    {
+      "ID": 3004,
+      "WeaponCategory": 3,
+      "DamageType": 4,
+      "Path": "Effect/Battle/hiteffect/fire/fx_HIT_FIRE_3"
+    },
+    {
+      "ID": 4004,
+      "WeaponCategory": 4,
+      "DamageType": 4,
+      "Path": "Effect/Battle/hiteffect/fire/fx_HIT_FIRE_4"
+    },
+    {
+      "ID": 5004,
+      "WeaponCategory": 5,
+      "DamageType": 4,
+      "Path": "Effect/Battle/hiteffect/fire/fx_HIT_FIRE_5"
+    },
+    {
+      "ID": 1006,
+      "WeaponCategory": 1,
+      "DamageType": 6,
+      "Path": "Effect/Battle/hiteffect/ice/fx_HIT_ICE_1"
+    },
+    {
+      "ID": 2006,
+      "WeaponCategory": 2,
+      "DamageType": 6,
+      "Path": "Effect/Battle/hiteffect/ice/fx_HIT_ICE_2"
+    },
+    {
+      "ID": 3006,
+      "WeaponCategory": 3,
+      "DamageType": 6,
+      "Path": "Effect/Battle/hiteffect/ice/fx_HIT_ICE_3"
+    },
+    {
+      "ID": 4006,
+      "WeaponCategory": 4,
+      "DamageType": 6,
+      "Path": "Effect/Battle/hiteffect/ice/fx_HIT_ICE_4"
+    },
+    {
+      "ID": 5006,
+      "WeaponCategory": 5,
+      "DamageType": 6,
+      "Path": "Effect/Battle/hiteffect/ice/fx_HIT_ICE_5"
+    },
+    {
+      "ID": 1008,
+      "WeaponCategory": 1,
+      "DamageType": 8,
+      "Path": "Effect/Battle/hiteffect/water/fx_HIT_WATER_1"
+    },
+    {
+      "ID": 2008,
+      "WeaponCategory": 2,
+      "DamageType": 8,
+      "Path": "Effect/Battle/hiteffect/water/fx_HIT_WATER_2"
+    },
+    {
+      "ID": 3008,
+      "WeaponCategory": 3,
+      "DamageType": 8,
+      "Path": "Effect/Battle/hiteffect/water/fx_HIT_WATER_3"
+    },
+    {
+      "ID": 4008,
+      "WeaponCategory": 4,
+      "DamageType": 8,
+      "Path": "Effect/Battle/hiteffect/water/fx_HIT_WATER_4"
+    },
+    {
+      "ID": 5008,
+      "WeaponCategory": 5,
+      "DamageType": 8,
+      "Path": "Effect/Battle/hiteffect/water/fx_HIT_WATER_5"
+    },
+    {
+      "ID": 1010,
+      "WeaponCategory": 1,
+      "DamageType": 10,
+      "Path": "Effect/Battle/hiteffect/dark/fx_HIT_DARK_1"
+    },
+    {
+      "ID": 2010,
+      "WeaponCategory": 2,
+      "DamageType": 10,
+      "Path": "Effect/Battle/hiteffect/dark/fx_HIT_DARK_2"
+    },
+    {
+      "ID": 3010,
+      "WeaponCategory": 3,
+      "DamageType": 10,
+      "Path": "Effect/Battle/hiteffect/dark/fx_HIT_DARK_3"
+    },
+    {
+      "ID": 4010,
+      "WeaponCategory": 4,
+      "DamageType": 10,
+      "Path": "Effect/Battle/hiteffect/dark/fx_HIT_DARK_4"
+    },
+    {
+      "ID": 5010,
+      "WeaponCategory": 5,
+      "DamageType": 10,
+      "Path": "Effect/Battle/hiteffect/dark/fx_HIT_DARK_5"
+    },
+    {
+      "ID": 1012,
+      "WeaponCategory": 1,
+      "DamageType": 12,
+      "Path": "Effect/Battle/hiteffect/light/fx_HIT_LIGHT_1"
+    },
+    {
+      "ID": 2012,
+      "WeaponCategory": 2,
+      "DamageType": 12,
+      "Path": "Effect/Battle/hiteffect/light/fx_HIT_LIGHT_2"
+    },
+    {
+      "ID": 3012,
+      "WeaponCategory": 3,
+      "DamageType": 12,
+      "Path": "Effect/Battle/hiteffect/light/fx_HIT_LIGHT_3"
+    },
+    {
+      "ID": 4012,
+      "WeaponCategory": 4,
+      "DamageType": 12,
+      "Path": "Effect/Battle/hiteffect/light/fx_HIT_LIGHT_4"
+    },
+    {
+      "ID": 5012,
+      "WeaponCategory": 5,
+      "DamageType": 12,
+      "Path": "Effect/Battle/hiteffect/light/fx_HIT_LIGHT_5"
+    },
+    {
+      "ID": 1014,
+      "WeaponCategory": 1,
+      "DamageType": 14,
+      "Path": "Effect/Battle/hiteffect/thunder/fx_HIT_THUNDER_1"
+    },
+    {
+      "ID": 2014,
+      "WeaponCategory": 2,
+      "DamageType": 14,
+      "Path": "Effect/Battle/hiteffect/thunder/fx_HIT_THUNDER_2"
+    },
+    {
+      "ID": 3014,
+      "WeaponCategory": 3,
+      "DamageType": 14,
+      "Path": "Effect/Battle/hiteffect/thunder/fx_HIT_THUNDER_3"
+    },
+    {
+      "ID": 4014,
+      "WeaponCategory": 4,
+      "DamageType": 14,
+      "Path": "Effect/Battle/hiteffect/thunder/fx_HIT_THUNDER_4"
+    },
+    {
+      "ID": 5014,
+      "WeaponCategory": 5,
+      "DamageType": 14,
+      "Path": "Effect/Battle/hiteffect/thunder/fx_HIT_THUNDER_5"
+    }
+  ]
+}

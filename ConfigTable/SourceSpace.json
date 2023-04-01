@@ -1,0 +1,45 @@
+{
+  "Data": [
+    {
+      "Name": "通用",
+      "Describe": "用来添加xxx效果",
+      "PrefabPath": "Effect/SourceSpaceScene/X01"
+    },
+    {
+      "ID": 1,
+      "Name": "奥山",
+      "Describe": "用来添加xxx效果",
+      "PrefabPath": "Effect/SourceSpaceScene/X05"
+    },
+    {
+      "ID": 2,
+      "Name": "尼罗",
+      "Describe": "用来添加xxx效果",
+      "PrefabPath": "Effect/SourceSpaceScene/X03"
+    },
+    {
+      "ID": 3,
+      "Name": "真樱",
+      "Describe": "用来添加xxx效果",
+      "PrefabPath": "Effect/SourceSpaceScene/X02"
+    },
+    {
+      "ID": 4,
+      "Name": "圣树",
+      "Describe": "用来添加xxx效果",
+      "PrefabPath": "Effect/SourceSpaceScene/X04"
+    },
+    {
+      "ID": 5,
+      "Name": "众星",
+      "Describe": "用来添加xxx效果",
+      "PrefabPath": "Effect/SourceSpaceScene/X06"
+    },
+    {
+      "ID": 9,
+      "Name": "天垣",
+      "Describe": "用来添加xxx效果",
+      "PrefabPath": "Effect/SourceSpaceScene/X07"
+    }
+  ]
+}

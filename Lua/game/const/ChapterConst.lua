@@ -1,0 +1,3 @@
+return {
+	CHAPTER_CLIENT_EMPTY_DREAM = 10112
+}

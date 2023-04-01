@@ -1,0 +1,65 @@
+{
+  "Data": [
+    {
+      "ID": 2050
+    },
+    {
+      "ID": 3005,
+      "DefaultAnimationName": "hit_feedback"
+    },
+    {
+      "ID": 3006,
+      "DefaultAnimationName": "hit_feedback"
+    },
+    {
+      "ID": 3008,
+      "DefaultAnimationName": "hit_feedback"
+    },
+    {
+      "ID": 3009,
+      "DefaultAnimationName": "hit_feedback"
+    },
+    {
+      "ID": 3010,
+      "DefaultAnimationName": "hit_feedback"
+    },
+    {
+      "ID": 3013,
+      "DefaultAnimationName": "hit_feedback"
+    },
+    {
+      "ID": 3016,
+      "DefaultAnimationName": "hit_feedback"
+    },
+    {
+      "ID": 4010,
+      "DefaultAnimationName": "hit_feedback"
+    },
+    {
+      "ID": 4011,
+      "DefaultAnimationName": "hit_feedback"
+    },
+    {
+      "ID": 4012
+    },
+    {
+      "ID": 4013
+    },
+    {
+      "ID": 4014,
+      "DefaultAnimationName": "hit_feedback"
+    },
+    {
+      "ID": 4020,
+      "DefaultAnimationName": "hit_feedback"
+    },
+    {
+      "ID": 4021,
+      "DefaultAnimationName": "hit_feedback"
+    },
+    {
+      "ID": 4027,
+      "DefaultAnimationName": "hit_feedback"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "Data": [
+    {
+      "ID": 6,
+      "Role": "RoleCategory_Human",
+      "AudioClipPath": "Audio/attack/attack_quite"
+    },
+    {
+      "ID": 7,
+      "Role": "RoleCategory_Virtual",
+      "AudioClipPath": "Audio/attack/attack_quite"
+    },
+    {
+      "ID": 8,
+      "Role": "RoleCategory_Metal",
+      "AudioClipPath": "Audio/attack/attack_quite"
+    },
+    {
+      "ID": 106,
+      "Weapon": "WeaponCategory_Sword",
+      "Role": "RoleCategory_Human",
+      "AudioClipPath": "Audio/attack/attack_za_routi"
+    },
+    {
+      "ID": 107,
+      "Weapon": "WeaponCategory_Sword",
+      "Role": "RoleCategory_Virtual",
+      "AudioClipPath": "Audio/attack/attack_za_routi"
+    },
+    {
+      "ID": 108,
+      "Weapon": "WeaponCategory_Sword",
+      "Role": "RoleCategory_Metal",
+      "AudioClipPath": "Audio/attack/attack_za_jixie"
+    },
+    {
+      "ID": 206,
+      "Weapon": "WeaponCategory_LongHandled",
+      "Role": "RoleCategory_Human",
+      "AudioClipPath": "Audio/attack/1050_attack_routi"
+    },
+    {
+      "ID": 207,
+      "Weapon": "WeaponCategory_LongHandled",
+      "Role": "RoleCategory_Virtual",
+      "AudioClipPath": "Audio/attack/1050_attack_routi"
+    },
+    {
+      "ID": 208,
+      "Weapon": "WeaponCategory_LongHandled",
+      "Role": "RoleCategory_Metal",
+      "AudioClipPath": "Audio/attack/1050_attack5_routi"
+    },
+    {
+      "ID": 301,
+      "Weapon": "WeaponCategory_Bow",
+      "Role": "RoleCategory_Human",
+      "AudioClipPath": "Audio/attack/attack_bian_routi"
+    },
+    {
+      "ID": 302,
+      "Weapon": "WeaponCategory_Bow",
+      "Role": "RoleCategory_Virtual",
+      "AudioClipPath": "Audio/attack/attack_bian_bug"
+    },
+    {
+      "ID": 303,
+      "Weapon": "WeaponCategory_Bow",
+      "Role": "RoleCategory_Metal",
+      "AudioClipPath": "Audio/attack/attack_bian_routi"
+    },
+    {
+      "ID": 401,
+      "Weapon": "WeaponCategory_Blunt",
+      "Role": "RoleCategory_Human",
+      "AudioClipPath": "Audio/attack/attack_quite"
+    },
+    {
+      "ID": 402,
+      "Weapon": "WeaponCategory_Blunt",
+      "Role": "RoleCategory_Virtual",
+      "AudioClipPath": "Audio/attack/attack_quite"
+    },
+    {
+      "ID": 403,
+      "Weapon": "WeaponCategory_Blunt",
+      "Role": "RoleCategory_Metal",
+      "AudioClipPath": "Audio/attack/attack_quite"
+    }
+  ]
+}

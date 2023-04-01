@@ -1,0 +1,58 @@
+{
+  "Data": [
+    {
+      "ID": 4012,
+      "LockHeight": 1.0,
+      "LockRadius": 22.0,
+      "ScreenY": 0.7
+    },
+    {
+      "ID": 4021,
+      "LockHeight": 1.0,
+      "LockRadius": 22.0,
+      "ScreenY": 0.7
+    },
+    {
+      "ID": 4013,
+      "LockHeight": 0.8,
+      "LockRadius": 20.0,
+      "ScreenY": 0.65
+    },
+    {
+      "ID": 4026,
+      "LockHeight": 8.0,
+      "LockRadius": 25.0,
+      "ScreenY": 0.6
+    },
+    {
+      "ID": 4027,
+      "LockHeight": 8.0,
+      "LockRadius": 20.0,
+      "ScreenY": 0.6
+    },
+    {
+      "ID": 4025,
+      "LockHeight": 2.0,
+      "LockRadius": 22.0,
+      "ScreenY": 0.7
+    },
+    {
+      "ID": 4028,
+      "LockHeight": 2.0,
+      "LockRadius": 22.0,
+      "ScreenY": 0.7
+    },
+    {
+      "ID": 4029,
+      "LockHeight": 2.0,
+      "LockRadius": 22.0,
+      "ScreenY": 0.7
+    },
+    {
+      "ID": 4031,
+      "LockHeight": 4.0,
+      "LockRadius": 22.0,
+      "ScreenY": 0.6
+    }
+  ]
+}

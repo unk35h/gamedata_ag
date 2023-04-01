@@ -1,0 +1,406 @@
+{
+  "Data": [
+    {
+      "ID": 1,
+      "Desc": "[600000001]",
+      "FlowName": "FlowScript/Equips/Equip1.asset"
+    },
+    {
+      "ID": 2,
+      "Desc": "[600000002]",
+      "FlowName": "FlowScript/Equips/Equip2.asset"
+    },
+    {
+      "ID": 3,
+      "Desc": "[600000003]",
+      "FlowName": "FlowScript/Equips/Equip3.asset"
+    },
+    {
+      "ID": 4,
+      "Desc": "[600000004]",
+      "FlowName": "FlowScript/Equips/Equip4.asset"
+    },
+    {
+      "ID": 5,
+      "Param": [
+        40
+      ],
+      "Desc": "[600000005]",
+      "FlowName": "FlowScript/Equips/Equip5.asset"
+    },
+    {
+      "ID": 6,
+      "Param": [
+        40
+      ],
+      "Desc": "[600000006]",
+      "FlowName": "FlowScript/Equips/Equip6.asset"
+    },
+    {
+      "ID": 7,
+      "Param": [
+        15000,
+        30
+      ],
+      "Desc": "[600000007]",
+      "FlowName": "FlowScript/Equips/Equip7.asset"
+    },
+    {
+      "ID": 8,
+      "Desc": "[600000008]",
+      "FlowName": "FlowScript/Equips/Equip8.asset"
+    },
+    {
+      "ID": 9,
+      "Param": [
+        5000
+      ],
+      "Desc": "[600000009]",
+      "FlowName": "FlowScript/Equips/Equip9.asset",
+      "TimelinePath": "timeline/100_timeline.ys"
+    },
+    {
+      "ID": 10,
+      "Desc": "[600000010]",
+      "FlowName": "FlowScript/Equips/Equip10.asset"
+    },
+    {
+      "ID": 11,
+      "Desc": "[600000011]",
+      "FlowName": "FlowScript/Equips/Equip11.asset"
+    },
+    {
+      "ID": 12,
+      "Desc": "[600000012]",
+      "FlowName": "FlowScript/Equips/Equip12.asset"
+    },
+    {
+      "ID": 13,
+      "Desc": "[600000013]",
+      "FlowName": "FlowScript/Equips/Equip13.asset"
+    },
+    {
+      "ID": 14,
+      "Desc": "[600000014]",
+      "FlowName": "FlowScript/Equips/Equip14.asset"
+    },
+    {
+      "ID": 15,
+      "Desc": "[600000015]",
+      "FlowName": "FlowScript/Equips/Equip15.asset"
+    },
+    {
+      "ID": 16,
+      "Desc": "[600000016]",
+      "FlowName": "FlowScript/Equips/Equip16.asset"
+    },
+    {
+      "ID": 17,
+      "Desc": "[600000017]",
+      "FlowName": "FlowScript/Equips/Equip17.asset"
+    },
+    {
+      "ID": 18,
+      "Desc": "[600000018]",
+      "FlowName": "FlowScript/Equips/Equip18.asset"
+    },
+    {
+      "ID": 19,
+      "Desc": "[600000019]",
+      "FlowName": "FlowScript/Equips/Equip19.asset"
+    },
+    {
+      "ID": 20,
+      "Desc": "[600000020]",
+      "FlowName": "FlowScript/Equips/Equip20.asset"
+    },
+    {
+      "ID": 21,
+      "Desc": "[600000021]",
+      "FlowName": "FlowScript/Equips/Equip21.asset"
+    },
+    {
+      "ID": 22,
+      "Desc": "[600000022]",
+      "FlowName": "FlowScript/Equips/Equip22.asset"
+    },
+    {
+      "ID": 23,
+      "Param": [
+        1
+      ],
+      "Desc": "[600000023]",
+      "FlowName": "FlowScript/Equips/Equip23.asset"
+    },
+    {
+      "ID": 24,
+      "Param": [
+        15
+      ],
+      "Desc": "[600000024]",
+      "FlowName": "FlowScript/Equips/Equip24.asset"
+    },
+    {
+      "ID": 25,
+      "Desc": "[600000025]",
+      "FlowName": "FlowScript/Equips/Equip25.asset"
+    },
+    {
+      "ID": 26,
+      "Desc": "[600000026]",
+      "FlowName": "FlowScript/Equips/Equip26.asset"
+    },
+    {
+      "ID": 27,
+      "Param": [
+        1000
+      ],
+      "Desc": "[600000027]",
+      "FlowName": "FlowScript/Equips/Equip27.asset"
+    },
+    {
+      "ID": 28,
+      "Param": [
+        10000,
+        30
+      ],
+      "Desc": "[600000028]",
+      "FlowName": "FlowScript/Equips/Equip28.asset"
+    },
+    {
+      "ID": 29,
+      "Param": [
+        1000
+      ],
+      "Desc": "[600000029]",
+      "FlowName": "FlowScript/Equips/Equip29.asset"
+    },
+    {
+      "ID": 30,
+      "Desc": "[600000030]",
+      "FlowName": "FlowScript/Equips/Equip30.asset"
+    },
+    {
+      "ID": 31,
+      "Desc": "[600000031]",
+      "FlowName": "FlowScript/Equips/Equip31.asset"
+    },
+    {
+      "ID": 32,
+      "Desc": "[600000032]",
+      "FlowName": "FlowScript/Equips/Equip32.asset"
+    },
+    {
+      "ID": 33,
+      "Desc": "[600000033]",
+      "FlowName": "FlowScript/Equips/Equip33.asset"
+    },
+    {
+      "ID": 34,
+      "Desc": "[600000034]",
+      "FlowName": "FlowScript/Equips/Equip34.asset"
+    },
+    {
+      "ID": 35,
+      "Param": [
+        3000
+      ],
+      "Desc": "[600000035]",
+      "FlowName": "FlowScript/Equips/Equip35.asset"
+    },
+    {
+      "ID": 36,
+      "Desc": "[600000036]",
+      "FlowName": "FlowScript/Equips/Equip36.asset"
+    },
+    {
+      "ID": 37,
+      "Desc": "[600000037]",
+      "FlowName": "FlowScript/Equips/Equip37.asset"
+    },
+    {
+      "ID": 38,
+      "Param": [
+        10000
+      ],
+      "Desc": "[600000038]",
+      "FlowName": "FlowScript/Equips/Equip38.asset"
+    },
+    {
+      "ID": 39,
+      "Param": [
+        15000
+      ],
+      "Desc": "[600000039]",
+      "FlowName": "FlowScript/Equips/Equip39.asset"
+    },
+    {
+      "ID": 40,
+      "Desc": "[600000040]",
+      "FlowName": "FlowScript/Equips/Equip40.asset"
+    },
+    {
+      "ID": 41,
+      "Desc": "[600000041]",
+      "FlowName": "FlowScript/Equips/Equip41.asset"
+    },
+    {
+      "ID": 42,
+      "Desc": "[600000042]",
+      "FlowName": "FlowScript/Equips/Equip42.asset"
+    },
+    {
+      "ID": 43,
+      "Desc": "[600000043]",
+      "FlowName": "FlowScript/Equips/Equip43.asset"
+    },
+    {
+      "ID": 44,
+      "Param": [
+        9000
+      ],
+      "Desc": "[600000044]",
+      "FlowName": "FlowScript/Equips/Equip44.asset"
+    },
+    {
+      "ID": 101,
+      "Desc": "[600000101]",
+      "FlowName": "FlowScript/Enchant/Enchant101.asset"
+    },
+    {
+      "ID": 103,
+      "Desc": "[600000103]",
+      "FlowName": "FlowScript/Enchant/Enchant103.asset"
+    },
+    {
+      "ID": 104,
+      "Desc": "[600000104]",
+      "FlowName": "FlowScript/Enchant/Enchant104.asset"
+    },
+    {
+      "ID": 107,
+      "Desc": "[600000107]",
+      "FlowName": "FlowScript/Enchant/Enchant107.asset"
+    },
+    {
+      "ID": 108,
+      "Desc": "[600000108]",
+      "FlowName": "FlowScript/Enchant/Enchant108.asset"
+    },
+    {
+      "ID": 111,
+      "Desc": "[600000111]",
+      "FlowName": "FlowScript/Enchant/Enchant111.asset"
+    },
+    {
+      "ID": 114,
+      "Desc": "[600000114]",
+      "FlowName": "FlowScript/Enchant/Enchant114.asset"
+    },
+    {
+      "ID": 117,
+      "Desc": "[600000117]",
+      "FlowName": "FlowScript/Enchant/Enchant117.asset"
+    },
+    {
+      "ID": 119,
+      "Desc": "[600000119]",
+      "FlowName": "FlowScript/Enchant/Enchant119.asset"
+    },
+    {
+      "ID": 120,
+      "Desc": "[600000120]",
+      "FlowName": "FlowScript/Enchant/Enchant120.asset"
+    },
+    {
+      "ID": 121,
+      "Desc": "[600000121]",
+      "FlowName": "FlowScript/Enchant/Enchant121.asset"
+    },
+    {
+      "ID": 122,
+      "Desc": "[600000122]",
+      "FlowName": "FlowScript/Enchant/Enchant122.asset"
+    },
+    {
+      "ID": 123,
+      "Desc": "[600000123]",
+      "FlowName": "FlowScript/Enchant/Enchant123.asset"
+    },
+    {
+      "ID": 124,
+      "Desc": "[600000124]",
+      "FlowName": "FlowScript/Enchant/Enchant124.asset"
+    },
+    {
+      "ID": 125,
+      "Desc": "[600000125]",
+      "FlowName": "FlowScript/Enchant/Enchant125.asset"
+    },
+    {
+      "ID": 126,
+      "Desc": "[600000126]",
+      "FlowName": "FlowScript/Enchant/Enchant126.asset"
+    },
+    {
+      "ID": 127,
+      "Desc": "[600000127]",
+      "FlowName": "FlowScript/Enchant/Enchant127.asset"
+    },
+    {
+      "ID": 128,
+      "Desc": "[600000128]",
+      "FlowName": "FlowScript/Enchant/Enchant128.asset"
+    },
+    {
+      "ID": 129,
+      "Desc": "[600000129]",
+      "FlowName": "FlowScript/Enchant/Enchant129.asset"
+    },
+    {
+      "ID": 130,
+      "Desc": "[600000130]",
+      "FlowName": "FlowScript/Enchant/Enchant130.asset"
+    },
+    {
+      "ID": 131,
+      "Desc": "[600000131]",
+      "FlowName": "FlowScript/Enchant/Enchant131.asset"
+    },
+    {
+      "ID": 133,
+      "Desc": "[600000133]",
+      "FlowName": "FlowScript/Enchant/Enchant133.asset"
+    },
+    {
+      "ID": 134,
+      "Desc": "[600000134]",
+      "FlowName": "FlowScript/Enchant/Enchant134.asset"
+    },
+    {
+      "ID": 135,
+      "Desc": "[600000135]",
+      "FlowName": "FlowScript/Enchant/Enchant135.asset"
+    },
+    {
+      "ID": 136,
+      "Desc": "[600000136]",
+      "FlowName": "FlowScript/Enchant/Enchant136.asset"
+    },
+    {
+      "ID": 137,
+      "Desc": "[600000137]",
+      "FlowName": "FlowScript/Enchant/Enchant137.asset"
+    },
+    {
+      "ID": 141,
+      "Desc": "[600000141]",
+      "FlowName": "FlowScript/Enchant/Enchant141.asset"
+    },
+    {
+      "ID": 142,
+      "Desc": "[600000142]",
+      "FlowName": "FlowScript/Enchant/Enchant142.asset"
+    }
+  ]
+}

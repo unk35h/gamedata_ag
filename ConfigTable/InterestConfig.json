@@ -1,0 +1,56 @@
+{
+  "Data": [
+    {
+      "ID": 1,
+      "Group": [
+        "RoleType_Enemy",
+        "RoleType_Bunker",
+        "RoleType_Box"
+      ]
+    },
+    {
+      "ID": 2,
+      "Group": [
+        "RoleType_Player",
+        "RoleType_Bunker",
+        "RoleType_Friend",
+        "RoleType_AvoidShadow"
+      ]
+    },
+    {
+      "ID": 4
+    },
+    {
+      "ID": 8
+    },
+    {
+      "ID": 16
+    },
+    {
+      "ID": 32,
+      "Group": [
+        "RoleType_Player",
+        "RoleType_Friend"
+      ]
+    },
+    {
+      "ID": 64
+    },
+    {
+      "ID": 128,
+      "Group": [
+        "RoleType_Enemy"
+      ]
+    },
+    {
+      "ID": 256,
+      "Group": [
+        "RoleType_Enemy",
+        "RoleType_Box"
+      ]
+    },
+    {
+      "ID": 512
+    }
+  ]
+}

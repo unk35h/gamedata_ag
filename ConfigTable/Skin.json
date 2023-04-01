@@ -1,0 +1,1534 @@
+{
+  "Data": [
+    {
+      "ID": 1011,
+      "Hero": 1011,
+      "BattleModelPath": "Char/1011_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1011_timeline"
+    },
+    {
+      "ID": 6052,
+      "Hero": 6052,
+      "BattleModelPath": "Char/6052_tpose",
+      "BattleCameraParam": 1,
+      "Transfiguration": 1111,
+      "RenderTimeline": "timeline/6052_timeline"
+    },
+    {
+      "ID": 605201,
+      "Hero": 6052,
+      "BattleModelPath": "Char/605201_tpose",
+      "BattleCameraParam": 1,
+      "Transfiguration": 111101,
+      "RenderTimeline": "timeline/6052_timeline"
+    },
+    {
+      "ID": 1013,
+      "Hero": 1013,
+      "BattleModelPath": "Char/1013_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1013_timeline"
+    },
+    {
+      "ID": 101301,
+      "Hero": 1013,
+      "BattleModelPath": "Char/101301_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1013_timeline"
+    },
+    {
+      "ID": 1016,
+      "Hero": 1016,
+      "BattleModelPath": "Char/1016_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1016_timeline"
+    },
+    {
+      "ID": 1017,
+      "Hero": 1017,
+      "BattleModelPath": "Char/1017_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1017_timeline"
+    },
+    {
+      "ID": 101701,
+      "Hero": 1017,
+      "BattleModelPath": "Char/101701_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1017_timeline"
+    },
+    {
+      "ID": 1019,
+      "Hero": 1019,
+      "BattleModelPath": "Char/1019_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1019_timeline"
+    },
+    {
+      "ID": 1024,
+      "Hero": 1024,
+      "BattleModelPath": "Char/1024_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1024_timeline"
+    },
+    {
+      "ID": 1026,
+      "Hero": 1026,
+      "BattleModelPath": "Char/1026_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1026_timeline"
+    },
+    {
+      "ID": 1027,
+      "Hero": 1027,
+      "BattleModelPath": "Char/1027_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1027_timeline"
+    },
+    {
+      "ID": 102701,
+      "Hero": 1027,
+      "BattleModelPath": "Char/102701_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1027_timeline"
+    },
+    {
+      "ID": 1028,
+      "Hero": 1028,
+      "BattleModelPath": "Char/1028_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1028_timeline",
+      "RenderFlowscript": "FlowScript/Char/1028/102800_render_FlowscriptPrefab"
+    },
+    {
+      "ID": 102801,
+      "Hero": 1028,
+      "BattleModelPath": "Char/102801_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1028_timeline",
+      "RenderFlowscript": "FlowScript/Char/1028/102801_render_FlowscriptPrefab"
+    },
+    {
+      "ID": 1029,
+      "Hero": 1029,
+      "BattleModelPath": "Char/1029_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1029_timeline",
+      "SourceSpaceAssetPath": "Effect/SourceSpaceScene/X08"
+    },
+    {
+      "ID": 1032,
+      "Hero": 1032,
+      "BattleModelPath": "Char/1032_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1032_timeline"
+    },
+    {
+      "ID": 103203,
+      "Hero": 1032,
+      "BattleModelPath": "Char/103203_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1032_timeline"
+    },
+    {
+      "ID": 1132,
+      "Hero": 1132,
+      "BattleModelPath": "Char/1132_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1132_timeline"
+    },
+    {
+      "ID": 1033,
+      "Hero": 1033,
+      "BattleModelPath": "Char/1033_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1033_timeline"
+    },
+    {
+      "ID": 1037,
+      "Hero": 1037,
+      "BattleModelPath": "Char/1037_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1037_timeline"
+    },
+    {
+      "ID": 103701,
+      "Hero": 1037,
+      "BattleModelPath": "Char/103701_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1037_timeline"
+    },
+    {
+      "ID": 1035,
+      "Hero": 1035,
+      "BattleModelPath": "Char/1035_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1035_timeline"
+    },
+    {
+      "ID": 1036,
+      "Hero": 1036,
+      "BattleModelPath": "Char/1036_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1036_timeline"
+    },
+    {
+      "ID": 1039,
+      "Hero": 1039,
+      "BattleModelPath": "Char/1039_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1039_timeline"
+    },
+    {
+      "ID": 103901,
+      "Hero": 1039,
+      "BattleModelPath": "Char/103901_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1039_timeline"
+    },
+    {
+      "ID": 1038,
+      "Hero": 1038,
+      "BattleModelPath": "Char/1038_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1038_timeline"
+    },
+    {
+      "ID": 1041,
+      "Hero": 1041,
+      "BattleModelPath": "Char/1041_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1041_timeline"
+    },
+    {
+      "ID": 104101,
+      "Hero": 1041,
+      "BattleModelPath": "Char/104101_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1041_timeline"
+    },
+    {
+      "ID": 1042,
+      "Hero": 1042,
+      "BattleModelPath": "Char/1042_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1042_timeline",
+      "RenderFlowscript": "FlowScript/Char/1042/104200_FlowscriptPrefab_Render"
+    },
+    {
+      "ID": 104201,
+      "Hero": 1042,
+      "BattleModelPath": "Char/104201_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1042_timeline",
+      "RenderFlowscript": "FlowScript/Char/1042/104200_FlowscriptPrefab_Render"
+    },
+    {
+      "ID": 104204,
+      "Hero": 1042,
+      "BattleModelPath": "Char/104204_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/104204_timeline",
+      "RenderFlowscript": "FlowScript/Char/1042/104204_FlowscriptPrefab_Render"
+    },
+    {
+      "ID": 1048,
+      "Hero": 1048,
+      "BattleModelPath": "Char/1048_tpose",
+      "BattleCameraParam": 1048,
+      "RenderTimeline": "timeline/1048_timeline"
+    },
+    {
+      "ID": 104801,
+      "Hero": 1048,
+      "BattleModelPath": "Char/104801_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1048_timeline"
+    },
+    {
+      "ID": 1050,
+      "Hero": 1050,
+      "BattleModelPath": "Char/1050_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1050_timeline"
+    },
+    {
+      "ID": 1052,
+      "Hero": 1052,
+      "BattleModelPath": "Char/1052_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1052_timeline"
+    },
+    {
+      "ID": 105201,
+      "Hero": 1052,
+      "BattleModelPath": "Char/105201_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1052_timeline"
+    },
+    {
+      "ID": 1056,
+      "Hero": 1056,
+      "BattleModelPath": "Char/1056_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1056_timeline"
+    },
+    {
+      "ID": 1058,
+      "Hero": 1058,
+      "BattleModelPath": "Char/1058_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1058_timeline"
+    },
+    {
+      "ID": 105804,
+      "Hero": 1058,
+      "BattleModelPath": "Char/105804_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1058_timeline"
+    },
+    {
+      "ID": 1059,
+      "Hero": 1059,
+      "BattleModelPath": "Char/1059_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1059_timeline"
+    },
+    {
+      "ID": 1066,
+      "Hero": 1066,
+      "BattleModelPath": "Char/1066_tpose",
+      "BattleCameraParam": 1066,
+      "RenderTimeline": "timeline/1066_timeline"
+    },
+    {
+      "ID": 106603,
+      "Hero": 1066,
+      "BattleModelPath": "Char/106603_tpose",
+      "BattleCameraParam": 1066,
+      "RenderTimeline": "timeline/1066_timeline"
+    },
+    {
+      "ID": 106604,
+      "Hero": 1066,
+      "BattleModelPath": "Char/106604_tpose",
+      "BattleCameraParam": 1066,
+      "RenderTimeline": "timeline/1066_timeline"
+    },
+    {
+      "ID": 1067,
+      "Hero": 1067,
+      "BattleModelPath": "Char/1067_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1067_timeline"
+    },
+    {
+      "ID": 1068,
+      "Hero": 1068,
+      "BattleModelPath": "Char/1068_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1068_timeline"
+    },
+    {
+      "ID": 1070,
+      "Hero": 1070,
+      "BattleModelPath": "Char/1070_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1070_timeline"
+    },
+    {
+      "ID": 1071,
+      "Hero": 1071,
+      "BattleModelPath": "Char/1071_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1071_timeline"
+    },
+    {
+      "ID": 1072,
+      "Hero": 1072,
+      "BattleModelPath": "Char/1072_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1072_timeline"
+    },
+    {
+      "ID": 1074,
+      "Hero": 1074,
+      "BattleModelPath": "Char/1074_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1074_timeline"
+    },
+    {
+      "ID": 1075,
+      "Hero": 1075,
+      "BattleModelPath": "Char/1075_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1075_timeline"
+    },
+    {
+      "ID": 1076,
+      "Hero": 1076,
+      "BattleModelPath": "Char/1076_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1076_timeline"
+    },
+    {
+      "ID": 1080,
+      "Hero": 1080,
+      "BattleModelPath": "Char/1080_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1080_timeline"
+    },
+    {
+      "ID": 1081,
+      "Hero": 1081,
+      "BattleModelPath": "Char/1081_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1081_timeline",
+      "RenderFlowscript": "FlowScript/Char/1081/108100_render_flowscript_prefab",
+      "AdditionalRenderTimelineArray": [
+        "timeline/6054_timeline"
+      ]
+    },
+    {
+      "ID": 1084,
+      "Hero": 1084,
+      "BattleModelPath": "Char/1084_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1084_timeline"
+    },
+    {
+      "ID": 108403,
+      "Hero": 1084,
+      "BattleModelPath": "Char/108403_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1084_timeline"
+    },
+    {
+      "ID": 108404,
+      "Hero": 1084,
+      "BattleModelPath": "Char/108404_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1084_timeline"
+    },
+    {
+      "ID": 1093,
+      "Hero": 1093,
+      "BattleModelPath": "Char/1093_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1093_timeline"
+    },
+    {
+      "ID": 109303,
+      "Hero": 1093,
+      "BattleModelPath": "Char/109303_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1093_timeline"
+    },
+    {
+      "ID": 1094,
+      "Hero": 1094,
+      "BattleModelPath": "Char/1094_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1094_timeline",
+      "RenderFlowscript": "FlowScript/Char/1094/109400_render_flowscript_prefab",
+      "AdditionalRenderTimelineArray": [
+        "timeline/6050_timeline"
+      ]
+    },
+    {
+      "ID": 6073,
+      "Hero": 6073,
+      "BattleModelPath": "Char/6073_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/6073_timeline",
+      "AdditionalRenderTimelineArray": [
+        "timeline/6050_timeline"
+      ]
+    },
+    {
+      "ID": 109402,
+      "Hero": 1094,
+      "BattleModelPath": "Char/109402_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/109402_timeline",
+      "RenderFlowscript": "FlowScript/Char/1094/109402_render_flowscript_prefab",
+      "AdditionalRenderTimelineArray": [
+        "timeline/6074_timeline"
+      ]
+    },
+    {
+      "ID": 1096,
+      "Hero": 1096,
+      "BattleModelPath": "Char/1096_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1096_timeline"
+    },
+    {
+      "ID": 1097,
+      "Hero": 1097,
+      "BattleModelPath": "Char/1097_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1097_timeline"
+    },
+    {
+      "ID": 109701,
+      "Hero": 1097,
+      "BattleModelPath": "Char/109701_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1097_timeline"
+    },
+    {
+      "ID": 1099,
+      "Hero": 1099,
+      "BattleModelPath": "Char/1099_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1099_timeline"
+    },
+    {
+      "ID": 1111,
+      "Hero": 1111,
+      "BattleModelPath": "Char/1111_tpose",
+      "BattleCameraParam": 1,
+      "Transfiguration": 6052,
+      "RenderTimeline": "timeline/1111_timeline"
+    },
+    {
+      "ID": 111101,
+      "Hero": 1111,
+      "BattleModelPath": "Char/111101_tpose",
+      "BattleCameraParam": 1,
+      "Transfiguration": 605201,
+      "RenderTimeline": "timeline/1111_timeline"
+    },
+    {
+      "ID": 1119,
+      "Hero": 1119,
+      "BattleModelPath": "Char/1119_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1119_timeline"
+    },
+    {
+      "ID": 1127,
+      "Hero": 1127,
+      "BattleModelPath": "Char/1127_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1127_timeline"
+    },
+    {
+      "ID": 1138,
+      "Hero": 1138,
+      "BattleModelPath": "Char/1138_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1138_timeline"
+    },
+    {
+      "ID": 113801,
+      "Hero": 1138,
+      "BattleModelPath": "Char/113801_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1138_timeline"
+    },
+    {
+      "ID": 1139,
+      "Hero": 1139,
+      "BattleModelPath": "Char/1139_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1139_timeline"
+    },
+    {
+      "ID": 113903,
+      "Hero": 1139,
+      "BattleModelPath": "Char/113903_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1139_timeline"
+    },
+    {
+      "ID": 1148,
+      "Hero": 1148,
+      "BattleModelPath": "Char/1148_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1148_timeline"
+    },
+    {
+      "ID": 114801,
+      "Hero": 1148,
+      "BattleModelPath": "Char/114801_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1148_timeline"
+    },
+    {
+      "ID": 1184,
+      "Hero": 1184,
+      "BattleModelPath": "Char/1184_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1184_timeline"
+    },
+    {
+      "ID": 1199,
+      "Hero": 1199,
+      "BattleModelPath": "Char/1199_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1199_timeline"
+    },
+    {
+      "ID": 119901,
+      "Hero": 1199,
+      "BattleModelPath": "Char/119901_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1199_timeline"
+    },
+    {
+      "ID": 2017,
+      "Hero": 2017,
+      "BattleModelPath": "Char/2017_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2017_timeline"
+    },
+    {
+      "ID": 2018,
+      "Hero": 2018,
+      "BattleModelPath": "Char/2018_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2018_timeline"
+    },
+    {
+      "ID": 2019,
+      "Hero": 2019,
+      "BattleModelPath": "Char/2019_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2019_timeline"
+    },
+    {
+      "ID": 2020,
+      "Hero": 2020,
+      "BattleModelPath": "Char/2020_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2020_timeline"
+    },
+    {
+      "ID": 2021,
+      "Hero": 2021,
+      "BattleModelPath": "Char/2021_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2021_timeline"
+    },
+    {
+      "ID": 2022,
+      "Hero": 2022,
+      "BattleModelPath": "Char/2022_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2022_timeline"
+    },
+    {
+      "ID": 2025,
+      "Hero": 2025,
+      "BattleModelPath": "Char/2025_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2025_timeline"
+    },
+    {
+      "ID": 2026,
+      "Hero": 2026,
+      "BattleModelPath": "Char/2026_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2026_timeline"
+    },
+    {
+      "ID": 2027,
+      "Hero": 2027,
+      "BattleModelPath": "Char/2027_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2027_timeline"
+    },
+    {
+      "ID": 2029,
+      "Hero": 2029,
+      "BattleModelPath": "Char/2029_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2029_timeline"
+    },
+    {
+      "ID": 2030,
+      "Hero": 2030,
+      "BattleModelPath": "Char/2030_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2030_timeline"
+    },
+    {
+      "ID": 2032,
+      "Hero": 2032,
+      "BattleModelPath": "Char/2032_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2032_timeline"
+    },
+    {
+      "ID": 2033,
+      "Hero": 2033,
+      "BattleModelPath": "Char/2033_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2033_timeline"
+    },
+    {
+      "ID": 2036,
+      "Hero": 2036,
+      "BattleModelPath": "Char/2036_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2036_timeline"
+    },
+    {
+      "ID": 2037,
+      "Hero": 2037,
+      "BattleModelPath": "Char/2037_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2037_timeline"
+    },
+    {
+      "ID": 2038,
+      "Hero": 2038,
+      "BattleModelPath": "Char/2038_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2038_timeline"
+    },
+    {
+      "ID": 2040,
+      "Hero": 2040,
+      "BattleModelPath": "Char/2040_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2040_timeline"
+    },
+    {
+      "ID": 2041,
+      "Hero": 2041,
+      "BattleModelPath": "Char/2041_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2041_timeline"
+    },
+    {
+      "ID": 2043,
+      "Hero": 2043,
+      "BattleModelPath": "Char/2043_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2043_timeline"
+    },
+    {
+      "ID": 2044,
+      "Hero": 2044,
+      "BattleModelPath": "Char/2044_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2044_timeline"
+    },
+    {
+      "ID": 2045,
+      "Hero": 2045,
+      "BattleModelPath": "Char/2045_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2045_timeline"
+    },
+    {
+      "ID": 2046,
+      "Hero": 2046,
+      "BattleModelPath": "Char/2046_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2046_timeline"
+    },
+    {
+      "ID": 2047,
+      "Hero": 2047,
+      "BattleModelPath": "Char/2047_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2047_timeline"
+    },
+    {
+      "ID": 2049,
+      "Hero": 2049,
+      "BattleModelPath": "Char/2049_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2049_timeline"
+    },
+    {
+      "ID": 2050,
+      "Hero": 2050,
+      "BattleModelPath": "Char/2050_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2050_timeline"
+    },
+    {
+      "ID": 2051,
+      "Hero": 2051,
+      "BattleModelPath": "Char/2051_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2051_timeline"
+    },
+    {
+      "ID": 2052,
+      "Hero": 2052,
+      "BattleModelPath": "Char/2052_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2052_timeline"
+    },
+    {
+      "ID": 2053,
+      "Hero": 2053,
+      "BattleModelPath": "Char/2053_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2053_timeline"
+    },
+    {
+      "ID": 2054,
+      "Hero": 2054,
+      "BattleModelPath": "Char/2054_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2054_timeline"
+    },
+    {
+      "ID": 2055,
+      "Hero": 2055,
+      "BattleModelPath": "Char/2055_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2055_timeline"
+    },
+    {
+      "ID": 2056,
+      "Hero": 2056,
+      "BattleModelPath": "Char/2056_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2056_timeline"
+    },
+    {
+      "ID": 2057,
+      "Hero": 2057,
+      "BattleModelPath": "Char/2057_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2057_timeline"
+    },
+    {
+      "ID": 2058,
+      "Hero": 2058,
+      "BattleModelPath": "Char/2058_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2058_timeline"
+    },
+    {
+      "ID": 2059,
+      "Hero": 2059,
+      "BattleModelPath": "Char/2059_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2059_timeline"
+    },
+    {
+      "ID": 2060,
+      "Hero": 2060,
+      "BattleModelPath": "Char/2060_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2060_timeline"
+    },
+    {
+      "ID": 2061,
+      "Hero": 2061,
+      "BattleModelPath": "Char/2061_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2061_timeline"
+    },
+    {
+      "ID": 2062,
+      "Hero": 2062,
+      "BattleModelPath": "Char/2062_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2062_timeline"
+    },
+    {
+      "ID": 2063,
+      "Hero": 2063,
+      "BattleModelPath": "Char/2063_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2063_timeline"
+    },
+    {
+      "ID": 2064,
+      "Hero": 2064,
+      "BattleModelPath": "Char/2064_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2064_timeline"
+    },
+    {
+      "ID": 2065,
+      "Hero": 2065,
+      "BattleModelPath": "Char/2065_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2065_timeline"
+    },
+    {
+      "ID": 2066,
+      "Hero": 2066,
+      "BattleModelPath": "Char/2066_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2066_timeline"
+    },
+    {
+      "ID": 2067,
+      "Hero": 2067,
+      "BattleModelPath": "Char/2067_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2067_timeline"
+    },
+    {
+      "ID": 2068,
+      "Hero": 2068,
+      "BattleModelPath": "Char/2068_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2068_timeline"
+    },
+    {
+      "ID": 2069,
+      "Hero": 2069,
+      "BattleModelPath": "Char/2069_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2069_timeline"
+    },
+    {
+      "ID": 2070,
+      "Hero": 2070,
+      "BattleModelPath": "Char/2070_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2070_timeline"
+    },
+    {
+      "ID": 2071,
+      "Hero": 2071,
+      "BattleModelPath": "Char/2071_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2071_timeline"
+    },
+    {
+      "ID": 2073,
+      "Hero": 2073,
+      "BattleModelPath": "Char/2073_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2073_timeline"
+    },
+    {
+      "ID": 2074,
+      "Hero": 2074,
+      "BattleModelPath": "Char/2074_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2074_timeline"
+    },
+    {
+      "ID": 2075,
+      "Hero": 2075,
+      "BattleModelPath": "Char/2075_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2075_timeline"
+    },
+    {
+      "ID": 2076,
+      "Hero": 2076,
+      "BattleModelPath": "Char/2076_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2076_timeline"
+    },
+    {
+      "ID": 2077,
+      "Hero": 2077,
+      "BattleModelPath": "Char/2077_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2077_timeline"
+    },
+    {
+      "ID": 2078,
+      "Hero": 2078,
+      "BattleModelPath": "Char/2078_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2078_timeline"
+    },
+    {
+      "ID": 2079,
+      "Hero": 2079,
+      "BattleModelPath": "Char/2079_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2079_timeline"
+    },
+    {
+      "ID": 2080,
+      "Hero": 2080,
+      "BattleModelPath": "Char/2080_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2080_timeline"
+    },
+    {
+      "ID": 2081,
+      "Hero": 2081,
+      "BattleModelPath": "Char/2081_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2081_timeline"
+    },
+    {
+      "ID": 2083,
+      "Hero": 2083,
+      "BattleModelPath": "Char/2083_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2083_timeline"
+    },
+    {
+      "ID": 2084,
+      "Hero": 2084,
+      "BattleModelPath": "Char/2084_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2084_timeline"
+    },
+    {
+      "ID": 2085,
+      "Hero": 2085,
+      "BattleModelPath": "Char/2085_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2085_timeline"
+    },
+    {
+      "ID": 2088,
+      "Hero": 2088,
+      "BattleModelPath": "Char/2088_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/2088_timeline"
+    },
+    {
+      "ID": 3004,
+      "Hero": 3004,
+      "BattleModelPath": "Char/3004_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3004_timeline"
+    },
+    {
+      "ID": 3005,
+      "Hero": 3005,
+      "BattleModelPath": "Char/3005_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3005_timeline"
+    },
+    {
+      "ID": 3006,
+      "Hero": 3006,
+      "BattleModelPath": "Char/3006_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3006_timeline"
+    },
+    {
+      "ID": 3007,
+      "Hero": 3007,
+      "BattleModelPath": "Char/3007_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3007_timeline"
+    },
+    {
+      "ID": 3008,
+      "Hero": 3008,
+      "BattleModelPath": "Char/3008_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3008_timeline"
+    },
+    {
+      "ID": 3009,
+      "Hero": 3009,
+      "BattleModelPath": "Char/3009_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3009_timeline"
+    },
+    {
+      "ID": 3010,
+      "Hero": 3010,
+      "BattleModelPath": "Char/3010_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3010_timeline"
+    },
+    {
+      "ID": 3012,
+      "Hero": 3012,
+      "BattleModelPath": "Char/3012_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3012_timeline"
+    },
+    {
+      "ID": 3013,
+      "Hero": 3013,
+      "BattleModelPath": "Char/3013_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3013_timeline"
+    },
+    {
+      "ID": 3014,
+      "Hero": 3014,
+      "BattleModelPath": "Char/3014_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3014_timeline"
+    },
+    {
+      "ID": 3016,
+      "Hero": 3016,
+      "BattleModelPath": "Char/3016_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3016_timeline"
+    },
+    {
+      "ID": 3017,
+      "Hero": 3017,
+      "BattleModelPath": "Char/3017_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3017_timeline"
+    },
+    {
+      "ID": 3019,
+      "Hero": 3019,
+      "BattleModelPath": "Char/3019_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3019_timeline"
+    },
+    {
+      "ID": 3020,
+      "Hero": 3020,
+      "BattleModelPath": "Char/3020_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3020_timeline"
+    },
+    {
+      "ID": 3021,
+      "Hero": 3021,
+      "BattleModelPath": "Char/3021_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3021_timeline"
+    },
+    {
+      "ID": 3022,
+      "Hero": 3022,
+      "BattleModelPath": "Char/3022_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3022_timeline"
+    },
+    {
+      "ID": 3023,
+      "Hero": 3023,
+      "BattleModelPath": "Char/3023_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3023_timeline"
+    },
+    {
+      "ID": 3024,
+      "Hero": 3024,
+      "BattleModelPath": "Char/3024_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3024_timeline"
+    },
+    {
+      "ID": 3025,
+      "Hero": 3025,
+      "BattleModelPath": "Char/3025_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3025_timeline"
+    },
+    {
+      "ID": 3027,
+      "Hero": 3027,
+      "BattleModelPath": "Char/3027_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3027_timeline"
+    },
+    {
+      "ID": 3028,
+      "Hero": 3028,
+      "BattleModelPath": "Char/3028_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3028_timeline"
+    },
+    {
+      "ID": 3029,
+      "Hero": 3029,
+      "BattleModelPath": "Char/3029_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3029_timeline"
+    },
+    {
+      "ID": 3031,
+      "Hero": 3031,
+      "BattleModelPath": "Char/3031_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3031_timeline"
+    },
+    {
+      "ID": 3032,
+      "Hero": 3032,
+      "BattleModelPath": "Char/3032_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3032_timeline"
+    },
+    {
+      "ID": 3033,
+      "Hero": 3033,
+      "BattleModelPath": "Char/3033_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3033_timeline"
+    },
+    {
+      "ID": 3035,
+      "Hero": 3035,
+      "BattleModelPath": "Char/3035_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3035_timeline"
+    },
+    {
+      "ID": 3036,
+      "Hero": 3036,
+      "BattleModelPath": "Char/3036_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3036_timeline"
+    },
+    {
+      "ID": 3038,
+      "Hero": 3038,
+      "BattleModelPath": "Char/3038_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3038_timeline"
+    },
+    {
+      "ID": 3039,
+      "Hero": 3039,
+      "BattleModelPath": "Char/3039_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3039_timeline"
+    },
+    {
+      "ID": 3040,
+      "Hero": 3040,
+      "BattleModelPath": "Char/3040_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3040_timeline"
+    },
+    {
+      "ID": 3041,
+      "Hero": 3041,
+      "BattleModelPath": "Char/3041_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3041_timeline"
+    },
+    {
+      "ID": 3042,
+      "Hero": 3042,
+      "BattleModelPath": "Char/3042_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3042_timeline"
+    },
+    {
+      "ID": 3043,
+      "Hero": 3043,
+      "BattleModelPath": "Char/3043_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3043_timeline"
+    },
+    {
+      "ID": 3501,
+      "Hero": 3501,
+      "BattleModelPath": "Char/3501_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/3501_timeline"
+    },
+    {
+      "ID": 4010,
+      "Hero": 4010,
+      "BattleModelPath": "Char/4010_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/4010_timeline"
+    },
+    {
+      "ID": 4011,
+      "Hero": 4011,
+      "BattleModelPath": "Char/4011_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/4011_timeline"
+    },
+    {
+      "ID": 4012,
+      "Hero": 4012,
+      "BattleModelPath": "Char/4012_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/4012_timeline"
+    },
+    {
+      "ID": 4013,
+      "Hero": 4013,
+      "BattleModelPath": "Char/4013_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/4013_timeline"
+    },
+    {
+      "ID": 4014,
+      "Hero": 4014,
+      "BattleModelPath": "Char/4014_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/4014_timeline"
+    },
+    {
+      "ID": 4015,
+      "Hero": 4015,
+      "BattleModelPath": "Char/4015_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/4015_timeline"
+    },
+    {
+      "ID": 4020,
+      "Hero": 4020,
+      "BattleModelPath": "Char/4020_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/4020_timeline"
+    },
+    {
+      "ID": 4021,
+      "Hero": 4021,
+      "BattleModelPath": "Char/4021_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/4021_timeline"
+    },
+    {
+      "ID": 4023,
+      "Hero": 4023,
+      "BattleModelPath": "Char/4023_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/4023_timeline"
+    },
+    {
+      "ID": 4024,
+      "Hero": 4024,
+      "BattleModelPath": "Char/4024_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/4024_timeline"
+    },
+    {
+      "ID": 4025,
+      "Hero": 4025,
+      "BattleModelPath": "Char/4025_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/4025_timeline"
+    },
+    {
+      "ID": 4026,
+      "Hero": 4026,
+      "BattleModelPath": "Char/4026_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/4026_timeline"
+    },
+    {
+      "ID": 4027,
+      "Hero": 4027,
+      "BattleModelPath": "Char/4027_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/4027_timeline"
+    },
+    {
+      "ID": 4028,
+      "Hero": 4028,
+      "BattleModelPath": "Char/4028_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/4028_timeline"
+    },
+    {
+      "ID": 4029,
+      "Hero": 4029,
+      "BattleModelPath": "Char/4029_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/4029_timeline"
+    },
+    {
+      "ID": 4031,
+      "Hero": 4031,
+      "BattleModelPath": "Char/4031_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/4031_timeline"
+    },
+    {
+      "ID": 4034,
+      "Hero": 4034,
+      "BattleModelPath": "Char/4034_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/4034_timeline"
+    },
+    {
+      "ID": 4038,
+      "Hero": 4038,
+      "BattleModelPath": "Char/4038_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/4038_timeline"
+    },
+    {
+      "ID": 5011,
+      "Hero": 5011,
+      "BattleModelPath": "Char/5011_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/5011_timeline"
+    },
+    {
+      "ID": 5016,
+      "Hero": 5016,
+      "BattleModelPath": "Char/5016_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/5016_timeline"
+    },
+    {
+      "ID": 5019,
+      "Hero": 5019,
+      "BattleModelPath": "Char/5019_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/5019_timeline"
+    },
+    {
+      "ID": 5028,
+      "Hero": 5028,
+      "BattleModelPath": "Char/5028_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/5028_timeline"
+    },
+    {
+      "ID": 5035,
+      "Hero": 5035,
+      "BattleModelPath": "Char/5035_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/5035_timeline"
+    },
+    {
+      "ID": 5050,
+      "Hero": 5050,
+      "BattleModelPath": "Char/5050_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/5050_timeline"
+    },
+    {
+      "ID": 5052,
+      "Hero": 5052,
+      "BattleModelPath": "Char/5052_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/5052_timeline"
+    },
+    {
+      "ID": 5067,
+      "Hero": 5067,
+      "BattleModelPath": "Char/5067_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/5067_timeline"
+    },
+    {
+      "ID": 5071,
+      "Hero": 5071,
+      "BattleModelPath": "Char/5071_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/5071_timeline"
+    },
+    {
+      "ID": 5080,
+      "Hero": 5080,
+      "BattleModelPath": "Char/5080_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/5080_timeline"
+    },
+    {
+      "ID": 5094,
+      "Hero": 5094,
+      "BattleModelPath": "Char/5094_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/5094_timeline",
+      "AdditionalRenderTimelineArray": [
+        "timeline/6050_timeline"
+      ]
+    },
+    {
+      "ID": 5096,
+      "Hero": 5096,
+      "BattleModelPath": "Char/5096_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/5096_timeline"
+    },
+    {
+      "ID": 5111,
+      "Hero": 5111,
+      "BattleModelPath": "Char/5111_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/5111_timeline"
+    },
+    {
+      "ID": 5119,
+      "Hero": 5119,
+      "BattleModelPath": "Char/5119_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/5119_timeline"
+    },
+    {
+      "ID": 5184,
+      "Hero": 5184,
+      "BattleModelPath": "Char/5184_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/5184_timeline"
+    },
+    {
+      "ID": 6053,
+      "Hero": 6053,
+      "BattleModelPath": "Char/6053_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/6053_timeline"
+    },
+    {
+      "ID": 6079,
+      "Hero": 6079,
+      "BattleModelPath": "Char/6079_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/6079_timeline"
+    },
+    {
+      "ID": 6080,
+      "Hero": 6080,
+      "BattleModelPath": "Char/6080_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/6080_timeline"
+    },
+    {
+      "ID": 6081,
+      "Hero": 6081,
+      "BattleModelPath": "Char/6081_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/6081_timeline"
+    },
+    {
+      "ID": 6082,
+      "Hero": 6082,
+      "BattleModelPath": "Char/6082_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/6082_timeline"
+    },
+    {
+      "ID": 6083,
+      "Hero": 6083,
+      "BattleModelPath": "Char/6083_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/6083_timeline"
+    },
+    {
+      "ID": 10025,
+      "Hero": 10025,
+      "BattleModelPath": "Char/10025_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/10025_timeline"
+    },
+    {
+      "ID": 10006,
+      "Hero": 10006,
+      "BattleModelPath": "Char/10006_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/10006_timeline"
+    },
+    {
+      "ID": 6051,
+      "Hero": 6051,
+      "BattleModelPath": "Char/6051_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/6051_timeline"
+    },
+    {
+      "ID": 65535,
+      "Hero": 65535
+    }
+  ]
+}

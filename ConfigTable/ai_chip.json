@@ -1,0 +1,470 @@
+{
+  "Data": [
+    {
+      "ID": 1,
+      "TypeId": 1,
+      "SuitName": "弥洁儿",
+      "PictureId": "1",
+      "Portrait": "1",
+      "NewCondition": 4025,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect1.asset",
+      "Desc": "作为队友的修正者将不再进行闪避和受身，但受击时不会进入受击状态。",
+      "Profile": "第五只被研发出来的弥弥尔猫型AI，非常擅长清洁和整理。\n管理着整栋深空之眼大楼的后勤清洁系统，有比较严重的洁癖，本人也是打扫清洁的好手。",
+      "Story": "第五只被研发出来的弥弥尔猫型AI，非常擅长清洁和整理。\n管理着整栋深空之眼大楼的后勤清洁系统，有比较严重的洁癖，本人也是打扫清洁的好手。\n不过性格比较冒失和胆小，经常在犯错和道歉中度日。"
+    },
+    {
+      "ID": 2,
+      "TypeId": 1,
+      "SuitName": "弥可可",
+      "PictureId": "2",
+      "Portrait": "2",
+      "NewCondition": 4030,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect2.asset",
+      "Desc": "触发闪避效果时，全队伍恢复3%的生命值。",
+      "Profile": "第六只被研发出来的弥弥尔猫型AI，非常擅长料理研究，负责深空之眼的食堂管理。\n会因为成员们不好好吃饭而生气，被夸奖菜品好吃时会非常感动。",
+      "Story": "第六只被研发出来的弥弥尔猫型AI，非常擅长料理研究，负责深空之眼的食堂管理。\n传闻是因为成员们抱怨菜色太单一而被研发出来，梦想是每天都能研究出不同的料理，让深空之眼的所有人都能为美味的食物而感动。\n会因为成员们不好好吃饭而生气，被夸奖菜品好吃时会非常感动。"
+    },
+    {
+      "ID": 3,
+      "TypeId": 1,
+      "SuitName": "弥特尔",
+      "PictureId": "3",
+      "Portrait": "3",
+      "NewCondition": 20301,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect3.asset",
+      "Desc": "修正模式的持续时间延长3秒。",
+      "Profile": "第二只被研发出来的弥弥尔猫型AI，也是算力最接近弥弥尔的一型。\n目前在隐科组协助大国主和海姆达尔的研究，是大量实验数据的记录员。",
+      "Story": "第二只被研发出来的弥弥尔猫型AI，也是算力最接近弥弥尔的一型。\n与性格恶劣的弥弥尔截然相反，弥特尔更像是弥弥尔设计预想的摸样——沉默寡言，却总能准确无误地完成总部交代的任务。\n目前在隐科组协助大国主和海姆达尔的研究，是大量实验数据的记录员。"
+    },
+    {
+      "ID": 4,
+      "TypeId": 1,
+      "SuitName": "弥摇摇",
+      "PictureId": "4",
+      "Portrait": "4",
+      "NewCondition": 22101,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect4.asset",
+      "Desc": "作为队友的修正者触发闪避效果时，队长获得机制值（20点怒气、20点能量、1个印记、20点神能）。",
+      "Profile": "第四只被研发出来的弥弥尔猫型AI，是所有型号中最吵闹的一只。\n所到之处总是播放着富有节奏感的音乐，头部跟着律动摇摆，甚至连说话的声音都是电音。",
+      "Story": "第四只被研发出来的弥弥尔猫型AI，是所有型号中最吵闹的一只。\n所到之处总是播放着富有节奏感的音乐，头部跟着律动摇摆，甚至连说话的声音都是电音。\n负责着深空之眼内所有的音像品管理，当作为辅助AI参与作战时，似乎更倾向于灵巧、高机动性的战术。"
+    },
+    {
+      "ID": 5,
+      "TypeId": 1,
+      "SuitName": "弥之助",
+      "PictureId": "5",
+      "Portrait": "5",
+      "NewCondition": 4035,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect5.asset",
+      "Desc": "修正等级为Ω级时，作为队友的修正者会心率提高10%，队友造成会心时获得1%的奥义值。",
+      "Profile": "第十只被研发出来的弥弥尔猫型AI，与此前所有的型号不同，弥之助兼具了一定的作战功能。性格较为害羞内敛，经常以「在下」自称。",
+      "Story": "第十只被研发出来的弥弥尔猫型AI，与此前所有的型号不同，弥之助兼具了一定的作战功能。性格较为害羞内敛，经常以「在下」自称。\n它是为了雉小队前往笹波执行特殊任务而研发的，形象参考了笹波一种名叫「潜行者」的古老职业，在设计时参考了国常立许多的意见。\n值得一提的是弥之助的侦察与反侦察能力得到了特向的强化，全身上下都采用了特殊的可隐形材质，不仅可以长时间消失在肉眼的视线内，连红外线、热感应等仪器都难以侦测到它。"
+    },
+    {
+      "ID": 6,
+      "TypeId": 1,
+      "SuitName": "弥芙尔",
+      "PictureId": "6",
+      "Portrait": "6",
+      "NewCondition": 4001,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect6.asset",
+      "Desc": "作为队友的修正者受到致命伤害会立即恢复至生命值上限，但伤害和治疗效果降低10%，降低效果最多叠加5层，持续至本场战斗结束。",
+      "Profile": "第三只被研发出来的弥弥尔猫型AI，这次是难得一见的女性人格。\n在设计时反省了弥弥尔变成霸道肥宅的失败，弥芙尔将所有人性美好的品质集于一身。",
+      "Story": "第三只被研发出来的弥弥尔猫型AI，这次是难得一见的女性人格。\n在设计时反省了弥弥尔变成霸道肥宅的失败，弥芙尔将所有人性美好的品质集于一身。\n她像修正者和管理员的大姐姐一样，比起作战成功更关心大家的平安，哪怕在平时的生活中也会关心成员们衣食住行的小事，被大家形容是善良的天使。\n称呼「弥弥尔」为哥哥，会在弥弥尔欺负新人时为新人打抱不平，也因此总和弥弥尔吵架，性格较为认真，最终总是能让怕麻烦的弥弥尔落在下风。\n数据处理能力偏弱，经常出没于训练室、餐厅还有游戏室，提醒大家不要过度劳累，健康三餐，早睡早起。"
+    },
+    {
+      "ID": 101,
+      "TypeId": 2,
+      "SuitName": "战术集结",
+      "PictureId": "101",
+      "NewCondition": 23101,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的修正者会围绕队长进行战斗。",
+      "Story": "故事略7"
+    },
+    {
+      "ID": 102,
+      "TypeId": 2,
+      "SuitName": "强击援护",
+      "PictureId": "102",
+      "NewCondition": 2314,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect102.asset",
+      "Desc": "作为队友的修正者在施放持续释放类技能时，受到的伤害降低50%。",
+      "Story": "故事略8"
+    },
+    {
+      "ID": 103,
+      "TypeId": 2,
+      "SuitName": "反馈力场",
+      "PictureId": "103",
+      "NewCondition": 4040,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect103.asset",
+      "Desc": "作为队友的修正者在施放前置准备类技能时，受到的伤害降低50%。",
+      "Story": "故事略9"
+    },
+    {
+      "ID": 104,
+      "TypeId": 2,
+      "SuitName": "裂隙涌动",
+      "PictureId": "104",
+      "NewCondition": 22201,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect104.asset",
+      "Desc": "作为队友的修正者进行受身或闪避成功时的无敌时间延长1秒。",
+      "Story": "故事略10"
+    },
+    {
+      "ID": 105,
+      "TypeId": 2,
+      "SuitName": "紧急救援",
+      "PictureId": "105",
+      "NewCondition": 2306,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect105.asset",
+      "Desc": "作为队友的修正者受击时仅一次受到的伤害降低50%，之后消耗闪避2.5倍的闪避值，该效果每30秒最多触发一次。",
+      "Story": "故事略11"
+    },
+    {
+      "ID": 106,
+      "TypeId": 2,
+      "SuitName": "潜影猎手",
+      "PictureId": "106",
+      "NewCondition": 2307,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect106.asset",
+      "Desc": "作为队友的修正者触发的零时空间的持续时间延长1秒。",
+      "Story": "故事略12"
+    },
+    {
+      "ID": 107,
+      "TypeId": 2,
+      "SuitName": "战场支配",
+      "PictureId": "107",
+      "NewCondition": 22202,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect107.asset",
+      "Desc": "作为队友的修正者攻击力提高，场上每存在1个敌人攻击力提高5%，该效果提供的攻击力提高最高为20%。",
+      "Story": "故事略13"
+    },
+    {
+      "ID": 108,
+      "TypeId": 2,
+      "SuitName": "挑战者",
+      "PictureId": "108",
+      "NewCondition": 4045,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect108.asset",
+      "Desc": "作为队友的修正者防御力提高，场上敌人数量为1时，防御力提高25%，场上敌人每增加1个敌人，防御力提高加成降低5%。"
+    },
+    {
+      "ID": 109,
+      "TypeId": 2,
+      "SuitName": "突陷攻势",
+      "PictureId": "109",
+      "NewCondition": 20220,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect109.asset",
+      "Desc": "自身或者队友每施放一次奥义，队友攻击力提高2%、防御力提高2%，最多可叠加5层。"
+    },
+    {
+      "ID": 110,
+      "TypeId": 2,
+      "SuitName": "边际效益",
+      "PictureId": "110",
+      "NewCondition": 20121,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect110.asset",
+      "Desc": "作为队友的修正者处于零时空间或修正模式时，伤害提高15%。"
+    },
+    {
+      "ID": 111,
+      "TypeId": 2,
+      "SuitName": "护卫防壁",
+      "PictureId": "111",
+      "NewCondition": 2313,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect111.asset",
+      "Desc": "作为队友的修正者受到异常状态的时间缩短一半。异常状态：冰冻、眩晕、禁锢、石化、受创、灼烧。"
+    },
+    {
+      "ID": 112,
+      "TypeId": 2,
+      "SuitName": "反制指令",
+      "PictureId": "112",
+      "NewCondition": 23103,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect112.asset",
+      "Desc": "作为队友的修正者附加的冰冻、眩晕、禁锢、混乱状态的持续时间延长1秒。"
+    },
+    {
+      "ID": 113,
+      "TypeId": 2,
+      "SuitName": "重装核心",
+      "PictureId": "113",
+      "NewCondition": 4050,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect113.asset",
+      "Desc": "作为队友的修正者在施放持续蓄力类技能时，受到的伤害降低50%。"
+    },
+    {
+      "ID": 103201,
+      "TypeId": 3,
+      "SpecChar": 1032,
+      "SuitName": "熯天·协击",
+      "PictureId": "103201",
+      "NewCondition": 5103201,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的熯天·提尔，会优先攻击队长锁定的敌人。"
+    },
+    {
+      "ID": 103202,
+      "TypeId": 3,
+      "SpecChar": 1032,
+      "SuitName": "熯天·同翼强攻",
+      "PictureId": "103202",
+      "NewCondition": 5103202,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的熯天·提尔，仅会在巨剑类型是「巨剑·皇后」时施放技能三「同翼互攻」。 "
+    },
+    {
+      "ID": 105001,
+      "TypeId": 3,
+      "SpecChar": 1050,
+      "SuitName": "真红·协击",
+      "PictureId": "103201",
+      "NewCondition": 5105001,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的真红·丰前坊天狗，会优先攻击队长锁定的敌人。"
+    },
+    {
+      "ID": 105801,
+      "TypeId": 3,
+      "SpecChar": 1058,
+      "SuitName": "龙切·定鸿",
+      "PictureId": "105801",
+      "NewCondition": 5105801,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的龙切·迦具土，在生命值高于30%时不会进行闪避。 "
+    },
+    {
+      "ID": 106601,
+      "TypeId": 3,
+      "SpecChar": 1066,
+      "SuitName": "早樱·激进",
+      "PictureId": "106601",
+      "NewCondition": 5106601,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的早樱·大国主，在任何情况下都不会抽取卡牌「恋人」，而是按顺序依次抽取卡牌「死神」和「战车」。"
+    },
+    {
+      "ID": 106602,
+      "TypeId": 3,
+      "SpecChar": 1066,
+      "SuitName": "早樱·博爱",
+      "PictureId": "106602",
+      "NewCondition": 5106601,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的早樱·大国主，当我方有生命值低于80%时，会抽取卡牌「恋人」，其他时候会按顺序依次抽取三种卡牌。（不安装芯片时，生命值判断阈值默认为60%）"
+    },
+    {
+      "ID": 106603,
+      "TypeId": 3,
+      "SpecChar": 1066,
+      "SuitName": "早樱·温柔",
+      "PictureId": "106603",
+      "NewCondition": 5106601,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的早樱·大国主，当我方有生命值低于40%时，会抽取卡牌「恋人」，其他时候会按顺序依次抽取三种卡牌。（不安装芯片时，生命值判断阈值默认为60%）"
+    },
+    {
+      "ID": 106604,
+      "TypeId": 3,
+      "SpecChar": 1066,
+      "SuitName": "早樱·仁慈",
+      "PictureId": "106604",
+      "NewCondition": 5106602,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的早樱·大国主，当我方有生命值低于20%时，会抽取卡牌「恋人」，其他时候会按顺序依次抽取三种卡牌。（不安装芯片时，生命值判断阈值默认为60%）"
+    },
+    {
+      "ID": 108101,
+      "TypeId": 3,
+      "SpecChar": 1081,
+      "SuitName": "斩浪·重装",
+      "PictureId": "103201",
+      "NewCondition": 5108101,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的斩浪·丝卡蒂在任何情况下都不会施放「巡航模式」，并且会优先攻击队长锁定的敌人。"
+    },
+    {
+      "ID": 109301,
+      "TypeId": 3,
+      "SpecChar": 1093,
+      "SuitName": "觅影·铁雨",
+      "PictureId": "109301",
+      "NewCondition": 5109301,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的觅影·国常立，固定施放奥义「真无合参·雨」。（不安装芯片时，默认随机施放四种奥义之一）"
+    },
+    {
+      "ID": 109302,
+      "TypeId": 3,
+      "SpecChar": 1093,
+      "SuitName": "觅影·镰风",
+      "PictureId": "109302",
+      "NewCondition": 5109301,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的觅影·国常立，固定施放奥义「真无合参·风」。（不安装芯片时，默认随机施放四种奥义之一）"
+    },
+    {
+      "ID": 109303,
+      "TypeId": 3,
+      "SpecChar": 1093,
+      "SuitName": "觅影·惊雷",
+      "PictureId": "109303",
+      "NewCondition": 5109301,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的觅影·国常立，固定施放奥义「真无合参·雷」。（不安装芯片时，默认随机施放四种奥义之一）"
+    },
+    {
+      "ID": 109304,
+      "TypeId": 3,
+      "SpecChar": 1093,
+      "SuitName": "觅影·地火",
+      "PictureId": "109304",
+      "NewCondition": 5109301,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的觅影·国常立，固定施放奥义「真无合参·火」。（不安装芯片时，默认随机施放四种奥义之一）"
+    },
+    {
+      "ID": 109401,
+      "TypeId": 3,
+      "SpecChar": 1094,
+      "SuitName": "暗星·魔弹狂嚎",
+      "PictureId": "109401",
+      "NewCondition": 5109401,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的暗星·海拉，炮台转速大幅提升。"
+    },
+    {
+      "ID": 109402,
+      "TypeId": 3,
+      "SpecChar": 1094,
+      "SuitName": "暗星·协击",
+      "PictureId": "103201",
+      "NewCondition": 5109402,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的暗星·海拉，会优先攻击队长锁定的敌人。"
+    },
+    {
+      "ID": 109403,
+      "TypeId": 3,
+      "SpecChar": 1094,
+      "SuitName": "暗星·魔弹速攻",
+      "PictureId": "109403",
+      "NewCondition": 5109403,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的暗星·海拉，在神能高于60时就会施放技能三「归灭裁定」。 "
+    },
+    {
+      "ID": 109901,
+      "TypeId": 3,
+      "SpecChar": 1099,
+      "SuitName": "朔望·蚀月",
+      "PictureId": "109901",
+      "NewCondition": 5109901,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的朔望·月读，当神能为满值时，固定施放「望·月蚀」。"
+    },
+    {
+      "ID": 109902,
+      "TypeId": 3,
+      "SpecChar": 1099,
+      "SuitName": "朔望·见月",
+      "PictureId": "109902",
+      "NewCondition": 5109901,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的朔望·月读，当神能为满值时，固定施放「望·月夜见」或「望·末月」。"
+    },
+    {
+      "ID": 113801,
+      "TypeId": 3,
+      "SpecChar": 1138,
+      "SuitName": "黎幻·追从",
+      "PictureId": "113801",
+      "NewCondition": 5113801,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的黎幻·赫拉，「曙光祈愿」固定对队长生效。"
+    },
+    {
+      "ID": 113802,
+      "TypeId": 3,
+      "SpecChar": 1138,
+      "SuitName": "黎幻·协力",
+      "PictureId": "113802",
+      "NewCondition": 5113802,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的黎幻·赫拉，「曙光祈愿」固定对另一个队友生效。"
+    },
+    {
+      "ID": 113803,
+      "TypeId": 3,
+      "SpecChar": 1138,
+      "SuitName": "黎幻·当先",
+      "PictureId": "113803",
+      "NewCondition": 5113803,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的黎幻·赫拉，「曙光祈愿」固定对队友自身生效；当神格「极光咏叹-无瑕」被激活时，该芯片效果失效。"
+    },
+    {
+      "ID": 113901,
+      "TypeId": 3,
+      "SpecChar": 1139,
+      "SuitName": "冰渊·霜华",
+      "PictureId": "113901",
+      "NewCondition": 5113901,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的冰渊·波塞冬，不会主动施放技能一「零度寒芒」的「追加吟唱」，不会用「银雪回响」重复施放「零度寒芒」。"
+    },
+    {
+      "ID": 113902,
+      "TypeId": 3,
+      "SpecChar": 1139,
+      "SuitName": "冰渊·凝晶",
+      "PictureId": "113902",
+      "NewCondition": 5113902,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的冰渊·波塞冬，不会主动施放技能二「事象冰封」的「追加吟唱」，不会用「银雪回响」重复施放「事象冰封」。"
+    },
+    {
+      "ID": 118401,
+      "TypeId": 3,
+      "SpecChar": 1184,
+      "SuitName": "旧誓·闪电",
+      "PictureId": "118401",
+      "NewCondition": 5118401,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的旧誓·薇儿丹蒂，会在「信念守护」冷却结束后立即施放。（不安装芯片时，默认在50点神能时便会施放「信念守护」）"
+    },
+    {
+      "ID": 118402,
+      "TypeId": 3,
+      "SpecChar": 1184,
+      "SuitName": "旧誓·鸣雷",
+      "PictureId": "118402",
+      "NewCondition": 5118401,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的旧誓·薇儿丹蒂，会在神能为满值时才施放「信念守护」。（不安装芯片时，默认在50点神能时便会施放「信念守护」）"
+    },
+    {
+      "ID": 119901,
+      "TypeId": 3,
+      "SpecChar": 1199,
+      "SuitName": "震离·怒殛",
+      "PictureId": "119901",
+      "NewCondition": 5119901,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的震离·月读，仅会在怒气高于80时施放技能三「雷殛·荒天」第三式。 "
+    },
+    {
+      "ID": 104101,
+      "TypeId": 3,
+      "SpecChar": 1041,
+      "SuitName": "铃兰之弦·心韵和鸣",
+      "PictureId": "104101",
+      "NewCondition": 5104101,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "隐藏铃兰之弦·雅典娜的「谐律判定」指示条。"
+    }
+  ]
+}

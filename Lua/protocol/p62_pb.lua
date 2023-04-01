@@ -1,0 +1,434 @@
+slot0 = require("protobuf")
+
+module("p62_pb")
+
+slot1 = slot0.Descriptor()
+slot2 = slot0.FieldDescriptor()
+slot3 = slot0.FieldDescriptor()
+slot4 = slot0.FieldDescriptor()
+slot5 = slot0.FieldDescriptor()
+slot6 = slot0.FieldDescriptor()
+slot7 = slot0.FieldDescriptor()
+slot8 = slot0.FieldDescriptor()
+slot9 = slot0.FieldDescriptor()
+slot10 = slot0.FieldDescriptor()
+slot11 = slot0.FieldDescriptor()
+slot12 = slot0.Descriptor()
+slot13 = slot0.FieldDescriptor()
+slot14 = slot0.FieldDescriptor()
+slot15 = slot0.Descriptor()
+slot16 = slot0.FieldDescriptor()
+slot17 = slot0.FieldDescriptor()
+slot18 = slot0.Descriptor()
+slot19 = slot0.FieldDescriptor()
+slot20 = slot0.FieldDescriptor()
+slot21 = slot0.FieldDescriptor()
+slot22 = slot0.Descriptor()
+slot23 = slot0.FieldDescriptor()
+slot24 = slot0.Descriptor()
+slot25 = slot0.FieldDescriptor()
+slot26 = slot0.Descriptor()
+slot27 = slot0.Descriptor()
+slot28 = slot0.FieldDescriptor()
+slot29 = slot0.Descriptor()
+slot30 = slot0.FieldDescriptor()
+slot31 = slot0.Descriptor()
+slot32 = slot0.FieldDescriptor()
+slot33 = slot0.FieldDescriptor()
+slot34 = slot0.Descriptor()
+slot35 = slot0.FieldDescriptor()
+slot36 = slot0.Descriptor()
+slot37 = slot0.FieldDescriptor()
+slot38 = slot0.FieldDescriptor()
+slot39 = slot0.Descriptor()
+slot40 = slot0.FieldDescriptor()
+slot2.name = "vs"
+slot2.full_name = ".p62.sc_62001.vs"
+slot2.number = 1
+slot2.index = 0
+slot2.label = 2
+slot2.has_default_value = false
+slot2.default_value = 0
+slot2.type = 13
+slot2.cpp_type = 3
+slot3.name = "return_login_time"
+slot3.full_name = ".p62.sc_62001.return_login_time"
+slot3.number = 2
+slot3.index = 1
+slot3.label = 1
+slot3.has_default_value = false
+slot3.default_value = 0
+slot3.type = 13
+slot3.cpp_type = 3
+slot4.name = "receive_sign_index"
+slot4.full_name = ".p62.sc_62001.receive_sign_index"
+slot4.number = 3
+slot4.index = 2
+slot4.label = 1
+slot4.has_default_value = false
+slot4.default_value = 0
+slot4.type = 13
+slot4.cpp_type = 3
+slot5.name = "last_update_receive_time"
+slot5.full_name = ".p62.sc_62001.last_update_receive_time"
+slot5.number = 4
+slot5.index = 3
+slot5.label = 1
+slot5.has_default_value = false
+slot5.default_value = 0
+slot5.type = 13
+slot5.cpp_type = 3
+slot6.name = "received_sign_list"
+slot6.full_name = ".p62.sc_62001.received_sign_list"
+slot6.number = 5
+slot6.index = 4
+slot6.label = 3
+slot6.has_default_value = false
+slot6.default_value = {}
+slot6.type = 13
+slot6.cpp_type = 3
+slot7.name = "is_receive_gift"
+slot7.full_name = ".p62.sc_62001.is_receive_gift"
+slot7.number = 6
+slot7.index = 5
+slot7.label = 1
+slot7.has_default_value = false
+slot7.default_value = 0
+slot7.type = 13
+slot7.cpp_type = 3
+slot8.name = "gashapon_reward"
+slot8.full_name = ".p62.sc_62001.gashapon_reward"
+slot8.number = 7
+slot8.index = 6
+slot8.label = 3
+slot8.has_default_value = false
+slot8.default_value = {}
+slot8.message_type = slot12
+slot8.type = 11
+slot8.cpp_type = 10
+slot9.name = "bp"
+slot9.full_name = ".p62.sc_62001.bp"
+slot9.number = 8
+slot9.index = 7
+slot9.label = 1
+slot9.has_default_value = false
+slot9.default_value = nil
+slot9.message_type = slot15
+slot9.type = 11
+slot9.cpp_type = 10
+slot10.name = "acc_num"
+slot10.full_name = ".p62.sc_62001.acc_num"
+slot10.number = 9
+slot10.index = 8
+slot10.label = 1
+slot10.has_default_value = false
+slot10.default_value = 0
+slot10.type = 13
+slot10.cpp_type = 3
+slot11.name = "return_last_offline_time"
+slot11.full_name = ".p62.sc_62001.return_last_offline_time"
+slot11.number = 10
+slot11.index = 9
+slot11.label = 1
+slot11.has_default_value = false
+slot11.default_value = 0
+slot11.type = 13
+slot11.cpp_type = 3
+slot1.name = "sc_62001"
+slot1.full_name = ".p62.sc_62001"
+slot1.nested_types = {}
+slot1.enum_types = {}
+slot1.fields = {
+	slot2,
+	slot3,
+	slot4,
+	slot5,
+	slot6,
+	slot7,
+	slot8,
+	slot9,
+	slot10,
+	slot11
+}
+slot1.is_extendable = false
+slot1.extensions = {}
+slot13.name = "id"
+slot13.full_name = ".p62.reward_net_rec.id"
+slot13.number = 1
+slot13.index = 0
+slot13.label = 2
+slot13.has_default_value = false
+slot13.default_value = 0
+slot13.type = 13
+slot13.cpp_type = 3
+slot14.name = "residual_num"
+slot14.full_name = ".p62.reward_net_rec.residual_num"
+slot14.number = 2
+slot14.index = 1
+slot14.label = 2
+slot14.has_default_value = false
+slot14.default_value = 0
+slot14.type = 13
+slot14.cpp_type = 3
+slot12.name = "reward_net_rec"
+slot12.full_name = ".p62.reward_net_rec"
+slot12.nested_types = {}
+slot12.enum_types = {}
+slot12.fields = {
+	slot13,
+	slot14
+}
+slot12.is_extendable = false
+slot12.extensions = {}
+slot16.name = "is_recharge"
+slot16.full_name = ".p62.return_bp_net_rec.is_recharge"
+slot16.number = 1
+slot16.index = 0
+slot16.label = 2
+slot16.has_default_value = false
+slot16.default_value = 0
+slot16.type = 13
+slot16.cpp_type = 3
+slot17.name = "bp_assignment"
+slot17.full_name = ".p62.return_bp_net_rec.bp_assignment"
+slot17.number = 2
+slot17.index = 1
+slot17.label = 3
+slot17.has_default_value = false
+slot17.default_value = {}
+slot17.message_type = slot18
+slot17.type = 11
+slot17.cpp_type = 10
+slot15.name = "return_bp_net_rec"
+slot15.full_name = ".p62.return_bp_net_rec"
+slot15.nested_types = {}
+slot15.enum_types = {}
+slot15.fields = {
+	slot16,
+	slot17
+}
+slot15.is_extendable = false
+slot15.extensions = {}
+slot19.name = "id"
+slot19.full_name = ".p62.bp_assignment_net_rec.id"
+slot19.number = 1
+slot19.index = 0
+slot19.label = 2
+slot19.has_default_value = false
+slot19.default_value = 0
+slot19.type = 13
+slot19.cpp_type = 3
+slot20.name = "is_receive_reward"
+slot20.full_name = ".p62.bp_assignment_net_rec.is_receive_reward"
+slot20.number = 2
+slot20.index = 1
+slot20.label = 2
+slot20.has_default_value = false
+slot20.default_value = 0
+slot20.type = 13
+slot20.cpp_type = 3
+slot21.name = "is_receive_recharge_reward"
+slot21.full_name = ".p62.bp_assignment_net_rec.is_receive_recharge_reward"
+slot21.number = 3
+slot21.index = 2
+slot21.label = 2
+slot21.has_default_value = false
+slot21.default_value = 0
+slot21.type = 13
+slot21.cpp_type = 3
+slot18.name = "bp_assignment_net_rec"
+slot18.full_name = ".p62.bp_assignment_net_rec"
+slot18.nested_types = {}
+slot18.enum_types = {}
+slot18.fields = {
+	slot19,
+	slot20,
+	slot21
+}
+slot18.is_extendable = false
+slot18.extensions = {}
+slot23.name = "index"
+slot23.full_name = ".p62.cs_62002.index"
+slot23.number = 1
+slot23.index = 0
+slot23.label = 2
+slot23.has_default_value = false
+slot23.default_value = 0
+slot23.type = 13
+slot23.cpp_type = 3
+slot22.name = "cs_62002"
+slot22.full_name = ".p62.cs_62002"
+slot22.nested_types = {}
+slot22.enum_types = {}
+slot22.fields = {
+	slot23
+}
+slot22.is_extendable = false
+slot22.extensions = {}
+slot25.name = "result"
+slot25.full_name = ".p62.sc_62003.result"
+slot25.number = 1
+slot25.index = 0
+slot25.label = 2
+slot25.has_default_value = false
+slot25.default_value = 0
+slot25.type = 13
+slot25.cpp_type = 3
+slot24.name = "sc_62003"
+slot24.full_name = ".p62.sc_62003"
+slot24.nested_types = {}
+slot24.enum_types = {}
+slot24.fields = {
+	slot25
+}
+slot24.is_extendable = false
+slot24.extensions = {}
+slot26.name = "cs_62004"
+slot26.full_name = ".p62.cs_62004"
+slot26.nested_types = {}
+slot26.enum_types = {}
+slot26.fields = {}
+slot26.is_extendable = false
+slot26.extensions = {}
+slot28.name = "result"
+slot28.full_name = ".p62.sc_62005.result"
+slot28.number = 1
+slot28.index = 0
+slot28.label = 2
+slot28.has_default_value = false
+slot28.default_value = 0
+slot28.type = 13
+slot28.cpp_type = 3
+slot27.name = "sc_62005"
+slot27.full_name = ".p62.sc_62005"
+slot27.nested_types = {}
+slot27.enum_types = {}
+slot27.fields = {
+	slot28
+}
+slot27.is_extendable = false
+slot27.extensions = {}
+slot30.name = "times"
+slot30.full_name = ".p62.cs_62006.times"
+slot30.number = 1
+slot30.index = 0
+slot30.label = 2
+slot30.has_default_value = false
+slot30.default_value = 0
+slot30.type = 13
+slot30.cpp_type = 3
+slot29.name = "cs_62006"
+slot29.full_name = ".p62.cs_62006"
+slot29.nested_types = {}
+slot29.enum_types = {}
+slot29.fields = {
+	slot30
+}
+slot29.is_extendable = false
+slot29.extensions = {}
+slot32.name = "result"
+slot32.full_name = ".p62.sc_62007.result"
+slot32.number = 1
+slot32.index = 0
+slot32.label = 2
+slot32.has_default_value = false
+slot32.default_value = 0
+slot32.type = 13
+slot32.cpp_type = 3
+slot33.name = "reward_id_list"
+slot33.full_name = ".p62.sc_62007.reward_id_list"
+slot33.number = 2
+slot33.index = 1
+slot33.label = 3
+slot33.has_default_value = false
+slot33.default_value = {}
+slot33.type = 13
+slot33.cpp_type = 3
+slot31.name = "sc_62007"
+slot31.full_name = ".p62.sc_62007"
+slot31.nested_types = {}
+slot31.enum_types = {}
+slot31.fields = {
+	slot32,
+	slot33
+}
+slot31.is_extendable = false
+slot31.extensions = {}
+slot35.name = "bp_submit"
+slot35.full_name = ".p62.cs_62008.bp_submit"
+slot35.number = 1
+slot35.index = 0
+slot35.label = 3
+slot35.has_default_value = false
+slot35.default_value = {}
+slot35.message_type = slot36
+slot35.type = 11
+slot35.cpp_type = 10
+slot34.name = "cs_62008"
+slot34.full_name = ".p62.cs_62008"
+slot34.nested_types = {}
+slot34.enum_types = {}
+slot34.fields = {
+	slot35
+}
+slot34.is_extendable = false
+slot34.extensions = {}
+slot37.name = "id"
+slot37.full_name = ".p62.bp_submit_net_rec.id"
+slot37.number = 1
+slot37.index = 0
+slot37.label = 2
+slot37.has_default_value = false
+slot37.default_value = 0
+slot37.type = 13
+slot37.cpp_type = 3
+slot38.name = "receive_type"
+slot38.full_name = ".p62.bp_submit_net_rec.receive_type"
+slot38.number = 2
+slot38.index = 1
+slot38.label = 2
+slot38.has_default_value = false
+slot38.default_value = 0
+slot38.type = 13
+slot38.cpp_type = 3
+slot36.name = "bp_submit_net_rec"
+slot36.full_name = ".p62.bp_submit_net_rec"
+slot36.nested_types = {}
+slot36.enum_types = {}
+slot36.fields = {
+	slot37,
+	slot38
+}
+slot36.is_extendable = false
+slot36.extensions = {}
+slot40.name = "result"
+slot40.full_name = ".p62.sc_62009.result"
+slot40.number = 1
+slot40.index = 0
+slot40.label = 2
+slot40.has_default_value = false
+slot40.default_value = 0
+slot40.type = 13
+slot40.cpp_type = 3
+slot39.name = "sc_62009"
+slot39.full_name = ".p62.sc_62009"
+slot39.nested_types = {}
+slot39.enum_types = {}
+slot39.fields = {
+	slot40
+}
+slot39.is_extendable = false
+slot39.extensions = {}
+bp_assignment_net_rec = slot0.Message(slot18)
+bp_submit_net_rec = slot0.Message(slot36)
+cs_62002 = slot0.Message(slot22)
+cs_62004 = slot0.Message(slot26)
+cs_62006 = slot0.Message(slot29)
+cs_62008 = slot0.Message(slot34)
+return_bp_net_rec = slot0.Message(slot15)
+reward_net_rec = slot0.Message(slot12)
+sc_62001 = slot0.Message(slot1)
+sc_62003 = slot0.Message(slot24)
+sc_62005 = slot0.Message(slot27)
+sc_62007 = slot0.Message(slot31)
+sc_62009 = slot0.Message(slot39)

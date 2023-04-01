@@ -1,0 +1,52 @@
+{
+  "Data": [
+    {
+      "ID": 1,
+      "FollowHeight": 2.8,
+      "FollowRadius": 17.0,
+      "LockHeight": 4.0,
+      "LockRadius": 17.8,
+      "OffsetZ": 10.0
+    },
+    {
+      "ID": 1027,
+      "FollowHeight": 3.6,
+      "FollowRadius": 16.5,
+      "LockHeight": 4.0,
+      "LockRadius": 17.1,
+      "OffsetZ": 10.0
+    },
+    {
+      "ID": 1048,
+      "FollowHeight": 3.6,
+      "FollowRadius": 16.5,
+      "LockHeight": 4.0,
+      "LockRadius": 17.1,
+      "OffsetZ": 10.0
+    },
+    {
+      "ID": 1066,
+      "FollowHeight": 3.6,
+      "FollowRadius": 16.8,
+      "LockHeight": 4.0,
+      "LockRadius": 17.4,
+      "OffsetZ": 10.0
+    },
+    {
+      "ID": 1097,
+      "FollowHeight": 3.6,
+      "FollowRadius": 16.5,
+      "LockHeight": 4.0,
+      "LockRadius": 17.1,
+      "OffsetZ": 10.0
+    },
+    {
+      "ID": 1148,
+      "FollowHeight": 3.6,
+      "FollowRadius": 16.5,
+      "LockHeight": 4.0,
+      "LockRadius": 17.1,
+      "OffsetZ": 10.0
+    }
+  ]
+}

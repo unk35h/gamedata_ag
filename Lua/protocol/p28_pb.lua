@@ -1,0 +1,552 @@
+slot0 = require("protobuf")
+
+module("p28_pb")
+
+slot1 = slot0.Descriptor()
+slot2 = slot0.FieldDescriptor()
+slot3 = slot0.FieldDescriptor()
+slot4 = slot0.FieldDescriptor()
+slot5 = slot0.FieldDescriptor()
+slot6 = slot0.Descriptor()
+slot7 = slot0.FieldDescriptor()
+slot8 = slot0.FieldDescriptor()
+slot9 = slot0.FieldDescriptor()
+slot10 = slot0.FieldDescriptor()
+slot11 = slot0.Descriptor()
+slot12 = slot0.FieldDescriptor()
+slot13 = slot0.Descriptor()
+slot14 = slot0.FieldDescriptor()
+slot15 = slot0.Descriptor()
+slot16 = slot0.FieldDescriptor()
+slot17 = slot0.FieldDescriptor()
+slot18 = slot0.FieldDescriptor()
+slot19 = slot0.Descriptor()
+slot20 = slot0.FieldDescriptor()
+slot21 = slot0.Descriptor()
+slot22 = slot0.FieldDescriptor()
+slot23 = slot0.Descriptor()
+slot24 = slot0.FieldDescriptor()
+slot25 = slot0.Descriptor()
+slot26 = slot0.FieldDescriptor()
+slot27 = slot0.Descriptor()
+slot28 = slot0.FieldDescriptor()
+slot29 = slot0.FieldDescriptor()
+slot30 = slot0.Descriptor()
+slot31 = slot0.FieldDescriptor()
+slot32 = slot0.Descriptor()
+slot33 = slot0.FieldDescriptor()
+slot34 = slot0.FieldDescriptor()
+slot35 = slot0.Descriptor()
+slot36 = slot0.FieldDescriptor()
+slot37 = slot0.Descriptor()
+slot38 = slot0.FieldDescriptor()
+slot39 = slot0.Descriptor()
+slot40 = slot0.FieldDescriptor()
+slot41 = slot0.FieldDescriptor()
+slot42 = slot0.FieldDescriptor()
+slot43 = slot0.Descriptor()
+slot44 = slot0.FieldDescriptor()
+slot45 = slot0.Descriptor()
+slot46 = slot0.FieldDescriptor()
+slot47 = slot0.FieldDescriptor()
+slot48 = slot0.Descriptor()
+slot49 = slot0.FieldDescriptor()
+slot50 = slot0.Descriptor()
+slot51 = slot0.FieldDescriptor()
+slot2.name = "assignment_list"
+slot2.full_name = ".p28.sc_28001.assignment_list"
+slot2.number = 1
+slot2.index = 0
+slot2.label = 3
+slot2.has_default_value = false
+slot2.default_value = {}
+slot2.message_type = slot6
+slot2.type = 11
+slot2.cpp_type = 10
+slot3.name = "send_type"
+slot3.full_name = ".p28.sc_28001.send_type"
+slot3.number = 2
+slot3.index = 1
+slot3.label = 2
+slot3.has_default_value = false
+slot3.default_value = 0
+slot3.type = 13
+slot3.cpp_type = 3
+slot4.name = "newbie_phase"
+slot4.full_name = ".p28.sc_28001.newbie_phase"
+slot4.number = 3
+slot4.index = 2
+slot4.label = 1
+slot4.has_default_value = false
+slot4.default_value = 0
+slot4.type = 13
+slot4.cpp_type = 3
+slot5.name = "assignment_phase"
+slot5.full_name = ".p28.sc_28001.assignment_phase"
+slot5.number = 4
+slot5.index = 3
+slot5.label = 1
+slot5.has_default_value = false
+slot5.default_value = 0
+slot5.type = 13
+slot5.cpp_type = 3
+slot1.name = "sc_28001"
+slot1.full_name = ".p28.sc_28001"
+slot1.nested_types = {}
+slot1.enum_types = {}
+slot1.fields = {
+	slot2,
+	slot3,
+	slot4,
+	slot5
+}
+slot1.is_extendable = false
+slot1.extensions = {}
+slot7.name = "id"
+slot7.full_name = ".p28.assignment_info.id"
+slot7.number = 1
+slot7.index = 0
+slot7.label = 2
+slot7.has_default_value = false
+slot7.default_value = 0
+slot7.type = 13
+slot7.cpp_type = 3
+slot8.name = "progress"
+slot8.full_name = ".p28.assignment_info.progress"
+slot8.number = 2
+slot8.index = 1
+slot8.label = 2
+slot8.has_default_value = false
+slot8.default_value = 0
+slot8.type = 13
+slot8.cpp_type = 3
+slot9.name = "complete_flag"
+slot9.full_name = ".p28.assignment_info.complete_flag"
+slot9.number = 3
+slot9.index = 2
+slot9.label = 2
+slot9.has_default_value = false
+slot9.default_value = 0
+slot9.type = 13
+slot9.cpp_type = 3
+slot10.name = "expired_timestamp"
+slot10.full_name = ".p28.assignment_info.expired_timestamp"
+slot10.number = 4
+slot10.index = 3
+slot10.label = 2
+slot10.has_default_value = false
+slot10.default_value = 0
+slot10.type = 13
+slot10.cpp_type = 3
+slot6.name = "assignment_info"
+slot6.full_name = ".p28.assignment_info"
+slot6.nested_types = {}
+slot6.enum_types = {}
+slot6.fields = {
+	slot7,
+	slot8,
+	slot9,
+	slot10
+}
+slot6.is_extendable = false
+slot6.extensions = {}
+slot12.name = "id_list"
+slot12.full_name = ".p28.sc_28005.id_list"
+slot12.number = 1
+slot12.index = 0
+slot12.label = 3
+slot12.has_default_value = false
+slot12.default_value = {}
+slot12.type = 13
+slot12.cpp_type = 3
+slot11.name = "sc_28005"
+slot11.full_name = ".p28.sc_28005"
+slot11.nested_types = {}
+slot11.enum_types = {}
+slot11.fields = {
+	slot12
+}
+slot11.is_extendable = false
+slot11.extensions = {}
+slot14.name = "progress_list"
+slot14.full_name = ".p28.sc_28007.progress_list"
+slot14.number = 1
+slot14.index = 0
+slot14.label = 3
+slot14.has_default_value = false
+slot14.default_value = {}
+slot14.message_type = slot6
+slot14.type = 11
+slot14.cpp_type = 10
+slot13.name = "sc_28007"
+slot13.full_name = ".p28.sc_28007"
+slot13.nested_types = {}
+slot13.enum_types = {}
+slot13.fields = {
+	slot14
+}
+slot13.is_extendable = false
+slot13.extensions = {}
+slot16.name = "id"
+slot16.full_name = ".p28.assignment_progress.id"
+slot16.number = 1
+slot16.index = 0
+slot16.label = 2
+slot16.has_default_value = false
+slot16.default_value = 0
+slot16.type = 13
+slot16.cpp_type = 3
+slot17.name = "progress"
+slot17.full_name = ".p28.assignment_progress.progress"
+slot17.number = 2
+slot17.index = 1
+slot17.label = 2
+slot17.has_default_value = false
+slot17.default_value = 0
+slot17.type = 13
+slot17.cpp_type = 3
+slot18.name = "complete_flag"
+slot18.full_name = ".p28.assignment_progress.complete_flag"
+slot18.number = 3
+slot18.index = 2
+slot18.label = 2
+slot18.has_default_value = false
+slot18.default_value = 0
+slot18.type = 13
+slot18.cpp_type = 3
+slot15.name = "assignment_progress"
+slot15.full_name = ".p28.assignment_progress"
+slot15.nested_types = {}
+slot15.enum_types = {}
+slot15.fields = {
+	slot16,
+	slot17,
+	slot18
+}
+slot15.is_extendable = false
+slot15.extensions = {}
+slot20.name = "id"
+slot20.full_name = ".p28.cs_28010.id"
+slot20.number = 1
+slot20.index = 0
+slot20.label = 2
+slot20.has_default_value = false
+slot20.default_value = 0
+slot20.type = 13
+slot20.cpp_type = 3
+slot19.name = "cs_28010"
+slot19.full_name = ".p28.cs_28010"
+slot19.nested_types = {}
+slot19.enum_types = {}
+slot19.fields = {
+	slot20
+}
+slot19.is_extendable = false
+slot19.extensions = {}
+slot22.name = "result"
+slot22.full_name = ".p28.sc_28011.result"
+slot22.number = 1
+slot22.index = 0
+slot22.label = 2
+slot22.has_default_value = false
+slot22.default_value = 0
+slot22.type = 13
+slot22.cpp_type = 3
+slot21.name = "sc_28011"
+slot21.full_name = ".p28.sc_28011"
+slot21.nested_types = {}
+slot21.enum_types = {}
+slot21.fields = {
+	slot22
+}
+slot21.is_extendable = false
+slot21.extensions = {}
+slot24.name = "progress_info"
+slot24.full_name = ".p28.cs_28012.progress_info"
+slot24.number = 1
+slot24.index = 0
+slot24.label = 2
+slot24.has_default_value = false
+slot24.default_value = nil
+slot24.message_type = slot15
+slot24.type = 11
+slot24.cpp_type = 10
+slot23.name = "cs_28012"
+slot23.full_name = ".p28.cs_28012"
+slot23.nested_types = {}
+slot23.enum_types = {}
+slot23.fields = {
+	slot24
+}
+slot23.is_extendable = false
+slot23.extensions = {}
+slot26.name = "result"
+slot26.full_name = ".p28.sc_28013.result"
+slot26.number = 1
+slot26.index = 0
+slot26.label = 2
+slot26.has_default_value = false
+slot26.default_value = 0
+slot26.type = 13
+slot26.cpp_type = 3
+slot25.name = "sc_28013"
+slot25.full_name = ".p28.sc_28013"
+slot25.nested_types = {}
+slot25.enum_types = {}
+slot25.fields = {
+	slot26
+}
+slot25.is_extendable = false
+slot25.extensions = {}
+slot28.name = "id_list"
+slot28.full_name = ".p28.cs_28014.id_list"
+slot28.number = 1
+slot28.index = 0
+slot28.label = 3
+slot28.has_default_value = false
+slot28.default_value = {}
+slot28.type = 13
+slot28.cpp_type = 3
+slot29.name = "type"
+slot29.full_name = ".p28.cs_28014.type"
+slot29.number = 2
+slot29.index = 1
+slot29.label = 2
+slot29.has_default_value = false
+slot29.default_value = 0
+slot29.type = 13
+slot29.cpp_type = 3
+slot27.name = "cs_28014"
+slot27.full_name = ".p28.cs_28014"
+slot27.nested_types = {}
+slot27.enum_types = {}
+slot27.fields = {
+	slot28,
+	slot29
+}
+slot27.is_extendable = false
+slot27.extensions = {}
+slot31.name = "result"
+slot31.full_name = ".p28.sc_28015.result"
+slot31.number = 1
+slot31.index = 0
+slot31.label = 2
+slot31.has_default_value = false
+slot31.default_value = 0
+slot31.type = 13
+slot31.cpp_type = 3
+slot30.name = "sc_28015"
+slot30.full_name = ".p28.sc_28015"
+slot30.nested_types = {}
+slot30.enum_types = {}
+slot30.fields = {
+	slot31
+}
+slot30.is_extendable = false
+slot30.extensions = {}
+slot33.name = "need_active_point"
+slot33.full_name = ".p28.cs_28016.need_active_point"
+slot33.number = 1
+slot33.index = 0
+slot33.label = 2
+slot33.has_default_value = false
+slot33.default_value = 0
+slot33.type = 13
+slot33.cpp_type = 3
+slot34.name = "activity_pt_id"
+slot34.full_name = ".p28.cs_28016.activity_pt_id"
+slot34.number = 2
+slot34.index = 1
+slot34.label = 1
+slot34.has_default_value = false
+slot34.default_value = 0
+slot34.type = 13
+slot34.cpp_type = 3
+slot32.name = "cs_28016"
+slot32.full_name = ".p28.cs_28016"
+slot32.nested_types = {}
+slot32.enum_types = {}
+slot32.fields = {
+	slot33,
+	slot34
+}
+slot32.is_extendable = false
+slot32.extensions = {}
+slot36.name = "result"
+slot36.full_name = ".p28.sc_28017.result"
+slot36.number = 1
+slot36.index = 0
+slot36.label = 2
+slot36.has_default_value = false
+slot36.default_value = 0
+slot36.type = 13
+slot36.cpp_type = 3
+slot35.name = "sc_28017"
+slot35.full_name = ".p28.sc_28017"
+slot35.nested_types = {}
+slot35.enum_types = {}
+slot35.fields = {
+	slot36
+}
+slot35.is_extendable = false
+slot35.extensions = {}
+slot38.name = "pt_list"
+slot38.full_name = ".p28.sc_28019.pt_list"
+slot38.number = 1
+slot38.index = 0
+slot38.label = 3
+slot38.has_default_value = false
+slot38.default_value = {}
+slot38.message_type = slot39
+slot38.type = 11
+slot38.cpp_type = 10
+slot37.name = "sc_28019"
+slot37.full_name = ".p28.sc_28019"
+slot37.nested_types = {}
+slot37.enum_types = {}
+slot37.fields = {
+	slot38
+}
+slot37.is_extendable = false
+slot37.extensions = {}
+slot40.name = "activity_pt_id"
+slot40.full_name = ".p28.pt.activity_pt_id"
+slot40.number = 1
+slot40.index = 0
+slot40.label = 2
+slot40.has_default_value = false
+slot40.default_value = 0
+slot40.type = 13
+slot40.cpp_type = 3
+slot41.name = "active_point"
+slot41.full_name = ".p28.pt.active_point"
+slot41.number = 2
+slot41.index = 1
+slot41.label = 2
+slot41.has_default_value = false
+slot41.default_value = 0
+slot41.type = 13
+slot41.cpp_type = 3
+slot42.name = "get_id_list"
+slot42.full_name = ".p28.pt.get_id_list"
+slot42.number = 3
+slot42.index = 2
+slot42.label = 3
+slot42.has_default_value = false
+slot42.default_value = {}
+slot42.type = 13
+slot42.cpp_type = 3
+slot39.name = "pt"
+slot39.full_name = ".p28.pt"
+slot39.nested_types = {}
+slot39.enum_types = {}
+slot39.fields = {
+	slot40,
+	slot41,
+	slot42
+}
+slot39.is_extendable = false
+slot39.extensions = {}
+slot44.name = "progress_list"
+slot44.full_name = ".p28.sc_28021.progress_list"
+slot44.number = 1
+slot44.index = 0
+slot44.label = 3
+slot44.has_default_value = false
+slot44.default_value = {}
+slot44.message_type = slot6
+slot44.type = 11
+slot44.cpp_type = 10
+slot43.name = "sc_28021"
+slot43.full_name = ".p28.sc_28021"
+slot43.nested_types = {}
+slot43.enum_types = {}
+slot43.fields = {
+	slot44
+}
+slot43.is_extendable = false
+slot43.extensions = {}
+slot46.name = "assignment_list"
+slot46.full_name = ".p28.sc_28023.assignment_list"
+slot46.number = 1
+slot46.index = 0
+slot46.label = 3
+slot46.has_default_value = false
+slot46.default_value = {}
+slot46.message_type = slot6
+slot46.type = 11
+slot46.cpp_type = 10
+slot47.name = "send_type"
+slot47.full_name = ".p28.sc_28023.send_type"
+slot47.number = 2
+slot47.index = 1
+slot47.label = 2
+slot47.has_default_value = false
+slot47.default_value = 0
+slot47.type = 13
+slot47.cpp_type = 3
+slot45.name = "sc_28023"
+slot45.full_name = ".p28.sc_28023"
+slot45.nested_types = {}
+slot45.enum_types = {}
+slot45.fields = {
+	slot46,
+	slot47
+}
+slot45.is_extendable = false
+slot45.extensions = {}
+slot49.name = "id_list"
+slot49.full_name = ".p28.cs_28024.id_list"
+slot49.number = 1
+slot49.index = 0
+slot49.label = 3
+slot49.has_default_value = false
+slot49.default_value = {}
+slot49.type = 13
+slot49.cpp_type = 3
+slot48.name = "cs_28024"
+slot48.full_name = ".p28.cs_28024"
+slot48.nested_types = {}
+slot48.enum_types = {}
+slot48.fields = {
+	slot49
+}
+slot48.is_extendable = false
+slot48.extensions = {}
+slot51.name = "result"
+slot51.full_name = ".p28.sc_28025.result"
+slot51.number = 1
+slot51.index = 0
+slot51.label = 2
+slot51.has_default_value = false
+slot51.default_value = 0
+slot51.type = 13
+slot51.cpp_type = 3
+slot50.name = "sc_28025"
+slot50.full_name = ".p28.sc_28025"
+slot50.nested_types = {}
+slot50.enum_types = {}
+slot50.fields = {
+	slot51
+}
+slot50.is_extendable = false
+slot50.extensions = {}
+assignment_info = slot0.Message(slot6)
+assignment_progress = slot0.Message(slot15)
+cs_28010 = slot0.Message(slot19)
+cs_28012 = slot0.Message(slot23)
+cs_28014 = slot0.Message(slot27)
+cs_28016 = slot0.Message(slot32)
+cs_28024 = slot0.Message(slot48)
+pt = slot0.Message(slot39)
+sc_28001 = slot0.Message(slot1)
+sc_28005 = slot0.Message(slot11)
+sc_28007 = slot0.Message(slot13)
+sc_28011 = slot0.Message(slot21)
+sc_28013 = slot0.Message(slot25)
+sc_28015 = slot0.Message(slot30)
+sc_28017 = slot0.Message(slot35)
+sc_28019 = slot0.Message(slot37)
+sc_28021 = slot0.Message(slot43)
+sc_28023 = slot0.Message(slot45)
+sc_28025 = slot0.Message(slot50)
