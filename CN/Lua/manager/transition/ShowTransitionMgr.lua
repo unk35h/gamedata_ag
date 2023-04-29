@@ -30,11 +30,15 @@ function slot0.RegistCanEndFunc(slot0, slot1)
 	slot0.canEndFunc_ = slot1
 end
 
-function slot0.Show(slot0, slot1, slot2)
+function slot0.Show(slot0, slot1, slot2, slot3)
 	slot0.transitionState_ = uv0
-	slot3 = nil
+	slot4, slot5 = nil
 
-	if gameContext ~= nil and (not ViewConst.PLAY_TRANSITION_URL_LIST[gameContext:GetLastOpenPage()] or not slot2) then
+	if slot3 then
+		slot5 = manager.loadScene:GetNeedLoadSceneName(gameContext:GetAllOpenRoute())
+	end
+
+	if gameContext ~= nil and (not ViewConst.PLAY_TRANSITION_URL_LIST[gameContext:GetLastOpenPage()] or not slot2) and (not slot3 or not slot5) then
 		slot0:ClearTimer()
 		manager.ui:UIEventEnabled(true)
 
@@ -52,8 +56,12 @@ function slot0.Show(slot0, slot1, slot2)
 	slot0:ClearTimer()
 	manager.ui:UIEventEnabled(false)
 
-	if slot3 then
-		manager.loadScene:SetShouldLoadSceneName(slot3)
+	if slot3 and slot5 then
+		slot4 = slot5
+	end
+
+	if slot4 then
+		manager.loadScene:SetShouldLoadSceneName(slot4)
 	end
 
 	slot0.waitNextFrameToCallback = false

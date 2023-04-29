@@ -9362,7 +9362,8 @@
     },
     {
       "ID": 1070223,
-      "AbilityClass": 2
+      "AbilityClass": 2,
+      "IsExtensionalSkill": true
     },
     {
       "ID": 1070224,
@@ -24648,6 +24649,14 @@
       "AbilityClass": 3
     },
     {
+      "ID": 5071008,
+      "AbilityClass": 3
+    },
+    {
+      "ID": 5071009,
+      "AbilityClass": 3
+    },
+    {
       "ID": 5071307,
       "AbilityClass": 3
     },
@@ -24700,14 +24709,13 @@
       "AbilityClass": 3
     },
     {
-      "ID": 5071329,
-      "AbilityClass": 3
-    },
-    {
       "ID": 5071401
     },
     {
       "ID": 5071403
+    },
+    {
+      "ID": 5071406
     },
     {
       "ID": 5071001,
@@ -27019,6 +27027,10 @@
     },
     {
       "ID": 1199053,
+      "AbilityClass": 2
+    },
+    {
+      "ID": 800069,
       "AbilityClass": 2
     },
     {

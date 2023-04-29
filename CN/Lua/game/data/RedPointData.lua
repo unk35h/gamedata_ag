@@ -1,15 +1,20 @@
 slot0 = singletonClass("RedPointData")
-slot1, slot2 = nil
+slot1, slot2, slot3 = nil
 
 function slot0.Init(slot0)
 	uv0 = {}
 	uv1 = {}
+	uv2 = {}
 end
 
 function slot0.InitRedPointS(slot0, slot1)
 	for slot5, slot6 in ipairs(slot1) do
-		slot0:SetRedPointOpen(slot6, true)
+		slot0:SetNeedRedPointOpen(slot6, true)
 	end
+end
+
+function slot0.SetNeedRedPointOpen(slot0, slot1, slot2)
+	uv0[tonumber(slot1)] = slot2
 end
 
 function slot0.InitClientRedPoint(slot0, slot1)

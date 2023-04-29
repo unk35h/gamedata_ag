@@ -43,7 +43,13 @@ return {
 		manager.net:Push(56002, {
 			red_dot = slot0
 		})
-		RedPointData:SetRedPointOpen(slot0, false)
+		RedPointData:SetRedPointOpen(slot0, true)
+	end,
+	HandleNeedRedPoint = function (slot0)
+		manager.net:Push(56002, {
+			red_dot = slot0
+		})
+		RedPointData:SetNeedRedPointOpen(slot0, false)
 	end,
 	OnActivityMainToggleClick = function (slot0)
 		if slot0 == ActivityConst.CHESS_ACTIVITY_CHINESE_ZONE then

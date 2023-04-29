@@ -73,7 +73,7 @@ function slot16(slot0)
 
 	uv1():WaitUntil(function ()
 		return uv0.orderInfo ~= nil
-	end):Then(function ()
+	end, true):Then(function ()
 		for slot3, slot4 in ipairs(uv0.orderInfo) do
 			slot4.orderCharacterID = uv1.entityID
 			slot4.orderTableID = uv0.tableEid
@@ -85,7 +85,7 @@ function slot16(slot0)
 		uv0.eat = false
 
 		uv1.finish:Notify()
-	end):Start()
+	end):Start(true)
 end
 
 function slot17(slot0)

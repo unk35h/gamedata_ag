@@ -207,7 +207,9 @@ function slot0.AIChoice(slot0, slot1, slot2, ...)
 		slot8 = slot7.foodList
 
 		if slot2 == uv4 then
-			if slot0.CheckFoodServeComplete(slot1) then
+			if nullable(slot7, "curOrder") and #slot7.curOrder == 0 then
+				slot0:SwitchState(slot1, uv0.FvckOff)
+			elseif slot0.CheckFoodServeComplete(slot1) then
 				if slot5.pay then
 					CanteenAIFunction:StopCustomerWaitFoodTimer(slot5.tableEid)
 

@@ -125,7 +125,7 @@ function slot0.InitDormMap(slot0, slot1)
 
 	uv2 = manager.time:GetServerTime()
 
-	SendMessageManagerToSDK("backhome_dorm_opt", {
+	SDKTools.SendMessageToSDK("backhome_dorm_opt", {
 		backhome_type = 0,
 		opt_time = -1
 	})
@@ -332,15 +332,21 @@ function slot0.GetFurHasPlaceTotalNum(slot0, slot1)
 end
 
 function slot0.GetDormFurListByRoomID(slot0, slot1)
-	if uv0[slot1].roomInfo.furnitureInfoS then
+	if uv0[slot1].roomInfo then
 		return uv0[slot1].roomInfo.furnitureInfoS
+	else
+		print("场景数据缺少roomInfo,场景id为" .. slot1)
 	end
 end
 
 function slot0.SyncRoomFurniture(slot0, slot1, slot2, slot3)
 	if not uv0[slot1.architecture_id] then
-		print("没有场景数据")
+		print("没有场景数据,场景id为" .. slot4)
 
+		return
+	end
+
+	if not uv0[slot4].roomInfo then
 		return
 	end
 
@@ -787,24 +793,22 @@ function slot0.InitTemplateDorm(slot0, slot1)
 	end
 end
 
-function slot0.GetTemplateDorm(slot0, slot1)
-	slot2 = {}
+function slot0.GetCanUseTemplateID(slot0)
+	for slot5 = 1, DormConst.DORM_TEMPLATE_NUM_MAX + DormConst.DORM_TEMPLATE_PRIVATE_NUM_MAX do
+		slot6 = false
 
-	for slot6, slot7 in pairs(uv0) do
-		if slot7.type == slot1 then
-			table.insert(slot2, slot6)
+		for slot10, slot11 in pairs(uv0) do
+			if slot11.posID == slot5 then
+				slot6 = true
+
+				break
+			end
+		end
+
+		if not slot6 then
+			return slot5
 		end
 	end
-end
-
-function slot0.GetTemplateTotalNum(slot0)
-	slot1 = 0
-
-	for slot5, slot6 in pairs(uv0) do
-		slot1 = slot1 + 1
-	end
-
-	return slot1
 end
 
 function slot0.GetDormTemplateInfo(slot0, slot1)
@@ -835,17 +839,17 @@ function slot0.SaveFurTemplateInfo(slot0, slot1)
 	slot2 = nil
 	slot2 = (slot1.architecture_id == 0 or uv0[slot3]) and uv0[DormData:GetCurrectSceneID()]
 
-	if uv1[slot1.id] then
-		slot5 = uv1[slot4]
-		slot5.id = slot1.id
-		slot5.type = slot1.type
-		slot5.name = slot1.name
-		slot5.posID = slot1.pos
-		slot5.furnitureInfoS = slot2.roomInfo.furnitureInfoS
-		slot5.floorID = slot2.floorID
-		slot5.wallID = slot2.wallID
+	if uv1[slot0:GetDormTemplateInfoByPosID(slot1.pos, slot1.type)] then
+		slot7 = uv1[slot6]
+		slot7.id = slot1.id
+		slot7.type = slot1.type
+		slot7.name = slot1.name
+		slot7.posID = slot1.pos
+		slot7.furnitureInfoS = slot2.roomInfo.furnitureInfoS
+		slot7.floorID = slot2.floorID
+		slot7.wallID = slot2.wallID
 	else
-		uv1[slot4] = DormRoomTemplate.New({
+		uv1[slot1.id] = DormRoomTemplate.New({
 			id = slot1.id,
 			type = slot1.type,
 			name = slot1.name,
@@ -1249,7 +1253,7 @@ function slot0.Dispose(slot0)
 
 	uv5 = manager.time:GetServerTime()
 
-	SendMessageManagerToSDK("backhome_dorm_opt", {
+	SDKTools.SendMessageToSDK("backhome_dorm_opt", {
 		backhome_type = 0,
 		opt_time = uv5 - uv6
 	})

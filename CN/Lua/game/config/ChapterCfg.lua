@@ -1409,6 +1409,177 @@ return {
 			118403
 		}
 	},
+	[11113] = {
+		english = "13",
+		type = 1,
+		group = 1301,
+		level = 1,
+		activity_id = 141205,
+		sub_type = 15,
+		drag_follow = 0,
+		cue_name = "bgm_activity_2_0_ui",
+		switch_bg_index = 0,
+		line_type = 0,
+		difficulty = 1,
+		unlock_activity_id = 141202,
+		max_width = 0,
+		subhead = "廊桥话雨",
+		bg = "XuHeng1st_bg_1",
+		cue_sheet = "bgm_activity_2_0_ui",
+		awb = "bgm_activity_2_0_ui",
+		id = 11113,
+		section_id_list = {
+			1011316,
+			1011317,
+			1011318,
+			1011319,
+			1011320,
+			1011321,
+			1011322,
+			1011323,
+			1011324,
+			1011325
+		},
+		pre_chapter = {
+			10113
+		},
+		star_need = {
+			5,
+			12,
+			20
+		},
+		first_reward = {
+			{
+				1,
+				20
+			},
+			{
+				40301,
+				15
+			},
+			{
+				40802,
+				1
+			}
+		},
+		second_reward = {
+			{
+				1,
+				30
+			},
+			{
+				40301,
+				25
+			},
+			{
+				40802,
+				2
+			}
+		},
+		third_reward = {
+			{
+				1,
+				40
+			},
+			{
+				40301,
+				30
+			},
+			{
+				40802,
+				3
+			}
+		},
+		trial_list = {
+			107103,
+			107504,
+			108405,
+			118408
+		}
+	},
+	[12113] = {
+		english = "13",
+		type = 1,
+		group = 1302,
+		level = 1,
+		activity_id = 141205,
+		sub_type = 15,
+		drag_follow = 0,
+		cue_name = "bgm_activity_2_0_ui",
+		switch_bg_index = 0,
+		line_type = 0,
+		difficulty = 1,
+		unlock_activity_id = 141203,
+		max_width = 0,
+		subhead = "廊桥话雨",
+		bg = "XuHeng1st_bg_1",
+		cue_sheet = "bgm_activity_2_0_ui",
+		awb = "bgm_activity_2_0_ui",
+		id = 12113,
+		section_id_list = {
+			1011326,
+			1011327,
+			1011328,
+			1011329,
+			1011330
+		},
+		pre_chapter = {
+			11113
+		},
+		star_need = {
+			6,
+			9,
+			15
+		},
+		first_reward = {
+			{
+				1,
+				20
+			},
+			{
+				40301,
+				15
+			},
+			{
+				40802,
+				1
+			}
+		},
+		second_reward = {
+			{
+				1,
+				30
+			},
+			{
+				40301,
+				25
+			},
+			{
+				40802,
+				2
+			}
+		},
+		third_reward = {
+			{
+				1,
+				40
+			},
+			{
+				40301,
+				30
+			},
+			{
+				40802,
+				3
+			}
+		},
+		trial_list = {
+			107103,
+			107504,
+			108405,
+			118408
+		}
+	},
 	[10200] = {
 		trial_list = "",
 		english = "0",
@@ -4750,6 +4921,196 @@ return {
 			4010150
 		}
 	},
+	[4010116] = {
+		trial_list = "",
+		pre_chapter = "",
+		english = "",
+		type = 7,
+		group = 16,
+		level = 80,
+		first_reward = "",
+		activity_id = 0,
+		second_reward = "",
+		sub_type = 1,
+		drag_follow = 0,
+		cue_name = "",
+		switch_bg_index = 0,
+		line_type = 0,
+		difficulty = 0,
+		star_need = "",
+		unlock_activity_id = 0,
+		max_width = 0,
+		subhead = "历战空间NO.16",
+		bg = "",
+		cue_sheet = "",
+		third_reward = "",
+		awb = "",
+		id = 4010116,
+		section_id_list = {
+			4010151,
+			4010152,
+			4010153,
+			4010154,
+			4010155,
+			4010156,
+			4010157,
+			4010158,
+			4010159,
+			4010160
+		}
+	},
+	[4010117] = {
+		trial_list = "",
+		pre_chapter = "",
+		english = "",
+		type = 7,
+		group = 17,
+		level = 80,
+		first_reward = "",
+		activity_id = 0,
+		second_reward = "",
+		sub_type = 1,
+		drag_follow = 0,
+		cue_name = "",
+		switch_bg_index = 0,
+		line_type = 0,
+		difficulty = 0,
+		star_need = "",
+		unlock_activity_id = 0,
+		max_width = 0,
+		subhead = "历战空间NO.17",
+		bg = "",
+		cue_sheet = "",
+		third_reward = "",
+		awb = "",
+		id = 4010117,
+		section_id_list = {
+			4010161,
+			4010162,
+			4010163,
+			4010164,
+			4010165,
+			4010166,
+			4010167,
+			4010168,
+			4010169,
+			4010170
+		}
+	},
+	[4010118] = {
+		trial_list = "",
+		pre_chapter = "",
+		english = "",
+		type = 7,
+		group = 18,
+		level = 80,
+		first_reward = "",
+		activity_id = 0,
+		second_reward = "",
+		sub_type = 1,
+		drag_follow = 0,
+		cue_name = "",
+		switch_bg_index = 0,
+		line_type = 0,
+		difficulty = 0,
+		star_need = "",
+		unlock_activity_id = 0,
+		max_width = 0,
+		subhead = "历战空间NO.18",
+		bg = "",
+		cue_sheet = "",
+		third_reward = "",
+		awb = "",
+		id = 4010118,
+		section_id_list = {
+			4010171,
+			4010172,
+			4010173,
+			4010174,
+			4010175,
+			4010176,
+			4010177,
+			4010178,
+			4010179,
+			4010180
+		}
+	},
+	[4010119] = {
+		trial_list = "",
+		pre_chapter = "",
+		english = "",
+		type = 7,
+		group = 19,
+		level = 80,
+		first_reward = "",
+		activity_id = 0,
+		second_reward = "",
+		sub_type = 1,
+		drag_follow = 0,
+		cue_name = "",
+		switch_bg_index = 0,
+		line_type = 0,
+		difficulty = 0,
+		star_need = "",
+		unlock_activity_id = 0,
+		max_width = 0,
+		subhead = "历战空间NO.19",
+		bg = "",
+		cue_sheet = "",
+		third_reward = "",
+		awb = "",
+		id = 4010119,
+		section_id_list = {
+			4010181,
+			4010182,
+			4010183,
+			4010184,
+			4010185,
+			4010186,
+			4010187,
+			4010188,
+			4010189,
+			4010190
+		}
+	},
+	[4010120] = {
+		trial_list = "",
+		pre_chapter = "",
+		english = "",
+		type = 7,
+		group = 20,
+		level = 80,
+		first_reward = "",
+		activity_id = 0,
+		second_reward = "",
+		sub_type = 1,
+		drag_follow = 0,
+		cue_name = "",
+		switch_bg_index = 0,
+		line_type = 0,
+		difficulty = 0,
+		star_need = "",
+		unlock_activity_id = 0,
+		max_width = 0,
+		subhead = "历战空间NO.20",
+		bg = "",
+		cue_sheet = "",
+		third_reward = "",
+		awb = "",
+		id = 4010120,
+		section_id_list = {
+			4010191,
+			4010192,
+			4010193,
+			4010194,
+			4010195,
+			4010196,
+			4010197,
+			4010198,
+			4010199,
+			4010200
+		}
+	},
 	[504] = {
 		trial_list = "",
 		pre_chapter = "",
@@ -5300,6 +5661,8 @@ return {
 			11112,
 			12112,
 			10113,
+			11113,
+			12113,
 			10200,
 			10201,
 			10202,
@@ -5351,7 +5714,12 @@ return {
 			4010112,
 			4010113,
 			4010114,
-			4010115
+			4010115,
+			4010116,
+			4010117,
+			4010118,
+			4010119,
+			4010120
 		},
 		[15] = {
 			4040100,
@@ -5445,6 +5813,8 @@ return {
 		11112,
 		12112,
 		10113,
+		11113,
+		12113,
 		10200,
 		10201,
 		10202,
@@ -5522,6 +5892,11 @@ return {
 		4010113,
 		4010114,
 		4010115,
+		4010116,
+		4010117,
+		4010118,
+		4010119,
+		4010120,
 		504,
 		503,
 		505,

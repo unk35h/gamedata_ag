@@ -207,7 +207,7 @@ function slot0.RefreshInfoPage(slot0, slot1)
 		slot2 = ItemCfg[slot1]
 		slot0.ingnameText_.text = slot2.name
 		slot0.ingdestextText_.text = slot2.desc
-		slot0.ingnumText_.text = string.format("X%d", CanteenData:GetCateenIngredient()[slot1])
+		slot0.ingnumText_.text = string.format("x%d", CanteenData:GetCateenIngredient()[slot1])
 		slot0.foodicon2Img_.sprite = ItemTools.getItemSprite(slot1)
 	end
 end

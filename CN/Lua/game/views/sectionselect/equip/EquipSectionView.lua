@@ -121,7 +121,7 @@ function slot0.RefreshMissionList(slot0)
 end
 
 function slot0.RefreshRedPoint(slot0)
-	slot0.isUnChoose_ = RedPointData:GetIsRedPointOpen(RED_POINT_ID.BATTLE_EQUIP)
+	slot0.isUnChoose_ = not RedPointData:GetIsRedPointOpen(RED_POINT_ID.BATTLE_EQUIP)
 
 	if slot0.isUnChoose_ then
 		manager.redPoint:SetRedPointIndependent(slot0.switchBtn_.transform, true)

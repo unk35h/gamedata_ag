@@ -525,6 +525,7 @@ return {
 			"puzzle",
 			"activityMatrix",
 			"cowboy",
+			"moonBo",
 			"activityWorldBoss",
 			"paperCut",
 			"music",
@@ -533,8 +534,7 @@ return {
 		{
 			"home",
 			"chat",
-			"clubBoss",
-			"moonBo"
+			"clubBoss"
 		}
 	}
 }

@@ -276,6 +276,7 @@ function slot0.OnEnter(slot0)
 	MailAction.SortMailManual()
 	slot0:AddEventListener()
 	manager.redPoint:bindUIandKey(slot0.btn_letter_transform, RedPointConst.LETTER_UNREAD)
+	manager.redPoint:bindUIandKey(slot0.btn_letter_transform1, RedPointConst.LETTER_UNREAD)
 	slot0:UpdateList(true)
 	slot0:UpdateView()
 	slot0:StartTimer()
@@ -394,6 +395,7 @@ function slot0.OnExit(slot0)
 	slot0:RemoveAllEventListener()
 	slot0:RemoveTimer()
 	manager.redPoint:unbindUIandKey(slot0.btn_letter_transform)
+	manager.redPoint:unbindUIandKey(slot0.btn_letter_transform1)
 
 	slot0.lastDeletedIndex_ = nil
 	slot0.firstDeletedIndex_ = nil

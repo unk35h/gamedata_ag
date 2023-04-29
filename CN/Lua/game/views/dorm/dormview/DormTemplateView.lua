@@ -147,7 +147,7 @@ function slot0.indexTemplate(slot0, slot1, slot2)
 			else
 				slot4 = DormData:GetCurrectSceneID()
 
-				DormTools:SaveDormSceneTemplate(DormitoryData:GetTemplateTotalNum() + 1, BackHomeCfg[slot4].type, string.format(GetTips("DORM_MOULD_DEFAULT_NAME"), tostring(slot1)), slot4, slot1)
+				DormTools:SaveDormSceneTemplate(DormitoryData:GetCanUseTemplateID(), BackHomeCfg[slot4].type, string.format(GetTips("DORM_MOULD_DEFAULT_NAME"), tostring(slot1)), slot4, slot1)
 			end
 		end
 	end)

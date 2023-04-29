@@ -178,6 +178,7 @@ function slot0.RefrenBGM(slot0)
 end
 
 function slot0.Dispose(slot0)
+	slot0.list_:Dispose()
 	uv0.super.Dispose(slot0)
 end
 

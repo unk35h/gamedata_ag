@@ -37,7 +37,7 @@ function slot0.InitUI(slot0)
 			number = slot0:GetNumber(slot5)
 		})
 		slot7:RegistCallBack(function (slot0)
-			if slot0.number <= slot0.selectNum_ or uv0.cutExp_ > 0 then
+			if slot0.number <= slot0.selectNum_ or uv0.cutExp_ >= 0 and uv0.nextLv_ == uv0.curLvMax_ then
 				return
 			end
 

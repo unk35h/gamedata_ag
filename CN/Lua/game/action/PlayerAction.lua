@@ -311,7 +311,9 @@ return {
 		PlayerData:PlayerCardInit(slot0)
 
 		for slot5, slot6 in ipairs(PlayerData:GetPlayerInfo().all_background_list) do
-			if PlayerData:GetStickerBg(slot6) and slot7.unlock == 1 and RedPointData:GetIsRedPointOpen(RedPointConst.STICKER_BG_RANGE + slot6) then
+			slot7 = PlayerData:GetStickerBg(slot6)
+
+			if slot6 ~= 4002 and slot7 and slot7.unlock == 1 and not RedPointData:GetIsRedPointOpen(RedPointConst.STICKER_BG_RANGE + slot6) then
 				manager.redPoint:setTip(RedPointConst.STICKER_BG .. "_" .. slot6, 1)
 			end
 		end

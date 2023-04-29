@@ -1748,10 +1748,6 @@ return {
 			component = DormTaskDispatchView
 		},
 		{
-			name = "popFoodDownView",
-			component = PopFoodDownView
-		},
-		{
 			name = "canteenManualRewardView",
 			component = CanteenManualRewardView
 		},
@@ -3385,6 +3381,10 @@ return {
 		{
 			name = "drawAllHeroSelect",
 			component = DrawAllHeroSelectView
+		},
+		{
+			name = "sectionSelectHeroMythicFinalView",
+			component = SectionSelectHeroMythicFinalView
 		}
 	}
 }

@@ -651,7 +651,12 @@ return {
 		return GetTips("SYSTEM_LOCK")
 	end,
 	Back = function (slot0, slot1)
-		gameContext:Back(slot0, slot1)
+		slot2 = gameContext
+
+		slot2:Back(slot0, slot1)
+		GlobalCall.register("AfterGo", function ()
+			uv0.RefreshGaussianBg()
+		end)
 		uv0.RefreshGaussianBg()
 	end,
 	OpenPageByJump = function (slot0, slot1, slot2)

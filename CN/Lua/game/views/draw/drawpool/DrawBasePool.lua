@@ -73,6 +73,10 @@ function slot0.GetPoolId(slot0)
 	return slot0.poolId
 end
 
+function slot0.GetShowId(slot0)
+	return slot0.showId
+end
+
 function slot0.ShowRightPanel(slot0)
 	return true
 end

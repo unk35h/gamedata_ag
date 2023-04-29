@@ -226,9 +226,12 @@ function DormHeroTemplate.TouchHero(slot0, slot1)
 	slot2 = GameDisplayCfg.dorm_interaction_stroke.value
 
 	Dorm.DormEntityManager.SendInteractToEntityCMD(slot1, slot1, slot2[math.random(1, #slot2)], false)
-	SendMessageManagerToSDK("backhome_dorm_stroke", {
-		hero_id = slot0.hero_id
-	})
+
+	if slot0.hero_id then
+		SDKTools.SendMessageToSDK("backhome_dorm_stroke", {
+			hero_id = slot0.hero_id
+		})
+	end
 end
 
 function DormHeroTemplate.BackToDorm(slot0)

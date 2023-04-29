@@ -198,6 +198,7 @@ function slot0.Dispose(slot0)
 	slot0:RemoveListeners()
 
 	if slot0.uiList_ ~= nil then
+		slot0:RemoveTween()
 		slot0.uiList_:StopRender()
 
 		slot0.uiList_ = nil

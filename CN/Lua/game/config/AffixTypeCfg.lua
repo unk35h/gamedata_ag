@@ -5035,6 +5035,206 @@ return {
 			0
 		}
 	},
+	[365] = {
+		name = "物属",
+		affix_buff_id = 365,
+		max_level = 4,
+		extra_description = "AFFIX_365",
+		id = 365,
+		description = {
+			700000365
+		},
+		buffid = {
+			3652,
+			3653,
+			3654,
+			3655,
+			3656,
+			3657,
+			3658
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[366] = {
+		name = "光属",
+		affix_buff_id = 366,
+		max_level = 4,
+		extra_description = "AFFIX_366",
+		id = 366,
+		description = {
+			700000366
+		},
+		buffid = {
+			3651,
+			3653,
+			3654,
+			3655,
+			3656,
+			3657,
+			3658
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[367] = {
+		name = "暗属",
+		affix_buff_id = 367,
+		max_level = 4,
+		extra_description = "AFFIX_367",
+		id = 367,
+		description = {
+			700000367
+		},
+		buffid = {
+			3651,
+			3652,
+			3654,
+			3655,
+			3656,
+			3657,
+			3658
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[368] = {
+		name = "水属",
+		affix_buff_id = 368,
+		max_level = 4,
+		extra_description = "AFFIX_368",
+		id = 368,
+		description = {
+			700000368
+		},
+		buffid = {
+			3651,
+			3652,
+			3653,
+			3655,
+			3656,
+			3657,
+			3658
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[369] = {
+		name = "冰属",
+		affix_buff_id = 369,
+		max_level = 4,
+		extra_description = "AFFIX_369",
+		id = 369,
+		description = {
+			700000369
+		},
+		buffid = {
+			3651,
+			3652,
+			3653,
+			3654,
+			3656,
+			3657,
+			3658
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[370] = {
+		name = "火属",
+		affix_buff_id = 370,
+		max_level = 4,
+		extra_description = "AFFIX_370",
+		id = 370,
+		description = {
+			700000370
+		},
+		buffid = {
+			3651,
+			3652,
+			3653,
+			3654,
+			3655,
+			3657,
+			3658
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[371] = {
+		name = "风属",
+		affix_buff_id = 371,
+		max_level = 4,
+		extra_description = "AFFIX_371",
+		id = 371,
+		description = {
+			700000371
+		},
+		buffid = {
+			3651,
+			3652,
+			3653,
+			3654,
+			3655,
+			3656,
+			3658
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[372] = {
+		name = "雷属",
+		affix_buff_id = 372,
+		max_level = 4,
+		extra_description = "AFFIX_372",
+		id = 372,
+		description = {
+			700000372
+		},
+		buffid = {
+			3651,
+			3652,
+			3653,
+			3654,
+			3655,
+			3656,
+			3657
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
 	[501] = {
 		name = "必胜御守",
 		affix_buff_id = 501,
@@ -16581,6 +16781,14 @@ return {
 		362,
 		363,
 		364,
+		365,
+		366,
+		367,
+		368,
+		369,
+		370,
+		371,
+		372,
 		501,
 		502,
 		503,

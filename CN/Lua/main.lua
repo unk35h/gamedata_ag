@@ -295,6 +295,10 @@ function GetTipsF(slot0, ...)
 end
 
 function ShowTips(slot0, slot1)
+	if LuaExchangeHelper.GetSceneIsHanding() then
+		return
+	end
+
 	slot2, slot3 = GetTips(slot0)
 
 	manager.tips:ShowTips(slot2, slot3, slot1)
@@ -667,9 +671,6 @@ function DestroyLua()
 end
 
 function StatUILoadTimeToServer(slot0)
-	SDKTools.SendMessageToSDK("load_time_after_battle", {
-		use_milliseconds = slot0
-	})
 end
 
 function LuaGcCollect()

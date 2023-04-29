@@ -99,6 +99,8 @@ function slot0.OnEnter(slot0)
 	slot0:SetSelectPool(slot1)
 	DrawTools:LoadDrawLevel()
 	manager.ui:SetMainCamera("draw")
+
+	slot0.panel_.transform.localPosition = Vector2(0, 0)
 end
 
 function slot0.OnExit(slot0)
@@ -107,9 +109,10 @@ function slot0.OnExit(slot0)
 	slot0.criMovie_:Stop()
 
 	if slot0.curPoolObject then
-		slot0.curPoolObject:SetActive(false, slot0.selectPoolId_)
+		slot0.curPoolObject:SetActive(false)
 	end
 
+	slot0.curPoolObject = nil
 	slot0.selectPoolId_ = -1
 	slot0.one_cost_type = nil
 	slot0.ten_cost_type = nil
@@ -224,13 +227,8 @@ function slot0.ShowBar(slot0)
 end
 
 function slot0.RefreshUI(slot0)
-	if slot0.curPoolObject then
-		slot0.curPoolObject:SetActive(false)
-	end
-
 	slot1 = slot0.selectPoolId_
 	slot3 = slot1
-	slot4 = true
 
 	if DrawPoolCfg[slot1].pool_selected_type == 9 then
 		if DrawData:GetPollUpID(slot1) == 0 then
@@ -241,13 +239,13 @@ function slot0.RefreshUI(slot0)
 			end, {})
 			slot3 = slot2.optional_lists[1]
 		else
-			slot3 = slot5
+			slot3 = slot4
 		end
 	elseif slot2.pool_selected_type == 2 then
 		if DrawData:GetPollUpID(slot1) == 0 then
-			slot7 = DrawData:GetPoolUpTimes(slot1)
+			slot6 = DrawData:GetPoolUpTimes(slot1)
 
-			if slot2.pool_change == 0 or slot7 < slot6 then
+			if slot2.pool_change == 0 or slot6 < slot5 then
 				slot0.timer = TimeTools.StartAfterSeconds(0.1, function (slot0)
 					if DrawData:IsOnePrefabPool(slot0) then
 						uv0:Go("/drawAllHeroSelect", {
@@ -263,12 +261,23 @@ function slot0.RefreshUI(slot0)
 				end, {
 					slot1
 				})
+
+				return
 			end
 
 			slot3 = slot2.optional_lists[1]
-			slot4 = false
 		else
-			slot3 = slot5
+			slot3 = slot4
+		end
+	end
+
+	if slot0.curPoolObject then
+		if slot0.curPoolObject:GetShowId() == slot3 then
+			slot0.curPoolObject:Refresh(slot3)
+
+			return
+		else
+			slot0.curPoolObject:SetActive(false)
 		end
 	end
 
@@ -290,28 +299,26 @@ function slot0.RefreshUI(slot0)
 
 	slot0.curPoolObject = slot0.poolObjects_[slot3]
 
-	if slot4 then
-		slot0.curPoolObject:Refresh(slot3)
-		slot0.curPoolObject:SetActive(true)
-	end
+	slot0.curPoolObject:Refresh(slot3)
+	slot0.curPoolObject:SetActive(true)
 
 	if slot0.curPoolObject:ShowRightPanel() then
-		slot5 = DrawTools.GetCostTicket(slot0.selectPoolId_)
+		slot4 = DrawTools.GetCostTicket(slot0.selectPoolId_)
 
-		if DrawTools.GetActivityCostTicket(slot0.selectPoolId_) == 0 or ItemTools.IsItemExpiredByItemId(slot6) or ItemTools.getItemNum(slot6) == 0 then
-			slot0.iconOnce_.sprite = ItemTools.getItemSprite(slot5)
-			slot0.iconTenth_.sprite = ItemTools.getItemSprite(slot5)
+		if DrawTools.GetActivityCostTicket(slot0.selectPoolId_) == 0 or ItemTools.IsItemExpiredByItemId(slot5) or ItemTools.getItemNum(slot5) == 0 then
+			slot0.iconOnce_.sprite = ItemTools.getItemSprite(slot4)
+			slot0.iconTenth_.sprite = ItemTools.getItemSprite(slot4)
 			slot0.one_cost_type = DrawConst.DRAW_COST_TYPE.COMMON
 			slot0.ten_cost_type = DrawConst.DRAW_COST_TYPE.COMMON
 		else
-			slot0.iconOnce_.sprite = ItemTools.getItemSprite(slot6)
+			slot0.iconOnce_.sprite = ItemTools.getItemSprite(slot5)
 			slot0.one_cost_type = DrawConst.DRAW_COST_TYPE.ACTIVITY
 
-			if ItemTools.getItemNum(slot6) < 10 then
-				slot0.iconTenth_.sprite = ItemTools.getItemSprite(slot5)
+			if ItemTools.getItemNum(slot5) < 10 then
+				slot0.iconTenth_.sprite = ItemTools.getItemSprite(slot4)
 				slot0.ten_cost_type = DrawConst.DRAW_COST_TYPE.COMMON
 			else
-				slot0.iconTenth_.sprite = ItemTools.getItemSprite(slot6)
+				slot0.iconTenth_.sprite = ItemTools.getItemSprite(slot5)
 				slot0.ten_cost_type = DrawConst.DRAW_COST_TYPE.ACTIVITY
 			end
 		end
@@ -321,8 +328,8 @@ function slot0.RefreshUI(slot0)
 		slot0.showRightController:SetSelectedIndex(0)
 	end
 
-	if slot0.poolActivitys_[slot1] and ActivityData:GetActivityData(slot5) then
-		slot0:SetCountDown(true, ActivityData:GetActivityData(slot5).stopTime)
+	if slot0.poolActivitys_[slot1] and ActivityData:GetActivityData(slot4) then
+		slot0:SetCountDown(true, ActivityData:GetActivityData(slot4).stopTime)
 	else
 		slot0:SetCountDown(false)
 	end
@@ -701,8 +708,7 @@ function slot0.SkipMovie(slot0)
 end
 
 function slot0.DoNextNode(slot0, slot1)
-	SetActive(slot0.panel_, true)
-
+	slot0.panel_.transform.localPosition = Vector2(0, 0)
 	slot2 = #slot0.itemList_
 
 	if slot1 and slot2 > 1 then
@@ -843,7 +849,9 @@ function slot0.StarInteract(slot0)
 	if (slot1 < 5 or GameObject.Find("X102/TC/directors/director_gold")) and (slot1 < 4 or GameObject.Find("X102/TC/directors/director_purple")) and GameObject.Find("X102/TC/directors/director_blue") then
 		slot0.drawInteract:Init(slot2:GetComponent("PlayableDirector"), handler(slot0, slot0.StopInteract))
 		slot0.drawInteract:Reset()
-		SetActive(slot0.panel_, false)
+
+		slot0.panel_.transform.localPosition = Vector2(9999, 9999)
+
 		SetActive(slot0.drawInteractGo_, true)
 	else
 		slot0:StopInteract()

@@ -127,6 +127,8 @@ function slot0.RefreshTipsPosition(slot0, slot1)
 	else
 		slot0.tipsPanelTrans_:SetAsLastSibling()
 	end
+
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(slot0.taskPanelTrans_)
 end
 
 function slot0.IsAllReceived(slot0, slot1)

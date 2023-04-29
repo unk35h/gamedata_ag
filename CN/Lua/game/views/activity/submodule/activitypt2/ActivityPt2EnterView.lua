@@ -82,6 +82,7 @@ function slot0.OnEnter(slot0)
 	slot0:RefreshUI()
 	slot0:RegistEventListener(OSIRIS_TASK_UPDATE, handler(slot0, slot0.RefreshTask))
 	manager.redPoint:setTip(RedPointConst.ACTIVITY_PT_2_OPEN .. "_" .. slot0.activityID_, 0)
+	saveData(RedPointConst.ACTIVITY_PT_2_OPEN, tostring(slot0.activityID_), true)
 end
 
 function slot0.RefreshUI(slot0)

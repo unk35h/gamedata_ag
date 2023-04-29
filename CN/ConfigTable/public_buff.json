@@ -2614,7 +2614,7 @@
       "SubType": "BUFF_TYPE_LIGHTMITIGATE_DOWN",
       "MaxLevel": 2,
       "BuffClassId": 1,
-      "EffectId": 40011,
+      "EffectId": 40012,
       "Icon": "BUFF_DEFENSE_DOWN",
       "KeepTime": 5000,
       "BuffTicktime": 9999999,
@@ -6146,11 +6146,11 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         81,
-        -20
+        -18
       ],
       "BuffparamFactor": [
         0,
-        -20
+        -18
       ]
     },
     {
@@ -6216,7 +6216,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         401,
-        150
+        300
       ],
       "BuffparamFactor": [
         0,
@@ -6233,11 +6233,11 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         401,
-        15
+        20
       ],
       "BuffparamFactor": [
         0,
-        15
+        20
       ]
     },
     {
@@ -6269,11 +6269,11 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         302,
-        2
+        1
       ],
       "BuffparamFactor": [
         0,
-        2
+        1
       ]
     },
     {
@@ -6321,6 +6321,24 @@
       "BuffparamBase": [
         1002,
         1000
+      ],
+      "BuffparamFactor": [
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 107024,
+      "Type": "BUFF",
+      "SubType": "BUFF_TYPE_FIREDAMAGE_UP",
+      "MaxLevel": 1,
+      "BuffClassId": 1,
+      "EffectId": 40001,
+      "KeepTime": 12000,
+      "BuffTicktime": 9999999,
+      "BuffparamBase": [
+        153,
+        150
       ],
       "BuffparamFactor": [
         0,
@@ -6549,11 +6567,11 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         162,
-        -60
+        -50
       ],
       "BuffparamFactor": [
         0,
-        -30
+        -25
       ]
     },
     {
@@ -6568,11 +6586,11 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         168,
-        -60
+        -50
       ],
       "BuffparamFactor": [
         0,
-        -30
+        -25
       ]
     },
     {
@@ -6797,7 +6815,7 @@
       "SubType": "BUFF_TYPE_SHIELD",
       "MaxLevel": 1,
       "BuffClassId": 102,
-      "KeepTime": 12000,
+      "KeepTime": 14000,
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         4081,
@@ -6811,14 +6829,14 @@
     {
       "ID": 107504,
       "Type": "BUFF",
-      "SubType": "BUFF_TYPE_CRITDAMAGE_UP",
+      "SubType": "BUFF_TYPE_CRITRATE_UP",
       "MaxLevel": 1,
       "BuffClassId": 1,
       "EffectId": 10,
-      "KeepTime": 7000,
+      "KeepTime": 10000,
       "BuffTicktime": 9999999,
       "BuffparamBase": [
-        82,
+        81,
         1
       ],
       "BuffparamFactor": [
@@ -6871,7 +6889,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         153,
-        200
+        150
       ],
       "BuffparamFactor": [
         0,
@@ -6919,6 +6937,7 @@
       "SubType": "BUFF_TYPE_FIREMITIGATE_DOWN",
       "MaxLevel": 1,
       "BuffClassId": 1,
+      "EffectId": 40002,
       "Icon": "BUFF_DEFENSE_DOWN",
       "KeepTime": 7000,
       "BuffTicktime": 9999999,
@@ -6955,11 +6974,11 @@
       "MaxLevel": 99999,
       "BuffClassId": 1,
       "EffectId": 40001,
-      "KeepTime": 12000,
+      "KeepTime": 99000,
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         153,
-        150
+        100
       ],
       "BuffparamFactor": [
         0,
@@ -6973,11 +6992,11 @@
       "MaxLevel": 9999,
       "BuffClassId": 1,
       "EffectId": 2,
-      "KeepTime": 4000,
+      "KeepTime": 5000,
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         11,
-        400
+        500
       ],
       "BuffparamFactor": [
         0,
@@ -7002,17 +7021,34 @@
       ]
     },
     {
+      "ID": 107519,
+      "Type": "BUFF",
+      "SubType": "BUFF_TYPE_ELEMENTDAMAGE",
+      "MaxLevel": 99999,
+      "BuffClassId": 1,
+      "KeepTime": 10000,
+      "BuffTicktime": 9999999,
+      "BuffparamBase": [
+        159,
+        1
+      ],
+      "BuffparamFactor": [
+        0,
+        1
+      ]
+    },
+    {
       "ID": 107599,
       "Type": "BUFF",
       "SubType": "BUFF_TYPE_SHIELD",
       "MaxLevel": 1000,
       "BuffClassId": 108,
       "EffectId": 10002,
-      "KeepTime": 12000,
+      "KeepTime": 14000,
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         4081,
-        118
+        168
       ],
       "BuffparamFactor": [
         0,
@@ -7029,11 +7065,11 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         701,
-        126
+        88
       ],
       "BuffparamFactor": [
         0,
-        3
+        4
       ]
     },
     {
@@ -7046,11 +7082,11 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         701,
-        64
+        66
       ],
       "BuffparamFactor": [
         0,
-        2
+        3
       ]
     },
     {
@@ -7063,7 +7099,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         701,
-        84
+        34
       ],
       "BuffparamFactor": [
         0,
@@ -7080,7 +7116,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         701,
-        168
+        68
       ],
       "BuffparamFactor": [
         0,
@@ -8783,7 +8819,7 @@
       "SubType": "BUFF_TYPE_LIGHTMITIGATE_DOWN",
       "MaxLevel": 1,
       "BuffClassId": 1,
-      "EffectId": 40011,
+      "EffectId": 40012,
       "Icon": "BUFF_DEFENSE_DOWN",
       "KeepTime": 10000,
       "BuffTicktime": 9999999,
@@ -13591,6 +13627,7 @@
       "SubType": "BUFF_TYPE_LIGHTMITIGATE_DOWN",
       "MaxLevel": 1,
       "BuffClassId": 1,
+      "EffectId": 40012,
       "Icon": "BUFF_DEFENSE_DOWN",
       "KeepTime": 10000,
       "BuffTicktime": 9999999,
@@ -14663,7 +14700,6 @@
       "SubType": "BUFF_TYPE_HEALTH_UP",
       "MaxLevel": 1,
       "BuffClassId": 10,
-      "EffectId": 20001,
       "KeepTime": 9999999,
       "BuffTicktime": 9999999,
       "BuffparamBase": [
@@ -22928,6 +22964,222 @@
       ]
     },
     {
+      "ID": 365,
+      "Type": "AFFIX",
+      "SubType": "AFFIX_362",
+      "MaxLevel": 1,
+      "BuffClassId": 1010,
+      "Icon": "AFFIX_BUFF_PHYSICVULNER_UP",
+      "KeepTime": 9999999,
+      "BuffTicktime": 9999999
+    },
+    {
+      "ID": 366,
+      "Type": "AFFIX",
+      "SubType": "AFFIX_363",
+      "MaxLevel": 1,
+      "BuffClassId": 1010,
+      "Icon": "AFFIX_BUFF_LIGHTVULNER_UP",
+      "KeepTime": 9999999,
+      "BuffTicktime": 9999999
+    },
+    {
+      "ID": 367,
+      "Type": "AFFIX",
+      "SubType": "AFFIX_364",
+      "MaxLevel": 1,
+      "BuffClassId": 1010,
+      "Icon": "AFFIX_BUFF_DARKVULNER_UP",
+      "KeepTime": 9999999,
+      "BuffTicktime": 9999999
+    },
+    {
+      "ID": 368,
+      "Type": "AFFIX",
+      "SubType": "AFFIX_365",
+      "MaxLevel": 1,
+      "BuffClassId": 1010,
+      "Icon": "AFFIX_BUFF_WATERVULNER_UP",
+      "KeepTime": 9999999,
+      "BuffTicktime": 9999999
+    },
+    {
+      "ID": 369,
+      "Type": "AFFIX",
+      "SubType": "AFFIX_366",
+      "MaxLevel": 1,
+      "BuffClassId": 1010,
+      "Icon": "AFFIX_BUFF_ICEVULNER_UP",
+      "KeepTime": 9999999,
+      "BuffTicktime": 9999999
+    },
+    {
+      "ID": 370,
+      "Type": "AFFIX",
+      "SubType": "AFFIX_367",
+      "MaxLevel": 1,
+      "BuffClassId": 1010,
+      "Icon": "AFFIX_BUFF_FIREVULNER_UP",
+      "KeepTime": 9999999,
+      "BuffTicktime": 9999999
+    },
+    {
+      "ID": 371,
+      "Type": "AFFIX",
+      "SubType": "AFFIX_368",
+      "MaxLevel": 1,
+      "BuffClassId": 1010,
+      "Icon": "AFFIX_BUFF_WINDVULNER_UP",
+      "KeepTime": 9999999,
+      "BuffTicktime": 9999999
+    },
+    {
+      "ID": 372,
+      "Type": "AFFIX",
+      "SubType": "AFFIX_369",
+      "MaxLevel": 1,
+      "BuffClassId": 1010,
+      "Icon": "AFFIX_BUFF_THUNDERVULNER_UP",
+      "KeepTime": 9999999,
+      "BuffTicktime": 9999999
+    },
+    {
+      "ID": 3651,
+      "Type": "BUFF",
+      "SubType": "BUFF_TYPE_PHYSICVULNER_DOWN",
+      "MaxLevel": 4,
+      "BuffClassId": 1,
+      "KeepTime": 9999999,
+      "BuffTicktime": 9999999,
+      "BuffparamBase": [
+        161,
+        250
+      ],
+      "BuffparamFactor": [
+        0,
+        250
+      ]
+    },
+    {
+      "ID": 3652,
+      "Type": "BUFF",
+      "SubType": "BUFF_TYPE_LIGHTVULNER_DOWN",
+      "MaxLevel": 4,
+      "BuffClassId": 1,
+      "KeepTime": 9999999,
+      "BuffTicktime": 9999999,
+      "BuffparamBase": [
+        167,
+        250
+      ],
+      "BuffparamFactor": [
+        0,
+        250
+      ]
+    },
+    {
+      "ID": 3653,
+      "Type": "BUFF",
+      "SubType": "BUFF_TYPE_DARKVULNER_DOWN",
+      "MaxLevel": 4,
+      "BuffClassId": 1,
+      "KeepTime": 9999999,
+      "BuffTicktime": 9999999,
+      "BuffparamBase": [
+        166,
+        250
+      ],
+      "BuffparamFactor": [
+        0,
+        250
+      ]
+    },
+    {
+      "ID": 3654,
+      "Type": "BUFF",
+      "SubType": "BUFF_TYPE_WATERVULNER_DOWN",
+      "MaxLevel": 4,
+      "BuffClassId": 1,
+      "KeepTime": 9999999,
+      "BuffTicktime": 9999999,
+      "BuffparamBase": [
+        165,
+        250
+      ],
+      "BuffparamFactor": [
+        0,
+        250
+      ]
+    },
+    {
+      "ID": 3655,
+      "Type": "BUFF",
+      "SubType": "BUFF_TYPE_ICEMITIGATE_UP",
+      "MaxLevel": 4,
+      "BuffClassId": 1,
+      "KeepTime": 9999999,
+      "BuffTicktime": 9999999,
+      "BuffparamBase": [
+        164,
+        250
+      ],
+      "BuffparamFactor": [
+        0,
+        250
+      ]
+    },
+    {
+      "ID": 3656,
+      "Type": "BUFF",
+      "SubType": "BUFF_TYPE_FIREVULNER_DOWN",
+      "MaxLevel": 4,
+      "BuffClassId": 1,
+      "KeepTime": 9999999,
+      "BuffTicktime": 9999999,
+      "BuffparamBase": [
+        163,
+        250
+      ],
+      "BuffparamFactor": [
+        0,
+        250
+      ]
+    },
+    {
+      "ID": 3657,
+      "Type": "BUFF",
+      "SubType": "BUFF_TYPE_WINDVULNER_DOWN",
+      "MaxLevel": 4,
+      "BuffClassId": 1,
+      "KeepTime": 9999999,
+      "BuffTicktime": 9999999,
+      "BuffparamBase": [
+        162,
+        250
+      ],
+      "BuffparamFactor": [
+        0,
+        250
+      ]
+    },
+    {
+      "ID": 3658,
+      "Type": "BUFF",
+      "SubType": "BUFF_TYPE_THUNDERVULNER_DOWN",
+      "MaxLevel": 4,
+      "BuffClassId": 1,
+      "KeepTime": 9999999,
+      "BuffTicktime": 9999999,
+      "BuffparamBase": [
+        168,
+        250
+      ],
+      "BuffparamFactor": [
+        0,
+        250
+      ]
+    },
+    {
       "ID": 80101,
       "Type": "BUFF",
       "SubType": "BUFF_TYPE_HOT",
@@ -30820,6 +31072,69 @@
       ]
     },
     {
+      "ID": 97228,
+      "Type": "BUFF",
+      "SubType": "BUFF_TYPE_CRITRATE_UP",
+      "MaxLevel": 1,
+      "BuffClassId": 1,
+      "KeepTime": 9999999,
+      "BuffTicktime": 9999999,
+      "BuffparamBase": [
+        81,
+        250
+      ],
+      "BuffparamFactor": [
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 97229,
+      "Type": "BUFF",
+      "SubType": "BUFF_TYPE_WINDDAMAGE_UP",
+      "MaxLevel": 1,
+      "BuffClassId": 1,
+      "EffectId": 2,
+      "KeepTime": 9999999,
+      "BuffTicktime": 9999999,
+      "BuffparamBase": [
+        152,
+        250
+      ],
+      "BuffparamFactor": [
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 97230,
+      "Type": "BUFF",
+      "SubType": "BUFF_TYPE_THUNDERDAMAGE_UP",
+      "MaxLevel": 1,
+      "BuffClassId": 1,
+      "EffectId": 2,
+      "KeepTime": 9999999,
+      "BuffTicktime": 9999999,
+      "BuffparamBase": [
+        158,
+        250
+      ],
+      "BuffparamFactor": [
+        0,
+        0
+      ]
+    },
+    {
+      "ID": 97231,
+      "Type": "DEBUFF",
+      "SubType": "BUFF_TYPE_DIZZY",
+      "MaxLevel": 1,
+      "BuffClassId": 303,
+      "EffectId": 30004,
+      "KeepTime": 3000,
+      "BuffTicktime": 1
+    },
+    {
       "ID": 97401,
       "Type": "DEBUFF",
       "MaxLevel": 1,
@@ -36155,22 +36470,42 @@
       "BuffTicktime": 9999999
     },
     {
+      "ID": 70005,
+      "Type": "AFFIX",
+      "SubType": "AFFIX_BUFF_HP_ANGRY",
+      "MaxLevel": 1,
+      "BuffClassId": 1360,
+      "Icon": "AFFIX_BUFF_HP_ANGRY",
+      "KeepTime": 9999999,
+      "BuffTicktime": 9999999
+    },
+    {
       "ID": 700051,
       "Type": "BUFF",
-      "SubType": "BUFF_TYPE_HOT",
-      "MaxLevel": 1,
-      "BuffClassId": 204,
-      "EffectId": 20005,
+      "SubType": "BUFF_TYPE_DAMAGE_UP",
+      "MaxLevel": 3,
+      "BuffClassId": 1,
+      "EffectId": 1,
       "KeepTime": 9999999,
-      "BuffTicktime": 1000,
+      "BuffTicktime": 9999999,
       "BuffparamBase": [
-        300,
-        0
+        401,
+        300
       ],
       "BuffparamFactor": [
         0,
-        0
+        300
       ]
+    },
+    {
+      "ID": 700052,
+      "Type": "BUFF",
+      "SubType": "BUFF_TYPE_STOIC",
+      "MaxLevel": 3,
+      "BuffClassId": 101,
+      "EffectId": 10001,
+      "KeepTime": 15000,
+      "BuffTicktime": 9999999
     },
     {
       "ID": 70051,
@@ -36187,7 +36522,6 @@
       "SubType": "BUFF_TYPE_DEFENSE_UP",
       "MaxLevel": 1,
       "BuffClassId": 1,
-      "EffectId": 5,
       "KeepTime": 9999999,
       "BuffTicktime": 9999999,
       "BuffparamBase": [
@@ -36214,16 +36548,15 @@
       "SubType": "BUFF_TYPE_ATTACK_UP",
       "MaxLevel": 1,
       "BuffClassId": 1,
-      "EffectId": 2,
       "KeepTime": 9999999,
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         11,
-        20
+        10
       ],
       "BuffparamFactor": [
         0,
-        20
+        10
       ]
     },
     {
@@ -36245,7 +36578,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         401,
-        600
+        400
       ],
       "BuffparamFactor": [
         0,
@@ -36271,7 +36604,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         401,
-        200
+        100
       ],
       "BuffparamFactor": [
         0,
@@ -36297,7 +36630,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         401,
-        200
+        100
       ],
       "BuffparamFactor": [
         0,
@@ -36319,13 +36652,12 @@
       "SubType": "BUFF_TYPE_MITIGATE_UP",
       "MaxLevel": 1,
       "BuffClassId": 7,
-      "EffectId": 5,
       "Icon": "BUFF_DEFENSE_UP",
       "KeepTime": 9999999,
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         500,
-        200
+        100
       ],
       "BuffparamFactor": [
         0,
@@ -36347,16 +36679,15 @@
       "SubType": "BUFF_TYPE_ATTACK_UP",
       "MaxLevel": 1,
       "BuffClassId": 1,
-      "EffectId": 2,
       "KeepTime": 9999999,
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         11,
-        20
+        10
       ],
       "BuffparamFactor": [
         0,
-        20
+        10
       ]
     },
     {
@@ -36395,7 +36726,7 @@
       "KeepTime": 9999999,
       "BuffTicktime": 9999999,
       "BuffparamBase": [
-        100
+        150
       ],
       "BuffparamFactor": [
         0
@@ -36420,7 +36751,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         401,
-        2000
+        200
       ],
       "BuffparamFactor": [
         0,
@@ -36446,7 +36777,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         401,
-        50
+        10
       ],
       "BuffparamFactor": [
         0,
@@ -36467,12 +36798,12 @@
       "Type": "BUFF",
       "SubType": "BUFF_TYPE_DAMAGE_UP",
       "MaxLevel": 1,
-      "BuffClassId": 2,
-      "KeepTime": 34,
+      "BuffClassId": 1,
+      "KeepTime": 500,
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         401,
-        1000
+        250
       ],
       "BuffparamFactor": [
         0,
@@ -36498,7 +36829,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         82,
-        2000
+        400
       ],
       "BuffparamFactor": [
         0,
@@ -36515,7 +36846,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         156,
-        350
+        200
       ],
       "BuffparamFactor": [
         0,
@@ -36559,7 +36890,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         401,
-        2000
+        300
       ],
       "BuffparamFactor": [
         0,
@@ -36583,7 +36914,7 @@
       "BuffClassId": 301,
       "EffectId": 30003,
       "Icon": "BUFF_TYPE_LOCK",
-      "KeepTime": 10000
+      "KeepTime": 8000
     },
     {
       "ID": 701082,
@@ -36593,7 +36924,7 @@
       "BuffClassId": 301,
       "EffectId": 30003,
       "Icon": "BUFF_TYPE_LOCK",
-      "KeepTime": 10000
+      "KeepTime": 8000
     },
     {
       "ID": 701083,
@@ -36603,7 +36934,24 @@
       "BuffClassId": 301,
       "EffectId": 30003,
       "Icon": "BUFF_TYPE_LOCK",
-      "KeepTime": 10000
+      "KeepTime": 8000
+    },
+    {
+      "ID": 701084,
+      "Type": "BUFF",
+      "SubType": "BUFF_TYPE_DAMAGE_UP",
+      "MaxLevel": 1,
+      "BuffClassId": 2,
+      "KeepTime": 34,
+      "BuffTicktime": 9999999,
+      "BuffparamBase": [
+        401,
+        200
+      ],
+      "BuffparamFactor": [
+        0,
+        0
+      ]
     },
     {
       "ID": 70109,
@@ -36620,7 +36968,7 @@
       "SubType": "BUFF_TYPE_ENERGYREDUCTION_UP",
       "MaxLevel": 1,
       "BuffClassId": 9,
-      "KeepTime": 5000,
+      "KeepTime": 3000,
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         1110,
@@ -36650,7 +36998,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         401,
-        10000
+        100
       ],
       "BuffparamFactor": [
         0,
@@ -36845,7 +37193,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         401,
-        5000
+        500
       ],
       "BuffparamFactor": [
         0,
@@ -37029,14 +37377,14 @@
       "BuffTicktime": 9999999
     },
     {
-      "ID": 707291,
+      "ID": 701291,
       "Type": "DEBUFF",
       "MaxLevel": 9999999,
-      "BuffClassId": 201,
+      "BuffClassId": 202,
       "KeepTime": 34,
       "BuffTicktime": 9999999,
       "BuffparamBase": [
-        0
+        3000
       ],
       "BuffparamFactor": [
         0
@@ -37087,11 +37435,11 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         450,
-        1
+        5
       ],
       "BuffparamFactor": [
         0,
-        1
+        5
       ]
     },
     {
@@ -37188,11 +37536,11 @@
       "SubType": "BUFF_TYPE_DAMAGE_UP",
       "MaxLevel": 1,
       "BuffClassId": 1,
-      "KeepTime": 10000,
+      "KeepTime": 8000,
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         401,
-        2000
+        200
       ],
       "BuffparamFactor": [
         0,
@@ -37218,7 +37566,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         401,
-        5000
+        600
       ],
       "BuffparamFactor": [
         0,
@@ -37235,7 +37583,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         401,
-        5000
+        600
       ],
       "BuffparamFactor": [
         0,
@@ -37271,11 +37619,11 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         401,
-        2000
+        30
       ],
       "BuffparamFactor": [
         0,
-        0
+        30
       ]
     },
     {
@@ -37690,11 +38038,11 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         401,
-        10
+        40
       ],
       "BuffparamFactor": [
         0,
-        10
+        40
       ]
     },
     {
@@ -37718,11 +38066,11 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         25,
-        150
+        -150
       ],
       "BuffparamFactor": [
         0,
-        50
+        -50
       ]
     },
     {
@@ -37882,12 +38230,12 @@
       "KeepTime": 2000,
       "BuffTicktime": 9999999,
       "BuffparamBase": [
-        302,
+        401,
         600
       ],
       "BuffparamFactor": [
         0,
-        90
+        400
       ]
     },
     {
@@ -38006,11 +38354,11 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         401,
-        500
+        200
       ],
       "BuffparamFactor": [
         0,
-        220
+        150
       ]
     },
     {
@@ -38028,11 +38376,12 @@
       "SubType": "ROLEDAMAGEMUTIPLY",
       "MaxLevel": 9999999,
       "BuffClassId": 14,
-      "KeepTime": 9999999,
+      "KeepTime": 3000,
+      "KeepTimeGrow": 1000,
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         450,
-        1000
+        500
       ],
       "BuffparamFactor": [
         0,
@@ -38123,6 +38472,23 @@
       "BuffClassId": 706090,
       "KeepTime": 9999999,
       "BuffTicktime": 9999999
+    },
+    {
+      "ID": 706091,
+      "Type": "BUFF",
+      "SubType": "BUFF_TYPE_UNIQUESKILLDAMAGE_UP",
+      "MaxLevel": 9999999,
+      "BuffClassId": 1,
+      "KeepTime": 8000,
+      "BuffTicktime": 9999999,
+      "BuffparamBase": [
+        303,
+        300
+      ],
+      "BuffparamFactor": [
+        0,
+        300
+      ]
     },
     {
       "ID": 70610,
@@ -38420,6 +38786,23 @@
       "BuffTicktime": 9999999
     },
     {
+      "ID": 706621,
+      "Type": "BUFF",
+      "SubType": "BUFF_TYPE_UNIQUESKILLDAMAGE_UP",
+      "MaxLevel": 9999999,
+      "BuffClassId": 1,
+      "KeepTime": 8000,
+      "BuffTicktime": 9999999,
+      "BuffparamBase": [
+        303,
+        300
+      ],
+      "BuffparamFactor": [
+        0,
+        300
+      ]
+    },
+    {
       "ID": 70663,
       "Type": "AFFIX",
       "SubType": "ARTIFACT_APPEAR_ENERGY",
@@ -38491,7 +38874,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         401,
-        100
+        50
       ],
       "BuffparamFactor": [
         0,
@@ -38517,7 +38900,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         159,
-        100
+        50
       ],
       "BuffparamFactor": [
         0,
@@ -38543,7 +38926,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         500,
-        100
+        50
       ],
       "BuffparamFactor": [
         0,
@@ -38569,7 +38952,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         31,
-        100
+        50
       ],
       "BuffparamFactor": [
         0,
@@ -38590,16 +38973,16 @@
       "Type": "BUFF",
       "SubType": "BUFF_TYPE_ATTACK_UP",
       "MaxLevel": 9999999,
-      "BuffClassId": 2,
-      "KeepTime": 34,
+      "BuffClassId": 1,
+      "KeepTime": 9999999,
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         11,
-        4
+        40
       ],
       "BuffparamFactor": [
         0,
-        4
+        80
       ]
     },
     {
@@ -38621,7 +39004,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         1002,
-        40
+        20
       ],
       "BuffparamFactor": [
         0,
@@ -38673,7 +39056,7 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         303,
-        250
+        150
       ],
       "BuffparamFactor": [
         0,
@@ -38747,11 +39130,11 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         25,
-        150
+        -150
       ],
       "BuffparamFactor": [
         0,
-        50
+        -50
       ]
     },
     {
@@ -39048,11 +39431,11 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         11,
-        4
+        2
       ],
       "BuffparamFactor": [
         0,
-        4
+        2
       ]
     },
     {
@@ -39198,12 +39581,12 @@
       "KeepTime": 34,
       "BuffTicktime": 9999999,
       "BuffparamBase": [
-        12,
-        10
+        11,
+        50
       ],
       "BuffparamFactor": [
         0,
-        10
+        50
       ]
     },
     {
@@ -39226,11 +39609,11 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         12,
-        10
+        100
       ],
       "BuffparamFactor": [
         0,
-        10
+        100
       ]
     },
     {
@@ -39253,11 +39636,11 @@
       "BuffTicktime": 9999999,
       "BuffparamBase": [
         12,
-        10
+        100
       ],
       "BuffparamFactor": [
         0,
-        10
+        100
       ]
     }
   ]

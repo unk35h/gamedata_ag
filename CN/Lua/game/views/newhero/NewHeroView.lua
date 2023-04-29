@@ -75,11 +75,15 @@ function slot0.InitUI(slot0)
 	slot0.curScrollHelper_ = slot0.shortScrollHelper_
 	slot0.heroInfoView_ = NewHeroInfoView.New(slot0, slot0.infoViewGo_)
 	slot0.heroAvatarView_ = HeroAvatarView.New(slot0, slot0.displayGo_)
-	slot1 = slot0.heroAvatarView_
 
-	slot1:SetShowInteractive(true)
+	slot0.heroAvatarView_:SetShowInteractive(true)
 
 	slot0.weaponAvatarView_ = WeaponAvatarView.New(slot0, slot0.displayGo_)
+
+	if slot0.pageContainerPop_ ~= nil then
+		slot0.pageContainerPop_.parent = slot0.pageContainer_.parent
+	end
+
 	slot0.toggles_ = {
 		slot0.toggle1_,
 		slot0.toggle3_,
@@ -503,8 +507,7 @@ function slot0.UpdateHeroView(slot0)
 			x = 0,
 			y = 0
 		})
-		manager.redPoint:bindUIandKey(slot0.toggle4_.transform, RedPointConst.HERO_WEAPON_BREAK_ID .. slot0.curHeroInfo_.id)
-		manager.redPoint:bindUIandKey(slot0.moduleRedpointTrans_, RedPointConst.WEAPON_MODULE_UNLOCK .. "_" .. slot0.curHeroInfo_.id)
+		manager.redPoint:bindUIandKey(slot0.toggle4_.transform, RedPointConst.HERO_WEAPON .. slot0.curHeroInfo_.id)
 	else
 		SetActive(slot0.redPoint4Go_, false)
 	end
@@ -832,6 +835,10 @@ function slot0.OnMainHomeViewTop(slot0)
 	end
 end
 
+function slot0.GetPopContainer(slot0)
+	return slot0.pageContainerPop_
+end
+
 function slot0.OnExit(slot0)
 	slot0.exited_ = true
 
@@ -868,7 +875,6 @@ function slot0.OnExit(slot0)
 
 	manager.redPoint:unbindUIandKey(slot0.propertyNoticePos_)
 	manager.redPoint:unbindUIandKey(slot0.toggle4_.transform)
-	manager.redPoint:unbindUIandKey(slot0.moduleRedpointTrans_)
 	manager.redPoint:unbindUIandKey(slot0.chipredpointTrans_)
 	slot0:RecordStay(slot0.curPageIndex_)
 

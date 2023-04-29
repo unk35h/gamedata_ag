@@ -29,6 +29,7 @@ end
 
 function slot0.RegisterEvent(slot0)
 	slot0:RegistEventListener(CANTEEN_SET_SIGNFOOD_SUCCESS, function ()
+		ShowTips("招牌菜下架成功")
 		uv0:RefreshFoodList()
 	end)
 end

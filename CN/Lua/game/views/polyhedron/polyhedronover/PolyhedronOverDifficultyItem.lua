@@ -44,6 +44,8 @@ function slot0.SetData(slot0, slot1, slot2)
 			slot0.name = slot5.name
 			slot0.desc = slot5.name .. slot4
 		end
+
+		slot0.m_icon.sprite = getSpriteWithoutAtlas(PolyhedronConst.HERO_ATTRIBUTE_ICON_PATH .. slot3)
 	end
 end
 

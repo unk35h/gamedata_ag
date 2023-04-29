@@ -681,7 +681,7 @@ return {
 		attribute_factor = {
 			1000,
 			1000,
-			3500
+			1200
 		},
 		hero_list = {
 			{

@@ -26,6 +26,8 @@ function slot0.SetHeroInfo(slot0, slot1)
 		elseif slot0.isPolyhedron_ then
 			slot0.heroInfo_ = PolyhedronData:GetPolyhedronHeroData(slot1.id)
 		end
+
+		SetActive(slot0.moduleRedGo_, false)
 	else
 		slot0.heroInfo_ = HeroData:GetHeroData(slot1.id)
 

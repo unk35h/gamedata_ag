@@ -38,9 +38,9 @@ function slot0.AddListeners(slot0)
 
 	slot0:AddBtnListener(slot4, nil, function ()
 		if not MythicData:GetIsBattleIng() then
-			uv0:Go("/mythicChipManagerView", {
+			JumpTools.GoToSystem("/mythicChipManagerView", {
 				chessTeamID = uv0.teamID_
-			})
+			}, ViewConst.SYSTEM_ID.CHIP_MANAGER)
 		end
 	end)
 
@@ -144,7 +144,7 @@ function slot0.GetRaceEffect(slot0)
 	slot3 = false
 	slot8, slot9 = nil
 
-	for slot8, slot9 in pairs(BattleTeamData:GetSingleTeam(slot0.stageType_, slot8, slot9, id)) do
+	for slot8, slot9 in pairs(BattleTeamData:GetSingleTeam(slot0.stageType_, slot8, slot9, slot0.teamID_)) do
 		if slot9 ~= 0 then
 			slot1[slot10] = (slot1[HeroCfg[slot9].race] or 0) + 1
 

@@ -179,7 +179,7 @@ function slot0.AddUIListener(slot0)
 	slot0:AddBtnListenerScale(slot0.polyhedronSettlementBtn_, nil, function ()
 		ShowMessageBox({
 			title = GetTips("PROMPT"),
-			content = GetTips("GIVE_UP_BATTLE"),
+			content = GetTips("POLYHEDRON_BATTLE_GIVE_UP_AND_SETTLE"),
 			OkCallback = function ()
 				PolyhedronAction.QueryPolyhedronGiveUp(function (slot0)
 					if isSuccess(slot0.result) then

@@ -20,6 +20,7 @@ function slot0.InitUI(slot0)
 	slot0:BindCfgUI()
 
 	slot0.stateController_ = ControllerUtil.GetController(slot0.transform_, "state")
+	slot0.lockCon_ = ControllerUtil.GetController(slot0.transform_, "lock")
 	slot0.infoSGo_ = {}
 	slot0.astrolabeMessageView_ = AstrolabeInfoView.New(slot0, slot0.messageGo_)
 	slot0.astrolabeUnlockView_ = AstrolabeUnlockView.New(slot0, slot0.unlockGo_)
@@ -157,8 +158,11 @@ function slot0.RefreshState(slot0, slot1)
 		else
 			slot0.stateController_:SetSelectedState("one")
 		end
+
+		slot0.lockCon_:SetSelectedState("false")
 	else
 		slot0.stateController_:SetSelectedState("lock")
+		slot0.lockCon_:SetSelectedState("true")
 		slot0.astrolabeUnlockView_:RefreshUI(slot1)
 	end
 end

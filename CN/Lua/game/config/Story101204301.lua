@@ -2,7 +2,14 @@ return {
 	Play120431001 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 8.733
+
+		if ({
+			zh = 6.1,
+			ja = 8.733
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -106,7 +113,7 @@ return {
 			slot10 = 0.001
 
 			if slot9 <= uv0.time_ and uv0.time_ < slot9 + slot10 then
-				slot8.localPosition = Vector3.Lerp(uv0.var_.moveOldPos1076ui_story, Vector3.New(-1.1, -1.1, -5.3), (uv0.time_ - slot9) / slot10)
+				slot8.localPosition = Vector3.Lerp(uv0.var_.moveOldPos1076ui_story, Vector3.New(-1.1, -1.11, -5.6), (uv0.time_ - slot9) / slot10)
 				slot14 = manager.ui.mainCamera.transform.position - slot8.position
 				slot8.forward = Vector3.New(slot14.x, slot14.y, slot14.z)
 				slot15 = slot8.localEulerAngles
@@ -116,7 +123,7 @@ return {
 			end
 
 			if uv0.time_ >= slot9 + slot10 and uv0.time_ < slot9 + slot10 + slot0 then
-				slot8.localPosition = Vector3.New(-1.1, -1.1, -5.3)
+				slot8.localPosition = Vector3.New(-1.1, -1.11, -5.6)
 				slot13 = manager.ui.mainCamera.transform.position - slot8.position
 				slot8.forward = Vector3.New(slot13.x, slot13.y, slot13.z)
 				slot14 = slot8.localEulerAngles
@@ -126,7 +133,7 @@ return {
 			end
 
 			if 1.8 < uv0.time_ and uv0.time_ <= slot11 + slot0 then
-				uv0:PlayTimeline("1076ui_story", "")
+				uv0:PlayTimeline("1076ui_story", "StoryTimeline/CharAction/story1076/story1076action/1076action1_1")
 			end
 
 			if 1.8 < uv0.time_ and uv0.time_ <= slot12 + slot0 then
@@ -165,10 +172,30 @@ return {
 				uv0:AudioAction("play", "music", "ui_battle", "ui_battle_stopbgm", "")
 			end
 
+			if uv0.time_ <= 0.033 then
+				uv0.dialog_:SetActive(false)
+			end
+
 			slot21 = 0.45
 
-			if 0 < uv0.time_ and uv0.time_ <= slot20 + slot0 then
-				uv0.dialogCg_.alpha = 1
+			if 2 < uv0.time_ and uv0.time_ <= slot20 + slot0 then
+				uv0.dialog_:SetActive(true)
+
+				uv0.dialog_.transform.localScale = Vector3(0.8, 0.95, 1)
+
+				LeanTween.scale(uv0.dialog_, Vector3.one, 0.2)
+
+				slot22 = LeanTween.value(uv0.dialog_, 0, 1, 0.3)
+
+				slot22:setOnUpdate(LuaHelper.FloatAction(function (slot0)
+					uv0.dialogCg_.alpha = slot0
+				end))
+				slot22:setOnComplete(System.Action(function ()
+					LeanTween.cancel(uv0.dialog_)
+					uv1:setOnUpdate(nil):setOnComplete(nil)
+				end))
+
+				uv0.duration_ = uv0.duration_ + 0.3
 
 				SetActive(uv0.leftNameGo_, true)
 
@@ -187,9 +214,24 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431001", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431001", "story_v_out_120431.awb") / 1000 > 0 and slot21 < slot26 and uv0.duration_ < slot26 + slot20 then
+						slot21 = slot26
+						uv0.duration_ = slot26 + slot20
+					end
+
+					if slot24.prefab_name ~= "" and uv0.actors_[slot24.prefab_name] ~= nil then
+						uv0:RecordAudio("120431001", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot24.prefab_name].transform, "story_v_out_120431", "120431001", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431001", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
+			slot20 = slot20 + 0.3
 			slot23 = uv0:FormatText(StoryWordCfg[120431001].content)
 			slot25 = string.split(slot23, ".")
 
@@ -214,7 +256,14 @@ return {
 	Play120431002 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 4.6
+
+		if ({
+			zh = 2.233,
+			ja = 4.6
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -347,6 +396,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431002", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431002", "story_v_out_120431.awb") / 1000 > 0 and slot14 < slot18 and uv0.duration_ < slot18 + slot13 then
+						slot14 = slot18
+						uv0.duration_ = slot18 + slot13
+					end
+
+					if slot16.prefab_name ~= "" and uv0.actors_[slot16.prefab_name] ~= nil then
+						uv0:RecordAudio("120431002", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot16.prefab_name].transform, "story_v_out_120431", "120431002", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431002", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -374,7 +437,14 @@ return {
 	Play120431003 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 4.4
+
+		if ({
+			zh = 2.433,
+			ja = 4.4
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -393,31 +463,9 @@ return {
 				uv0:PlayTimeline("1084ui_story", "StoryTimeline/CharAction/1084/1084action/1084action7_2")
 			end
 
-			slot2 = uv0.actors_["1084ui_story"]
+			slot3 = 0.275
 
-			if 0 < uv0.time_ and uv0.time_ <= slot3 + slot0 and uv0.var_.characterEffect1084ui_story == nil then
-				uv0.var_.characterEffect1084ui_story = slot2.GetComponentInChildren(slot2, typeof(CharacterEffect))
-			end
-
-			slot4 = 0.2
-
-			if slot3 <= uv0.time_ and uv0.time_ < slot3 + slot4 then
-				slot5 = (uv0.time_ - slot3) / slot4
-
-				if uv0.var_.characterEffect1084ui_story then
-					uv0.var_.characterEffect1084ui_story.fillFlat = true
-					uv0.var_.characterEffect1084ui_story.fillRatio = Mathf.Lerp(0, 0.5, slot5)
-				end
-			end
-
-			if uv0.time_ >= slot3 + slot4 and uv0.time_ < slot3 + slot4 + slot0 and uv0.var_.characterEffect1084ui_story then
-				uv0.var_.characterEffect1084ui_story.fillFlat = true
-				uv0.var_.characterEffect1084ui_story.fillRatio = 0.5
-			end
-
-			slot6 = 0.275
-
-			if 0 < uv0.time_ and uv0.time_ <= slot5 + slot0 then
+			if 0 < uv0.time_ and uv0.time_ <= slot2 + slot0 then
 				uv0.dialogCg_.alpha = 1
 
 				SetActive(uv0.leftNameGo_, true)
@@ -437,23 +485,37 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431003", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431003", "story_v_out_120431.awb") / 1000 > 0 and slot3 < slot7 and uv0.duration_ < slot7 + slot2 then
+						slot3 = slot7
+						uv0.duration_ = slot7 + slot2
+					end
+
+					if slot5.prefab_name ~= "" and uv0.actors_[slot5.prefab_name] ~= nil then
+						uv0:RecordAudio("120431003", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot5.prefab_name].transform, "story_v_out_120431", "120431003", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431003", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
-			slot8 = uv0:FormatText(StoryWordCfg[120431003].content)
-			slot10 = string.split(slot8, ".")
+			slot5 = uv0:FormatText(StoryWordCfg[120431003].content)
+			slot7 = string.split(slot5, ".")
 
-			if #string.split(slot8, "\n") >= 4 or #slot10 >= 4 then
-				slot6 = slot6 * 3
+			if #string.split(slot5, "\n") >= 4 or #slot7 >= 4 then
+				slot3 = slot3 * 3
 			end
 
-			if slot5 <= uv0.time_ and uv0.time_ < slot5 + slot6 then
-				uv0.typewritter.percent = (uv0.time_ - slot5) / slot6
+			if slot2 <= uv0.time_ and uv0.time_ < slot2 + slot3 then
+				uv0.typewritter.percent = (uv0.time_ - slot2) / slot3
 
 				uv0.typewritter:SetDirty()
 			end
 
-			if uv0.time_ >= slot5 + slot6 and uv0.time_ < slot5 + slot6 + slot0 then
+			if uv0.time_ >= slot2 + slot3 and uv0.time_ < slot2 + slot3 + slot0 then
 				uv0.typewritter.percent = 1
 
 				uv0.typewritter:SetDirty()
@@ -479,9 +541,31 @@ return {
 		end
 
 		function slot1.onSingleLineUpdate_(slot0)
-			slot2 = 0.45
+			slot1 = uv0.actors_["1084ui_story"]
 
-			if 0 < uv0.time_ and uv0.time_ <= slot1 + slot0 then
+			if 0 < uv0.time_ and uv0.time_ <= slot2 + slot0 and uv0.var_.characterEffect1084ui_story == nil then
+				uv0.var_.characterEffect1084ui_story = slot1.GetComponentInChildren(slot1, typeof(CharacterEffect))
+			end
+
+			slot3 = 0.2
+
+			if slot2 <= uv0.time_ and uv0.time_ < slot2 + slot3 then
+				slot4 = (uv0.time_ - slot2) / slot3
+
+				if uv0.var_.characterEffect1084ui_story then
+					uv0.var_.characterEffect1084ui_story.fillFlat = true
+					uv0.var_.characterEffect1084ui_story.fillRatio = Mathf.Lerp(0, 0.5, slot4)
+				end
+			end
+
+			if uv0.time_ >= slot2 + slot3 and uv0.time_ < slot2 + slot3 + slot0 and uv0.var_.characterEffect1084ui_story then
+				uv0.var_.characterEffect1084ui_story.fillFlat = true
+				uv0.var_.characterEffect1084ui_story.fillRatio = 0.5
+			end
+
+			slot5 = 0.45
+
+			if 0 < uv0.time_ and uv0.time_ <= slot4 + slot0 then
 				uv0.dialogCg_.alpha = 1
 
 				SetActive(uv0.leftNameGo_, true)
@@ -504,20 +588,20 @@ return {
 				uv0:RecordContent(uv0.text_.text)
 			end
 
-			slot4 = uv0:FormatText(StoryWordCfg[120431004].content)
-			slot6 = string.split(slot4, ".")
+			slot7 = uv0:FormatText(StoryWordCfg[120431004].content)
+			slot9 = string.split(slot7, ".")
 
-			if #string.split(slot4, "\n") >= 4 or #slot6 >= 4 then
-				slot2 = slot2 * 3
+			if #string.split(slot7, "\n") >= 4 or #slot9 >= 4 then
+				slot5 = slot5 * 3
 			end
 
-			if slot1 <= uv0.time_ and uv0.time_ < slot1 + slot2 then
-				uv0.typewritter.percent = (uv0.time_ - slot1) / slot2
+			if slot4 <= uv0.time_ and uv0.time_ < slot4 + slot5 then
+				uv0.typewritter.percent = (uv0.time_ - slot4) / slot5
 
 				uv0.typewritter:SetDirty()
 			end
 
-			if uv0.time_ >= slot1 + slot2 and uv0.time_ < slot1 + slot2 + slot0 then
+			if uv0.time_ >= slot4 + slot5 and uv0.time_ < slot4 + slot5 + slot0 then
 				uv0.typewritter.percent = 1
 
 				uv0.typewritter:SetDirty()
@@ -528,7 +612,14 @@ return {
 	Play120431005 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 4.9
+
+		if ({
+			zh = 3.4,
+			ja = 4.9
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -589,6 +680,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431005", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431005", "story_v_out_120431.awb") / 1000 > 0 and slot6 < slot10 and uv0.duration_ < slot10 + slot5 then
+						slot6 = slot10
+						uv0.duration_ = slot10 + slot5
+					end
+
+					if slot8.prefab_name ~= "" and uv0.actors_[slot8.prefab_name] ~= nil then
+						uv0:RecordAudio("120431005", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot8.prefab_name].transform, "story_v_out_120431", "120431005", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431005", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -758,7 +863,14 @@ return {
 	Play120431008 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 3.8
+
+		if ({
+			zh = 1.999999999999,
+			ja = 3.8
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -819,6 +931,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431008", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431008", "story_v_out_120431.awb") / 1000 > 0 and slot6 < slot10 and uv0.duration_ < slot10 + slot5 then
+						slot6 = slot10
+						uv0.duration_ = slot10 + slot5
+					end
+
+					if slot8.prefab_name ~= "" and uv0.actors_[slot8.prefab_name] ~= nil then
+						uv0:RecordAudio("120431008", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot8.prefab_name].transform, "story_v_out_120431", "120431008", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431008", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -932,7 +1058,14 @@ return {
 	Play120431010 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 7.333
+
+		if ({
+			zh = 1.8,
+			ja = 7.333
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -989,6 +1122,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431010", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431010", "story_v_out_120431.awb") / 1000 > 0 and slot5 < slot9 and uv0.duration_ < slot9 + slot4 then
+						slot5 = slot9
+						uv0.duration_ = slot9 + slot4
+					end
+
+					if slot7.prefab_name ~= "" and uv0.actors_[slot7.prefab_name] ~= nil then
+						uv0:RecordAudio("120431010", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot7.prefab_name].transform, "story_v_out_120431", "120431010", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431010", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -1016,7 +1163,7 @@ return {
 	Play120431011 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 2.199999999999
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -1099,6 +1246,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431011", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431011", "story_v_out_120431.awb") / 1000 > 0 and slot9 < slot13 and uv0.duration_ < slot13 + slot8 then
+						slot9 = slot13
+						uv0.duration_ = slot13 + slot8
+					end
+
+					if slot11.prefab_name ~= "" and uv0.actors_[slot11.prefab_name] ~= nil then
+						uv0:RecordAudio("120431011", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot11.prefab_name].transform, "story_v_out_120431", "120431011", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431011", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -1126,7 +1287,14 @@ return {
 	Play120431012 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 6.5
+
+		if ({
+			zh = 5.466,
+			ja = 6.5
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -1205,6 +1373,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431012", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431012", "story_v_out_120431.awb") / 1000 > 0 and slot8 < slot12 and uv0.duration_ < slot12 + slot7 then
+						slot8 = slot12
+						uv0.duration_ = slot12 + slot7
+					end
+
+					if slot10.prefab_name ~= "" and uv0.actors_[slot10.prefab_name] ~= nil then
+						uv0:RecordAudio("120431012", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot10.prefab_name].transform, "story_v_out_120431", "120431012", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431012", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -1378,7 +1560,14 @@ return {
 	Play120431015 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 5.633
+
+		if ({
+			zh = 5.633,
+			ja = 5.5
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -1435,6 +1624,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431015", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431015", "story_v_out_120431.awb") / 1000 > 0 and slot5 < slot9 and uv0.duration_ < slot9 + slot4 then
+						slot5 = slot9
+						uv0.duration_ = slot9 + slot4
+					end
+
+					if slot7.prefab_name ~= "" and uv0.actors_[slot7.prefab_name] ~= nil then
+						uv0:RecordAudio("120431015", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot7.prefab_name].transform, "story_v_out_120431", "120431015", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431015", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -1642,7 +1845,14 @@ return {
 	Play120431017 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 3.9
+
+		if ({
+			zh = 2.666,
+			ja = 3.9
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -1681,6 +1891,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431017", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431017", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431017", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431017", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431017", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -1708,7 +1932,14 @@ return {
 	Play120431018 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 2.5
+
+		if ({
+			zh = 0.999999999999,
+			ja = 2.5
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -1723,83 +1954,57 @@ return {
 		end
 
 		function slot1.onSingleLineUpdate_(slot0)
-			slot1 = uv0.actors_["1076ui_story"].transform
+			slot1 = uv0.actors_["1076ui_story"]
 
-			if 0 < uv0.time_ and uv0.time_ <= slot2 + slot0 then
-				uv0.var_.moveOldPos1076ui_story = slot1.localPosition
+			if 0 < uv0.time_ and uv0.time_ <= slot2 + slot0 and uv0.var_.characterEffect1076ui_story == nil then
+				uv0.var_.characterEffect1076ui_story = slot1.GetComponentInChildren(slot1, typeof(CharacterEffect))
 			end
 
-			slot3 = 0.001
+			slot3 = 0.2
 
 			if slot2 <= uv0.time_ and uv0.time_ < slot2 + slot3 then
-				slot1.localPosition = Vector3.Lerp(uv0.var_.moveOldPos1076ui_story, Vector3.New(0, -1.1, -5.3), (uv0.time_ - slot2) / slot3)
-				slot7 = manager.ui.mainCamera.transform.position - slot1.position
-				slot1.forward = Vector3.New(slot7.x, slot7.y, slot7.z)
-				slot8 = slot1.localEulerAngles
-				slot8.z = 0
-				slot8.x = 0
-				slot1.localEulerAngles = slot8
-			end
+				slot4 = (uv0.time_ - slot2) / slot3
 
-			if uv0.time_ >= slot2 + slot3 and uv0.time_ < slot2 + slot3 + slot0 then
-				slot1.localPosition = Vector3.New(0, -1.1, -5.3)
-				slot6 = manager.ui.mainCamera.transform.position - slot1.position
-				slot1.forward = Vector3.New(slot6.x, slot6.y, slot6.z)
-				slot7 = slot1.localEulerAngles
-				slot7.z = 0
-				slot7.x = 0
-				slot1.localEulerAngles = slot7
-			end
-
-			if uv0.actors_["1074ui_story"] == nil then
-				slot5 = Object.Instantiate(Asset.Load("Char/" .. slot4), uv0.stage_.transform)
-				slot5.name = slot4
-				slot5.transform.localPosition = Vector3.New(0, 100, 0)
-				uv0.actors_[slot4] = slot5
-				slot5:GetComponentInChildren(typeof(CharacterEffect)).enabled = true
-
-				if GameObjectTools.GetOrAddComponent(slot5, typeof(DynamicBoneHelper)) then
-					slot7.EnableDynamicBone(slot7, false)
-				end
-
-				uv0:ShowWeapon(slot6.transform, false)
-
-				uv0.var_[slot4 .. "Animator"] = slot6.gameObject:GetComponent(typeof(UnityEngine.Animator))
-				uv0.var_[slot4 .. "Animator"].applyRootMotion = true
-				uv0.var_[slot4 .. "LipSync"] = slot6.gameObject:GetComponentInChildren(typeof(RogoDigital.Lipsync.LipSync))
-			end
-
-			slot5 = uv0.actors_["1074ui_story"]
-
-			if 0 < uv0.time_ and uv0.time_ <= slot6 + slot0 and uv0.var_.characterEffect1074ui_story == nil then
-				uv0.var_.characterEffect1074ui_story = slot5.GetComponentInChildren(slot5, typeof(CharacterEffect))
-			end
-
-			slot7 = 0.2
-
-			if slot6 <= uv0.time_ and uv0.time_ < slot6 + slot7 then
-				slot8 = (uv0.time_ - slot6) / slot7
-
-				if uv0.var_.characterEffect1074ui_story then
-					uv0.var_.characterEffect1074ui_story.fillFlat = false
+				if uv0.var_.characterEffect1076ui_story then
+					uv0.var_.characterEffect1076ui_story.fillFlat = false
 				end
 			end
 
-			if uv0.time_ >= slot6 + slot7 and uv0.time_ < slot6 + slot7 + slot0 and uv0.var_.characterEffect1074ui_story then
-				uv0.var_.characterEffect1074ui_story.fillFlat = false
+			if uv0.time_ >= slot2 + slot3 and uv0.time_ < slot2 + slot3 + slot0 and uv0.var_.characterEffect1076ui_story then
+				uv0.var_.characterEffect1076ui_story.fillFlat = false
 			end
 
-			if 0 < uv0.time_ and uv0.time_ <= slot8 + slot0 then
-				uv0:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/story1074/story1074action/1074action1_1")
+			slot4 = uv0.actors_["1076ui_story"].transform
+
+			if 0 < uv0.time_ and uv0.time_ <= slot5 + slot0 then
+				uv0.var_.moveOldPos1076ui_story = slot4.localPosition
 			end
 
-			if 0 < uv0.time_ and uv0.time_ <= slot9 + slot0 then
-				uv0:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface1104cva")
+			slot6 = 0.001
+
+			if slot5 <= uv0.time_ and uv0.time_ < slot5 + slot6 then
+				slot4.localPosition = Vector3.Lerp(uv0.var_.moveOldPos1076ui_story, Vector3.New(0, -1.11, -5.6), (uv0.time_ - slot5) / slot6)
+				slot10 = manager.ui.mainCamera.transform.position - slot4.position
+				slot4.forward = Vector3.New(slot10.x, slot10.y, slot10.z)
+				slot11 = slot4.localEulerAngles
+				slot11.z = 0
+				slot11.x = 0
+				slot4.localEulerAngles = slot11
 			end
 
-			slot11 = 0.05
+			if uv0.time_ >= slot5 + slot6 and uv0.time_ < slot5 + slot6 + slot0 then
+				slot4.localPosition = Vector3.New(0, -1.11, -5.6)
+				slot9 = manager.ui.mainCamera.transform.position - slot4.position
+				slot4.forward = Vector3.New(slot9.x, slot9.y, slot9.z)
+				slot10 = slot4.localEulerAngles
+				slot10.z = 0
+				slot10.x = 0
+				slot4.localEulerAngles = slot10
+			end
 
-			if 0 < uv0.time_ and uv0.time_ <= slot10 + slot0 then
+			slot8 = 0.05
+
+			if 0 < uv0.time_ and uv0.time_ <= slot7 + slot0 then
 				uv0.dialogCg_.alpha = 1
 
 				SetActive(uv0.leftNameGo_, true)
@@ -1819,23 +2024,37 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431018", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431018", "story_v_out_120431.awb") / 1000 > 0 and slot8 < slot12 and uv0.duration_ < slot12 + slot7 then
+						slot8 = slot12
+						uv0.duration_ = slot12 + slot7
+					end
+
+					if slot10.prefab_name ~= "" and uv0.actors_[slot10.prefab_name] ~= nil then
+						uv0:RecordAudio("120431018", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot10.prefab_name].transform, "story_v_out_120431", "120431018", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431018", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
-			slot13 = uv0:FormatText(StoryWordCfg[120431018].content)
-			slot15 = string.split(slot13, ".")
+			slot10 = uv0:FormatText(StoryWordCfg[120431018].content)
+			slot12 = string.split(slot10, ".")
 
-			if #string.split(slot13, "\n") >= 4 or #slot15 >= 4 then
-				slot11 = slot11 * 3
+			if #string.split(slot10, "\n") >= 4 or #slot12 >= 4 then
+				slot8 = slot8 * 3
 			end
 
-			if slot10 <= uv0.time_ and uv0.time_ < slot10 + slot11 then
-				uv0.typewritter.percent = (uv0.time_ - slot10) / slot11
+			if slot7 <= uv0.time_ and uv0.time_ < slot7 + slot8 then
+				uv0.typewritter.percent = (uv0.time_ - slot7) / slot8
 
 				uv0.typewritter:SetDirty()
 			end
 
-			if uv0.time_ >= slot10 + slot11 and uv0.time_ < slot10 + slot11 + slot0 then
+			if uv0.time_ >= slot7 + slot8 and uv0.time_ < slot7 + slot8 + slot0 then
 				uv0.typewritter.percent = 1
 
 				uv0.typewritter:SetDirty()
@@ -1846,7 +2065,14 @@ return {
 	Play120431019 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 6.466
+
+		if ({
+			zh = 6.166,
+			ja = 6.466
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -1861,10 +2087,10 @@ return {
 		end
 
 		function slot1.onSingleLineUpdate_(slot0)
-			slot1 = uv0.actors_["1074ui_story"]
+			slot1 = uv0.actors_["1076ui_story"]
 
-			if 0 < uv0.time_ and uv0.time_ <= slot2 + slot0 and uv0.var_.characterEffect1074ui_story == nil then
-				uv0.var_.characterEffect1074ui_story = slot1.GetComponentInChildren(slot1, typeof(CharacterEffect))
+			if 0 < uv0.time_ and uv0.time_ <= slot2 + slot0 and uv0.var_.characterEffect1076ui_story == nil then
+				uv0.var_.characterEffect1076ui_story = slot1.GetComponentInChildren(slot1, typeof(CharacterEffect))
 			end
 
 			slot3 = 0.2
@@ -1872,15 +2098,15 @@ return {
 			if slot2 <= uv0.time_ and uv0.time_ < slot2 + slot3 then
 				slot4 = (uv0.time_ - slot2) / slot3
 
-				if uv0.var_.characterEffect1074ui_story then
-					uv0.var_.characterEffect1074ui_story.fillFlat = true
-					uv0.var_.characterEffect1074ui_story.fillRatio = Mathf.Lerp(0, 0.5, slot4)
+				if uv0.var_.characterEffect1076ui_story then
+					uv0.var_.characterEffect1076ui_story.fillFlat = true
+					uv0.var_.characterEffect1076ui_story.fillRatio = Mathf.Lerp(0, 0.5, slot4)
 				end
 			end
 
-			if uv0.time_ >= slot2 + slot3 and uv0.time_ < slot2 + slot3 + slot0 and uv0.var_.characterEffect1074ui_story then
-				uv0.var_.characterEffect1074ui_story.fillFlat = true
-				uv0.var_.characterEffect1074ui_story.fillRatio = 0.5
+			if uv0.time_ >= slot2 + slot3 and uv0.time_ < slot2 + slot3 + slot0 and uv0.var_.characterEffect1076ui_story then
+				uv0.var_.characterEffect1076ui_story.fillFlat = true
+				uv0.var_.characterEffect1076ui_story.fillRatio = 0.5
 			end
 
 			slot5 = 0.75
@@ -1907,6 +2133,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431019", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431019", "story_v_out_120431.awb") / 1000 > 0 and slot5 < slot9 and uv0.duration_ < slot9 + slot4 then
+						slot5 = slot9
+						uv0.duration_ = slot9 + slot4
+					end
+
+					if slot7.prefab_name ~= "" and uv0.actors_[slot7.prefab_name] ~= nil then
+						uv0:RecordAudio("120431019", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot7.prefab_name].transform, "story_v_out_120431", "120431019", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431019", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -1934,7 +2174,14 @@ return {
 	Play120431020 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 10.866
+
+		if ({
+			zh = 8.033,
+			ja = 10.866
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -1973,6 +2220,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431020", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431020", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431020", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431020", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431020", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -2120,7 +2381,14 @@ return {
 	Play120431023 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 8.966
+
+		if ({
+			zh = 5.7,
+			ja = 8.966
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -2135,10 +2403,10 @@ return {
 		end
 
 		function slot1.onSingleLineUpdate_(slot0)
-			slot1 = uv0.actors_["1074ui_story"]
+			slot1 = uv0.actors_["1076ui_story"]
 
-			if 0 < uv0.time_ and uv0.time_ <= slot2 + slot0 and uv0.var_.characterEffect1074ui_story == nil then
-				uv0.var_.characterEffect1074ui_story = slot1.GetComponentInChildren(slot1, typeof(CharacterEffect))
+			if 0 < uv0.time_ and uv0.time_ <= slot2 + slot0 and uv0.var_.characterEffect1076ui_story == nil then
+				uv0.var_.characterEffect1076ui_story = slot1.GetComponentInChildren(slot1, typeof(CharacterEffect))
 			end
 
 			slot3 = 0.2
@@ -2146,13 +2414,13 @@ return {
 			if slot2 <= uv0.time_ and uv0.time_ < slot2 + slot3 then
 				slot4 = (uv0.time_ - slot2) / slot3
 
-				if uv0.var_.characterEffect1074ui_story then
-					uv0.var_.characterEffect1074ui_story.fillFlat = false
+				if uv0.var_.characterEffect1076ui_story then
+					uv0.var_.characterEffect1076ui_story.fillFlat = false
 				end
 			end
 
-			if uv0.time_ >= slot2 + slot3 and uv0.time_ < slot2 + slot3 + slot0 and uv0.var_.characterEffect1074ui_story then
-				uv0.var_.characterEffect1074ui_story.fillFlat = false
+			if uv0.time_ >= slot2 + slot3 and uv0.time_ < slot2 + slot3 + slot0 and uv0.var_.characterEffect1076ui_story then
+				uv0.var_.characterEffect1076ui_story.fillFlat = false
 			end
 
 			slot5 = 0.675
@@ -2177,6 +2445,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431023", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431023", "story_v_out_120431.awb") / 1000 > 0 and slot5 < slot9 and uv0.duration_ < slot9 + slot4 then
+						slot5 = slot9
+						uv0.duration_ = slot9 + slot4
+					end
+
+					if slot7.prefab_name ~= "" and uv0.actors_[slot7.prefab_name] ~= nil then
+						uv0:RecordAudio("120431023", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot7.prefab_name].transform, "story_v_out_120431", "120431023", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431023", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -2352,7 +2634,14 @@ return {
 	Play120431026 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 5.466
+
+		if ({
+			zh = 4.4,
+			ja = 5.466
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -2445,6 +2734,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431026", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431026", "story_v_out_120431.awb") / 1000 > 0 and slot10 < slot14 and uv0.duration_ < slot14 + slot9 then
+						slot10 = slot14
+						uv0.duration_ = slot14 + slot9
+					end
+
+					if slot12.prefab_name ~= "" and uv0.actors_[slot12.prefab_name] ~= nil then
+						uv0:RecordAudio("120431026", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot12.prefab_name].transform, "story_v_out_120431", "120431026", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431026", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -2472,7 +2775,7 @@ return {
 	Play120431027 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 1.4
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -2507,63 +2810,59 @@ return {
 				uv0.var_.characterEffect1076ui_story.fillFlat = false
 			end
 
-			if 0 < uv0.time_ and uv0.time_ <= slot4 + slot0 then
-				uv0:PlayTimeline("1076ui_story", "")
+			slot4 = uv0.actors_["1076ui_story"].transform
+
+			if 0 < uv0.time_ and uv0.time_ <= slot5 + slot0 then
+				uv0.var_.moveOldPos1076ui_story = slot4.localPosition
 			end
 
-			slot5 = uv0.actors_["1076ui_story"].transform
+			slot6 = 0.001
 
-			if 0 < uv0.time_ and uv0.time_ <= slot6 + slot0 then
-				uv0.var_.moveOldPos1076ui_story = slot5.localPosition
-			end
-
-			slot7 = 0.001
-
-			if slot6 <= uv0.time_ and uv0.time_ < slot6 + slot7 then
-				slot5.localPosition = Vector3.Lerp(uv0.var_.moveOldPos1076ui_story, Vector3.New(1.1, -1.1, -5.3), (uv0.time_ - slot6) / slot7)
-				slot11 = manager.ui.mainCamera.transform.position - slot5.position
-				slot5.forward = Vector3.New(slot11.x, slot11.y, slot11.z)
-				slot12 = slot5.localEulerAngles
-				slot12.z = 0
-				slot12.x = 0
-				slot5.localEulerAngles = slot12
-			end
-
-			if uv0.time_ >= slot6 + slot7 and uv0.time_ < slot6 + slot7 + slot0 then
-				slot5.localPosition = Vector3.New(1.1, -1.1, -5.3)
-				slot10 = manager.ui.mainCamera.transform.position - slot5.position
-				slot5.forward = Vector3.New(slot10.x, slot10.y, slot10.z)
-				slot11 = slot5.localEulerAngles
+			if slot5 <= uv0.time_ and uv0.time_ < slot5 + slot6 then
+				slot4.localPosition = Vector3.Lerp(uv0.var_.moveOldPos1076ui_story, Vector3.New(1.1, -1.11, -5.6), (uv0.time_ - slot5) / slot6)
+				slot10 = manager.ui.mainCamera.transform.position - slot4.position
+				slot4.forward = Vector3.New(slot10.x, slot10.y, slot10.z)
+				slot11 = slot4.localEulerAngles
 				slot11.z = 0
 				slot11.x = 0
-				slot5.localEulerAngles = slot11
+				slot4.localEulerAngles = slot11
 			end
 
-			slot8 = uv0.actors_["1084ui_story"]
-
-			if 0 < uv0.time_ and uv0.time_ <= slot9 + slot0 and uv0.var_.characterEffect1084ui_story == nil then
-				uv0.var_.characterEffect1084ui_story = slot8.GetComponentInChildren(slot8, typeof(CharacterEffect))
+			if uv0.time_ >= slot5 + slot6 and uv0.time_ < slot5 + slot6 + slot0 then
+				slot4.localPosition = Vector3.New(1.1, -1.11, -5.6)
+				slot9 = manager.ui.mainCamera.transform.position - slot4.position
+				slot4.forward = Vector3.New(slot9.x, slot9.y, slot9.z)
+				slot10 = slot4.localEulerAngles
+				slot10.z = 0
+				slot10.x = 0
+				slot4.localEulerAngles = slot10
 			end
 
-			slot10 = 0.2
+			slot7 = uv0.actors_["1084ui_story"]
 
-			if slot9 <= uv0.time_ and uv0.time_ < slot9 + slot10 then
-				slot11 = (uv0.time_ - slot9) / slot10
+			if 0 < uv0.time_ and uv0.time_ <= slot8 + slot0 and uv0.var_.characterEffect1084ui_story == nil then
+				uv0.var_.characterEffect1084ui_story = slot7.GetComponentInChildren(slot7, typeof(CharacterEffect))
+			end
+
+			slot9 = 0.2
+
+			if slot8 <= uv0.time_ and uv0.time_ < slot8 + slot9 then
+				slot10 = (uv0.time_ - slot8) / slot9
 
 				if uv0.var_.characterEffect1084ui_story then
 					uv0.var_.characterEffect1084ui_story.fillFlat = true
-					uv0.var_.characterEffect1084ui_story.fillRatio = Mathf.Lerp(0, 0.5, slot11)
+					uv0.var_.characterEffect1084ui_story.fillRatio = Mathf.Lerp(0, 0.5, slot10)
 				end
 			end
 
-			if uv0.time_ >= slot9 + slot10 and uv0.time_ < slot9 + slot10 + slot0 and uv0.var_.characterEffect1084ui_story then
+			if uv0.time_ >= slot8 + slot9 and uv0.time_ < slot8 + slot9 + slot0 and uv0.var_.characterEffect1084ui_story then
 				uv0.var_.characterEffect1084ui_story.fillFlat = true
 				uv0.var_.characterEffect1084ui_story.fillRatio = 0.5
 			end
 
-			slot12 = 0.125
+			slot11 = 0.125
 
-			if 0 < uv0.time_ and uv0.time_ <= slot11 + slot0 then
+			if 0 < uv0.time_ and uv0.time_ <= slot10 + slot0 then
 				uv0.dialogCg_.alpha = 1
 
 				SetActive(uv0.leftNameGo_, true)
@@ -2583,23 +2882,37 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431027", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431027", "story_v_out_120431.awb") / 1000 > 0 and slot11 < slot15 and uv0.duration_ < slot15 + slot10 then
+						slot11 = slot15
+						uv0.duration_ = slot15 + slot10
+					end
+
+					if slot13.prefab_name ~= "" and uv0.actors_[slot13.prefab_name] ~= nil then
+						uv0:RecordAudio("120431027", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot13.prefab_name].transform, "story_v_out_120431", "120431027", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431027", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
-			slot14 = uv0:FormatText(StoryWordCfg[120431027].content)
-			slot16 = string.split(slot14, ".")
+			slot13 = uv0:FormatText(StoryWordCfg[120431027].content)
+			slot15 = string.split(slot13, ".")
 
-			if #string.split(slot14, "\n") >= 4 or #slot16 >= 4 then
-				slot12 = slot12 * 3
+			if #string.split(slot13, "\n") >= 4 or #slot15 >= 4 then
+				slot11 = slot11 * 3
 			end
 
-			if slot11 <= uv0.time_ and uv0.time_ < slot11 + slot12 then
-				uv0.typewritter.percent = (uv0.time_ - slot11) / slot12
+			if slot10 <= uv0.time_ and uv0.time_ < slot10 + slot11 then
+				uv0.typewritter.percent = (uv0.time_ - slot10) / slot11
 
 				uv0.typewritter:SetDirty()
 			end
 
-			if uv0.time_ >= slot11 + slot12 and uv0.time_ < slot11 + slot12 + slot0 then
+			if uv0.time_ >= slot10 + slot11 and uv0.time_ < slot10 + slot11 + slot0 then
 				uv0.typewritter.percent = 1
 
 				uv0.typewritter:SetDirty()
@@ -2692,7 +3005,14 @@ return {
 	Play120431029 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 8.4
+
+		if ({
+			zh = 5.366,
+			ja = 8.4
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -2755,6 +3075,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431029", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431029", "story_v_out_120431.awb") / 1000 > 0 and slot7 < slot11 and uv0.duration_ < slot11 + slot6 then
+						slot7 = slot11
+						uv0.duration_ = slot11 + slot6
+					end
+
+					if slot9.prefab_name ~= "" and uv0.actors_[slot9.prefab_name] ~= nil then
+						uv0:RecordAudio("120431029", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot9.prefab_name].transform, "story_v_out_120431", "120431029", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431029", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -2782,7 +3116,14 @@ return {
 	Play120431030 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 7.133
+
+		if ({
+			zh = 7.133,
+			ja = 6.866
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -2819,6 +3160,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431030", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431030", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431030", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431030", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431030", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -3121,7 +3476,14 @@ return {
 	Play120431033 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 8
+
+		if ({
+			zh = 5.6,
+			ja = 8
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -3232,6 +3594,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431033", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431033", "story_v_out_120431.awb") / 1000 > 0 and slot11 < slot15 and uv0.duration_ < slot15 + slot10 then
+						slot11 = slot15
+						uv0.duration_ = slot15 + slot10
+					end
+
+					if slot13.prefab_name ~= "" and uv0.actors_[slot13.prefab_name] ~= nil then
+						uv0:RecordAudio("120431033", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot13.prefab_name].transform, "story_v_out_120431", "120431033", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431033", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -3259,7 +3635,14 @@ return {
 	Play120431034 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 12
+
+		if ({
+			zh = 9.566,
+			ja = 12
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -3363,12 +3746,16 @@ return {
 			end
 
 			if 0 < uv0.time_ and uv0.time_ <= slot11 + slot0 then
-				uv0:PlayTimeline("1069ui_story", "")
+				uv0:PlayTimeline("1069ui_story", "StoryTimeline/CharAction/story1069/story1069action/1069action4_1")
 			end
 
-			slot13 = 1.1
-
 			if 0 < uv0.time_ and uv0.time_ <= slot12 + slot0 then
+				uv0:PlayTimeline("1069ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface1103cva")
+			end
+
+			slot14 = 1.1
+
+			if 0 < uv0.time_ and uv0.time_ <= slot13 + slot0 then
 				uv0.dialogCg_.alpha = 1
 
 				SetActive(uv0.leftNameGo_, true)
@@ -3388,23 +3775,37 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431034", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431034", "story_v_out_120431.awb") / 1000 > 0 and slot14 < slot18 and uv0.duration_ < slot18 + slot13 then
+						slot14 = slot18
+						uv0.duration_ = slot18 + slot13
+					end
+
+					if slot16.prefab_name ~= "" and uv0.actors_[slot16.prefab_name] ~= nil then
+						uv0:RecordAudio("120431034", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot16.prefab_name].transform, "story_v_out_120431", "120431034", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431034", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
-			slot15 = uv0:FormatText(StoryWordCfg[120431034].content)
-			slot17 = string.split(slot15, ".")
+			slot16 = uv0:FormatText(StoryWordCfg[120431034].content)
+			slot18 = string.split(slot16, ".")
 
-			if #string.split(slot15, "\n") >= 4 or #slot17 >= 4 then
-				slot13 = slot13 * 3
+			if #string.split(slot16, "\n") >= 4 or #slot18 >= 4 then
+				slot14 = slot14 * 3
 			end
 
-			if slot12 <= uv0.time_ and uv0.time_ < slot12 + slot13 then
-				uv0.typewritter.percent = (uv0.time_ - slot12) / slot13
+			if slot13 <= uv0.time_ and uv0.time_ < slot13 + slot14 then
+				uv0.typewritter.percent = (uv0.time_ - slot13) / slot14
 
 				uv0.typewritter:SetDirty()
 			end
 
-			if uv0.time_ >= slot12 + slot13 and uv0.time_ < slot12 + slot13 + slot0 then
+			if uv0.time_ >= slot13 + slot14 and uv0.time_ < slot13 + slot14 + slot0 then
 				uv0.typewritter.percent = 1
 
 				uv0.typewritter:SetDirty()
@@ -3415,7 +3816,14 @@ return {
 	Play120431035 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 1.8
+
+		if ({
+			zh = 1.766,
+			ja = 1.8
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -3494,6 +3902,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431035", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431035", "story_v_out_120431.awb") / 1000 > 0 and slot8 < slot12 and uv0.duration_ < slot12 + slot7 then
+						slot8 = slot12
+						uv0.duration_ = slot12 + slot7
+					end
+
+					if slot10.prefab_name ~= "" and uv0.actors_[slot10.prefab_name] ~= nil then
+						uv0:RecordAudio("120431035", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot10.prefab_name].transform, "story_v_out_120431", "120431035", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431035", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -3521,7 +3943,14 @@ return {
 	Play120431036 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 6.9
+
+		if ({
+			zh = 4.933,
+			ja = 6.9
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -3600,6 +4029,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431036", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431036", "story_v_out_120431.awb") / 1000 > 0 and slot8 < slot12 and uv0.duration_ < slot12 + slot7 then
+						slot8 = slot12
+						uv0.duration_ = slot12 + slot7
+					end
+
+					if slot10.prefab_name ~= "" and uv0.actors_[slot10.prefab_name] ~= nil then
+						uv0:RecordAudio("120431036", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot10.prefab_name].transform, "story_v_out_120431", "120431036", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431036", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -3627,7 +4070,14 @@ return {
 	Play120431037 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 5.133
+
+		if ({
+			zh = 5.133,
+			ja = 4.133
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -3664,6 +4114,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431037", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431037", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431037", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431037", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431037", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -3777,7 +4241,14 @@ return {
 	Play120431039 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 7
+
+		if ({
+			zh = 3.8,
+			ja = 7
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -3834,6 +4305,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431039", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431039", "story_v_out_120431.awb") / 1000 > 0 and slot5 < slot9 and uv0.duration_ < slot9 + slot4 then
+						slot5 = slot9
+						uv0.duration_ = slot9 + slot4
+					end
+
+					if slot7.prefab_name ~= "" and uv0.actors_[slot7.prefab_name] ~= nil then
+						uv0:RecordAudio("120431039", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot7.prefab_name].transform, "story_v_out_120431", "120431039", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431039", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -3861,7 +4346,14 @@ return {
 	Play120431040 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 9.5
+
+		if ({
+			zh = 7.266,
+			ja = 9.5
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -3876,29 +4368,9 @@ return {
 		end
 
 		function slot1.onSingleLineUpdate_(slot0)
-			slot1 = uv0.actors_["1069ui_story"]
+			slot2 = 0.875
 
-			if 0 < uv0.time_ and uv0.time_ <= slot2 + slot0 and uv0.var_.characterEffect1069ui_story == nil then
-				uv0.var_.characterEffect1069ui_story = slot1.GetComponentInChildren(slot1, typeof(CharacterEffect))
-			end
-
-			slot3 = 0.2
-
-			if slot2 <= uv0.time_ and uv0.time_ < slot2 + slot3 then
-				slot4 = (uv0.time_ - slot2) / slot3
-
-				if uv0.var_.characterEffect1069ui_story then
-					uv0.var_.characterEffect1069ui_story.fillFlat = false
-				end
-			end
-
-			if uv0.time_ >= slot2 + slot3 and uv0.time_ < slot2 + slot3 + slot0 and uv0.var_.characterEffect1069ui_story then
-				uv0.var_.characterEffect1069ui_story.fillFlat = false
-			end
-
-			slot5 = 0.875
-
-			if 0 < uv0.time_ and uv0.time_ <= slot4 + slot0 then
+			if 0 < uv0.time_ and uv0.time_ <= slot1 + slot0 then
 				uv0.dialogCg_.alpha = 1
 
 				SetActive(uv0.leftNameGo_, true)
@@ -3918,23 +4390,37 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431040", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431040", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431040", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431040", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431040", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
-			slot7 = uv0:FormatText(StoryWordCfg[120431040].content)
-			slot9 = string.split(slot7, ".")
+			slot4 = uv0:FormatText(StoryWordCfg[120431040].content)
+			slot6 = string.split(slot4, ".")
 
-			if #string.split(slot7, "\n") >= 4 or #slot9 >= 4 then
-				slot5 = slot5 * 3
+			if #string.split(slot4, "\n") >= 4 or #slot6 >= 4 then
+				slot2 = slot2 * 3
 			end
 
-			if slot4 <= uv0.time_ and uv0.time_ < slot4 + slot5 then
-				uv0.typewritter.percent = (uv0.time_ - slot4) / slot5
+			if slot1 <= uv0.time_ and uv0.time_ < slot1 + slot2 then
+				uv0.typewritter.percent = (uv0.time_ - slot1) / slot2
 
 				uv0.typewritter:SetDirty()
 			end
 
-			if uv0.time_ >= slot4 + slot5 and uv0.time_ < slot4 + slot5 + slot0 then
+			if uv0.time_ >= slot1 + slot2 and uv0.time_ < slot1 + slot2 + slot0 then
 				uv0.typewritter.percent = 1
 
 				uv0.typewritter:SetDirty()
@@ -3945,7 +4431,14 @@ return {
 	Play120431041 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 5.566
+
+		if ({
+			zh = 4.833,
+			ja = 5.566
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -4032,6 +4525,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431041", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431041", "story_v_out_120431.awb") / 1000 > 0 and slot10 < slot14 and uv0.duration_ < slot14 + slot9 then
+						slot10 = slot14
+						uv0.duration_ = slot14 + slot9
+					end
+
+					if slot12.prefab_name ~= "" and uv0.actors_[slot12.prefab_name] ~= nil then
+						uv0:RecordAudio("120431041", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot12.prefab_name].transform, "story_v_out_120431", "120431041", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431041", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -4059,7 +4566,14 @@ return {
 	Play120431042 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 13.5
+
+		if ({
+			zh = 7.066,
+			ja = 13.5
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -4104,6 +4618,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431042", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431042", "story_v_out_120431.awb") / 1000 > 0 and slot4 < slot8 and uv0.duration_ < slot8 + slot3 then
+						slot4 = slot8
+						uv0.duration_ = slot8 + slot3
+					end
+
+					if slot6.prefab_name ~= "" and uv0.actors_[slot6.prefab_name] ~= nil then
+						uv0:RecordAudio("120431042", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot6.prefab_name].transform, "story_v_out_120431", "120431042", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431042", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -4131,7 +4659,14 @@ return {
 	Play120431043 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 8.233
+
+		if ({
+			zh = 5.033,
+			ja = 8.233
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -4188,9 +4723,17 @@ return {
 				uv0.var_.characterEffect1069ui_story.fillFlat = false
 			end
 
-			slot8 = 0.65
-
 			if 0 < uv0.time_ and uv0.time_ <= slot7 + slot0 then
+				uv0:PlayTimeline("1069ui_story", "StoryTimeline/CharAction/story1069/story1069actionlink/1069action442")
+			end
+
+			if 0 < uv0.time_ and uv0.time_ <= slot8 + slot0 then
+				uv0:PlayTimeline("1069ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface1103cva")
+			end
+
+			slot10 = 0.65
+
+			if 0 < uv0.time_ and uv0.time_ <= slot9 + slot0 then
 				uv0.dialogCg_.alpha = 1
 
 				SetActive(uv0.leftNameGo_, true)
@@ -4210,23 +4753,37 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431043", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431043", "story_v_out_120431.awb") / 1000 > 0 and slot10 < slot14 and uv0.duration_ < slot14 + slot9 then
+						slot10 = slot14
+						uv0.duration_ = slot14 + slot9
+					end
+
+					if slot12.prefab_name ~= "" and uv0.actors_[slot12.prefab_name] ~= nil then
+						uv0:RecordAudio("120431043", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot12.prefab_name].transform, "story_v_out_120431", "120431043", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431043", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
-			slot10 = uv0:FormatText(StoryWordCfg[120431043].content)
-			slot12 = string.split(slot10, ".")
+			slot12 = uv0:FormatText(StoryWordCfg[120431043].content)
+			slot14 = string.split(slot12, ".")
 
-			if #string.split(slot10, "\n") >= 4 or #slot12 >= 4 then
-				slot8 = slot8 * 3
+			if #string.split(slot12, "\n") >= 4 or #slot14 >= 4 then
+				slot10 = slot10 * 3
 			end
 
-			if slot7 <= uv0.time_ and uv0.time_ < slot7 + slot8 then
-				uv0.typewritter.percent = (uv0.time_ - slot7) / slot8
+			if slot9 <= uv0.time_ and uv0.time_ < slot9 + slot10 then
+				uv0.typewritter.percent = (uv0.time_ - slot9) / slot10
 
 				uv0.typewritter:SetDirty()
 			end
 
-			if uv0.time_ >= slot7 + slot8 and uv0.time_ < slot7 + slot8 + slot0 then
+			if uv0.time_ >= slot9 + slot10 and uv0.time_ < slot9 + slot10 + slot0 then
 				uv0.typewritter.percent = 1
 
 				uv0.typewritter:SetDirty()
@@ -4323,7 +4880,14 @@ return {
 	Play120431045 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 5.566
+
+		if ({
+			zh = 2.933,
+			ja = 5.566
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -4380,6 +4944,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431045", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431045", "story_v_out_120431.awb") / 1000 > 0 and slot5 < slot9 and uv0.duration_ < slot9 + slot4 then
+						slot5 = slot9
+						uv0.duration_ = slot9 + slot4
+					end
+
+					if slot7.prefab_name ~= "" and uv0.actors_[slot7.prefab_name] ~= nil then
+						uv0:RecordAudio("120431045", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot7.prefab_name].transform, "story_v_out_120431", "120431045", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431045", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -4407,7 +4985,14 @@ return {
 	Play120431046 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 16.066
+
+		if ({
+			zh = 8,
+			ja = 16.066
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -4442,9 +5027,31 @@ return {
 				uv0.var_.characterEffect1075ui_story.fillFlat = false
 			end
 
-			slot5 = 0.95
+			slot4 = uv0.actors_["1069ui_story"]
 
-			if 0 < uv0.time_ and uv0.time_ <= slot4 + slot0 then
+			if 0 < uv0.time_ and uv0.time_ <= slot5 + slot0 and uv0.var_.characterEffect1069ui_story == nil then
+				uv0.var_.characterEffect1069ui_story = slot4.GetComponentInChildren(slot4, typeof(CharacterEffect))
+			end
+
+			slot6 = 0.2
+
+			if slot5 <= uv0.time_ and uv0.time_ < slot5 + slot6 then
+				slot7 = (uv0.time_ - slot5) / slot6
+
+				if uv0.var_.characterEffect1069ui_story then
+					uv0.var_.characterEffect1069ui_story.fillFlat = true
+					uv0.var_.characterEffect1069ui_story.fillRatio = Mathf.Lerp(0, 0.5, slot7)
+				end
+			end
+
+			if uv0.time_ >= slot5 + slot6 and uv0.time_ < slot5 + slot6 + slot0 and uv0.var_.characterEffect1069ui_story then
+				uv0.var_.characterEffect1069ui_story.fillFlat = true
+				uv0.var_.characterEffect1069ui_story.fillRatio = 0.5
+			end
+
+			slot8 = 0.95
+
+			if 0 < uv0.time_ and uv0.time_ <= slot7 + slot0 then
 				uv0.dialogCg_.alpha = 1
 
 				SetActive(uv0.leftNameGo_, true)
@@ -4464,23 +5071,37 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431046", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431046", "story_v_out_120431.awb") / 1000 > 0 and slot8 < slot12 and uv0.duration_ < slot12 + slot7 then
+						slot8 = slot12
+						uv0.duration_ = slot12 + slot7
+					end
+
+					if slot10.prefab_name ~= "" and uv0.actors_[slot10.prefab_name] ~= nil then
+						uv0:RecordAudio("120431046", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot10.prefab_name].transform, "story_v_out_120431", "120431046", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431046", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
-			slot7 = uv0:FormatText(StoryWordCfg[120431046].content)
-			slot9 = string.split(slot7, ".")
+			slot10 = uv0:FormatText(StoryWordCfg[120431046].content)
+			slot12 = string.split(slot10, ".")
 
-			if #string.split(slot7, "\n") >= 4 or #slot9 >= 4 then
-				slot5 = slot5 * 3
+			if #string.split(slot10, "\n") >= 4 or #slot12 >= 4 then
+				slot8 = slot8 * 3
 			end
 
-			if slot4 <= uv0.time_ and uv0.time_ < slot4 + slot5 then
-				uv0.typewritter.percent = (uv0.time_ - slot4) / slot5
+			if slot7 <= uv0.time_ and uv0.time_ < slot7 + slot8 then
+				uv0.typewritter.percent = (uv0.time_ - slot7) / slot8
 
 				uv0.typewritter:SetDirty()
 			end
 
-			if uv0.time_ >= slot4 + slot5 and uv0.time_ < slot4 + slot5 + slot0 then
+			if uv0.time_ >= slot7 + slot8 and uv0.time_ < slot7 + slot8 + slot0 then
 				uv0.typewritter.percent = 1
 
 				uv0.typewritter:SetDirty()
@@ -4491,7 +5112,14 @@ return {
 	Play120431047 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 7.866
+
+		if ({
+			zh = 3.933,
+			ja = 7.866
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -4570,6 +5198,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431047", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431047", "story_v_out_120431.awb") / 1000 > 0 and slot8 < slot12 and uv0.duration_ < slot12 + slot7 then
+						slot8 = slot12
+						uv0.duration_ = slot12 + slot7
+					end
+
+					if slot10.prefab_name ~= "" and uv0.actors_[slot10.prefab_name] ~= nil then
+						uv0:RecordAudio("120431047", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot10.prefab_name].transform, "story_v_out_120431", "120431047", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431047", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -4597,7 +5239,14 @@ return {
 	Play120431048 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 5.9
+
+		if ({
+			zh = 5.9,
+			ja = 4.733
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -4634,6 +5283,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431048", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431048", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431048", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431048", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431048", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -4661,7 +5324,14 @@ return {
 	Play120431049 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 4.933
+
+		if ({
+			zh = 4.933,
+			ja = 3.466
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -4748,6 +5418,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431049", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431049", "story_v_out_120431.awb") / 1000 > 0 and slot10 < slot14 and uv0.duration_ < slot14 + slot9 then
+						slot10 = slot14
+						uv0.duration_ = slot14 + slot9
+					end
+
+					if slot12.prefab_name ~= "" and uv0.actors_[slot12.prefab_name] ~= nil then
+						uv0:RecordAudio("120431049", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot12.prefab_name].transform, "story_v_out_120431", "120431049", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431049", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -4775,7 +5459,14 @@ return {
 	Play120431050 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 9.766
+
+		if ({
+			zh = 5.1,
+			ja = 9.766
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -4816,6 +5507,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431050", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431050", "story_v_out_120431.awb") / 1000 > 0 and slot3 < slot7 and uv0.duration_ < slot7 + slot2 then
+						slot3 = slot7
+						uv0.duration_ = slot7 + slot2
+					end
+
+					if slot5.prefab_name ~= "" and uv0.actors_[slot5.prefab_name] ~= nil then
+						uv0:RecordAudio("120431050", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot5.prefab_name].transform, "story_v_out_120431", "120431050", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431050", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -4937,7 +5642,14 @@ return {
 	Play120431052 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 8.366
+
+		if ({
+			zh = 4.1,
+			ja = 8.366
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -4974,6 +5686,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431052", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431052", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431052", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431052", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431052", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -5061,7 +5787,14 @@ return {
 	Play120431054 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 3.033
+
+		if ({
+			zh = 2.5,
+			ja = 3.033
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -5122,6 +5855,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431054", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431054", "story_v_out_120431.awb") / 1000 > 0 and slot6 < slot10 and uv0.duration_ < slot10 + slot5 then
+						slot6 = slot10
+						uv0.duration_ = slot10 + slot5
+					end
+
+					if slot8.prefab_name ~= "" and uv0.actors_[slot8.prefab_name] ~= nil then
+						uv0:RecordAudio("120431054", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot8.prefab_name].transform, "story_v_out_120431", "120431054", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431054", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -5149,7 +5896,14 @@ return {
 	Play120431055 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 6.933
+
+		if ({
+			zh = 3.9,
+			ja = 6.933
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -5295,6 +6049,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431055", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431055", "story_v_out_120431.awb") / 1000 > 0 and slot14 < slot18 and uv0.duration_ < slot18 + slot13 then
+						slot14 = slot18
+						uv0.duration_ = slot18 + slot13
+					end
+
+					if slot16.prefab_name ~= "" and uv0.actors_[slot16.prefab_name] ~= nil then
+						uv0:RecordAudio("120431055", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot16.prefab_name].transform, "story_v_out_120431", "120431055", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431055", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -5322,7 +6090,14 @@ return {
 	Play120431056 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 9.766
+
+		if ({
+			zh = 4.766,
+			ja = 9.766
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -5394,58 +6169,54 @@ return {
 			end
 
 			if 0 < uv0.time_ and uv0.time_ <= slot7 + slot0 then
-				uv0:PlayTimeline("1069ui_story", "")
+				uv0:PlayTimeline("1069ui_story", "StoryTimeline/CharAction/story1069/story1069action/1069action1_1")
 			end
 
-			if 0 < uv0.time_ and uv0.time_ <= slot8 + slot0 then
-				uv0:PlayTimeline("1069ui_story", "")
+			slot8 = uv0.actors_["1069ui_story"]
+
+			if 0 < uv0.time_ and uv0.time_ <= slot9 + slot0 and uv0.var_.characterEffect1069ui_story == nil then
+				uv0.var_.characterEffect1069ui_story = slot8.GetComponentInChildren(slot8, typeof(CharacterEffect))
 			end
 
-			slot9 = uv0.actors_["1069ui_story"]
+			slot10 = 0.2
 
-			if 0 < uv0.time_ and uv0.time_ <= slot10 + slot0 and uv0.var_.characterEffect1069ui_story == nil then
-				uv0.var_.characterEffect1069ui_story = slot9.GetComponentInChildren(slot9, typeof(CharacterEffect))
-			end
-
-			slot11 = 0.2
-
-			if slot10 <= uv0.time_ and uv0.time_ < slot10 + slot11 then
-				slot12 = (uv0.time_ - slot10) / slot11
+			if slot9 <= uv0.time_ and uv0.time_ < slot9 + slot10 then
+				slot11 = (uv0.time_ - slot9) / slot10
 
 				if uv0.var_.characterEffect1069ui_story then
 					uv0.var_.characterEffect1069ui_story.fillFlat = false
 				end
 			end
 
-			if uv0.time_ >= slot10 + slot11 and uv0.time_ < slot10 + slot11 + slot0 and uv0.var_.characterEffect1069ui_story then
+			if uv0.time_ >= slot9 + slot10 and uv0.time_ < slot9 + slot10 + slot0 and uv0.var_.characterEffect1069ui_story then
 				uv0.var_.characterEffect1069ui_story.fillFlat = false
 			end
 
-			slot12 = uv0.actors_["1029ui_story"]
+			slot11 = uv0.actors_["1029ui_story"]
 
-			if 0 < uv0.time_ and uv0.time_ <= slot13 + slot0 and uv0.var_.characterEffect1029ui_story == nil then
-				uv0.var_.characterEffect1029ui_story = slot12.GetComponentInChildren(slot12, typeof(CharacterEffect))
+			if 0 < uv0.time_ and uv0.time_ <= slot12 + slot0 and uv0.var_.characterEffect1029ui_story == nil then
+				uv0.var_.characterEffect1029ui_story = slot11.GetComponentInChildren(slot11, typeof(CharacterEffect))
 			end
 
-			slot14 = 0.2
+			slot13 = 0.2
 
-			if slot13 <= uv0.time_ and uv0.time_ < slot13 + slot14 then
-				slot15 = (uv0.time_ - slot13) / slot14
+			if slot12 <= uv0.time_ and uv0.time_ < slot12 + slot13 then
+				slot14 = (uv0.time_ - slot12) / slot13
 
 				if uv0.var_.characterEffect1029ui_story then
 					uv0.var_.characterEffect1029ui_story.fillFlat = true
-					uv0.var_.characterEffect1029ui_story.fillRatio = Mathf.Lerp(0, 0.5, slot15)
+					uv0.var_.characterEffect1029ui_story.fillRatio = Mathf.Lerp(0, 0.5, slot14)
 				end
 			end
 
-			if uv0.time_ >= slot13 + slot14 and uv0.time_ < slot13 + slot14 + slot0 and uv0.var_.characterEffect1029ui_story then
+			if uv0.time_ >= slot12 + slot13 and uv0.time_ < slot12 + slot13 + slot0 and uv0.var_.characterEffect1029ui_story then
 				uv0.var_.characterEffect1029ui_story.fillFlat = true
 				uv0.var_.characterEffect1029ui_story.fillRatio = 0.5
 			end
 
-			slot16 = 0.6
+			slot15 = 0.6
 
-			if 0 < uv0.time_ and uv0.time_ <= slot15 + slot0 then
+			if 0 < uv0.time_ and uv0.time_ <= slot14 + slot0 then
 				uv0.dialogCg_.alpha = 1
 
 				SetActive(uv0.leftNameGo_, true)
@@ -5465,23 +6236,37 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431056", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431056", "story_v_out_120431.awb") / 1000 > 0 and slot15 < slot19 and uv0.duration_ < slot19 + slot14 then
+						slot15 = slot19
+						uv0.duration_ = slot19 + slot14
+					end
+
+					if slot17.prefab_name ~= "" and uv0.actors_[slot17.prefab_name] ~= nil then
+						uv0:RecordAudio("120431056", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot17.prefab_name].transform, "story_v_out_120431", "120431056", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431056", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
-			slot18 = uv0:FormatText(StoryWordCfg[120431056].content)
-			slot20 = string.split(slot18, ".")
+			slot17 = uv0:FormatText(StoryWordCfg[120431056].content)
+			slot19 = string.split(slot17, ".")
 
-			if #string.split(slot18, "\n") >= 4 or #slot20 >= 4 then
-				slot16 = slot16 * 3
+			if #string.split(slot17, "\n") >= 4 or #slot19 >= 4 then
+				slot15 = slot15 * 3
 			end
 
-			if slot15 <= uv0.time_ and uv0.time_ < slot15 + slot16 then
-				uv0.typewritter.percent = (uv0.time_ - slot15) / slot16
+			if slot14 <= uv0.time_ and uv0.time_ < slot14 + slot15 then
+				uv0.typewritter.percent = (uv0.time_ - slot14) / slot15
 
 				uv0.typewritter:SetDirty()
 			end
 
-			if uv0.time_ >= slot15 + slot16 and uv0.time_ < slot15 + slot16 + slot0 then
+			if uv0.time_ >= slot14 + slot15 and uv0.time_ < slot14 + slot15 + slot0 then
 				uv0.typewritter.percent = 1
 
 				uv0.typewritter:SetDirty()
@@ -5492,7 +6277,14 @@ return {
 	Play120431057 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 6.233
+
+		if ({
+			zh = 5.1,
+			ja = 6.233
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -5571,6 +6363,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431057", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431057", "story_v_out_120431.awb") / 1000 > 0 and slot8 < slot12 and uv0.duration_ < slot12 + slot7 then
+						slot8 = slot12
+						uv0.duration_ = slot12 + slot7
+					end
+
+					if slot10.prefab_name ~= "" and uv0.actors_[slot10.prefab_name] ~= nil then
+						uv0:RecordAudio("120431057", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot10.prefab_name].transform, "story_v_out_120431", "120431057", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431057", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -5598,7 +6404,14 @@ return {
 	Play120431058 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 2.066
+
+		if ({
+			zh = 1.6,
+			ja = 2.066
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -5635,6 +6448,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431058", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431058", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431058", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431058", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431058", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -5662,7 +6489,14 @@ return {
 	Play120431059 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 7.533
+
+		if ({
+			zh = 6.066,
+			ja = 7.533
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -5805,6 +6639,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431059", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431059", "story_v_out_120431.awb") / 1000 > 0 and slot16 < slot20 and uv0.duration_ < slot20 + slot15 then
+						slot16 = slot20
+						uv0.duration_ = slot20 + slot15
+					end
+
+					if slot18.prefab_name ~= "" and uv0.actors_[slot18.prefab_name] ~= nil then
+						uv0:RecordAudio("120431059", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot18.prefab_name].transform, "story_v_out_120431", "120431059", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431059", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -5832,7 +6680,14 @@ return {
 	Play120431060 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 6.3
+
+		if ({
+			zh = 6.266,
+			ja = 6.3
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -5877,6 +6732,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431060", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431060", "story_v_out_120431.awb") / 1000 > 0 and slot4 < slot8 and uv0.duration_ < slot8 + slot3 then
+						slot4 = slot8
+						uv0.duration_ = slot8 + slot3
+					end
+
+					if slot6.prefab_name ~= "" and uv0.actors_[slot6.prefab_name] ~= nil then
+						uv0:RecordAudio("120431060", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot6.prefab_name].transform, "story_v_out_120431", "120431060", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431060", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -5904,7 +6773,14 @@ return {
 	Play120431061 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 10.1
+
+		if ({
+			zh = 5.6,
+			ja = 10.1
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -6075,6 +6951,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431061", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431061", "story_v_out_120431.awb") / 1000 > 0 and slot19 < slot23 and uv0.duration_ < slot23 + slot18 then
+						slot19 = slot23
+						uv0.duration_ = slot23 + slot18
+					end
+
+					if slot21.prefab_name ~= "" and uv0.actors_[slot21.prefab_name] ~= nil then
+						uv0:RecordAudio("120431061", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot21.prefab_name].transform, "story_v_out_120431", "120431061", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431061", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -6188,7 +7078,14 @@ return {
 	Play120431063 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 4.233
+
+		if ({
+			zh = 2,
+			ja = 4.233
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -6260,7 +7157,7 @@ return {
 			end
 
 			if 0 < uv0.time_ and uv0.time_ <= slot7 + slot0 then
-				uv0:PlayTimeline("1069ui_story", "")
+				uv0:PlayTimeline("1069ui_story", "StoryTimeline/CharAction/story1069/story1069action/1069action1_1")
 			end
 
 			if 0 < uv0.time_ and uv0.time_ <= slot8 + slot0 then
@@ -6309,6 +7206,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431063", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431063", "story_v_out_120431.awb") / 1000 > 0 and slot13 < slot17 and uv0.duration_ < slot17 + slot12 then
+						slot13 = slot17
+						uv0.duration_ = slot17 + slot12
+					end
+
+					if slot15.prefab_name ~= "" and uv0.actors_[slot15.prefab_name] ~= nil then
+						uv0:RecordAudio("120431063", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot15.prefab_name].transform, "story_v_out_120431", "120431063", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431063", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -6715,7 +7626,14 @@ return {
 	Play120431069 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 8.7
+
+		if ({
+			zh = 2.2,
+			ja = 8.7
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -6739,7 +7657,7 @@ return {
 			slot3 = 0.001
 
 			if slot2 <= uv0.time_ and uv0.time_ < slot2 + slot3 then
-				slot1.localPosition = Vector3.Lerp(uv0.var_.moveOldPos1076ui_story, Vector3.New(0, -1.1, -5.3), (uv0.time_ - slot2) / slot3)
+				slot1.localPosition = Vector3.Lerp(uv0.var_.moveOldPos1076ui_story, Vector3.New(0, -1.11, -5.6), (uv0.time_ - slot2) / slot3)
 				slot7 = manager.ui.mainCamera.transform.position - slot1.position
 				slot1.forward = Vector3.New(slot7.x, slot7.y, slot7.z)
 				slot8 = slot1.localEulerAngles
@@ -6749,7 +7667,7 @@ return {
 			end
 
 			if uv0.time_ >= slot2 + slot3 and uv0.time_ < slot2 + slot3 + slot0 then
-				slot1.localPosition = Vector3.New(0, -1.1, -5.3)
+				slot1.localPosition = Vector3.New(0, -1.11, -5.6)
 				slot6 = manager.ui.mainCamera.transform.position - slot1.position
 				slot1.forward = Vector3.New(slot6.x, slot6.y, slot6.z)
 				slot7 = slot1.localEulerAngles
@@ -6759,7 +7677,7 @@ return {
 			end
 
 			if 0 < uv0.time_ and uv0.time_ <= slot4 + slot0 then
-				uv0:PlayTimeline("1076ui_story", "")
+				uv0:PlayTimeline("1076ui_story", "StoryTimeline/CharAction/story1076/story1076action/1076action1_1")
 			end
 
 			if 0 < uv0.time_ and uv0.time_ <= slot5 + slot0 then
@@ -6808,6 +7726,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431069", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431069", "story_v_out_120431.awb") / 1000 > 0 and slot10 < slot14 and uv0.duration_ < slot14 + slot9 then
+						slot10 = slot14
+						uv0.duration_ = slot14 + slot9
+					end
+
+					if slot12.prefab_name ~= "" and uv0.actors_[slot12.prefab_name] ~= nil then
+						uv0:RecordAudio("120431069", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot12.prefab_name].transform, "story_v_out_120431", "120431069", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431069", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -7102,7 +8034,14 @@ return {
 	Play120431072 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 7
+		slot1.duration_ = 5.25
+
+		if ({
+			zh = 5.25,
+			ja = 4.716
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -7153,7 +8092,7 @@ return {
 				uv0:SetGaussion(false)
 			end
 
-			slot4 = 2
+			slot4 = 3.5
 
 			if slot3 <= uv0.time_ and uv0.time_ < slot3 + slot4 then
 				slot6 = Color.New(0, 0, 0)
@@ -7174,7 +8113,7 @@ return {
 
 			slot6 = 0.15
 
-			if 2 < uv0.time_ and uv0.time_ <= slot5 + slot0 then
+			if 3.35 < uv0.time_ and uv0.time_ <= slot5 + slot0 then
 				uv0.dialog_:SetActive(true)
 
 				uv0.dialog_.transform.localScale = Vector3(0.8, 0.95, 1)
@@ -7210,6 +8149,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431072", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431072", "story_v_out_120431.awb") / 1000 > 0 and slot6 < slot11 and uv0.duration_ < slot11 + slot5 then
+						slot6 = slot11
+						uv0.duration_ = slot11 + slot5
+					end
+
+					if slot9.prefab_name ~= "" and uv0.actors_[slot9.prefab_name] ~= nil then
+						uv0:RecordAudio("120431072", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot9.prefab_name].transform, "story_v_out_120431", "120431072", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431072", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -7422,7 +8375,14 @@ return {
 	Play120431076 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 7.433
+
+		if ({
+			zh = 3.666,
+			ja = 7.433
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -7459,6 +8419,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431076", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431076", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431076", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431076", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431076", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -7550,7 +8524,14 @@ return {
 	Play120431078 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 4.9
+
+		if ({
+			zh = 4.9,
+			ja = 4.366
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -7587,6 +8568,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431078", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431078", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431078", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431078", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431078", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -7614,7 +8609,14 @@ return {
 	Play120431079 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 4.966
+
+		if ({
+			zh = 3.7,
+			ja = 4.966
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -7651,6 +8653,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431079", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431079", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431079", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431079", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431079", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -7678,7 +8694,14 @@ return {
 	Play120431080 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 4.9
+
+		if ({
+			zh = 2.9,
+			ja = 4.9
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -7715,6 +8738,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431080", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431080", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431080", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431080", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431080", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -7742,7 +8779,14 @@ return {
 	Play120431081 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 6.833
+
+		if ({
+			zh = 6.833,
+			ja = 5.833
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -7779,6 +8823,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431081", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431081", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431081", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431081", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431081", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -7806,7 +8864,14 @@ return {
 	Play120431082 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 5.7
+
+		if ({
+			zh = 4.266,
+			ja = 5.7
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -7843,6 +8908,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431082", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431082", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431082", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431082", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431082", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -7870,7 +8949,14 @@ return {
 	Play120431083 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 13.1
+
+		if ({
+			zh = 12,
+			ja = 13.1
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -7907,6 +8993,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431083", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431083", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431083", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431083", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431083", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -7934,7 +9034,14 @@ return {
 	Play120431084 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 5.3
+
+		if ({
+			zh = 3.1,
+			ja = 5.3
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -7971,6 +9078,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431084", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431084", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431084", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431084", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431084", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -7998,7 +9119,14 @@ return {
 	Play120431085 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 8.366
+
+		if ({
+			zh = 5.966,
+			ja = 8.366
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -8035,6 +9163,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431085", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431085", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431085", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431085", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431085", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -8062,7 +9204,14 @@ return {
 	Play120431086 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 6
+
+		if ({
+			zh = 4.533,
+			ja = 6
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -8099,6 +9248,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431086", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431086", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431086", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431086", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431086", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -8126,7 +9289,14 @@ return {
 	Play120431087 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 5.066
+
+		if ({
+			zh = 4.8,
+			ja = 5.066
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -8163,6 +9333,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431087", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431087", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431087", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431087", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431087", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -8254,7 +9438,14 @@ return {
 	Play120431089 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 9.033
+
+		if ({
+			zh = 5.3,
+			ja = 9.033
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -8291,6 +9482,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431089", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431089", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431089", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431089", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431089", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -8318,7 +9523,14 @@ return {
 	Play120431090 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 9.566
+
+		if ({
+			zh = 3.766,
+			ja = 9.566
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -8355,6 +9567,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431090", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431090", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431090", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431090", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431090", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -8476,7 +9702,14 @@ return {
 	Play120431093 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 5.033
+
+		if ({
+			zh = 2.233,
+			ja = 5.033
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -8513,6 +9746,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431093", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431093", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431093", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431093", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431093", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -8813,7 +10060,14 @@ return {
 	Play120431098 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 9
+		slot1.duration_ = 7.566
+
+		if ({
+			zh = 6.366666666666,
+			ja = 7.566
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -8902,7 +10156,7 @@ return {
 
 			if 1.98333333333333 < uv0.time_ and uv0.time_ <= slot7 + slot0 then
 				uv0.fswbg_:SetActive(false)
-				uv0.dialog_:SetActive(true)
+				uv0.dialog_:SetActive(false)
 				uv0:ShowNextGo(false)
 			end
 
@@ -9010,6 +10264,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431098", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431098", "story_v_out_120431.awb") / 1000 > 0 and slot19 < slot24 and uv0.duration_ < slot24 + slot18 then
+						slot19 = slot24
+						uv0.duration_ = slot24 + slot18
+					end
+
+					if slot22.prefab_name ~= "" and uv0.actors_[slot22.prefab_name] ~= nil then
+						uv0:RecordAudio("120431098", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot22.prefab_name].transform, "story_v_out_120431", "120431098", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431098", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -9180,7 +10448,14 @@ return {
 	Play120431101 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 8.466
+
+		if ({
+			zh = 7.066,
+			ja = 8.466
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -9237,6 +10512,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431101", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431101", "story_v_out_120431.awb") / 1000 > 0 and slot5 < slot9 and uv0.duration_ < slot9 + slot4 then
+						slot5 = slot9
+						uv0.duration_ = slot9 + slot4
+					end
+
+					if slot7.prefab_name ~= "" and uv0.actors_[slot7.prefab_name] ~= nil then
+						uv0:RecordAudio("120431101", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot7.prefab_name].transform, "story_v_out_120431", "120431101", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431101", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -9350,7 +10639,14 @@ return {
 	Play120431103 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 4.133
+
+		if ({
+			zh = 4.133,
+			ja = 4.033
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -9415,6 +10711,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431103", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431103", "story_v_out_120431.awb") / 1000 > 0 and slot7 < slot11 and uv0.duration_ < slot11 + slot6 then
+						slot7 = slot11
+						uv0.duration_ = slot11 + slot6
+					end
+
+					if slot9.prefab_name ~= "" and uv0.actors_[slot9.prefab_name] ~= nil then
+						uv0:RecordAudio("120431103", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot9.prefab_name].transform, "story_v_out_120431", "120431103", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431103", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -9532,7 +10842,14 @@ return {
 	Play120431105 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 4.2
+
+		if ({
+			zh = 3.066,
+			ja = 4.2
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -9589,6 +10906,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431105", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431105", "story_v_out_120431.awb") / 1000 > 0 and slot5 < slot9 and uv0.duration_ < slot9 + slot4 then
+						slot5 = slot9
+						uv0.duration_ = slot9 + slot4
+					end
+
+					if slot7.prefab_name ~= "" and uv0.actors_[slot7.prefab_name] ~= nil then
+						uv0:RecordAudio("120431105", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot7.prefab_name].transform, "story_v_out_120431", "120431105", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431105", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -9616,7 +10947,14 @@ return {
 	Play120431106 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 7.866
+
+		if ({
+			zh = 5.233,
+			ja = 7.866
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -9653,6 +10991,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431106", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431106", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431106", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431106", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431106", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -9680,7 +11032,7 @@ return {
 	Play120431107 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 2.499999999999
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -9823,6 +11175,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431107", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431107", "story_v_out_120431.awb") / 1000 > 0 and slot16 < slot20 and uv0.duration_ < slot20 + slot15 then
+						slot16 = slot20
+						uv0.duration_ = slot20 + slot15
+					end
+
+					if slot18.prefab_name ~= "" and uv0.actors_[slot18.prefab_name] ~= nil then
+						uv0:RecordAudio("120431107", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot18.prefab_name].transform, "story_v_out_120431", "120431107", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431107", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -9850,7 +11216,14 @@ return {
 	Play120431108 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 6.3
+
+		if ({
+			zh = 5,
+			ja = 6.3
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -9895,6 +11268,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431108", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431108", "story_v_out_120431.awb") / 1000 > 0 and slot4 < slot8 and uv0.duration_ < slot8 + slot3 then
+						slot4 = slot8
+						uv0.duration_ = slot8 + slot3
+					end
+
+					if slot6.prefab_name ~= "" and uv0.actors_[slot6.prefab_name] ~= nil then
+						uv0:RecordAudio("120431108", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot6.prefab_name].transform, "story_v_out_120431", "120431108", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431108", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -10008,7 +11395,14 @@ return {
 	Play120431110 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 6.066
+
+		if ({
+			zh = 4.566,
+			ja = 6.066
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -10073,6 +11467,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431110", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431110", "story_v_out_120431.awb") / 1000 > 0 and slot7 < slot11 and uv0.duration_ < slot11 + slot6 then
+						slot7 = slot11
+						uv0.duration_ = slot11 + slot6
+					end
+
+					if slot9.prefab_name ~= "" and uv0.actors_[slot9.prefab_name] ~= nil then
+						uv0:RecordAudio("120431110", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot9.prefab_name].transform, "story_v_out_120431", "120431110", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431110", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -10100,7 +11508,14 @@ return {
 	Play120431111 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 4.533
+
+		if ({
+			zh = 3.3,
+			ja = 4.533
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -10137,6 +11552,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431111", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431111", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431111", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431111", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431111", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -10228,7 +11657,14 @@ return {
 	Play120431113 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 6.7
+
+		if ({
+			zh = 4.066,
+			ja = 6.7
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -10265,6 +11701,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431113", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431113", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431113", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431113", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431113", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -10292,7 +11742,14 @@ return {
 	Play120431114 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 9.233
+
+		if ({
+			zh = 4.733,
+			ja = 9.233
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -10329,6 +11786,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431114", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431114", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431114", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431114", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431114", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -10532,7 +12003,14 @@ return {
 	Play120431117 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 8.166
+
+		if ({
+			zh = 5.033,
+			ja = 8.166
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -10625,6 +12103,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431117", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431117", "story_v_out_120431.awb") / 1000 > 0 and slot10 < slot14 and uv0.duration_ < slot14 + slot9 then
+						slot10 = slot14
+						uv0.duration_ = slot14 + slot9
+					end
+
+					if slot12.prefab_name ~= "" and uv0.actors_[slot12.prefab_name] ~= nil then
+						uv0:RecordAudio("120431117", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot12.prefab_name].transform, "story_v_out_120431", "120431117", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431117", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -10738,7 +12230,14 @@ return {
 	Play120431119 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 5.5
+
+		if ({
+			zh = 1.933,
+			ja = 5.5
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -10795,6 +12294,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431119", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431119", "story_v_out_120431.awb") / 1000 > 0 and slot5 < slot9 and uv0.duration_ < slot9 + slot4 then
+						slot5 = slot9
+						uv0.duration_ = slot9 + slot4
+					end
+
+					if slot7.prefab_name ~= "" and uv0.actors_[slot7.prefab_name] ~= nil then
+						uv0:RecordAudio("120431119", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot7.prefab_name].transform, "story_v_out_120431", "120431119", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431119", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -10822,7 +12335,14 @@ return {
 	Play120431120 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 3.766
+
+		if ({
+			zh = 1.633,
+			ja = 3.766
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -10859,6 +12379,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431120", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431120", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431120", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431120", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431120", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -10972,7 +12506,14 @@ return {
 	Play120431122 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 6.2
+
+		if ({
+			zh = 4,
+			ja = 6.2
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -11029,6 +12570,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431122", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431122", "story_v_out_120431.awb") / 1000 > 0 and slot5 < slot9 and uv0.duration_ < slot9 + slot4 then
+						slot5 = slot9
+						uv0.duration_ = slot9 + slot4
+					end
+
+					if slot7.prefab_name ~= "" and uv0.actors_[slot7.prefab_name] ~= nil then
+						uv0:RecordAudio("120431122", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot7.prefab_name].transform, "story_v_out_120431", "120431122", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431122", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -11142,7 +12697,14 @@ return {
 	Play120431124 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 4.8
+
+		if ({
+			zh = 4.8,
+			ja = 3.1
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -11199,6 +12761,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431124", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431124", "story_v_out_120431.awb") / 1000 > 0 and slot5 < slot9 and uv0.duration_ < slot9 + slot4 then
+						slot5 = slot9
+						uv0.duration_ = slot9 + slot4
+					end
+
+					if slot7.prefab_name ~= "" and uv0.actors_[slot7.prefab_name] ~= nil then
+						uv0:RecordAudio("120431124", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot7.prefab_name].transform, "story_v_out_120431", "120431124", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431124", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -11327,31 +12903,9 @@ return {
 		end
 
 		function slot1.onSingleLineUpdate_(slot0)
-			slot1 = uv0.actors_["1029ui_story"]
+			slot2 = 0.7
 
-			if 0 < uv0.time_ and uv0.time_ <= slot2 + slot0 and uv0.var_.characterEffect1029ui_story == nil then
-				uv0.var_.characterEffect1029ui_story = slot1.GetComponentInChildren(slot1, typeof(CharacterEffect))
-			end
-
-			slot3 = 0.2
-
-			if slot2 <= uv0.time_ and uv0.time_ < slot2 + slot3 then
-				slot4 = (uv0.time_ - slot2) / slot3
-
-				if uv0.var_.characterEffect1029ui_story then
-					uv0.var_.characterEffect1029ui_story.fillFlat = true
-					uv0.var_.characterEffect1029ui_story.fillRatio = Mathf.Lerp(0, 0.5, slot4)
-				end
-			end
-
-			if uv0.time_ >= slot2 + slot3 and uv0.time_ < slot2 + slot3 + slot0 and uv0.var_.characterEffect1029ui_story then
-				uv0.var_.characterEffect1029ui_story.fillFlat = true
-				uv0.var_.characterEffect1029ui_story.fillRatio = 0.5
-			end
-
-			slot5 = 0.7
-
-			if 0 < uv0.time_ and uv0.time_ <= slot4 + slot0 then
+			if 0 < uv0.time_ and uv0.time_ <= slot1 + slot0 then
 				uv0.dialogCg_.alpha = 1
 
 				SetActive(uv0.leftNameGo_, false)
@@ -11370,20 +12924,20 @@ return {
 				uv0:RecordContent(uv0.text_.text)
 			end
 
-			slot7 = uv0:FormatText(StoryWordCfg[120431126].content)
-			slot9 = string.split(slot7, ".")
+			slot4 = uv0:FormatText(StoryWordCfg[120431126].content)
+			slot6 = string.split(slot4, ".")
 
-			if #string.split(slot7, "\n") >= 4 or #slot9 >= 4 then
-				slot5 = slot5 * 3
+			if #string.split(slot4, "\n") >= 4 or #slot6 >= 4 then
+				slot2 = slot2 * 3
 			end
 
-			if slot4 <= uv0.time_ and uv0.time_ < slot4 + slot5 then
-				uv0.typewritter.percent = (uv0.time_ - slot4) / slot5
+			if slot1 <= uv0.time_ and uv0.time_ < slot1 + slot2 then
+				uv0.typewritter.percent = (uv0.time_ - slot1) / slot2
 
 				uv0.typewritter:SetDirty()
 			end
 
-			if uv0.time_ >= slot4 + slot5 and uv0.time_ < slot4 + slot5 + slot0 then
+			if uv0.time_ >= slot1 + slot2 and uv0.time_ < slot1 + slot2 + slot0 then
 				uv0.typewritter.percent = 1
 
 				uv0.typewritter:SetDirty()
@@ -11394,7 +12948,14 @@ return {
 	Play120431127 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 11.5
+
+		if ({
+			zh = 10.466,
+			ja = 11.5
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -11451,6 +13012,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431127", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431127", "story_v_out_120431.awb") / 1000 > 0 and slot5 < slot9 and uv0.duration_ < slot9 + slot4 then
+						slot5 = slot9
+						uv0.duration_ = slot9 + slot4
+					end
+
+					if slot7.prefab_name ~= "" and uv0.actors_[slot7.prefab_name] ~= nil then
+						uv0:RecordAudio("120431127", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot7.prefab_name].transform, "story_v_out_120431", "120431127", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431127", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -11478,7 +13053,14 @@ return {
 	Play120431128 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 12.8
+
+		if ({
+			zh = 12.8,
+			ja = 12.766
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -11519,6 +13101,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431128", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431128", "story_v_out_120431.awb") / 1000 > 0 and slot3 < slot7 and uv0.duration_ < slot7 + slot2 then
+						slot3 = slot7
+						uv0.duration_ = slot7 + slot2
+					end
+
+					if slot5.prefab_name ~= "" and uv0.actors_[slot5.prefab_name] ~= nil then
+						uv0:RecordAudio("120431128", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot5.prefab_name].transform, "story_v_out_120431", "120431128", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431128", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -11546,7 +13142,14 @@ return {
 	Play120431129 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 1.333
+
+		if ({
+			zh = 1.333,
+			ja = 1.166
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -11583,6 +13186,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431129", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431129", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431129", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431129", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431129", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -11692,7 +13309,14 @@ return {
 	Play120431131 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 3.2
+
+		if ({
+			zh = 1.933,
+			ja = 3.2
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -11749,6 +13373,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431131", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431131", "story_v_out_120431.awb") / 1000 > 0 and slot5 < slot9 and uv0.duration_ < slot9 + slot4 then
+						slot5 = slot9
+						uv0.duration_ = slot9 + slot4
+					end
+
+					if slot7.prefab_name ~= "" and uv0.actors_[slot7.prefab_name] ~= nil then
+						uv0:RecordAudio("120431131", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot7.prefab_name].transform, "story_v_out_120431", "120431131", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431131", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -11928,7 +13566,14 @@ return {
 	Play120431133 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 11.7
+
+		if ({
+			zh = 7.666,
+			ja = 11.7
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -12021,6 +13666,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431133", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431133", "story_v_out_120431.awb") / 1000 > 0 and slot10 < slot14 and uv0.duration_ < slot14 + slot9 then
+						slot10 = slot14
+						uv0.duration_ = slot14 + slot9
+					end
+
+					if slot12.prefab_name ~= "" and uv0.actors_[slot12.prefab_name] ~= nil then
+						uv0:RecordAudio("120431133", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot12.prefab_name].transform, "story_v_out_120431", "120431133", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431133", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -12048,7 +13707,14 @@ return {
 	Play120431134 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 9.8
+
+		if ({
+			zh = 7.233,
+			ja = 9.8
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -12093,6 +13759,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431134", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431134", "story_v_out_120431.awb") / 1000 > 0 and slot4 < slot8 and uv0.duration_ < slot8 + slot3 then
+						slot4 = slot8
+						uv0.duration_ = slot8 + slot3
+					end
+
+					if slot6.prefab_name ~= "" and uv0.actors_[slot6.prefab_name] ~= nil then
+						uv0:RecordAudio("120431134", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot6.prefab_name].transform, "story_v_out_120431", "120431134", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431134", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -12120,7 +13800,14 @@ return {
 	Play120431135 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 3
+
+		if ({
+			zh = 1.433,
+			ja = 3
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -12181,6 +13868,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431135", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431135", "story_v_out_120431.awb") / 1000 > 0 and slot5 < slot9 and uv0.duration_ < slot9 + slot4 then
+						slot5 = slot9
+						uv0.duration_ = slot9 + slot4
+					end
+
+					if slot7.prefab_name ~= "" and uv0.actors_[slot7.prefab_name] ~= nil then
+						uv0:RecordAudio("120431135", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot7.prefab_name].transform, "story_v_out_120431", "120431135", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431135", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -12296,7 +13997,14 @@ return {
 	Play120431137 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 10.866
+
+		if ({
+			zh = 6.6,
+			ja = 10.866
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -12389,6 +14097,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431137", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431137", "story_v_out_120431.awb") / 1000 > 0 and slot10 < slot14 and uv0.duration_ < slot14 + slot9 then
+						slot10 = slot14
+						uv0.duration_ = slot14 + slot9
+					end
+
+					if slot12.prefab_name ~= "" and uv0.actors_[slot12.prefab_name] ~= nil then
+						uv0:RecordAudio("120431137", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot12.prefab_name].transform, "story_v_out_120431", "120431137", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431137", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -12416,7 +14138,14 @@ return {
 	Play120431138 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 5.633
+
+		if ({
+			zh = 1.999999999999,
+			ja = 5.633
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -12462,7 +14191,7 @@ return {
 			slot6 = 0.001
 
 			if slot5 <= uv0.time_ and uv0.time_ < slot5 + slot6 then
-				slot4.localPosition = Vector3.Lerp(uv0.var_.moveOldPos1076ui_story, Vector3.New(1.1, -1.1, -5.3), (uv0.time_ - slot5) / slot6)
+				slot4.localPosition = Vector3.Lerp(uv0.var_.moveOldPos1076ui_story, Vector3.New(1.1, -1.11, -5.6), (uv0.time_ - slot5) / slot6)
 				slot10 = manager.ui.mainCamera.transform.position - slot4.position
 				slot4.forward = Vector3.New(slot10.x, slot10.y, slot10.z)
 				slot11 = slot4.localEulerAngles
@@ -12472,7 +14201,7 @@ return {
 			end
 
 			if uv0.time_ >= slot5 + slot6 and uv0.time_ < slot5 + slot6 + slot0 then
-				slot4.localPosition = Vector3.New(1.1, -1.1, -5.3)
+				slot4.localPosition = Vector3.New(1.1, -1.11, -5.6)
 				slot9 = manager.ui.mainCamera.transform.position - slot4.position
 				slot4.forward = Vector3.New(slot9.x, slot9.y, slot9.z)
 				slot10 = slot4.localEulerAngles
@@ -12482,7 +14211,7 @@ return {
 			end
 
 			if 0 < uv0.time_ and uv0.time_ <= slot7 + slot0 then
-				uv0:PlayTimeline("1076ui_story", "")
+				uv0:PlayTimeline("1076ui_story", "StoryTimeline/CharAction/story1076/story1076action/1076action1_1")
 			end
 
 			slot8 = uv0.actors_["1076ui_story"]
@@ -12527,6 +14256,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431138", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431138", "story_v_out_120431.awb") / 1000 > 0 and slot12 < slot16 and uv0.duration_ < slot16 + slot11 then
+						slot12 = slot16
+						uv0.duration_ = slot16 + slot11
+					end
+
+					if slot14.prefab_name ~= "" and uv0.actors_[slot14.prefab_name] ~= nil then
+						uv0:RecordAudio("120431138", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot14.prefab_name].transform, "story_v_out_120431", "120431138", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431138", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -12569,35 +14312,31 @@ return {
 		end
 
 		function slot1.onSingleLineUpdate_(slot0)
-			if 0 < uv0.time_ and uv0.time_ <= slot1 + slot0 then
-				uv0:PlayTimeline("1076ui_story", "")
+			slot1 = uv0.actors_["1076ui_story"]
+
+			if 0 < uv0.time_ and uv0.time_ <= slot2 + slot0 and uv0.var_.characterEffect1076ui_story == nil then
+				uv0.var_.characterEffect1076ui_story = slot1.GetComponentInChildren(slot1, typeof(CharacterEffect))
 			end
 
-			slot2 = uv0.actors_["1076ui_story"]
+			slot3 = 0.2
 
-			if 0 < uv0.time_ and uv0.time_ <= slot3 + slot0 and uv0.var_.characterEffect1076ui_story == nil then
-				uv0.var_.characterEffect1076ui_story = slot2.GetComponentInChildren(slot2, typeof(CharacterEffect))
-			end
-
-			slot4 = 0.2
-
-			if slot3 <= uv0.time_ and uv0.time_ < slot3 + slot4 then
-				slot5 = (uv0.time_ - slot3) / slot4
+			if slot2 <= uv0.time_ and uv0.time_ < slot2 + slot3 then
+				slot4 = (uv0.time_ - slot2) / slot3
 
 				if uv0.var_.characterEffect1076ui_story then
 					uv0.var_.characterEffect1076ui_story.fillFlat = true
-					uv0.var_.characterEffect1076ui_story.fillRatio = Mathf.Lerp(0, 0.5, slot5)
+					uv0.var_.characterEffect1076ui_story.fillRatio = Mathf.Lerp(0, 0.5, slot4)
 				end
 			end
 
-			if uv0.time_ >= slot3 + slot4 and uv0.time_ < slot3 + slot4 + slot0 and uv0.var_.characterEffect1076ui_story then
+			if uv0.time_ >= slot2 + slot3 and uv0.time_ < slot2 + slot3 + slot0 and uv0.var_.characterEffect1076ui_story then
 				uv0.var_.characterEffect1076ui_story.fillFlat = true
 				uv0.var_.characterEffect1076ui_story.fillRatio = 0.5
 			end
 
-			slot6 = 1.35
+			slot5 = 1.35
 
-			if 0 < uv0.time_ and uv0.time_ <= slot5 + slot0 then
+			if 0 < uv0.time_ and uv0.time_ <= slot4 + slot0 then
 				uv0.dialogCg_.alpha = 1
 
 				SetActive(uv0.leftNameGo_, false)
@@ -12616,20 +14355,20 @@ return {
 				uv0:RecordContent(uv0.text_.text)
 			end
 
-			slot8 = uv0:FormatText(StoryWordCfg[120431139].content)
-			slot10 = string.split(slot8, ".")
+			slot7 = uv0:FormatText(StoryWordCfg[120431139].content)
+			slot9 = string.split(slot7, ".")
 
-			if #string.split(slot8, "\n") >= 4 or #slot10 >= 4 then
-				slot6 = slot6 * 3
+			if #string.split(slot7, "\n") >= 4 or #slot9 >= 4 then
+				slot5 = slot5 * 3
 			end
 
-			if slot5 <= uv0.time_ and uv0.time_ < slot5 + slot6 then
-				uv0.typewritter.percent = (uv0.time_ - slot5) / slot6
+			if slot4 <= uv0.time_ and uv0.time_ < slot4 + slot5 then
+				uv0.typewritter.percent = (uv0.time_ - slot4) / slot5
 
 				uv0.typewritter:SetDirty()
 			end
 
-			if uv0.time_ >= slot5 + slot6 and uv0.time_ < slot5 + slot6 + slot0 then
+			if uv0.time_ >= slot4 + slot5 and uv0.time_ < slot4 + slot5 + slot0 then
 				uv0.typewritter.percent = 1
 
 				uv0.typewritter:SetDirty()
@@ -12640,7 +14379,14 @@ return {
 	Play120431140 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 12.066
+
+		if ({
+			zh = 7.233,
+			ja = 12.066
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -12697,6 +14443,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431140", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431140", "story_v_out_120431.awb") / 1000 > 0 and slot5 < slot9 and uv0.duration_ < slot9 + slot4 then
+						slot5 = slot9
+						uv0.duration_ = slot9 + slot4
+					end
+
+					if slot7.prefab_name ~= "" and uv0.actors_[slot7.prefab_name] ~= nil then
+						uv0:RecordAudio("120431140", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot7.prefab_name].transform, "story_v_out_120431", "120431140", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431140", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -12724,7 +14484,14 @@ return {
 	Play120431141 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 3.3
+
+		if ({
+			zh = 2.566,
+			ja = 3.3
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -12811,6 +14578,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431141", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431141", "story_v_out_120431.awb") / 1000 > 0 and slot10 < slot14 and uv0.duration_ < slot14 + slot9 then
+						slot10 = slot14
+						uv0.duration_ = slot14 + slot9
+					end
+
+					if slot12.prefab_name ~= "" and uv0.actors_[slot12.prefab_name] ~= nil then
+						uv0:RecordAudio("120431141", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot12.prefab_name].transform, "story_v_out_120431", "120431141", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431141", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -12838,7 +14619,14 @@ return {
 	Play120431142 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 13.333
+
+		if ({
+			zh = 6.033,
+			ja = 13.333
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -12917,6 +14705,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431142", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431142", "story_v_out_120431.awb") / 1000 > 0 and slot8 < slot12 and uv0.duration_ < slot12 + slot7 then
+						slot8 = slot12
+						uv0.duration_ = slot12 + slot7
+					end
+
+					if slot10.prefab_name ~= "" and uv0.actors_[slot10.prefab_name] ~= nil then
+						uv0:RecordAudio("120431142", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot10.prefab_name].transform, "story_v_out_120431", "120431142", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431142", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -12944,7 +14746,14 @@ return {
 	Play120431143 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 2.266
+
+		if ({
+			zh = 1.999999999999,
+			ja = 2.266
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -13027,6 +14836,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431143", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431143", "story_v_out_120431.awb") / 1000 > 0 and slot9 < slot13 and uv0.duration_ < slot13 + slot8 then
+						slot9 = slot13
+						uv0.duration_ = slot13 + slot8
+					end
+
+					if slot11.prefab_name ~= "" and uv0.actors_[slot11.prefab_name] ~= nil then
+						uv0:RecordAudio("120431143", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot11.prefab_name].transform, "story_v_out_120431", "120431143", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431143", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -13257,25 +15080,65 @@ return {
 				slot10.localEulerAngles = slot16
 			end
 
+			slot13 = uv0.bgs_.XH0206.transform
+
+			if 2 < uv0.time_ and uv0.time_ <= slot14 + slot0 then
+				uv0.var_.moveOldPosXH0206 = slot13.localPosition
+			end
+
+			slot15 = 0.001
+
+			if slot14 <= uv0.time_ and uv0.time_ < slot14 + slot15 then
+				slot13.localPosition = Vector3.Lerp(uv0.var_.moveOldPosXH0206, Vector3.New(0, 1, 9.5), (uv0.time_ - slot14) / slot15)
+			end
+
+			if uv0.time_ >= slot14 + slot15 and uv0.time_ < slot14 + slot15 + slot0 then
+				slot13.localPosition = Vector3.New(0, 1, 9.5)
+			end
+
+			slot16 = uv0.bgs_.XH0206.transform
+
+			if 2.034 < uv0.time_ and uv0.time_ <= slot17 + slot0 then
+				uv0.var_.moveOldPosXH0206 = slot16.localPosition
+			end
+
+			slot18 = 4.5
+
+			if slot17 <= uv0.time_ and uv0.time_ < slot17 + slot18 then
+				slot16.localPosition = Vector3.Lerp(uv0.var_.moveOldPosXH0206, Vector3.New(0, 1, 10), (uv0.time_ - slot17) / slot18)
+			end
+
+			if uv0.time_ >= slot17 + slot18 and uv0.time_ < slot17 + slot18 + slot0 then
+				slot16.localPosition = Vector3.New(0, 1, 10)
+			end
+
+			if 4 < uv0.time_ and uv0.time_ <= slot19 + slot0 then
+				uv0.allBtn_.enabled = false
+			end
+
+			if uv0.time_ >= slot19 + 2.534 and uv0.time_ < slot19 + slot20 + slot0 then
+				uv0.allBtn_.enabled = true
+			end
+
 			if uv0.time_ <= 0.033 then
 				uv0.dialog_:SetActive(false)
 			end
 
-			slot14 = 1.075
+			slot22 = 1.075
 
-			if 4 < uv0.time_ and uv0.time_ <= slot13 + slot0 then
+			if 4 < uv0.time_ and uv0.time_ <= slot21 + slot0 then
 				uv0.dialog_:SetActive(true)
 
 				uv0.dialog_.transform.localScale = Vector3(0.8, 0.95, 1)
 
 				LeanTween.scale(uv0.dialog_, Vector3.one, 0.2)
 
-				slot15 = LeanTween.value(uv0.dialog_, 0, 1, 0.3)
+				slot23 = LeanTween.value(uv0.dialog_, 0, 1, 0.3)
 
-				slot15:setOnUpdate(LuaHelper.FloatAction(function (slot0)
+				slot23:setOnUpdate(LuaHelper.FloatAction(function (slot0)
 					uv0.dialogCg_.alpha = slot0
 				end))
-				slot15:setOnComplete(System.Action(function ()
+				slot23:setOnComplete(System.Action(function ()
 					LeanTween.cancel(uv0.dialog_)
 					uv1:setOnUpdate(nil):setOnComplete(nil)
 				end))
@@ -13298,21 +15161,21 @@ return {
 				uv0:RecordContent(uv0.text_.text)
 			end
 
-			slot13 = slot13 + 0.3
-			slot16 = uv0:FormatText(StoryWordCfg[120431145].content)
-			slot18 = string.split(slot16, ".")
+			slot21 = slot21 + 0.3
+			slot24 = uv0:FormatText(StoryWordCfg[120431145].content)
+			slot26 = string.split(slot24, ".")
 
-			if #string.split(slot16, "\n") >= 4 or #slot18 >= 4 then
-				slot14 = slot14 * 3
+			if #string.split(slot24, "\n") >= 4 or #slot26 >= 4 then
+				slot22 = slot22 * 3
 			end
 
-			if slot13 <= uv0.time_ and uv0.time_ < slot13 + slot14 then
-				uv0.typewritter.percent = (uv0.time_ - slot13) / slot14
+			if slot21 <= uv0.time_ and uv0.time_ < slot21 + slot22 then
+				uv0.typewritter.percent = (uv0.time_ - slot21) / slot22
 
 				uv0.typewritter:SetDirty()
 			end
 
-			if uv0.time_ >= slot13 + slot14 and uv0.time_ < slot13 + slot14 + slot0 then
+			if uv0.time_ >= slot21 + slot22 and uv0.time_ < slot21 + slot22 + slot0 then
 				uv0.typewritter.percent = 1
 
 				uv0.typewritter:SetDirty()
@@ -13383,7 +15246,14 @@ return {
 	Play120431147 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 5.2
+
+		if ({
+			zh = 1.433,
+			ja = 5.2
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -13420,6 +15290,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431147", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431147", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431147", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431147", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431147", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -13447,7 +15331,14 @@ return {
 	Play120431148 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 8.333
+
+		if ({
+			zh = 8.333,
+			ja = 8.266
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -13484,6 +15375,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431148", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431148", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431148", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431148", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431148", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -13511,7 +15416,14 @@ return {
 	Play120431149 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 6.166
+
+		if ({
+			zh = 1.8,
+			ja = 6.166
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -13548,6 +15460,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431149", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431149", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431149", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431149", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431149", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -13575,7 +15501,14 @@ return {
 	Play120431150 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 7.566
+
+		if ({
+			zh = 7.333,
+			ja = 7.566
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -13612,6 +15545,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431150", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431150", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431150", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431150", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431150", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -13639,7 +15586,14 @@ return {
 	Play120431151 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 10.966
+
+		if ({
+			zh = 8.266,
+			ja = 10.966
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -13676,6 +15630,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431151", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431151", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431151", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431151", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431151", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -13703,7 +15671,14 @@ return {
 	Play120431152 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 14.366
+
+		if ({
+			zh = 11.666,
+			ja = 14.366
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -13740,6 +15715,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431152", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431152", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431152", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431152", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431152", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -13767,7 +15756,14 @@ return {
 	Play120431153 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 2.1
+
+		if ({
+			zh = 1.433,
+			ja = 2.1
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -13804,6 +15800,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431153", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431153", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431153", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431153", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431153", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -13831,7 +15841,14 @@ return {
 	Play120431154 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 4.533
+
+		if ({
+			zh = 4.166,
+			ja = 4.533
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -13868,6 +15885,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431154", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431154", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431154", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431154", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431154", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -13895,7 +15926,14 @@ return {
 	Play120431155 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 4
+
+		if ({
+			zh = 2.333,
+			ja = 4
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -13932,6 +15970,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431155", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431155", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431155", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431155", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431155", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -13959,7 +16011,14 @@ return {
 	Play120431156 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 16.7
+
+		if ({
+			zh = 10.133,
+			ja = 16.7
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -13996,6 +16055,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431156", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431156", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431156", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431156", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431156", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -14023,7 +16096,14 @@ return {
 	Play120431157 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 20.866
+
+		if ({
+			zh = 7.666,
+			ja = 20.866
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -14060,6 +16140,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431157", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431157", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431157", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431157", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431157", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -14087,7 +16181,14 @@ return {
 	Play120431158 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 13.2
+
+		if ({
+			zh = 9.766,
+			ja = 13.2
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -14124,6 +16225,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431158", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431158", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431158", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431158", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431158", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -14151,7 +16266,14 @@ return {
 	Play120431159 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 11.666
+
+		if ({
+			zh = 10.666,
+			ja = 11.666
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -14188,6 +16310,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431159", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431159", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431159", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431159", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431159", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -14215,7 +16351,14 @@ return {
 	Play120431160 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 16.166
+
+		if ({
+			zh = 11,
+			ja = 16.166
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -14252,6 +16395,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431160", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431160", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431160", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431160", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431160", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -14279,7 +16436,14 @@ return {
 	Play120431161 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 2.7
+
+		if ({
+			zh = 1.766,
+			ja = 2.7
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -14316,6 +16480,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431161", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431161", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431161", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431161", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431161", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -14343,7 +16521,14 @@ return {
 	Play120431162 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 16.766
+
+		if ({
+			zh = 10.233,
+			ja = 16.766
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -14380,6 +16565,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431162", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431162", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431162", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431162", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431162", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -14407,7 +16606,14 @@ return {
 	Play120431163 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 11.466
+
+		if ({
+			zh = 9,
+			ja = 11.466
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -14444,6 +16650,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431163", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431163", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431163", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431163", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431163", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -14471,7 +16691,14 @@ return {
 	Play120431164 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 10.066
+
+		if ({
+			zh = 7.133,
+			ja = 10.066
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -14508,6 +16735,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431164", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431164", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431164", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431164", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431164", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -14535,7 +16776,14 @@ return {
 	Play120431165 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 8.2
+
+		if ({
+			zh = 4.7,
+			ja = 8.2
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -14572,6 +16820,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431165", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431165", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431165", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431165", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431165", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -14599,7 +16861,14 @@ return {
 	Play120431166 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 8.433
+
+		if ({
+			zh = 7.033,
+			ja = 8.433
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -14636,6 +16905,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431166", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431166", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431166", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431166", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431166", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -14663,7 +16946,14 @@ return {
 	Play120431167 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 10.2
+
+		if ({
+			zh = 7.933,
+			ja = 10.2
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -14700,6 +16990,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431167", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431167", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431167", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431167", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431167", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -14727,7 +17031,14 @@ return {
 	Play120431168 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 14.1
+
+		if ({
+			zh = 9.6,
+			ja = 14.1
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -14764,6 +17075,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431168", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431168", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431168", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431168", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431168", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -14791,7 +17116,14 @@ return {
 	Play120431169 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 16.333
+
+		if ({
+			zh = 10.2,
+			ja = 16.333
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -14828,6 +17160,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431169", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431169", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431169", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431169", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431169", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -14855,7 +17201,14 @@ return {
 	Play120431170 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 8.533
+
+		if ({
+			zh = 6.766,
+			ja = 8.533
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -14892,6 +17245,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431170", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431170", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431170", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431170", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431170", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -14919,7 +17286,14 @@ return {
 	Play120431171 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 3.6
+
+		if ({
+			zh = 1.833,
+			ja = 3.6
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -14956,6 +17330,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431171", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431171", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431171", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431171", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431171", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -14983,7 +17371,14 @@ return {
 	Play120431172 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 11.5
+
+		if ({
+			zh = 5.9,
+			ja = 11.5
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -15020,6 +17415,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431172", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431172", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431172", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431172", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431172", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -15047,7 +17456,14 @@ return {
 	Play120431173 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 16.4
+
+		if ({
+			zh = 7.133,
+			ja = 16.4
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -15084,6 +17500,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431173", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431173", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431173", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431173", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431173", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -15111,7 +17541,14 @@ return {
 	Play120431174 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 19.333
+
+		if ({
+			zh = 11.333,
+			ja = 19.333
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -15148,6 +17585,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431174", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431174", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431174", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431174", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431174", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 
@@ -15175,7 +17626,14 @@ return {
 	Play120431175 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 13.8
+
+		if ({
+			zh = 7.9,
+			ja = 13.8
+		})[manager.audio:GetLocalizationFlag()] ~= nil then
+			slot1.duration_ = slot2[slot3]
+		end
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -15211,6 +17669,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_out_120431", "120431175", "story_v_out_120431.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_out_120431", "120431175", "story_v_out_120431.awb") / 1000 > 0 and slot2 < slot6 and uv0.duration_ < slot6 + slot1 then
+						slot2 = slot6
+						uv0.duration_ = slot6 + slot1
+					end
+
+					if slot4.prefab_name ~= "" and uv0.actors_[slot4.prefab_name] ~= nil then
+						uv0:RecordAudio("120431175", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot4.prefab_name].transform, "story_v_out_120431", "120431175", "story_v_out_120431.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_out_120431", "120431175", "story_v_out_120431.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 

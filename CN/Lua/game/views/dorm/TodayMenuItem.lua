@@ -21,9 +21,17 @@ end
 
 function slot0.AddUIListener(slot0)
 	slot0:AddBtnListener(slot0.setdownBtn_, nil, function ()
-		JumpTools.OpenPageByJump("/popFoodDownView", {
-			foodID = uv0.ID_
-		})
+		if BackHomeCanteenFoodCfg[uv0.ID_] then
+			ShowMessageBox({
+				title = GetTips("PROMPT"),
+				content = string.format(GetTips("CANTEEN_FOOD_REMOVE"), BackHomeCanteenFoodCfg[uv0.ID_].name),
+				OkCallback = function ()
+					CanteenAction:SendSignFoodInfo(uv0.ID_, 0)
+				end,
+				CancelCallback = function ()
+				end
+			})
+		end
 	end)
 	slot0:AddBtnListener(slot0.shelvesbtnBtn_, nil, function ()
 		CanteenAction:SendSignFoodInfo(uv0.ID_, 0)

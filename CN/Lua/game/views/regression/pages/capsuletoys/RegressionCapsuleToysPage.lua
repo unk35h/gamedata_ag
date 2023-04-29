@@ -35,11 +35,10 @@ function slot0.AddUIListener(slot0)
 			return
 		end
 
-		uv0.drawController_:SetSelectedState("true")
-
 		slot0 = GameSetting.regression_gashapon_cost
 
 		if slot0.value[2] <= CurrencyData:GetCurrencyNum(slot0.value[1]) then
+			uv0.drawController_:SetSelectedState("true")
 			RegressionAction.RegressionCapsuleToysDraw(1, handler(uv0, uv0.OnCapsuleToysDraw))
 		else
 			ShowTips("ITEM_NOT_ENOUGH_RETURN_MATERIAL")
@@ -52,11 +51,10 @@ function slot0.AddUIListener(slot0)
 			return
 		end
 
-		uv0.drawController_:SetSelectedState("true")
-
 		slot0 = GameSetting.regression_gashapon_cost
 
 		if CurrencyData:GetCurrencyNum(slot0.value[1]) >= slot0.value[2] * 2 then
+			uv0.drawController_:SetSelectedState("true")
 			RegressionAction.RegressionCapsuleToysDraw(math.floor(slot1 / slot2) <= 10 and slot3 or 10, handler(uv0, uv0.OnCapsuleToysDraw))
 		else
 			ShowTips("ITEM_NOT_ENOUGH_RETURN_MATERIAL")

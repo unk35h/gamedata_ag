@@ -19804,6 +19804,198 @@ return {
 			250
 		}
 	},
+	[365] = {
+		buffparam_base = "",
+		buff_class_id = 1010,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 365,
+		icon = "AFFIX_BUFF_PHYSICVULNER_UP",
+		buff_ticktime = 9999999
+	},
+	[366] = {
+		buffparam_base = "",
+		buff_class_id = 1010,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 366,
+		icon = "AFFIX_BUFF_LIGHTVULNER_UP",
+		buff_ticktime = 9999999
+	},
+	[367] = {
+		buffparam_base = "",
+		buff_class_id = 1010,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 367,
+		icon = "AFFIX_BUFF_DARKVULNER_UP",
+		buff_ticktime = 9999999
+	},
+	[368] = {
+		buffparam_base = "",
+		buff_class_id = 1010,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 368,
+		icon = "AFFIX_BUFF_WATERVULNER_UP",
+		buff_ticktime = 9999999
+	},
+	[369] = {
+		buffparam_base = "",
+		buff_class_id = 1010,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 369,
+		icon = "AFFIX_BUFF_ICEVULNER_UP",
+		buff_ticktime = 9999999
+	},
+	[370] = {
+		buffparam_base = "",
+		buff_class_id = 1010,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 370,
+		icon = "AFFIX_BUFF_FIREVULNER_UP",
+		buff_ticktime = 9999999
+	},
+	[371] = {
+		buffparam_base = "",
+		buff_class_id = 1010,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 371,
+		icon = "AFFIX_BUFF_WINDVULNER_UP",
+		buff_ticktime = 9999999
+	},
+	[372] = {
+		buffparam_base = "",
+		buff_class_id = 1010,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 372,
+		icon = "AFFIX_BUFF_THUNDERVULNER_UP",
+		buff_ticktime = 9999999
+	},
+	[3651] = {
+		buff_class_id = 1,
+		max_level = 4,
+		ID = 3651,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			161,
+			250
+		},
+		buffparam_factor = {
+			0,
+			250
+		}
+	},
+	[3652] = {
+		buff_class_id = 1,
+		max_level = 4,
+		ID = 3652,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			167,
+			250
+		},
+		buffparam_factor = {
+			0,
+			250
+		}
+	},
+	[3653] = {
+		buff_class_id = 1,
+		max_level = 4,
+		ID = 3653,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			166,
+			250
+		},
+		buffparam_factor = {
+			0,
+			250
+		}
+	},
+	[3654] = {
+		buff_class_id = 1,
+		max_level = 4,
+		ID = 3654,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			165,
+			250
+		},
+		buffparam_factor = {
+			0,
+			250
+		}
+	},
+	[3655] = {
+		buff_class_id = 1,
+		max_level = 4,
+		ID = 3655,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			164,
+			250
+		},
+		buffparam_factor = {
+			0,
+			250
+		}
+	},
+	[3656] = {
+		buff_class_id = 1,
+		max_level = 4,
+		ID = 3656,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			163,
+			250
+		},
+		buffparam_factor = {
+			0,
+			250
+		}
+	},
+	[3657] = {
+		buff_class_id = 1,
+		max_level = 4,
+		ID = 3657,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			162,
+			250
+		},
+		buffparam_factor = {
+			0,
+			250
+		}
+	},
+	[3658] = {
+		buff_class_id = 1,
+		max_level = 4,
+		ID = 3658,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			168,
+			250
+		},
+		buffparam_factor = {
+			0,
+			250
+		}
+	},
 	[80101] = {
 		buff_class_id = 204,
 		max_level = 1000,
@@ -27045,6 +27237,60 @@ return {
 			0,
 			0
 		}
+	},
+	[97228] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 97228,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			81,
+			250
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[97229] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 97229,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			152,
+			250
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[97230] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 97230,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			158,
+			250
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[97231] = {
+		buffparam_base = "",
+		buff_class_id = 303,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 97231,
+		icon = "",
+		buff_ticktime = 1
 	},
 	[97401] = {
 		buff_class_id = 2,
@@ -36273,6 +36519,22 @@ return {
 		3631,
 		364,
 		3641,
+		365,
+		366,
+		367,
+		368,
+		369,
+		370,
+		371,
+		372,
+		3651,
+		3652,
+		3653,
+		3654,
+		3655,
+		3656,
+		3657,
+		3658,
 		80101,
 		80102,
 		501,
@@ -36895,6 +37157,10 @@ return {
 		97225,
 		97226,
 		97227,
+		97228,
+		97229,
+		97230,
+		97231,
 		97401,
 		9741,
 		97411,

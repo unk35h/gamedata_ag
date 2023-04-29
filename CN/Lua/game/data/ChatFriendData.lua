@@ -19,7 +19,7 @@ end
 
 function slot0.InitCacheChatList(slot0)
 	for slot4, slot5 in pairs(slot0.chatRecordList_) do
-		if slot0:GetUnreadMsgCnt(slot4) > 0 then
+		if not table.indexof(slot0.cacheHeroList_, slot4) and slot0:GetUnreadMsgCnt(slot4) > 0 then
 			slot0.friendList_[slot4] = {
 				readSeek = 0,
 				id = slot4,

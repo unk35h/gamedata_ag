@@ -37,68 +37,15 @@ function slot0.OnEnter(slot0)
 
 	slot0.scaleController_:SetSelectedState("false")
 	manager.ui:SetMainCamera("heroDisplay")
-
-	slot0.screenOrientation_ = Screen.orientation
-	slot2, slot3 = SettingTools.GetSettingScreenSize(tonumber(SettingData:GetSettingData().pic.resolution))
-
-	if not HeroDisplayData.firstOrientation then
-		ScreenRotateUtil.ChangeScreenOrientation(UnityEngine.ScreenOrientation.AutoRotation)
-
-		Screen.autorotateToPortrait = true
-		Screen.autorotateToPortraitUpsideDown = false
-		Screen.autorotateToLandscapeLeft = false
-		Screen.autorotateToLandscapeRight = false
-	else
-		ScreenRotateUtil.ChangeScreenOrientation(UnityEngine.ScreenOrientation.Portrait)
-	end
-
-	UnityEngine.Pipelines.SimPipeline.CanvasManager.Instance:RotateScreen(true)
-	setScreenOrientation(false)
-	U3DHud.mInstance:SetWidthAndHeight(1080, 1920)
-
-	if not HeroDisplayData.firstOrientation then
-		SetActive(manager.ui.mainCamera, false)
-	end
-
-	FrameTimer.New(function ()
-		Screen.SetResolution(uv0, uv1, true)
-
-		if not HeroDisplayData.firstOrientation then
-			FrameTimer.New(function ()
-				ScreenRotateUtil.ChangeScreenOrientation(UnityEngine.ScreenOrientation.AutoRotation)
-
-				Screen.autorotateToPortrait = false
-				Screen.autorotateToPortraitUpsideDown = false
-				Screen.autorotateToLandscapeLeft = true
-				Screen.autorotateToLandscapeRight = true
-
-				FrameTimer.New(function ()
-					ScreenRotateUtil.ChangeScreenOrientation(UnityEngine.ScreenOrientation.Portrait)
-					FrameTimer.New(function ()
-						SetActive(manager.ui.mainCamera, true)
-						UnityEngine.Pipelines.SimPipeline.CanvasManager.Instance:RotateScreen(true)
-						U3DHud.mInstance:SetWidthAndHeight(1080, 1920)
-						Screen.SetResolution(uv0, uv1, true)
-
-						HeroDisplayData.firstOrientation = true
-					end, 1, 1):Start()
-				end, 1, 1):Start()
-			end, 1, 1):Start()
-		else
-			FrameTimer.New(function ()
-				UnityEngine.Pipelines.SimPipeline.CanvasManager.Instance:RotateScreen(true)
-				U3DHud.mInstance:SetWidthAndHeight(1080, 1920)
-				Screen.SetResolution(uv0, uv1, true)
-			end, 1, 1):Start()
-		end
-	end, 1, 1):Start()
+	ScreenRotationAction.RotateToPortrait(function ()
+	end)
 
 	slot0.isFirstShowTips_ = true
 	slot0.heroID_ = slot0.params_.heroID
-	slot4 = OperationData:IsOperationOpen(OperationConst.SHARE_FLAG)
+	slot1 = OperationData:IsOperationOpen(OperationConst.SHARE_FLAG)
 
-	SetActive(slot0.buttonSnap_.gameObject, slot4)
-	SetActive(slot0.buttonSetting_.gameObject, slot4)
+	SetActive(slot0.buttonSnap_.gameObject, slot1)
+	SetActive(slot0.buttonSetting_.gameObject, slot1)
 	slot0:LoadModel()
 
 	slot0.isShowPosePanel_ = false
@@ -131,24 +78,9 @@ function slot0.OnExit(slot0)
 	manager.notify:RemoveListener(TOUCH_HORIZONTAL, slot0.rotateHandler_)
 	manager.notify:RemoveListener(TOUCH_VERTICAL, slot0.upDownHandler_)
 	manager.notify:RemoveListener(MULTI_TOUCH_SCALE, slot0.scaleHandler_)
-	ScreenRotateUtil.ChangeScreenOrientation(slot0.screenOrientation_)
-	ScreenRotateUtil.ChangeScreenOrientation(UnityEngine.ScreenOrientation.AutoRotation)
-
-	Screen.autorotateToPortrait = false
-	Screen.autorotateToPortraitUpsideDown = false
-	Screen.autorotateToLandscapeLeft = true
-	Screen.autorotateToLandscapeRight = true
-
-	setScreenOrientation(true)
-
-	slot2, slot3 = SettingTools.GetSettingScreenSize(tonumber(SettingData:GetSettingData().pic.resolution))
-
-	UnityEngine.Pipelines.SimPipeline.CanvasManager.Instance:RotateScreen(false)
-	U3DHud.mInstance:SetWidthAndHeight(1920, 1080)
-	FrameTimer.New(function ()
-		Screen.SetResolution(uv0, uv1, true)
+	ScreenRotationAction.RotateToLandscape(function ()
 		manager.notify:Invoke(HERO_DISPLAY_EXIT)
-	end, 2, 1):Start()
+	end)
 	slot0.touchView_:OnExit()
 	slot0.expressionView_:OnExit()
 	slot0.heroPoseView_:OnExit()

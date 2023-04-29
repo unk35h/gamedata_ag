@@ -6088,6 +6088,58 @@ return {
 			}
 		}
 	},
+	[107103] = {
+		star_lv = 600,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 40,
+		skin_id = 1071,
+		id = 107103,
+		weapon_level = 60,
+		weapon_stage = 5,
+		hero_id = 1071,
+		astrolabe_suit_id = 1071001,
+		weapon_key = 2590004,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 4,
+		equip_list = {
+			519044,
+			529029,
+			539044,
+			549029,
+			559044,
+			569029
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		}
+	},
 	[107501] = {
 		star_lv = 600,
 		skill_lv = 25,
@@ -6177,6 +6229,58 @@ return {
 		hero_attrib = "",
 		hero_lv = 80,
 		break_lv = 6,
+		equip_list = {
+			519042,
+			529042,
+			539042,
+			549036,
+			559036,
+			569036
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		}
+	},
+	[107504] = {
+		star_lv = 600,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 40,
+		skin_id = 1075,
+		id = 107504,
+		weapon_level = 60,
+		weapon_stage = 5,
+		hero_id = 1075,
+		astrolabe_suit_id = 1075002,
+		weapon_key = 2590003,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 4,
 		equip_list = {
 			519042,
 			529042,
@@ -6717,6 +6821,58 @@ return {
 			}
 		}
 	},
+	[108405] = {
+		star_lv = 600,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 40,
+		skin_id = 1084,
+		id = 108405,
+		weapon_level = 60,
+		weapon_stage = 5,
+		hero_id = 1084,
+		astrolabe_suit_id = 1084001,
+		weapon_key = 2540002,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 4,
+		equip_list = {
+			514008,
+			524029,
+			534008,
+			544029,
+			554008,
+			564029
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		}
+	},
 	[118401] = {
 		star_lv = 600,
 		skill_lv = 25,
@@ -6962,6 +7118,58 @@ return {
 		id = 118407,
 		weapon_level = 60,
 		weapon_stage = 1,
+		hero_id = 1184,
+		astrolabe_suit_id = 1184001,
+		weapon_key = 2540005,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 4,
+		equip_list = {
+			514009,
+			524029,
+			534009,
+			544029,
+			554009,
+			564029
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		}
+	},
+	[118408] = {
+		star_lv = 600,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 40,
+		skin_id = 1184,
+		id = 118408,
+		weapon_level = 60,
+		weapon_stage = 5,
 		hero_id = 1184,
 		astrolabe_suit_id = 1184001,
 		weapon_key = 2540005,
@@ -14919,9 +15127,11 @@ return {
 		107003,
 		107101,
 		107102,
+		107103,
 		107501,
 		107502,
 		107503,
+		107504,
 		108001,
 		108002,
 		108003,
@@ -14935,6 +15145,7 @@ return {
 		108402,
 		108403,
 		108404,
+		108405,
 		118401,
 		118402,
 		118403,
@@ -14942,6 +15153,7 @@ return {
 		118405,
 		118406,
 		118407,
+		118408,
 		109301,
 		109302,
 		109401,

@@ -14,6 +14,7 @@ function slot0.Init(slot0, slot1)
 	slot0._talkContent = slot2.talk_content
 	slot0._talkAnchors = slot2.talk_anchors
 	slot0._talkPosition = slot2.talk_position == "" and {} or slot2.talk_position
+	slot0._talkAdapt = slot2.talk_adapt
 end
 
 function slot0.OnStepEnd(slot0)
@@ -35,7 +36,7 @@ function slot0.Play(slot0)
 
 	slot2, slot3 = slot0._guide:GetNarratorInfo()
 
-	manager.guide.view:ShowTalk(slot0._talkContent, slot0._talkAnchors, slot0._talkPosition, slot2, slot3)
+	manager.guide.view:ShowTalk(slot0._talkContent, slot0._talkAnchors, slot0._talkPosition, slot2, slot3, slot0._talkAdapt)
 	manager.guide.view:ShowHoldMask(slot0:AnalyzeComponentCfg(slot0._maskComponentCfg) and slot4.gameObject or slot0:Component().gameObject, slot0._maskScale)
 end
 

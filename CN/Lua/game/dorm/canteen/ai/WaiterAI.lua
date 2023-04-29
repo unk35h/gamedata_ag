@@ -12,8 +12,10 @@ function slot0.Init(slot0)
 		WaiterEnterScene = "WaiterEnterScene",
 		WaiterMove = "WaiterMove"
 	}
-	slot0.passtableEntityEid = CanteenAIFunction:GetAllEIDNameSpace(CanteenAIFunction:GetNameSpace(DormEnum.ItemType.PassTable))[1]
-	slot0.passtableData = CanteenAIFunction:GetEntityData(slot0.passtableEntityEid)
+end
+
+function slot1()
+	return Dorm.storage:PickData(CanteenAIFunction:GetNameSpace(DormEnum.ItemType.PassTable))
 end
 
 function slot0.AIInit(slot0, slot1)
@@ -50,9 +52,9 @@ function slot0.RegisterEvent(slot0)
 	end
 end
 
-slot1 = 0
-slot2 = 1
-slot3 = 2
+slot2 = 0
+slot3 = 1
+slot4 = 2
 
 function slot0.ListenMoveEvent(slot0, slot1, slot2)
 	if not slot0.WaiterStateList[slot1] then
@@ -134,7 +136,7 @@ function slot0.AIChoice(slot0, slot1, slot2, ...)
 					DormEventInvoke(DORM_CHARACTER_INTERACT, slot3, slot1, slot4.selectedOrder.orderTableID)
 				else
 					slot0:SwitchState(slot1, slot0.WaiterState.WaiterInteractPassTable)
-					DormEventInvoke(DORM_CHARACTER_INTERACT, slot3, slot1, slot0.passtableEntityEid)
+					DormEventInvoke(DORM_CHARACTER_INTERACT, slot3, slot1, uv1())
 				end
 			else
 				slot0:SwitchState(slot1, slot0.WaiterState.WaiterIdle)
@@ -142,7 +144,7 @@ function slot0.AIChoice(slot0, slot1, slot2, ...)
 			end
 		end
 	elseif slot3 == slot0.WaiterState.WaiterIdle then
-		if slot2 == uv1 then
+		if slot2 == uv2 then
 			for slot10, slot11 in ipairs(slot5[1]) do
 				if slot0:ArrangeFood(slot11) then
 					CanteenAIFunction:SetCharacterBusy(slot1, true)
@@ -152,7 +154,7 @@ function slot0.AIChoice(slot0, slot1, slot2, ...)
 					slot11.status = DormEnum.FoodState.HasServer
 
 					slot0:SwitchState(slot1, slot0.WaiterState.WaiterInteractPassTable)
-					DormEventInvoke(DORM_CHARACTER_INTERACT, slot0.WaiterState.WaiterPassFood, slot1, slot0.passtableEntityEid)
+					DormEventInvoke(DORM_CHARACTER_INTERACT, slot3, slot1, uv1())
 					manager.notify:Invoke(DORM_RESTAURANT_CHARACTER_BUBBLE_REFRESH, slot11.orderTableID)
 
 					break
@@ -160,12 +162,12 @@ function slot0.AIChoice(slot0, slot1, slot2, ...)
 			end
 		end
 	elseif slot3 == slot0.WaiterState.WaiterInteractPassTable then
-		if slot2 == uv2 then
+		if slot2 == uv3 then
 			slot0:SwitchState(slot1, slot0.WaiterState.WaiterMove)
 			slot0:MoveToTarget(slot1)
 		end
 	elseif slot3 == slot0.WaiterState.WaiterPlaceFood then
-		if slot2 == uv2 then
+		if slot2 == uv3 then
 			slot0:SwitchState(slot1, slot0.WaiterState.WaiterMove)
 			slot0:MoveToTarget(slot1)
 		end
@@ -180,11 +182,11 @@ function slot0.ChoiceEndPosition(slot0, slot1)
 
 		return CanteenAIFunction:GetNearestPoint(slot1, CanteenItemManager.GetItemInteractPositions(slot3)), Dorm.DormEntityManager.QueryPosition(slot3)
 	else
-		return CanteenAIFunction:GetNearestPoint(slot1, CanteenItemManager.GetItemInteractPositions(slot0.passtableEntityEid))
+		return CanteenAIFunction:GetNearestPoint(slot1, CanteenItemManager.GetItemInteractPositions(uv0()))
 	end
 end
 
-function slot4()
+function slot5()
 	return Dorm.storage:GetData(DormEnum.Namespace.RestaurantBusiness, CanteenManager.orderFoodListField)
 end
 
@@ -197,10 +199,10 @@ function slot0.Update(slot0)
 end
 
 function slot0.FindFood(slot0, slot1)
-	if nullable(slot0.passtableData, "foodList") then
-		for slot6, slot7 in ipairs(slot2) do
-			if slot1 == CanteenAIFunction:GetEntityData(slot7).cfgID then
-				return slot7
+	if nullable(CanteenAIFunction:GetEntityData(uv0()), "foodList") then
+		for slot7, slot8 in ipairs(slot3) do
+			if slot1 == CanteenAIFunction:GetEntityData(slot8).cfgID then
+				return slot8
 			end
 		end
 	end

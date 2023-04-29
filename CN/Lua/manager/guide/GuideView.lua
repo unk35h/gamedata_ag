@@ -74,7 +74,7 @@ function slot0.RemoveUIListener(slot0)
 	slot0.eventTrigger_:RemoveAllListeners()
 end
 
-function slot0.ShowTalk(slot0, slot1, slot2, slot3, slot4, slot5)
+function slot0.ShowTalk(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	if not slot1 or slot1 == "" then
 		SetActive(slot0.textPanel_, false)
 
@@ -104,7 +104,13 @@ function slot0.ShowTalk(slot0, slot1, slot2, slot3, slot4, slot5)
 		slot0.textRect_.anchorMin = Vector2.New(0.5, 0.5)
 	end
 
-	slot0.textRect_.anchoredPosition = Vector2.New(slot3[1] or 0, slot3[2] or 0)
+	if slot6 == 1 then
+		slot0.textRect_.anchoredPosition = Vector2.New((slot3[1] or 0) + ReduxView.VIEW_ADAPT_DISTANCE, slot3[2] or 0)
+	elseif slot6 == 2 then
+		slot0.textRect_.anchoredPosition = Vector2.New((slot3[1] or 0) - ReduxView.VIEW_ADAPT_DISTANCE, slot3[2] or 0)
+	else
+		slot0.textRect_.anchoredPosition = Vector2.New(slot3[1] or 0, slot3[2] or 0)
+	end
 end
 
 function slot0.ShowHoldMask(slot0, slot1, slot2)

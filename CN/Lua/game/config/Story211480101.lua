@@ -2833,7 +2833,7 @@ return {
 	Play114801037 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5
+		slot1.duration_ = 3.266
 
 		function slot1.onSingleLineFinish_()
 			uv0.onSingleLineUpdate_ = nil
@@ -2898,6 +2898,20 @@ return {
 
 				uv0.typewritter:SetDirty()
 				uv0:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_old_114801", "114801037", "story_v_side_old_114801.awb") ~= 0 then
+					if manager.audio:GetVoiceLength("story_v_side_old_114801", "114801037", "story_v_side_old_114801.awb") / 1000 > 0 and slot7 < slot11 and uv0.duration_ < slot11 + slot6 then
+						slot7 = slot11
+						uv0.duration_ = slot11 + slot6
+					end
+
+					if slot9.prefab_name ~= "" and uv0.actors_[slot9.prefab_name] ~= nil then
+						uv0:RecordAudio("114801037", LuaForUtil.PlayVoiceWithCriLipsync(uv0.actors_[slot9.prefab_name].transform, "story_v_side_old_114801", "114801037", "story_v_side_old_114801.awb"))
+					else
+						uv0:AudioAction("play", "voice", "story_v_side_old_114801", "114801037", "story_v_side_old_114801.awb")
+					end
+				end
+
 				uv0:RecordContent(uv0.text_.text)
 			end
 

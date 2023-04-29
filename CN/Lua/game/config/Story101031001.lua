@@ -5,8 +5,8 @@ return {
 		slot1.duration_ = 7
 
 		if ({
-			ja = 7,
-			zh = 4.8
+			zh = 4.8,
+			ja = 7
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -341,8 +341,8 @@ return {
 		slot1.duration_ = 11.633
 
 		if ({
-			ja = 11.633,
-			zh = 10.4
+			zh = 10.4,
+			ja = 11.633
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -450,8 +450,8 @@ return {
 		slot1.duration_ = 2.1
 
 		if ({
-			ja = 2.1,
-			zh = 1.999999999999
+			zh = 1.999999999999,
+			ja = 2.1
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -641,8 +641,8 @@ return {
 		slot1.duration_ = 6.866
 
 		if ({
-			ja = 6.866,
-			zh = 5.933
+			zh = 5.933,
+			ja = 6.866
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -941,8 +941,8 @@ return {
 		slot1.duration_ = 6.4
 
 		if ({
-			ja = 6.4,
-			zh = 3.766
+			zh = 3.766,
+			ja = 6.4
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -1112,8 +1112,8 @@ return {
 		slot1.duration_ = 6.133
 
 		if ({
-			ja = 6.133,
-			zh = 3.733
+			zh = 3.733,
+			ja = 6.133
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -1375,8 +1375,8 @@ return {
 		slot1.duration_ = 11.966
 
 		if ({
-			ja = 11.966,
-			zh = 8.133
+			zh = 8.2,
+			ja = 11.966
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -1484,8 +1484,8 @@ return {
 		slot1.duration_ = 9.7
 
 		if ({
-			ja = 9.7,
-			zh = 5.366
+			zh = 5.433,
+			ja = 9.7
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -1619,8 +1619,8 @@ return {
 		slot1.duration_ = 3.133
 
 		if ({
-			ja = 3.133,
-			zh = 2.366
+			zh = 2.366,
+			ja = 3.133
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -1878,8 +1878,8 @@ return {
 		slot1.duration_ = 10.666
 
 		if ({
-			ja = 10.666,
-			zh = 6.266
+			zh = 6.3,
+			ja = 10.666
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -2009,8 +2009,8 @@ return {
 		slot1.duration_ = 13.333
 
 		if ({
-			ja = 13.333,
-			zh = 9.3
+			zh = 9.3,
+			ja = 13.333
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -2098,8 +2098,8 @@ return {
 		slot1.duration_ = 4.6
 
 		if ({
-			ja = 4.6,
-			zh = 2.9
+			zh = 3.066,
+			ja = 4.6
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -2371,8 +2371,8 @@ return {
 		slot1.duration_ = 10.5
 
 		if ({
-			ja = 10.5,
-			zh = 6.033
+			zh = 6.066,
+			ja = 10.5
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -2534,8 +2534,8 @@ return {
 		slot1.duration_ = 13.866
 
 		if ({
-			ja = 13.866,
-			zh = 10.666
+			zh = 10.7,
+			ja = 13.866
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -2825,8 +2825,8 @@ return {
 		slot1.duration_ = 3.6
 
 		if ({
-			ja = 3.6,
-			zh = 3.166
+			zh = 3.166,
+			ja = 3.6
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -2956,8 +2956,8 @@ return {
 		slot1.duration_ = 5.266
 
 		if ({
-			ja = 5.266,
-			zh = 3.5
+			zh = 3.6,
+			ja = 5.266
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -3088,11 +3088,11 @@ return {
 	Play103101024 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 3.366
+		slot1.duration_ = 3.333
 
 		if ({
-			ja = 2.833,
-			zh = 3.366
+			zh = 3.333,
+			ja = 2.833
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -3219,11 +3219,11 @@ return {
 	Play103101025 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 3.8
+		slot1.duration_ = 3.9
 
 		if ({
-			ja = 3.066,
-			zh = 3.8
+			zh = 3.9,
+			ja = 3.066
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -3481,8 +3481,8 @@ return {
 		slot1.duration_ = 11.1
 
 		if ({
-			ja = 11.1,
-			zh = 8.766
+			zh = 8.8,
+			ja = 11.1
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -3843,8 +3843,8 @@ return {
 		slot1.duration_ = 2.833
 
 		if ({
-			ja = 2.833,
-			zh = 2.1
+			zh = 2.133,
+			ja = 2.833
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -4002,8 +4002,8 @@ return {
 		slot1.duration_ = 5.2
 
 		if ({
-			ja = 5.2,
-			zh = 5.133
+			zh = 5.133,
+			ja = 5.2
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -4183,8 +4183,8 @@ return {
 		slot1.duration_ = 3.633
 
 		if ({
-			ja = 3.366,
-			zh = 3.633
+			zh = 3.633,
+			ja = 3.366
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -4374,8 +4374,8 @@ return {
 		slot1.duration_ = 5.666
 
 		if ({
-			ja = 5.666,
-			zh = 3.733
+			zh = 3.766,
+			ja = 5.666
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -4509,8 +4509,8 @@ return {
 		slot1.duration_ = 6.633
 
 		if ({
-			ja = 5.6,
-			zh = 6.633
+			zh = 6.633,
+			ja = 5.6
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -4706,8 +4706,8 @@ return {
 		slot1.duration_ = 5.133
 
 		if ({
-			ja = 5.133,
-			zh = 3.9
+			zh = 3.866,
+			ja = 5.133
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -5044,11 +5044,11 @@ return {
 	Play103101038 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 5.333
+		slot1.duration_ = 5.433
 
 		if ({
-			ja = 4.2,
-			zh = 5.333
+			zh = 5.433,
+			ja = 4.2
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -5188,8 +5188,8 @@ return {
 		slot1.duration_ = 9.6
 
 		if ({
-			ja = 9.6,
-			zh = 5.566
+			zh = 5.6,
+			ja = 9.6
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -5297,8 +5297,8 @@ return {
 		slot1.duration_ = 2.566
 
 		if ({
-			ja = 2.566,
-			zh = 1.999999999999
+			zh = 1.999999999999,
+			ja = 2.566
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -5484,8 +5484,8 @@ return {
 		slot1.duration_ = 2.6
 
 		if ({
-			ja = 2.6,
-			zh = 2.366
+			zh = 2.366,
+			ja = 2.6
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -5647,8 +5647,8 @@ return {
 		slot1.duration_ = 6.333
 
 		if ({
-			ja = 6.333,
-			zh = 4.533
+			zh = 4.5,
+			ja = 6.333
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end
@@ -5736,8 +5736,8 @@ return {
 		slot1.duration_ = 4.666
 
 		if ({
-			ja = 4.666,
-			zh = 4.5
+			zh = 4.5,
+			ja = 4.666
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
 		end

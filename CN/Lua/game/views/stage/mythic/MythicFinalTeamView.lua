@@ -110,6 +110,19 @@ end
 
 function slot0.AddUIListener(slot0)
 	slot0:AddBtnListener(slot0.btn_warbeganBtn_, nil, function ()
+		if MythicData:GetIsNew() then
+			ShowMessageBox({
+				ButtonType = "SingleBtn",
+				title = GetTips("PROMPT"),
+				content = GetTips("MYTHIC_REFRESH_DATA"),
+				OkCallback = function ()
+					JumpTools.OpenPageByJump("/mythicUltimateView/mythicDifficulty", nil)
+				end
+			})
+
+			return
+		end
+
 		MythicAction.SaveAllTeam(handler(uv0, uv0.LaunchBattle))
 	end)
 	slot0:AddBtnListener(slot0.btn_resetBtn_, nil, function ()
@@ -131,6 +144,19 @@ function slot0.AddUIListener(slot0)
 		})
 	end)
 	slot0:AddBtnListener(slot0.btn_continue_, nil, function ()
+		if MythicData:GetIsNew() then
+			ShowMessageBox({
+				ButtonType = "SingleBtn",
+				title = GetTips("PROMPT"),
+				content = GetTips("MYTHIC_REFRESH_DATA"),
+				OkCallback = function ()
+					JumpTools.OpenPageByJump("/mythicUltimateView/mythicDifficulty", nil)
+				end
+			})
+
+			return
+		end
+
 		uv0:ContinueBattle()
 	end)
 end
@@ -142,6 +168,19 @@ function slot0.OnMythicFinalQuitBattle(slot0)
 end
 
 function slot0.OnEnter(slot0)
+	if MythicData:GetIsNew() then
+		ShowMessageBox({
+			ButtonType = "SingleBtn",
+			title = GetTips("PROMPT"),
+			content = GetTips("MYTHIC_REFRESH_DATA"),
+			OkCallback = function ()
+				JumpTools.OpenPageByJump("/mythicUltimateView/mythicDifficulty", nil)
+			end
+		})
+
+		return
+	end
+
 	slot0.times_ = #MythicData:GetCurLevelIdList()
 	slot0.battleList_ = MythicData:GetCurLevelIdList()
 	slot0.activityID_ = ActivityConst.MYTHIC_FINAL

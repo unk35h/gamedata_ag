@@ -84,6 +84,11 @@ function slot0.RefreshUI(slot0)
 		slot0.m_title.text = ""
 	end
 
+	if slot2 == 1 then
+		slot0.selectItemIndex = 1
+		slot0.m_confirmBtn.interactable = true
+	end
+
 	slot0.rewardList:StartScroll(slot2)
 end
 

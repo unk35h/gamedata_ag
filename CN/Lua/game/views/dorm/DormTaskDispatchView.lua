@@ -63,11 +63,15 @@ function slot0.indexItem(slot0, slot1, slot2)
 end
 
 function slot0.OnEnter(slot0)
-	slot0:GetAward()
+	slot0:RegisterEvent()
+
+	if slot0:GetAward() then
+		return
+	end
+
 	manager.windowBar:SwitchBar({
 		BACK_BAR
 	})
-	slot0:RegisterEvent()
 
 	slot0.dispatchItemList_ = CanteenData:GetEntrustList()
 
@@ -97,7 +101,11 @@ end
 function slot0.GetAward(slot0)
 	if #CanteenData:CheckHasTimeOverEntrust() > 0 then
 		CanteenData:ReceiveEntrustAward(slot1)
+
+		return true
 	end
+
+	return false
 end
 
 function slot0.OnExit(slot0)

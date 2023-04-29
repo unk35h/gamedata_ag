@@ -6076,6 +6076,238 @@
       ]
     },
     {
+      "ID": 365,
+      "Name": "物属",
+      "ExtraDescription": "AFFIX_365",
+      "Description": [
+        700000365
+      ],
+      "AffixBuffId": 365,
+      "Buffid": [
+        3652,
+        3653,
+        3654,
+        3655,
+        3656,
+        3657,
+        3658
+      ],
+      "MaxLevel": 4,
+      "LogicId": 1,
+      "Base": [
+        0
+      ],
+      "Factor": [
+        0
+      ],
+      "Flowscript": [
+        "FlowScript/Affix/AffixEffect1010"
+      ]
+    },
+    {
+      "ID": 366,
+      "Name": "光属",
+      "ExtraDescription": "AFFIX_366",
+      "Description": [
+        700000366
+      ],
+      "AffixBuffId": 366,
+      "Buffid": [
+        3651,
+        3653,
+        3654,
+        3655,
+        3656,
+        3657,
+        3658
+      ],
+      "MaxLevel": 4,
+      "LogicId": 1,
+      "Base": [
+        0
+      ],
+      "Factor": [
+        0
+      ],
+      "Flowscript": [
+        "FlowScript/Affix/AffixEffect1010"
+      ]
+    },
+    {
+      "ID": 367,
+      "Name": "暗属",
+      "ExtraDescription": "AFFIX_367",
+      "Description": [
+        700000367
+      ],
+      "AffixBuffId": 367,
+      "Buffid": [
+        3651,
+        3652,
+        3654,
+        3655,
+        3656,
+        3657,
+        3658
+      ],
+      "MaxLevel": 4,
+      "LogicId": 1,
+      "Base": [
+        0
+      ],
+      "Factor": [
+        0
+      ],
+      "Flowscript": [
+        "FlowScript/Affix/AffixEffect1010"
+      ]
+    },
+    {
+      "ID": 368,
+      "Name": "水属",
+      "ExtraDescription": "AFFIX_368",
+      "Description": [
+        700000368
+      ],
+      "AffixBuffId": 368,
+      "Buffid": [
+        3651,
+        3652,
+        3653,
+        3655,
+        3656,
+        3657,
+        3658
+      ],
+      "MaxLevel": 4,
+      "LogicId": 1,
+      "Base": [
+        0
+      ],
+      "Factor": [
+        0
+      ],
+      "Flowscript": [
+        "FlowScript/Affix/AffixEffect1010"
+      ]
+    },
+    {
+      "ID": 369,
+      "Name": "冰属",
+      "ExtraDescription": "AFFIX_369",
+      "Description": [
+        700000369
+      ],
+      "AffixBuffId": 369,
+      "Buffid": [
+        3651,
+        3652,
+        3653,
+        3654,
+        3656,
+        3657,
+        3658
+      ],
+      "MaxLevel": 4,
+      "LogicId": 1,
+      "Base": [
+        0
+      ],
+      "Factor": [
+        0
+      ],
+      "Flowscript": [
+        "FlowScript/Affix/AffixEffect1010"
+      ]
+    },
+    {
+      "ID": 370,
+      "Name": "火属",
+      "ExtraDescription": "AFFIX_370",
+      "Description": [
+        700000370
+      ],
+      "AffixBuffId": 370,
+      "Buffid": [
+        3651,
+        3652,
+        3653,
+        3654,
+        3655,
+        3657,
+        3658
+      ],
+      "MaxLevel": 4,
+      "LogicId": 1,
+      "Base": [
+        0
+      ],
+      "Factor": [
+        0
+      ],
+      "Flowscript": [
+        "FlowScript/Affix/AffixEffect1010"
+      ]
+    },
+    {
+      "ID": 371,
+      "Name": "风属",
+      "ExtraDescription": "AFFIX_371",
+      "Description": [
+        700000371
+      ],
+      "AffixBuffId": 371,
+      "Buffid": [
+        3651,
+        3652,
+        3653,
+        3654,
+        3655,
+        3656,
+        3658
+      ],
+      "MaxLevel": 4,
+      "LogicId": 1,
+      "Base": [
+        0
+      ],
+      "Factor": [
+        0
+      ],
+      "Flowscript": [
+        "FlowScript/Affix/AffixEffect1010"
+      ]
+    },
+    {
+      "ID": 372,
+      "Name": "雷属",
+      "ExtraDescription": "AFFIX_372",
+      "Description": [
+        700000372
+      ],
+      "AffixBuffId": 372,
+      "Buffid": [
+        3651,
+        3652,
+        3653,
+        3654,
+        3655,
+        3656,
+        3657
+      ],
+      "MaxLevel": 4,
+      "LogicId": 1,
+      "Base": [
+        0
+      ],
+      "Factor": [
+        0
+      ],
+      "Flowscript": [
+        "FlowScript/Affix/AffixEffect1010"
+      ]
+    },
+    {
       "ID": 501,
       "Name": "必胜御守",
       "ExtraDescription": "ARTIFACT_APPEAR_ENERGY",
@@ -15530,11 +15762,35 @@
       ]
     },
     {
+      "ID": 70005,
+      "Name": "激怒",
+      "ExtraDescription": "AFFIX_BUFF_HP_ANGRY",
+      "Description": [
+        700070005
+      ],
+      "AffixBuffId": 70005,
+      "Buffid": [
+        700051,
+        700052
+      ],
+      "MaxLevel": 3,
+      "LogicId": 8,
+      "Base": [
+        30
+      ],
+      "Factor": [
+        0
+      ],
+      "Flowscript": [
+        "FlowScript/Affix/AffixEffect1360"
+      ]
+    },
+    {
       "ID": 70051,
-      "Name": "强攻",
+      "Name": "空描述模板",
       "ExtraDescription": "AFFIX_70051",
       "Description": [
-        700000101
+        700000001
       ],
       "AffixBuffId": 70051,
       "Buffid": [
@@ -15554,10 +15810,10 @@
     },
     {
       "ID": 70052,
-      "Name": "强攻",
+      "Name": "空描述模板",
       "ExtraDescription": "AFFIX_70052",
       "Description": [
-        700000101
+        700000001
       ],
       "AffixBuffId": 70052,
       "Buffid": [
@@ -15577,10 +15833,10 @@
     },
     {
       "ID": 70053,
-      "Name": "强攻",
+      "Name": "空描述模板",
       "ExtraDescription": "AFFIX_70053",
       "Description": [
-        700000101
+        700000001
       ],
       "AffixBuffId": 70053,
       "Buffid": [
@@ -15600,10 +15856,10 @@
     },
     {
       "ID": 70054,
-      "Name": "强攻",
+      "Name": "空描述模板",
       "ExtraDescription": "AFFIX_70054",
       "Description": [
-        700000101
+        700000001
       ],
       "AffixBuffId": 70054,
       "Buffid": [
@@ -15623,10 +15879,10 @@
     },
     {
       "ID": 70055,
-      "Name": "强攻",
+      "Name": "空描述模板",
       "ExtraDescription": "AFFIX_70055",
       "Description": [
-        700000101
+        700000001
       ],
       "AffixBuffId": 70055,
       "Buffid": [
@@ -15646,10 +15902,10 @@
     },
     {
       "ID": 70056,
-      "Name": "强攻",
+      "Name": "空描述模板",
       "ExtraDescription": "AFFIX_70056",
       "Description": [
-        700000101
+        700000001
       ],
       "AffixBuffId": 70056,
       "Buffid": [
@@ -15669,10 +15925,10 @@
     },
     {
       "ID": 70057,
-      "Name": "强攻",
+      "Name": "空描述模板",
       "ExtraDescription": "AFFIX_70057",
       "Description": [
-        700000101
+        700000001
       ],
       "AffixBuffId": 70057,
       "Buffid": [
@@ -15692,10 +15948,10 @@
     },
     {
       "ID": 70058,
-      "Name": "强攻",
+      "Name": "空描述模板",
       "ExtraDescription": "AFFIX_70058",
       "Description": [
-        700000101
+        700000001
       ],
       "AffixBuffId": 70058,
       "Buffid": [
@@ -15715,10 +15971,10 @@
     },
     {
       "ID": 70059,
-      "Name": "强攻",
+      "Name": "空描述模板",
       "ExtraDescription": "AFFIX_70059",
       "Description": [
-        700000101
+        700000001
       ],
       "AffixBuffId": 70059,
       "Buffid": [
@@ -16163,7 +16419,7 @@
     },
     {
       "ID": 70126,
-      "Name": "《约定》",
+      "Name": "《承诺》",
       "ExtraDescription": "AFFIX_70126",
       "Description": [
         700070126
@@ -16770,11 +17026,11 @@
       "LogicId": 27,
       "Base": [
         0,
-        3000
+        6000
       ],
       "Factor": [
         0,
-        2000
+        4000
       ],
       "Flowscript": [
         "FlowScript/Affix/AffixEffect705010"
@@ -17121,11 +17377,11 @@
       "LogicId": 27,
       "Base": [
         0,
-        6000
+        12000
       ],
       "Factor": [
         0,
-        4000
+        8000
       ],
       "Flowscript": [
         "FlowScript/Affix/AffixEffect705510"
@@ -17327,6 +17583,9 @@
         700070604
       ],
       "AffixBuffId": 70604,
+      "Buffid": [
+        706031
+      ],
       "MaxLevel": 1,
       "LogicId": 27,
       "Base": [
@@ -17374,6 +17633,9 @@
         700070606
       ],
       "AffixBuffId": 70606,
+      "Buffid": [
+        706031
+      ],
       "MaxLevel": 5,
       "LogicId": 27,
       "Base": [
@@ -17425,11 +17687,11 @@
       "LogicId": 27,
       "Base": [
         0,
-        6000
+        12000
       ],
       "Factor": [
         0,
-        4000
+        8000
       ],
       "Flowscript": [
         "FlowScript/Affix/AffixEffect706010"
@@ -17443,15 +17705,18 @@
         700070609
       ],
       "AffixBuffId": 70609,
+      "Buffid": [
+        706091
+      ],
       "MaxLevel": 5,
       "LogicId": 27,
       "Base": [
         0,
-        6000
+        0
       ],
       "Factor": [
         0,
-        4000
+        0
       ],
       "Flowscript": [
         "FlowScript/Affix/AffixEffect706010"
@@ -17519,11 +17784,11 @@
       "LogicId": 27,
       "Base": [
         0,
-        6000
+        4000
       ],
       "Factor": [
         0,
-        4000
+        2000
       ],
       "Flowscript": [
         "FlowScript/Affix/AffixEffect706010"
@@ -17609,7 +17874,7 @@
       "MaxLevel": 5,
       "LogicId": 27,
       "Base": [
-        0,
+        800067,
         0
       ],
       "Factor": [
@@ -17863,15 +18128,18 @@
         700070662
       ],
       "AffixBuffId": 70662,
+      "Buffid": [
+        706621
+      ],
       "MaxLevel": 5,
       "LogicId": 27,
       "Base": [
         0,
-        0
+        2000
       ],
       "Factor": [
         0,
-        0
+        1000
       ],
       "Flowscript": [
         "FlowScript/Affix/AffixEffect706510"
@@ -17935,7 +18203,7 @@
       "MaxLevel": 5,
       "LogicId": 27,
       "Base": [
-        0,
+        800069,
         0
       ],
       "Factor": [
@@ -18232,7 +18500,7 @@
       "MaxLevel": 5,
       "LogicId": 27,
       "Base": [
-        0,
+        800068,
         0
       ],
       "Factor": [
@@ -18257,7 +18525,7 @@
       "MaxLevel": 5,
       "LogicId": 27,
       "Base": [
-        0,
+        800068,
         0
       ],
       "Factor": [
@@ -18449,11 +18717,11 @@
       "LogicId": 27,
       "Base": [
         0,
-        0
+        1
       ],
       "Factor": [
         0,
-        0
+        1
       ],
       "Flowscript": [
         "FlowScript/Affix/AffixEffect707510"
@@ -18474,11 +18742,11 @@
       "LogicId": 27,
       "Base": [
         0,
-        0
+        5
       ],
       "Factor": [
         0,
-        0
+        -1
       ],
       "Flowscript": [
         "FlowScript/Affix/AffixEffect707510"

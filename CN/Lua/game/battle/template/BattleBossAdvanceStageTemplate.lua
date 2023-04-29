@@ -41,6 +41,30 @@ function slot0.GetHeroTeam(slot0)
 	return slot0.heroList, slot0.heroTrialList_
 end
 
+function slot0.GetServerChipData(slot0)
+	slot1 = {}
+	slot0.chipManagerID_, slot1 = BattleTeamData:GetMimirInfo(slot0:GetType(), slot0:GetActivityID(), BossTools.GetContID(slot0:GetType(), slot0.bossIndex_))
+	slot3, slot4 = slot0:GetHeroTeam()
+	slot5 = {}
+	slot6 = false
+
+	for slot10, slot11 in pairs(slot3) do
+		slot6 = false
+
+		for slot15, slot16 in pairs(slot4) do
+			if slot11 == (slot16 - slot16 % 100) / 100 then
+				slot6 = true
+			end
+		end
+
+		if slot6 == false then
+			table.insert(slot5, slot11)
+		end
+	end
+
+	slot0.chipList_ = ChipData:GetEnableAllChipList(slot0.chipManagerID_, slot5, slot1)
+end
+
 function slot0.GetStageAffix(slot0)
 	slot1 = {}
 	slot2 = {}

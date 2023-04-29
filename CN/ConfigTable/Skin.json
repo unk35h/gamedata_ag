@@ -188,6 +188,13 @@
       "RenderTimeline": "timeline/1039_timeline"
     },
     {
+      "ID": 103906,
+      "Hero": 1039,
+      "BattleModelPath": "Char/103906_tpose",
+      "BattleCameraParam": 1,
+      "RenderTimeline": "timeline/1039_timeline"
+    },
+    {
       "ID": 1038,
       "Hero": 1038,
       "BattleModelPath": "Char/1038_tpose",

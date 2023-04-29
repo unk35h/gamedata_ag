@@ -46,6 +46,7 @@ function slot0.SetWeaponServantData(slot0, slot1, slot2, slot3)
 	slot0.servantMap_ = ServantTools.GetServantMap()
 
 	slot0:UpdateView(slot2, slot3)
+	slot0.haveInstanceController_:SetSelectedState("true")
 	SetActive(slot0.replaceGo_, true)
 	SetActive(slot0.sleepybtnGo_, false)
 end

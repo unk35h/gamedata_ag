@@ -5251,7 +5251,7 @@ return {
 	},
 	[10710031] = {
 		suit_name = "东陆正灵",
-		name = "破击",
+		name = "巽和",
 		unlock_condition = 2301,
 		id = 10710031,
 		pos = 1,
@@ -5279,7 +5279,7 @@ return {
 	},
 	[10710033] = {
 		suit_name = "东陆正灵",
-		name = "巽和",
+		name = "破击",
 		unlock_condition = 2303,
 		id = 10710033,
 		pos = 3,

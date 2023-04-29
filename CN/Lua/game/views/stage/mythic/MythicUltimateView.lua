@@ -18,6 +18,7 @@ function slot0.InitUI(slot0)
 
 	slot0._affixMonster = {}
 	slot0.isStarController = ControllerUtil.GetController(slot0.transform_, "isStar")
+	slot0.mosterAffixController_ = ControllerUtil.GetController(slot0.m_mosterAffixController, "affix")
 end
 
 function slot0.AddUIListeners(slot0)
@@ -187,7 +188,7 @@ function slot0.RefreshUI(slot0)
 
 	slot0.levelText_.text = string.format(MythicFinalCfg[MythicData:GetCurHotLevelId()].level_diffuculty)
 
-	slot0:RefreshAffixItems(MythicData:GetMonsterAffix(), false, slot0._affixMonsterParent, slot0._affixMonster)
+	slot0:RefreshAffixItems(MythicData:GetMonsterAffix(), false, slot0._affixMonsterParent, slot0._affixMonster, slot0.mosterAffixController_)
 	slot0:RefreshRank()
 end
 
@@ -201,55 +202,60 @@ function slot0.RefreshMaterial(slot0)
 	end
 end
 
-function slot0.RefreshAffixItems(slot0, slot1, slot2, slot3, slot4)
-	slot5 = {}
-	slot6 = 0
-	slot7 = math.min(#(slot1 or {}), 3)
-	slot8 = MythicCfg[slot0.difficulty] and MythicCfg[slot0.difficulty].sub_partition_list or {}
+function slot0.RefreshAffixItems(slot0, slot1, slot2, slot3, slot4, slot5)
+	slot6 = {}
+	slot7 = 0
+	slot8 = math.min(#(slot1 or {}), 3)
+	slot9 = MythicCfg[slot0.difficulty] and MythicCfg[slot0.difficulty].sub_partition_list or {}
 
-	for slot12, slot13 in ipairs(slot1) do
-		slot14 = clone(slot13)
+	for slot13, slot14 in ipairs(slot1) do
+		slot15 = clone(slot14)
 
 		if slot2 then
-			if slot8[slot12] and MythicData:GetIsFirstClear(slot8[slot12]) then
-				slot14.lock = true
+			if slot9[slot13] and MythicData:GetIsFirstClear(slot9[slot13]) then
+				slot15.lock = true
 			else
-				slot14.lock = false
+				slot15.lock = false
 			end
 		else
-			slot14.lock = false
+			slot15.lock = false
 		end
 
-		if slot13[3] == 3 then
-			table.insert(slot5, 1, slot14)
+		if slot14[3] == 3 then
+			table.insert(slot6, 1, slot15)
 		else
-			slot6 = slot6 + 1
+			slot7 = slot7 + 1
 
-			table.insert(slot5, slot14)
+			table.insert(slot6, slot15)
 		end
 	end
 
-	for slot12, slot13 in ipairs(slot5) do
-		if slot4[slot12] == nil then
-			slot4[slot12] = MythicAffixItem.New(slot0._affixItem, slot3, slot13)
+	slot14 = "_"
+	slot13 = slot8 .. slot14 .. slot7
+
+	slot5:SetSelectedState(slot13)
+
+	for slot13, slot14 in ipairs(slot6) do
+		if slot4[slot13] == nil then
+			slot4[slot13] = MythicAffixItem.New(slot0._affixItem, slot3, slot14)
 		end
 
-		slot14 = slot4[slot12]
+		slot15 = slot4[slot13]
 
-		slot14:SetData(slot13)
+		slot15:SetData(slot14)
 
-		slot14 = slot4[slot12].transform_
-		slot14 = slot14:GetComponent(typeof(Button))
-		slot15 = slot14.onClick
+		slot15 = slot4[slot13].transform_
+		slot15 = slot15:GetComponent(typeof(Button))
+		slot16 = slot15.onClick
 
-		slot15:RemoveAllListeners()
-		slot0:AddBtnListener(slot14, nil, function ()
+		slot16:RemoveAllListeners()
+		slot0:AddBtnListener(slot15, nil, function ()
 			uv0:ShowAffixInfo(uv1[uv2].transform_, uv3)
 		end)
 	end
 
-	for slot12 = #slot5 + 1, #slot4 do
-		slot4[slot12]:Show(false)
+	for slot13 = #slot6 + 1, #slot4 do
+		slot4[slot13]:Show(false)
 	end
 end
 

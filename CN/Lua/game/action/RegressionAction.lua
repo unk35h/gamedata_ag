@@ -33,8 +33,21 @@ return {
 	end,
 	OnRegressionGiftBack = function (slot0)
 		if isSuccess(slot0.result) then
+			slot2 = RegressionCfg[RegressionData:GetRegressionVersion()] and RegressionCfg[slot1].gift or {}
+
+			for slot6, slot7 in ipairs(slot2) do
+				if ItemCfg[slot7[1]].sub_type == 404 then
+					slot2[slot6] = {
+						slot8.param[1],
+						slot7[2],
+						0,
+						ItemTools.GetItemExpiredTimeByID(slot7[1])
+					}
+				end
+			end
+
 			RegressionData:UpdateRegressionGift()
-			getReward(RegressionCfg[RegressionData:GetRegressionVersion()] and RegressionCfg[slot1].gift or {}, nil, function ()
+			getReward(slot2, nil, function ()
 				gameContext:Back()
 				JumpTools.OpenPageByJump("/regressionNew")
 			end, true)

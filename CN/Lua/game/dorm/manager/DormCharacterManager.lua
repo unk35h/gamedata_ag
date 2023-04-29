@@ -39,6 +39,7 @@ end
 
 function slot0.RemoveEntityInfo(slot0, slot1)
 	Dorm.storage:RecordData(DormEnum.Namespace.EntityType, slot1, nil)
+	slot0:OnCharaGrabReleased(slot1)
 end
 
 function slot0.Init(slot0)
@@ -61,6 +62,8 @@ end
 function slot0.RegisterEvent(slot0)
 	slot0.listener:Register(ON_BEGIN_STORY, handler(slot0, slot0.OnBeginStory))
 	slot0.listener:Register(ON_FINISH_STORY, handler(slot0, slot0.OnFinishStory))
+	slot0.listener:Register(ON_DORM_CHARACTER_GRAB_STARTED, handler(slot0, slot0.OnCharaGrabStart))
+	slot0.listener:Register(ON_DORM_CHARACTER_GRAB_RELEASED, handler(slot0, slot0.OnCharaGrabReleased))
 end
 
 function slot0.RemoveEvent(slot0)
@@ -93,7 +96,9 @@ function slot0.Generate(slot0, slot1)
 end
 
 function slot0.Remove(slot0, slot1)
-	slot0.dormHeroAI:RemoveCharacterAI(slot0.entityManager:Remove(slot1))
+	slot0.dormHeroAI:RemoveCharacterAI(eid)
+
+	slot2 = slot0.entityManager:Remove(slot1)
 end
 
 function slot0.Clear(slot0)
@@ -104,10 +109,24 @@ end
 function slot0.FindAndRemove(slot0)
 	slot1 = uv0.GetInstance()
 
+	slot1.dormHeroAI:RemoveCharacterAI(slot0)
 	EntityManager.FindAndRemoveEntity({
 		slot1.entityManager
 	}, slot0)
-	slot1.dormHeroAI:RemoveCharacterAI(slot0)
+end
+
+slot0.curGrabbingInfoNamespace = "dorm.curGrabbing"
+
+function slot0.OnCharaGrabStart(slot0, slot1)
+	Dorm.storage:RecordData(uv0.curGrabbingInfoNamespace, "eid", slot1)
+	manager.notify:Invoke(DORM_CUR_GRABBING_CHARACTER_CHANGE)
+end
+
+function slot0.OnCharaGrabReleased(slot0, slot1)
+	if Dorm.storage:GetData(uv0.curGrabbingInfoNamespace, "eid") == slot1 then
+		Dorm.storage:RecordData(slot2, "eid", nil)
+		manager.notify:Invoke(DORM_CUR_GRABBING_CHARACTER_CHANGE)
+	end
 end
 
 return slot0

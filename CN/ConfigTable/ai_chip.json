@@ -30,7 +30,7 @@
       "SuitName": "弥特尔",
       "PictureId": "3",
       "Portrait": "3",
-      "NewCondition": 20301,
+      "NewCondition": 30114,
       "FlowName": "FlowScript/AIChipEffect/AIChipEffect3.asset",
       "Desc": "修正模式的持续时间延长3秒。",
       "Profile": "第二只被研发出来的弥弥尔猫型AI，也是算力最接近弥弥尔的一型。\n目前在隐科组协助大国主和海姆达尔的研究，是大量实验数据的记录员。",
@@ -165,7 +165,7 @@
       "TypeId": 2,
       "SuitName": "边际效益",
       "PictureId": "110",
-      "NewCondition": 20121,
+      "NewCondition": 30115,
       "FlowName": "FlowScript/AIChipEffect/AIChipEffect110.asset",
       "Desc": "作为队友的修正者处于零时空间或修正模式时，伤害提高15%。"
     },
@@ -275,6 +275,26 @@
       "NewCondition": 5106602,
       "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
       "Desc": "作为队友的早樱·大国主，当我方有生命值低于20%时，会抽取卡牌「恋人」，其他时候会按顺序依次抽取三种卡牌。（不安装芯片时，生命值判断阈值默认为60%）"
+    },
+    {
+      "ID": 107502,
+      "TypeId": 3,
+      "SpecChar": 1075,
+      "SuitName": "澄心·烈幕",
+      "PictureId": "107502",
+      "NewCondition": 5107502,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的澄心·陵光，在队长不拥有护盾「炫铠」时，仅会施放「离行不息·烈式」，其他时候仅会施放「天同人和·烈式」；当神格「炽离神君-孤火」被激活时，该芯片效果失效。"
+    },
+    {
+      "ID": 107503,
+      "TypeId": 3,
+      "SpecChar": 1075,
+      "SuitName": "澄心·燃华",
+      "PictureId": "107503",
+      "NewCondition": 5107502,
+      "FlowName": "FlowScript/AIChipEffect/AIChipEffect101.asset",
+      "Desc": "作为队友的澄心·陵光，当队长生命值低于30%时，仅会施放「离行不息·烈式」，其他时候仅会施放「晋照升明·烈式」；当神格「炽离神君-孤火」被激活时，该芯片效果失效。"
     },
     {
       "ID": 108101,

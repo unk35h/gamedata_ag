@@ -8955,6 +8955,655 @@ return {
 			1011315
 		}
 	},
+	[31616] = {
+		name = "普通第十三章·间章上",
+		pre_id = 0,
+		type = 3,
+		source = "",
+		condition = 500,
+		desc = "完成普通第十三章·间章上的所有任务",
+		need = 10,
+		activity_id = 0,
+		day_index = 0,
+		timer_id = 0,
+		id = 31616,
+		phase = 17,
+		additional_parameter = {
+			3,
+			17
+		},
+		reward = {
+			{
+				40203,
+				3
+			},
+			{
+				40803,
+				3
+			}
+		},
+		unlock_condition = {
+			1,
+			90
+		}
+	},
+	[31617] = {
+		name = "普通第十三章·间章上",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度13-2-1",
+		need = 1,
+		activity_id = 0,
+		day_index = 0,
+		timer_id = 0,
+		id = 31617,
+		phase = 17,
+		additional_parameter = {
+			1011316
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			90
+		},
+		source = {
+			309,
+			11113,
+			1011316
+		}
+	},
+	[31618] = {
+		name = "普通第十三章·间章上",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度13-2-2",
+		need = 1,
+		activity_id = 0,
+		day_index = 0,
+		timer_id = 0,
+		id = 31618,
+		phase = 17,
+		additional_parameter = {
+			1011317
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			90
+		},
+		source = {
+			309,
+			11113,
+			1011317
+		}
+	},
+	[31619] = {
+		name = "普通第十三章·间章上",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度13-2-3",
+		need = 1,
+		activity_id = 0,
+		day_index = 0,
+		timer_id = 0,
+		id = 31619,
+		phase = 17,
+		additional_parameter = {
+			1011318
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			90
+		},
+		source = {
+			309,
+			11113,
+			1011318
+		}
+	},
+	[31620] = {
+		name = "普通第十三章·间章上",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度13-2-4",
+		need = 1,
+		activity_id = 0,
+		day_index = 0,
+		timer_id = 0,
+		id = 31620,
+		phase = 17,
+		additional_parameter = {
+			1011319
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			90
+		},
+		source = {
+			309,
+			11113,
+			1011319
+		}
+	},
+	[31621] = {
+		name = "普通第十三章·间章上",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度13-2-5",
+		need = 1,
+		activity_id = 0,
+		day_index = 0,
+		timer_id = 0,
+		id = 31621,
+		phase = 17,
+		additional_parameter = {
+			1011320
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			90
+		},
+		source = {
+			309,
+			11113,
+			1011320
+		}
+	},
+	[31622] = {
+		name = "普通第十三章·间章上",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度13-2-6",
+		need = 1,
+		activity_id = 0,
+		day_index = 0,
+		timer_id = 0,
+		id = 31622,
+		phase = 17,
+		additional_parameter = {
+			1011321
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			90
+		},
+		source = {
+			309,
+			11113,
+			1011321
+		}
+	},
+	[31623] = {
+		name = "普通第十三章·间章上",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度13-2-7",
+		need = 1,
+		activity_id = 0,
+		day_index = 0,
+		timer_id = 0,
+		id = 31623,
+		phase = 17,
+		additional_parameter = {
+			1011322
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			90
+		},
+		source = {
+			309,
+			11113,
+			1011322
+		}
+	},
+	[31624] = {
+		name = "普通第十三章·间章上",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度13-2-8",
+		need = 1,
+		activity_id = 0,
+		day_index = 0,
+		timer_id = 0,
+		id = 31624,
+		phase = 17,
+		additional_parameter = {
+			1011323
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			90
+		},
+		source = {
+			309,
+			11113,
+			1011323
+		}
+	},
+	[31625] = {
+		name = "普通第十三章·间章上",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度13-2-9",
+		need = 1,
+		activity_id = 0,
+		day_index = 0,
+		timer_id = 0,
+		id = 31625,
+		phase = 17,
+		additional_parameter = {
+			1011324
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			90
+		},
+		source = {
+			309,
+			11113,
+			1011324
+		}
+	},
+	[31626] = {
+		name = "普通第十三章·间章上",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度13-2-10",
+		need = 1,
+		activity_id = 0,
+		day_index = 0,
+		timer_id = 0,
+		id = 31626,
+		phase = 17,
+		additional_parameter = {
+			1011325
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			90
+		},
+		source = {
+			309,
+			11113,
+			1011325
+		}
+	},
+	[31627] = {
+		name = "普通第十三章·间章下",
+		pre_id = 0,
+		type = 3,
+		source = "",
+		condition = 500,
+		desc = "完成普通第十三章·间章下的所有任务",
+		need = 5,
+		activity_id = 0,
+		day_index = 0,
+		timer_id = 0,
+		id = 31627,
+		phase = 18,
+		additional_parameter = {
+			3,
+			18
+		},
+		reward = {
+			{
+				40203,
+				3
+			},
+			{
+				40803,
+				3
+			}
+		},
+		unlock_condition = {
+			1,
+			90
+		}
+	},
+	[31628] = {
+		name = "普通第十三章·间章下",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度13-3-1",
+		need = 1,
+		activity_id = 0,
+		day_index = 0,
+		timer_id = 0,
+		id = 31628,
+		phase = 18,
+		additional_parameter = {
+			1011326
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			90
+		},
+		source = {
+			309,
+			12113,
+			1011326
+		}
+	},
+	[31629] = {
+		name = "普通第十三章·间章下",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度13-3-2",
+		need = 1,
+		activity_id = 0,
+		day_index = 0,
+		timer_id = 0,
+		id = 31629,
+		phase = 18,
+		additional_parameter = {
+			1011327
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			90
+		},
+		source = {
+			309,
+			12113,
+			1011327
+		}
+	},
+	[31630] = {
+		name = "普通第十三章·间章下",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度13-3-3",
+		need = 1,
+		activity_id = 0,
+		day_index = 0,
+		timer_id = 0,
+		id = 31630,
+		phase = 18,
+		additional_parameter = {
+			1011328
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			90
+		},
+		source = {
+			309,
+			12113,
+			1011328
+		}
+	},
+	[31631] = {
+		name = "普通第十三章·间章下",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度13-3-4",
+		need = 1,
+		activity_id = 0,
+		day_index = 0,
+		timer_id = 0,
+		id = 31631,
+		phase = 18,
+		additional_parameter = {
+			1011329
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			90
+		},
+		source = {
+			309,
+			12113,
+			1011329
+		}
+	},
+	[31632] = {
+		name = "普通第十三章·间章下",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度13-3-5",
+		need = 1,
+		activity_id = 0,
+		day_index = 0,
+		timer_id = 0,
+		id = 31632,
+		phase = 18,
+		additional_parameter = {
+			1011330
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			90
+		},
+		source = {
+			309,
+			12113,
+			1011330
+		}
+	},
 	[40100] = {
 		name = "第一阶段",
 		pre_id = 0,
@@ -9177,7 +9826,7 @@ return {
 		pre_id = 0,
 		type = 4,
 		condition = 106,
-		desc = "拥有1位技能等级之和达到20的修正者",
+		desc = "拥有1位技能等级之和达到20的修正者（不包含跃迁技能提升）",
 		need = 1,
 		activity_id = 0,
 		day_index = 0,
@@ -9797,7 +10446,7 @@ return {
 		pre_id = 0,
 		type = 4,
 		condition = 106,
-		desc = "拥有1位技能等级之和达到50的修正者",
+		desc = "拥有1位技能等级之和达到50的修正者（不包含跃迁技能提升）",
 		need = 1,
 		activity_id = 0,
 		day_index = 0,
@@ -10866,7 +11515,7 @@ return {
 		pre_id = 0,
 		type = 4,
 		condition = 106,
-		desc = "拥有1位技能等级之和达到75的修正者",
+		desc = "拥有1位技能等级之和达到75的修正者（不包含跃迁技能提升）",
 		need = 1,
 		activity_id = 0,
 		day_index = 0,
@@ -14391,7 +15040,7 @@ return {
 		need = 1,
 		activity_id = 513,
 		day_index = 0,
-		timer_id = 0,
+		timer_id = 50010,
 		id = 130001,
 		phase = 0,
 		additional_parameter = {},
@@ -14418,7 +15067,7 @@ return {
 		need = 1,
 		activity_id = 513,
 		day_index = 0,
-		timer_id = 0,
+		timer_id = 50010,
 		id = 130002,
 		phase = 0,
 		additional_parameter = {
@@ -21540,7 +22189,7 @@ return {
 		pre_id = 0,
 		type = 601,
 		condition = 106,
-		desc = "拥有1位技能等级之和达到10的修正者",
+		desc = "拥有1位技能等级之和达到10的修正者（不包含跃迁技能提升）",
 		need = 1,
 		activity_id = 0,
 		day_index = 0,
@@ -22634,7 +23283,7 @@ return {
 		pre_id = 0,
 		type = 601,
 		condition = 106,
-		desc = "拥有1位技能等级之和达到50的修正者",
+		desc = "拥有1位技能等级之和达到50的修正者（不包含跃迁技能提升）",
 		need = 1,
 		activity_id = 0,
 		day_index = 0,
@@ -23130,7 +23779,7 @@ return {
 		pre_id = 0,
 		type = 601,
 		condition = 106,
-		desc = "拥有3位技能等级之和达到50的修正者",
+		desc = "拥有3位技能等级之和达到50的修正者（不包含跃迁技能提升）",
 		need = 3,
 		activity_id = 0,
 		day_index = 0,
@@ -23614,7 +24263,7 @@ return {
 		pre_id = 0,
 		type = 601,
 		condition = 106,
-		desc = "拥有1位技能等级之和达到75的修正者",
+		desc = "拥有1位技能等级之和达到75的修正者（不包含跃迁技能提升）",
 		need = 1,
 		activity_id = 0,
 		day_index = 0,
@@ -23989,7 +24638,7 @@ return {
 		pre_id = 0,
 		type = 601,
 		condition = 472,
-		desc = "累计通关2次梦境再构虚像难度Boss",
+		desc = "累计通关2次梦境再构虚象难度Boss",
 		need = 2,
 		activity_id = 0,
 		day_index = 0,
@@ -24215,7 +24864,7 @@ return {
 		pre_id = 0,
 		type = 601,
 		condition = 106,
-		desc = "拥有1位技能等级之和达到100的修正者",
+		desc = "拥有1位技能等级之和达到100的修正者（不包含跃迁技能提升）",
 		need = 1,
 		activity_id = 0,
 		day_index = 0,
@@ -25247,7 +25896,7 @@ return {
 		pre_id = 0,
 		type = 601,
 		condition = 106,
-		desc = "拥有3位技能等级之和达到125的修正者",
+		desc = "拥有3位技能等级之和达到125的修正者（不包含跃迁技能提升）",
 		need = 3,
 		activity_id = 0,
 		day_index = 0,
@@ -27039,7 +27688,7 @@ return {
 		pre_id = 0,
 		type = 602,
 		condition = 472,
-		desc = "通关1次浅梦层及以上任意虚像难度Boss",
+		desc = "通关1次浅梦层及以上任意虚象难度Boss",
 		need = 1,
 		activity_id = 0,
 		day_index = 0,
@@ -27078,7 +27727,7 @@ return {
 		pre_id = 0,
 		type = 602,
 		condition = 472,
-		desc = "通关2次浅梦层及以上任意虚像难度Boss",
+		desc = "通关2次浅梦层及以上任意虚象难度Boss",
 		need = 2,
 		activity_id = 0,
 		day_index = 0,
@@ -27117,7 +27766,7 @@ return {
 		pre_id = 0,
 		type = 602,
 		condition = 472,
-		desc = "通关1次深眠层及以上任意虚像难度Boss",
+		desc = "通关1次深眠层及以上任意虚象难度Boss",
 		need = 1,
 		activity_id = 0,
 		day_index = 0,
@@ -27156,7 +27805,7 @@ return {
 		pre_id = 0,
 		type = 602,
 		condition = 472,
-		desc = "通关2次深眠层及以上任意虚像难度Boss",
+		desc = "通关2次深眠层及以上任意虚象难度Boss",
 		need = 2,
 		activity_id = 0,
 		day_index = 0,
@@ -27195,7 +27844,7 @@ return {
 		pre_id = 0,
 		type = 602,
 		condition = 472,
-		desc = "通关3次深眠层及以上任意虚像难度Boss",
+		desc = "通关3次深眠层及以上任意虚象难度Boss",
 		need = 3,
 		activity_id = 0,
 		day_index = 0,
@@ -30295,7 +30944,7 @@ return {
 		pre_id = 0,
 		type = 602,
 		condition = 106,
-		desc = "拥有6位技能等级之和达到125的修正者",
+		desc = "拥有6位技能等级之和达到125的修正者（不包含跃迁技能提升）",
 		need = 6,
 		activity_id = 0,
 		day_index = 0,
@@ -30333,7 +30982,7 @@ return {
 		pre_id = 0,
 		type = 602,
 		condition = 106,
-		desc = "拥有1位技能等级之和达到150的修正者",
+		desc = "拥有1位技能等级之和达到150的修正者（不包含跃迁技能提升）",
 		need = 1,
 		activity_id = 0,
 		day_index = 0,
@@ -30371,7 +31020,7 @@ return {
 		pre_id = 0,
 		type = 602,
 		condition = 106,
-		desc = "拥有2位技能等级之和达到150的修正者",
+		desc = "拥有2位技能等级之和达到150的修正者（不包含跃迁技能提升）",
 		need = 2,
 		activity_id = 0,
 		day_index = 0,
@@ -30409,7 +31058,7 @@ return {
 		pre_id = 0,
 		type = 602,
 		condition = 106,
-		desc = "拥有3位技能等级之和达到150的修正者",
+		desc = "拥有3位技能等级之和达到150的修正者（不包含跃迁技能提升）",
 		need = 3,
 		activity_id = 0,
 		day_index = 0,
@@ -30447,7 +31096,7 @@ return {
 		pre_id = 0,
 		type = 602,
 		condition = 106,
-		desc = "拥有6位技能等级之和达到150的修正者",
+		desc = "拥有6位技能等级之和达到150的修正者（不包含跃迁技能提升）",
 		need = 6,
 		activity_id = 0,
 		day_index = 0,
@@ -30485,7 +31134,7 @@ return {
 		pre_id = 0,
 		type = 602,
 		condition = 106,
-		desc = "拥有1位技能等级之和达到175的修正者",
+		desc = "拥有1位技能等级之和达到175的修正者（不包含跃迁技能提升）",
 		need = 1,
 		activity_id = 0,
 		day_index = 0,
@@ -30523,7 +31172,7 @@ return {
 		pre_id = 0,
 		type = 602,
 		condition = 106,
-		desc = "拥有2位技能等级之和达到175的修正者",
+		desc = "拥有2位技能等级之和达到175的修正者（不包含跃迁技能提升）",
 		need = 2,
 		activity_id = 0,
 		day_index = 0,
@@ -30561,7 +31210,7 @@ return {
 		pre_id = 0,
 		type = 602,
 		condition = 106,
-		desc = "拥有3位技能等级之和达到175的修正者",
+		desc = "拥有3位技能等级之和达到175的修正者（不包含跃迁技能提升）",
 		need = 3,
 		activity_id = 0,
 		day_index = 0,
@@ -30599,7 +31248,7 @@ return {
 		pre_id = 0,
 		type = 602,
 		condition = 106,
-		desc = "拥有6位技能等级之和达到175的修正者",
+		desc = "拥有6位技能等级之和达到175的修正者（不包含跃迁技能提升）",
 		need = 6,
 		activity_id = 0,
 		day_index = 0,
@@ -30637,7 +31286,7 @@ return {
 		pre_id = 0,
 		type = 602,
 		condition = 106,
-		desc = "拥有1位技能等级之和达到200的修正者",
+		desc = "拥有1位技能等级之和达到200的修正者（不包含跃迁技能提升）",
 		need = 1,
 		activity_id = 0,
 		day_index = 0,
@@ -30675,7 +31324,7 @@ return {
 		pre_id = 0,
 		type = 602,
 		condition = 106,
-		desc = "拥有2位技能等级之和达到200的修正者",
+		desc = "拥有2位技能等级之和达到200的修正者（不包含跃迁技能提升）",
 		need = 2,
 		activity_id = 0,
 		day_index = 0,
@@ -30713,7 +31362,7 @@ return {
 		pre_id = 0,
 		type = 602,
 		condition = 106,
-		desc = "拥有3位技能等级之和达到200的修正者",
+		desc = "拥有3位技能等级之和达到200的修正者（不包含跃迁技能提升）",
 		need = 3,
 		activity_id = 0,
 		day_index = 0,
@@ -30751,7 +31400,7 @@ return {
 		pre_id = 0,
 		type = 602,
 		condition = 106,
-		desc = "拥有1位技能等级之和达到225的修正者",
+		desc = "拥有1位技能等级之和达到225的修正者（不包含跃迁技能提升）",
 		need = 1,
 		activity_id = 0,
 		day_index = 0,
@@ -30789,7 +31438,7 @@ return {
 		pre_id = 0,
 		type = 602,
 		condition = 106,
-		desc = "拥有2位技能等级之和达到225的修正者",
+		desc = "拥有2位技能等级之和达到225的修正者（不包含跃迁技能提升）",
 		need = 2,
 		activity_id = 0,
 		day_index = 0,
@@ -30827,7 +31476,7 @@ return {
 		pre_id = 0,
 		type = 602,
 		condition = 106,
-		desc = "拥有3位技能等级之和达到225的修正者",
+		desc = "拥有3位技能等级之和达到225的修正者（不包含跃迁技能提升）",
 		need = 3,
 		activity_id = 0,
 		day_index = 0,
@@ -35633,7 +36282,24 @@ return {
 			31612,
 			31613,
 			31614,
-			31615
+			31615,
+			31616,
+			31617,
+			31618,
+			31619,
+			31620,
+			31621,
+			31622,
+			31623,
+			31624,
+			31625,
+			31626,
+			31627,
+			31628,
+			31629,
+			31630,
+			31631,
+			31632
 		},
 		[6] = {
 			6001,
@@ -35886,6 +36552,23 @@ return {
 			31613,
 			31614,
 			31615,
+			31616,
+			31617,
+			31618,
+			31619,
+			31620,
+			31621,
+			31622,
+			31623,
+			31624,
+			31625,
+			31626,
+			31627,
+			31628,
+			31629,
+			31630,
+			31631,
+			31632,
 			40100,
 			40101,
 			40102,
@@ -36889,6 +37572,23 @@ return {
 		31613,
 		31614,
 		31615,
+		31616,
+		31617,
+		31618,
+		31619,
+		31620,
+		31621,
+		31622,
+		31623,
+		31624,
+		31625,
+		31626,
+		31627,
+		31628,
+		31629,
+		31630,
+		31631,
+		31632,
 		40100,
 		40101,
 		40102,

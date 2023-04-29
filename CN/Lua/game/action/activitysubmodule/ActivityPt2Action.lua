@@ -57,34 +57,11 @@ return {
 			return
 		end
 
-		slot4 = true
+		slot4 = false
+		slot5 = getData(RedPointConst.ACTIVITY_PT_2_OPEN, tostring(slot2)) or false
 
-		if ActivityCfg[slot1].activity_template == ActivityTemplateConst.ACTIVITY_PT_2_NORMAL then
-			slot5 = ActivityPt2Data:GetNormalDataList(slot1) or {}
-
-			for slot9, slot10 in pairs(slot5) do
-				if slot10.clear_time > 0 then
-					slot4 = false
-
-					break
-				end
-			end
-		elseif ActivityCfg[slot1].activity_template == ActivityTemplateConst.ACTIVITY_PT_2_CHALLENGE then
-			slot5 = ActivityPt2Data:GetChallengeDataList(slot1) or {}
-
-			for slot9, slot10 in pairs(slot5) do
-				if slot10.clear_time > 0 then
-					slot4 = false
-
-					break
-				end
-			end
-		elseif ActivityPt2Data:GetHardData(slot1) and slot5.clear_time > 0 then
-			slot4 = false
-		end
-
-		if not ActivityTools.IsUnlockActivity(slot2) then
-			slot4 = false
+		if ActivityTools.IsUnlockActivity(slot2) and not slot5 then
+			slot4 = true
 		end
 
 		manager.redPoint:setTip(RedPointConst.ACTIVITY_PT_2_OPEN .. "_" .. slot2, slot4 and 1 or 0)

@@ -138,7 +138,7 @@ function slot0.GetEntityData(slot0)
 end
 
 function slot0.ConsumeInteractCtx(slot0)
-	slot1 = Dorm.storage:GetData(DormEnum.Namespace.EntityData, slot0)
+	slot1 = uv0.GetEntityData(slot0)
 	slot1.interactCtx = nil
 
 	return slot1.interactCtx

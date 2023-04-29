@@ -90,6 +90,11 @@ function slot1.OnEnter(slot0)
 	end
 end
 
+function slot1.Show(slot0)
+	uv0.super.Show(slot0)
+	slot0:RefreshList()
+end
+
 function slot1.OnExit(slot0)
 	if slot0.timer_ ~= nil then
 		slot0.timer_:Stop()

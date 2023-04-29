@@ -3109,7 +3109,7 @@ return {
 		slot1.duration_ = 12.933
 
 		if ({
-			zh = 10.1,
+			zh = 9.9,
 			ja = 12.933
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]
@@ -4192,10 +4192,10 @@ return {
 	Play120092044 = function (slot0, slot1)
 		slot1.time_ = 0
 		slot1.state_ = "playing"
-		slot1.duration_ = 10.966
+		slot1.duration_ = 10.9
 
 		if ({
-			zh = 10.966,
+			zh = 10.9,
 			ja = 9.766
 		})[manager.audio:GetLocalizationFlag()] ~= nil then
 			slot1.duration_ = slot2[slot3]

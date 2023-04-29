@@ -27,6 +27,10 @@ function slot0.InitUI(slot0)
 	slot0.emptyCon_ = ControllerUtil.GetController(slot0.transform_, "empty")
 	slot0.infoViewCon_ = ControllerUtil.GetController(slot0.transform_, "infoView")
 	slot0.loopScrollView_ = LoopScrollView.New(slot0, slot0.scrollView_, slot0.content_.transform, slot0.viewPort_.rect.height, slot0.content_:GetComponent("VerticalLayoutGroup").spacing, true)
+
+	if slot0.handler_ and slot0.handler_.GetPopContainer then
+		slot0.infoViewGo_.transform.parent = slot0.handler_:GetPopContainer()
+	end
 end
 
 function slot0.AddUIListeners(slot0)

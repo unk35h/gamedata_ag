@@ -114,8 +114,12 @@ return {
 	end,
 	CalcEntrustLastTime = function (slot0, slot1)
 		if slot1.start_time + BackHomeCanteenTaskCfg[slot1.id].time * 60 - manager.time:GetServerTime() > 0 then
+			slot1.lastTime = slot6
+
 			return manager.time:DescCDTime(slot6)
 		else
+			slot1.lastTime = 0
+
 			return 0
 		end
 	end,

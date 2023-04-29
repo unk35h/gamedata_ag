@@ -25,16 +25,19 @@ function slot0.InitUI(slot0)
 end
 
 function slot0.RefreshUI(slot0, slot1)
+	slot2 = 0
+
 	if slot1.extraNum then
 		slot0.extraText_.text = string.format("+%d", slot1.extraNum)
-		slot1.num = slot1.num + slot1.extraNum
+		slot2 = slot1.num + slot1.extraNum
 	else
+		slot2 = slot1.num
 		slot0.extraText_.text = ""
 	end
 
 	slot0.item:RefreshData({
 		id = slot1.id,
-		number = slot1.num
+		number = slot2
 	})
 end
 

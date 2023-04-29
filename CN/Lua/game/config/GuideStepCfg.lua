@@ -2,6 +2,7 @@ return {
 	[101] = {
 		talk_anchors = 0,
 		type = "EnterStage",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 101,
 		talk_content = "",
@@ -16,6 +17,7 @@ return {
 	[102] = {
 		talk_anchors = 0,
 		type = "WaitBattleResult",
+		talk_adapt = 0,
 		is_finish = true,
 		id = 102,
 		talk_content = "",
@@ -33,6 +35,7 @@ return {
 	[103] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 103,
 		talk_content = "",
@@ -61,6 +64,7 @@ return {
 	[104] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 104,
 		talk_content = "",
@@ -80,6 +84,7 @@ return {
 	[105] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 105,
 		talk_content = "",
@@ -99,6 +104,7 @@ return {
 	[106] = {
 		talk_anchors = 0,
 		type = "ClickButtonNoMask",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 106,
 		talk_content = "",
@@ -119,6 +125,7 @@ return {
 	[201] = {
 		talk_anchors = 0,
 		type = "EnterStage",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 201,
 		talk_content = "",
@@ -133,6 +140,7 @@ return {
 	[202] = {
 		talk_anchors = 0,
 		type = "WaitBattleResult",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 202,
 		talk_content = "",
@@ -150,6 +158,7 @@ return {
 	[203] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 203,
 		talk_content = "",
@@ -178,6 +187,7 @@ return {
 	[204] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 204,
 		talk_content = "",
@@ -197,6 +207,7 @@ return {
 	[205] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 205,
 		talk_content = "",
@@ -216,6 +227,7 @@ return {
 	[206] = {
 		talk_anchors = 0,
 		type = "ClickButtonNoMask",
+		talk_adapt = 0,
 		is_finish = true,
 		id = 206,
 		talk_content = "",
@@ -236,6 +248,7 @@ return {
 	[301] = {
 		talk_anchors = 0,
 		type = "JumpTo",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 301,
 		talk_content = "",
@@ -250,6 +263,7 @@ return {
 	[302] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 302,
 		talk_content = "进入源层前，先提升队伍的实力做准备吧。",
@@ -271,6 +285,7 @@ return {
 	[303] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 303,
 		talk_content = "前鬼坊也会一起进入源层，这次她将配合你的作战安排。",
@@ -303,6 +318,7 @@ return {
 	[304] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 304,
 		talk_content = "首先，试着提升前鬼坊的作战等级吧。",
@@ -326,6 +342,7 @@ return {
 	[305] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 305,
 		talk_content = "学习资料已经准备好了，点击「升级」就可以快速获得作战知识。",
@@ -347,6 +364,7 @@ return {
 	[306] = {
 		talk_anchors = 0,
 		type = "ClickButtonNoMask",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 306,
 		talk_content = "",
@@ -365,6 +383,7 @@ return {
 	[307] = {
 		talk_anchors = 4,
 		type = "ClickCToggle",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 307,
 		talk_content = "刻印可以为修正者提供额外的力量。",
@@ -386,6 +405,7 @@ return {
 	[308] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 308,
 		talk_content = "在中继之环中查看刻印的配备情况。",
@@ -410,6 +430,7 @@ return {
 	[309] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 309,
 		talk_content = "在刚才的战斗中获得了新的刻印，现在为前鬼坊装备上吧。",
@@ -439,6 +460,7 @@ return {
 	[310] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 310,
 		talk_content = "刻印有对应的装备位，每三个同名刻印同时装备时还会有额外的加成效果。",
@@ -461,6 +483,7 @@ return {
 	[311] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 311,
 		talk_content = "点击「更换」将刻印置入对应的共鸣位。",
@@ -483,6 +506,7 @@ return {
 	[312] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 312,
 		talk_content = "此外，刻印也可以提升等级以增强力量。",
@@ -505,6 +529,7 @@ return {
 	[313] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 313,
 		talk_content = "同作为人类文明史的载体，刻印间可以通过共化来进行升级。",
@@ -527,6 +552,7 @@ return {
 	[314] = {
 		talk_anchors = 4,
 		type = "EventTrigger",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 314,
 		talk_content = "选择作为共化素材的刻印「启示录」。",
@@ -558,6 +584,7 @@ return {
 	[315] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = true,
 		id = 315,
 		talk_content = "「启示录」是一种特殊的刻印，当它作为共化材料时可以提供更多的经验。",
@@ -579,6 +606,7 @@ return {
 	[316] = {
 		talk_anchors = 0,
 		type = "ClickButtonNoMask",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 316,
 		talk_content = "",
@@ -598,6 +626,7 @@ return {
 	[317] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 317,
 		talk_content = "返回主界面。",
@@ -616,6 +645,7 @@ return {
 	[401] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 401,
 		talk_content = "队伍整备得差不多了，点击「作战」继续执行任务吧。",
@@ -644,6 +674,7 @@ return {
 	[402] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 402,
 		talk_content = "",
@@ -666,6 +697,7 @@ return {
 	[403] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 403,
 		talk_content = "",
@@ -695,6 +727,7 @@ return {
 		talk_anchors = 0,
 		talk_position = "",
 		type = "SetTeam",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 404,
 		talk_content = "",
@@ -710,6 +743,7 @@ return {
 	[405] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 405,
 		talk_content = "",
@@ -729,6 +763,7 @@ return {
 	[406] = {
 		talk_anchors = 4,
 		type = "EventTrigger",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 406,
 		talk_content = "将刚加入的前鬼坊编入作战队伍。",
@@ -760,6 +795,7 @@ return {
 	[407] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 407,
 		talk_content = "",
@@ -789,6 +825,7 @@ return {
 	[408] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 408,
 		talk_content = "",
@@ -807,6 +844,7 @@ return {
 	[409] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 409,
 		talk_content = "",
@@ -826,6 +864,7 @@ return {
 	[410] = {
 		talk_anchors = 0,
 		type = "WaitBattleResult",
+		talk_adapt = 0,
 		is_finish = true,
 		id = 410,
 		talk_content = "",
@@ -843,6 +882,7 @@ return {
 	[411] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 411,
 		talk_content = "",
@@ -871,6 +911,7 @@ return {
 	[412] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 412,
 		talk_content = "",
@@ -890,6 +931,7 @@ return {
 	[413] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 413,
 		talk_content = "",
@@ -909,6 +951,7 @@ return {
 	[414] = {
 		talk_anchors = 0,
 		type = "ClickButtonNoMask",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 414,
 		talk_content = "",
@@ -930,6 +973,7 @@ return {
 		talk_anchors = 0,
 		talk_position = "",
 		type = "SetTeam",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 501,
 		talk_content = "",
@@ -945,6 +989,7 @@ return {
 	[502] = {
 		talk_anchors = 0,
 		type = "JumpTo",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 502,
 		talk_content = "",
@@ -963,6 +1008,7 @@ return {
 	[503] = {
 		talk_anchors = 4,
 		type = "EventTrigger",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 503,
 		talk_content = "看起来出现了更为强大的敌人，但是不用担心，波塞冬也赶到了。",
@@ -994,6 +1040,7 @@ return {
 	[504] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 504,
 		talk_content = "将新加入的波塞冬编入作战队伍。",
@@ -1026,6 +1073,7 @@ return {
 	[505] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 505,
 		talk_content = "",
@@ -1044,6 +1092,7 @@ return {
 	[506] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 506,
 		talk_content = "有了波塞冬的支援，小队实力也更有保证了。现在，继续迎击敌人吧。",
@@ -1066,6 +1115,7 @@ return {
 	[507] = {
 		talk_anchors = 0,
 		type = "WaitBattleResult",
+		talk_adapt = 0,
 		is_finish = true,
 		id = 507,
 		talk_content = "",
@@ -1083,6 +1133,7 @@ return {
 	[508] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 508,
 		talk_content = "",
@@ -1111,6 +1162,7 @@ return {
 	[509] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 509,
 		talk_content = "",
@@ -1130,6 +1182,7 @@ return {
 	[510] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 510,
 		talk_content = "",
@@ -1149,6 +1202,7 @@ return {
 	[511] = {
 		talk_anchors = 0,
 		type = "ClickButtonNoMask",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 511,
 		talk_content = "",
@@ -1170,6 +1224,7 @@ return {
 		talk_anchors = 0,
 		talk_position = "",
 		type = "SetTeam",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 601,
 		talk_content = "",
@@ -1185,6 +1240,7 @@ return {
 	[602] = {
 		talk_anchors = 0,
 		type = "EnterStage",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 602,
 		talk_content = "",
@@ -1199,6 +1255,7 @@ return {
 	[603] = {
 		talk_anchors = 0,
 		type = "WaitBattleResult",
+		talk_adapt = 0,
 		is_finish = true,
 		id = 603,
 		talk_content = "",
@@ -1216,6 +1273,7 @@ return {
 	[604] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 604,
 		talk_content = "",
@@ -1244,6 +1302,7 @@ return {
 	[605] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 605,
 		talk_content = "",
@@ -1263,6 +1322,7 @@ return {
 	[606] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 606,
 		talk_content = "",
@@ -1282,6 +1342,7 @@ return {
 	[607] = {
 		talk_anchors = 0,
 		type = "ClickButtonNoMask",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 607,
 		talk_content = "",
@@ -1300,6 +1361,7 @@ return {
 	[801] = {
 		talk_anchors = 0,
 		type = "JumpTo",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 801,
 		talk_content = "",
@@ -1314,6 +1376,7 @@ return {
 	[802] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 802,
 		talk_content = "管理员，权钥系统已经完成调试了，去看看吧。",
@@ -1335,6 +1398,7 @@ return {
 	[803] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 803,
 		talk_content = "当修正者苏醒时，「盖亚」系统会为其赋予一定的系统权能，即是权钥。",
@@ -1367,6 +1431,7 @@ return {
 	[804] = {
 		talk_anchors = 3,
 		type = "ClickCToggle",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 804,
 		talk_content = "权钥既是修正者的武器，也是修正者的力量来源。",
@@ -1388,6 +1453,7 @@ return {
 	[805] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 805,
 		talk_content = "和修正者可以变强一样，权钥也能够被强化。",
@@ -1411,6 +1477,7 @@ return {
 	[806] = {
 		talk_anchors = 4,
 		type = "EventTrigger",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 806,
 		talk_content = "从源层深处发现的源质结晶可以被权钥净化并吸收。",
@@ -1442,6 +1509,7 @@ return {
 	[807] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 807,
 		talk_content = "这次的行动收获了不少源质结晶，试着强化一下薇儿丹蒂的权钥——卢恩之刃吧。",
@@ -1463,6 +1531,7 @@ return {
 	[808] = {
 		talk_anchors = 0,
 		type = "ClickButtonNoMask",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 808,
 		talk_content = "",
@@ -1481,6 +1550,7 @@ return {
 	[809] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 809,
 		talk_content = "除了吸收源质结晶以外，还有其他的方式能够增强权钥的力量，点击回到权钥界面。",
@@ -1499,6 +1569,7 @@ return {
 	[810] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 810,
 		talk_content = "每件权钥都可以选择一位钥从依附，增强修正者对其的控制力。",
@@ -1531,6 +1602,7 @@ return {
 	[811] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 811,
 		talk_content = "需要注意，每个神系的钥从仅可以依附在对应神系的修正者权钥之上。",
@@ -1553,6 +1625,7 @@ return {
 	[812] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 812,
 		talk_content = "钥从依附权钥后，除了可以提供攻击力加成外，还具备有特殊的权能。",
@@ -1575,6 +1648,7 @@ return {
 	[813] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 813,
 		talk_content = "钥从依附权钥后，除了可以提供攻击力加成外，还具备有特殊的权能。",
@@ -1597,6 +1671,7 @@ return {
 	[814] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = true,
 		id = 814,
 		talk_content = "现在选择这位钥从依附在卢恩之刃上吧。",
@@ -1618,6 +1693,7 @@ return {
 	[815] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 815,
 		talk_content = "权钥调整完毕，继续执行任务吧。",
@@ -1636,6 +1712,7 @@ return {
 	[901] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 901,
 		talk_content = "选择继续作战。",
@@ -1664,6 +1741,7 @@ return {
 	[902] = {
 		talk_anchors = 0,
 		type = "JumpTo",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 902,
 		talk_content = "",
@@ -1680,6 +1758,7 @@ return {
 	[1001] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1001,
 		talk_content = "新人，历战轮回装置的调试已经完成了，现在去确认一下吧。",
@@ -1708,6 +1787,7 @@ return {
 	[1002] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1002,
 		talk_content = "",
@@ -1727,6 +1807,7 @@ return {
 	[1003] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1003,
 		talk_content = "历战轮回系统会不断考验你和小队成员的极限，尽可能地在模拟战场中坚持，取得好成绩吧。",
@@ -1761,6 +1842,7 @@ return {
 	[1004] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1004,
 		talk_content = "",
@@ -1794,6 +1876,7 @@ return {
 	[1005] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 1005,
 		talk_content = "更加详细的内容，就参考下这里的说明手册吧。",
@@ -1812,6 +1895,7 @@ return {
 	[1101] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1101,
 		talk_content = "新人，黑区净化系统已经调整完成，现在去看看吧。",
@@ -1840,6 +1924,7 @@ return {
 	[1102] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1102,
 		talk_content = "",
@@ -1859,6 +1944,7 @@ return {
 	[1103] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1103,
 		talk_content = "在黑区净化里，系统将会模拟预演世界线的变动，给予修正者一定程度的考核。",
@@ -1893,6 +1979,7 @@ return {
 	[1104] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1104,
 		talk_content = "",
@@ -1911,6 +1998,7 @@ return {
 	[1105] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 1105,
 		talk_content = "更加详细的内容，就参考下这里的说明手册吧。",
@@ -1929,6 +2017,7 @@ return {
 	[1201] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1201,
 		talk_content = "新人，来隐科组一趟吧，有一件重要的事需要你帮忙。",
@@ -1957,6 +2046,7 @@ return {
 	[1202] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1202,
 		talk_content = "",
@@ -1976,6 +2066,7 @@ return {
 	[1203] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1203,
 		talk_content = "在之前的行动中，我们已经收集到了很多移转之辉，现在要做的将它转换成有用的算力。",
@@ -2010,6 +2101,7 @@ return {
 	[1204] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1204,
 		talk_content = "具体的细节，等你来隐科组再谈吧。",
@@ -2033,6 +2125,7 @@ return {
 	[1301] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1301,
 		talk_content = "新人，梦境再构装置的使用权限已经开放了，现在去看看吧，",
@@ -2061,6 +2154,7 @@ return {
 	[1302] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1302,
 		talk_content = "",
@@ -2080,6 +2174,7 @@ return {
 	[1303] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1303,
 		talk_content = "这个装置会藉由梦境能力的开发，真实地再现曾经与修正者们交战过的强大敌人。",
@@ -2114,6 +2209,7 @@ return {
 	[1304] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1304,
 		talk_content = "选择想要挑战的对手。",
@@ -2137,6 +2233,7 @@ return {
 	[1305] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 1305,
 		talk_content = "更加详细的内容，就参考下这里的说明手册吧。",
@@ -2155,6 +2252,7 @@ return {
 	[1601] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1601,
 		talk_content = "点击这里，可以看到当前所拥有的全部钥从。",
@@ -2176,6 +2274,7 @@ return {
 	[1602] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1602,
 		talk_content = "对沉睡着的钥从，可以对其进行真名唤醒。",
@@ -2197,6 +2296,7 @@ return {
 	[1701] = {
 		talk_anchors = 0,
 		type = "JumpTo",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1701,
 		talk_content = "",
@@ -2211,6 +2311,7 @@ return {
 	[1702] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1702,
 		talk_content = "探测系统开放了。",
@@ -2232,6 +2333,7 @@ return {
 	[1703] = {
 		talk_anchors = 0,
 		type = "JumpTo",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1703,
 		talk_content = "",
@@ -2246,6 +2348,7 @@ return {
 	[1704] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1704,
 		talk_content = "可以使用刚刚获得的探测凭证，进行一次探测。",
@@ -2267,6 +2370,7 @@ return {
 	[1801] = {
 		talk_anchors = 0,
 		type = "JumpTo",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1801,
 		talk_content = "",
@@ -2281,6 +2385,7 @@ return {
 	[1802] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1802,
 		talk_content = "新人，神格系统的权限已经开放，去为修正者选择合适的作战方式吧。",
@@ -2302,6 +2407,7 @@ return {
 	[1803] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1803,
 		talk_content = "",
@@ -2331,6 +2437,7 @@ return {
 	[1804] = {
 		talk_anchors = 4,
 		type = "ClickCToggle",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1804,
 		talk_content = "神格对应着修正者使用神力的方式，是「盖亚」系统赋予修正者权能的一部分。",
@@ -2352,6 +2459,7 @@ return {
 	[1805] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1805,
 		talk_content = "通过调整神格，可以让修正者具备不同的作战能力。",
@@ -2375,6 +2483,7 @@ return {
 	[1806] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1806,
 		talk_content = "与神格共鸣可以增强修正者的技能，使之拥有更加强力的效果。",
@@ -2397,6 +2506,7 @@ return {
 	[1807] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1807,
 		talk_content = "每个修正者最多可以共鸣三个神格，可以通过重置的方式重新选择其他神格进行共鸣。",
@@ -2419,6 +2529,7 @@ return {
 	[1808] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1808,
 		talk_content = "解锁神格后即可与相应神格进行共鸣，为修正者选择你认为最适合的神格搭配吧。",
@@ -2448,6 +2559,7 @@ return {
 	[1901] = {
 		talk_anchors = 0,
 		type = "JumpTo",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1901,
 		talk_content = "",
@@ -2462,6 +2574,7 @@ return {
 	[1902] = {
 		talk_anchors = 2,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1902,
 		talk_content = "新人，管理喵的作战用开发已经完成了，去看看吧。",
@@ -2483,6 +2596,7 @@ return {
 	[1903] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1903,
 		talk_content = "",
@@ -2508,6 +2622,7 @@ return {
 	[1904] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1904,
 		talk_content = "管理喵所拥有的强大算力，可以在作战中承担一部分的指挥工作。",
@@ -2540,6 +2655,7 @@ return {
 	[1905] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1905,
 		talk_content = "每只管理喵都有擅长的演算方向，启用后可以在作战中产生特别的效果。",
@@ -2562,6 +2678,7 @@ return {
 	[1906] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1906,
 		talk_content = "当满足一定研发条件后，即可将对应的管理喵应用到作战中。",
@@ -2584,6 +2701,7 @@ return {
 	[1907] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1907,
 		talk_content = "解锁后，还可以为管理喵安装最多2个的管理芯片。",
@@ -2613,6 +2731,7 @@ return {
 	[1908] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1908,
 		talk_content = "通过安装管理芯片，管理喵的战术决策也将得到扩展。",
@@ -2637,6 +2756,7 @@ return {
 	[1909] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1909,
 		talk_content = "每种芯片都有不同的效果，不同的组合给管理喵的战术带来了丰富的可能性。",
@@ -2659,6 +2779,7 @@ return {
 	[1910] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1910,
 		talk_content = "同样，在满足一定研发条件后，就可以解锁对应的管理芯片。",
@@ -2681,6 +2802,7 @@ return {
 	[1911] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1911,
 		talk_content = "解锁后，将选中的管理芯片为管理喵安装上吧。",
@@ -2702,6 +2824,7 @@ return {
 	[1912] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 1912,
 		talk_content = "点击返回。",
@@ -2720,6 +2843,7 @@ return {
 	[1913] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = true,
 		id = 1913,
 		talk_content = "现在管理喵的功能更加强大了，立刻启用试试看吧。",
@@ -2742,6 +2866,7 @@ return {
 	[1914] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 1914,
 		talk_content = "管理喵装备完毕，继续执行任务吧。",
@@ -2760,6 +2885,7 @@ return {
 	[1915] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 1915,
 		talk_content = "选择继续作战。",
@@ -2788,6 +2914,7 @@ return {
 	[2001] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2001,
 		talk_content = "新人，已经通过了的战斗区域，偶尔也会有异象再生。",
@@ -2810,6 +2937,7 @@ return {
 	[2002] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2002,
 		talk_content = "参加战场清扫，有可能会找到稀有的遗落刻印。",
@@ -2835,6 +2963,7 @@ return {
 	[2003] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2003,
 		talk_content = "管理员可以选择一个刻印套装进行UP，掉落必是该套装的一个部位。",
@@ -2857,6 +2986,7 @@ return {
 	[2004] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 2004,
 		talk_content = "更加详细的内容，就参考下这里的说明手册吧。",
@@ -2875,6 +3005,7 @@ return {
 	[2101] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2101,
 		talk_content = "",
@@ -2894,6 +3025,7 @@ return {
 	[2102] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2102,
 		talk_content = "新人，高难度任务的情报已经更新，从这里确认一下吧。",
@@ -2918,6 +3050,7 @@ return {
 	[2103] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2103,
 		talk_content = "在这里可以切换任务的难度。",
@@ -2944,6 +3077,7 @@ return {
 	[2201] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2201,
 		talk_content = "新人，「科尔盖」那边似乎有任务委派给你，现在去看看吧。",
@@ -2966,6 +3100,7 @@ return {
 	[2202] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2202,
 		talk_content = "与「科尔盖」的联合特勤任务已经开放了，根据他们提供的情报，也许会从任务中找到稀有的刻印赋能模组。",
@@ -2991,6 +3126,7 @@ return {
 	[2203] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 2203,
 		talk_content = "更加详细的内容，就参考下这里的说明手册吧。",
@@ -3009,6 +3145,7 @@ return {
 	[2301] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2301,
 		talk_content = "矩阵公会现已开放。",
@@ -3030,6 +3167,7 @@ return {
 	[2401] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2401,
 		talk_content = "欢迎来到餐厅，现在来看看如何查看菜品以及存储的食材，首先点击菜谱，这里有记录已解锁的菜品信息。",
@@ -3051,6 +3189,7 @@ return {
 	[2402] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2402,
 		talk_content = "左侧这里可以看到菜品对应的厨具类型，上架的时候也可以考虑尽量搭配不同类型的菜品。",
@@ -3073,6 +3212,7 @@ return {
 	[2403] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2403,
 		talk_content = "这里会显示厨具可制作的菜品列表，有些菜品需要达到更高的餐厅等级后才能制作。",
@@ -3095,6 +3235,7 @@ return {
 	[2404] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2404,
 		talk_content = "选中菜品后，可以查看具体信息。",
@@ -3119,6 +3260,7 @@ return {
 	[2405] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2405,
 		talk_content = "这里可以看到菜品的预计收益以及菜品口味。",
@@ -3141,6 +3283,7 @@ return {
 	[2406] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2406,
 		talk_content = "该菜品制作需要的食材以及数量会在这里显示。",
@@ -3163,6 +3306,7 @@ return {
 	[2407] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2407,
 		talk_content = "前往仓库可以查看当前库存的食材以及数量。",
@@ -3184,6 +3328,7 @@ return {
 	[2408] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2408,
 		talk_content = "食材的信息以及数量都会在这里显示，可以通过完成委托任务获得更多食材。",
@@ -3205,6 +3350,7 @@ return {
 	[2501] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2501,
 		talk_content = "管理员，食材已经准备好了，点击菜单准备将菜品上架吧。",
@@ -3226,6 +3372,7 @@ return {
 	[2502] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2502,
 		talk_content = "这里是已经解锁的菜品，点击上架，已经上架的菜品会全天候自动售卖，上架上限会随餐厅等级提升而变多。",
@@ -3250,6 +3397,7 @@ return {
 	[2503] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2503,
 		talk_content = "这里是菜品消耗的食材，如果食材不够，菜品就会进入售罄状态并且无法盈利。",
@@ -3272,6 +3420,7 @@ return {
 	[2504] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = true,
 		id = 2504,
 		talk_content = "餐厅想要能妥善经营则上架的菜品可不能少，先上架一道菜品吧。",
@@ -3293,6 +3442,7 @@ return {
 	[2505] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2505,
 		talk_content = "第二道菜品的食材也已经准备好了，一并点击上架吧。",
@@ -3317,6 +3467,7 @@ return {
 	[2506] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2506,
 		talk_content = "上架完后，餐厅的准备工作就完成了，只需要等待客人前来用餐就可以盈利了~",
@@ -3338,6 +3489,7 @@ return {
 	[2601] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2601,
 		talk_content = "既然菜品已经上架完毕，那也不能干等着食材耗尽，可以通过完成委托任务来积累食材。",
@@ -3359,6 +3511,7 @@ return {
 	[2602] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2602,
 		talk_content = "这是收到的委托请求，完成这些请求可以获得由委托人送来的食材，并且餐厅等级提升后有机会接到全新的委托。",
@@ -3383,6 +3536,7 @@ return {
 	[2603] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2603,
 		talk_content = "了解完委托的信息后就可以准备派遣啦，委托完成后会立刻获得新的委托任务。",
@@ -3407,6 +3561,7 @@ return {
 	[2604] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2604,
 		talk_content = "完成委托会消耗体力，这里可以看到修正者的体力信息，如果体力为空或是已被派遣就无法再派遣了。",
@@ -3431,6 +3586,7 @@ return {
 	[2605] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2605,
 		talk_content = "没有被派遣的修正者的体力会随着时间恢复，记得合理规划修正者的作息~",
@@ -3452,6 +3608,7 @@ return {
 	[2606] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2606,
 		talk_content = "这里可以看到本次委托需要消耗的总体力，选择的修正者的体力之和需要不小于这部分才能进行派遣",
@@ -3473,6 +3630,7 @@ return {
 	[2607] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2607,
 		talk_content = "每次委托可能会有不一样的推荐类型，搭配对应的修正者时可以增加委托大成功的概率。",
@@ -3494,6 +3652,7 @@ return {
 	[2608] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2608,
 		talk_content = "当前委托的大成功完成的实时概率，如果大成功达成委托则会获得额外的奖励~",
@@ -3516,6 +3675,7 @@ return {
 	[2701] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2701,
 		talk_content = "和诗蔻蒂一起出游吧。“出游日记”现已开放。",
@@ -3537,6 +3697,7 @@ return {
 	[2702] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2702,
 		talk_content = "诗蔻蒂正在房间里休息。",
@@ -3559,6 +3720,7 @@ return {
 	[2703] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2703,
 		talk_content = "今天要去哪里游玩呢？来为诗蔻蒂安排出游行程吧。",
@@ -3580,6 +3742,7 @@ return {
 	[2704] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2704,
 		talk_content = "选择本次出游的地点。",
@@ -3608,6 +3771,7 @@ return {
 	[2705] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2705,
 		talk_content = "选择本次出游携带的物品。携带不同的物品去往同一地点，会有不同的见闻哦。",
@@ -3632,6 +3796,7 @@ return {
 	[2706] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2706,
 		talk_content = "",
@@ -3650,6 +3815,7 @@ return {
 	[2801] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2801,
 		talk_content = "游玩结束，我们回来啦。",
@@ -3672,6 +3838,7 @@ return {
 	[2802] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2802,
 		talk_content = "出游会为诗蔻蒂带来见闻的增长~",
@@ -3694,6 +3861,7 @@ return {
 	[2803] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2803,
 		talk_content = "",
@@ -3715,6 +3883,7 @@ return {
 	[2804] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2804,
 		talk_content = "来看看在本次出游中发生的事件吧。",
@@ -3743,6 +3912,7 @@ return {
 	[2805] = {
 		talk_anchors = 2,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2805,
 		talk_content = "出游事件都被诗蔻蒂收藏在了这里，管理员可以随时进行查看。",
@@ -3764,6 +3934,7 @@ return {
 	[2806] = {
 		talk_anchors = 2,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2806,
 		talk_content = "经过几次出游，诗蔻蒂会把自己的所思所想记录在这里。",
@@ -3785,6 +3956,7 @@ return {
 	[2807] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2807,
 		talk_content = "诗蔻蒂并不擅长表达，因此，这些内容需要诗蔻蒂的见闻满足一定条件，且收录特定的出游事件后才能开启哦~",
@@ -3821,6 +3993,7 @@ return {
 	[2808] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 2808,
 		talk_content = "点击返回。",
@@ -3839,6 +4012,7 @@ return {
 	[2809] = {
 		talk_anchors = 2,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2809,
 		talk_content = "别忘了领取出游奖励~",
@@ -3860,6 +4034,7 @@ return {
 	[2810] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 2810,
 		talk_content = "更加详细的内容，就在这里查看吧。",
@@ -3878,6 +4053,7 @@ return {
 	[2901] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2901,
 		talk_content = "出游时获得的相片，似乎发生了变化。",
@@ -3899,6 +4075,7 @@ return {
 	[2902] = {
 		talk_anchors = 2,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 2902,
 		talk_content = "相片都存放在这里……怎么多出来了一张？",
@@ -3920,6 +4097,7 @@ return {
 	[3001] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3001,
 		talk_content = "",
@@ -3946,6 +4124,7 @@ return {
 	[3101] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3101,
 		talk_content = "",
@@ -3972,6 +4151,7 @@ return {
 	[3201] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3201,
 		talk_content = "",
@@ -3998,6 +4178,7 @@ return {
 	[3301] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3301,
 		talk_content = "新人，物资关卡现已开启，可以在这里获取各种修正者的培养材料。",
@@ -4020,6 +4201,7 @@ return {
 	[3401] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3401,
 		talk_content = "新人，经过初步学习后，物资获取权限已经全部为你开启。",
@@ -4042,6 +4224,7 @@ return {
 	[3501] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3501,
 		talk_content = "隐科组对于刻印的研究有了重大突破，发现了可以使权钥与刻印再次突破的神秘能源。",
@@ -4070,6 +4253,7 @@ return {
 	[3502] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3502,
 		talk_content = "报告显示源层深处极少数泉水会有产生伴生的透明结晶，其提取物可用于突破权钥与刻印的桎梏。",
@@ -4092,6 +4276,7 @@ return {
 	[3503] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3503,
 		talk_content = "这些结晶存在的地方附近都游荡着数量不等的强大视骸，想要采集必须要先清理掉它们。",
@@ -4117,6 +4302,7 @@ return {
 	[3504] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3504,
 		talk_content = "作为第一次深入源层深处，我们先谨慎勘探……就选择这个前进方向吧！",
@@ -4153,6 +4339,7 @@ return {
 	[3505] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3505,
 		talk_content = "",
@@ -4171,6 +4358,7 @@ return {
 	[3506] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 3506,
 		talk_content = "源层的干扰让我只能陪你到这了，还有什么其他不懂的地方就点击这里查看回顾吧。",
@@ -4189,6 +4377,7 @@ return {
 	[3601] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = true,
 		id = 3601,
 		talk_content = "新人，你结识了一位能力强劲的同伴呢，快来与这位修正者一起熟悉一下基础的战斗操作吧！",
@@ -4217,6 +4406,7 @@ return {
 	[3602] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3602,
 		talk_content = "",
@@ -4236,6 +4426,7 @@ return {
 	[3603] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3603,
 		talk_content = "",
@@ -4267,6 +4458,7 @@ return {
 	[3604] = {
 		talk_anchors = 4,
 		type = "ClickCToggle",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3604,
 		talk_content = "基础教学可以让你了解一些经常会用到的战斗知识。",
@@ -4296,6 +4488,7 @@ return {
 	[3605] = {
 		talk_anchors = 4,
 		type = "ClickCToggle",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3605,
 		talk_content = "角色教学可以让你更了解与自己并肩作战的修正者，最大效率的协助对方发挥出全部力量。",
@@ -4325,6 +4518,7 @@ return {
 	[3701] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3701,
 		talk_content = "哼哼~不要惊慌，是本大人我。这次是来告诉你一个重要消息的，那就是可以通过对刻印进行「赋能」，对刻印进行提升哦。",
@@ -4353,6 +4547,7 @@ return {
 	[3702] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3702,
 		talk_content = "刻印满足等级需求后，将直接解锁一个固定的「赋能效果」。",
@@ -4381,6 +4576,7 @@ return {
 	[3703] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3703,
 		talk_content = "同时解锁一个新的赋能位置，可以消耗「赋能模块」进行主动赋能，获取额外的「赋能效果」。",
@@ -4411,6 +4607,7 @@ return {
 	[3704] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 3704,
 		talk_content = "本大人知道的讯息已经全部同步给你了，如果想要了解更多刻印「赋能」相关的内容，就打开这里的说明手册吧。",
@@ -4429,6 +4626,7 @@ return {
 	[3801] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3801,
 		talk_content = "本喵刚刚得到隐科组传来讯息，在源层深处中的遗迹里发现可以强化刻印的材料。",
@@ -4451,6 +4649,7 @@ return {
 	[3802] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3802,
 		talk_content = "只不过前进的路上遍布游荡的视骸，消灭它们然后获取更多的启示录吧！",
@@ -4476,9 +4675,10 @@ return {
 	[3901] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3901,
-		talk_content = "新人，隐科组对刻印有些了新的研究成果，让我们去看看吧！",
+		talk_content = "新人，隐科组对刻印有了些新的研究成果，让我们去看看吧！",
 		params = {},
 		guide_component = {
 			"common",
@@ -4497,6 +4697,7 @@ return {
 	[3902] = {
 		talk_anchors = 4,
 		type = "ClickCToggle",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3902,
 		talk_content = "利用高品质的刻印核心制成独立模块，可以对「中继之环」进行一定程度的增幅，这种增幅被命名为「跃迁」。",
@@ -4518,6 +4719,7 @@ return {
 	[3903] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 3903,
 		talk_content = "「跃迁核心」的位置与刻印装载位置一一对应，当对应的刻印位置装备的刻印等级达到40级时，「跃迁核心」被激活。",
@@ -4541,6 +4743,7 @@ return {
 	[4001] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4001,
 		talk_content = "「跃迁核心」被成功激活后，可以对修正者的多项能力进行专项增幅。",
@@ -4563,6 +4766,7 @@ return {
 	[4002] = {
 		talk_anchors = 2,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4002,
 		talk_content = "每个「跃迁核心」最多得到2种能力增幅，不过不用担心，增幅效果可以随时来这里进行更换。",
@@ -4585,6 +4789,7 @@ return {
 	[4003] = {
 		talk_anchors = 2,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4003,
 		talk_content = "「跃迁核心」的专项增幅可以大幅度提升修正者的实力。",
@@ -4607,6 +4812,7 @@ return {
 	[4004] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4004,
 		talk_content = "「跃迁技能」装备以及升级需要消耗「跃迁因子」。",
@@ -4629,6 +4835,7 @@ return {
 	[4005] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4005,
 		talk_content = "「跃迁因子」的持有数量和当前可持有的数量上限可以在这里查看。",
@@ -4651,6 +4858,7 @@ return {
 	[4006] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4006,
 		talk_content = "管理员需要先获取「跃迁因子」，才能顺利装备「跃迁技能」哦~",
@@ -4672,6 +4880,7 @@ return {
 	[4007] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4007,
 		talk_content = "「跃迁因子」的数量可以通过消耗权能材料进行提升，这种材料可以在黑区净化的Ω难度获取。",
@@ -4694,6 +4903,7 @@ return {
 	[4101] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4101,
 		talk_content = "通过对普通五星刻印进行神力融合，可以为修正者进行能力增幅。",
@@ -4722,6 +4932,7 @@ return {
 	[4102] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4102,
 		talk_content = "「神系重构」可以将普通的五星刻印「重构」为随机神系刻印，为其提供对应神系额外的属性加成。",
@@ -4743,6 +4954,7 @@ return {
 	[4103] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4103,
 		talk_content = "「显晰重构」可以将神系刻印「重构」为专属刻印，为对应修正者提供更多的属性加成。",
@@ -4764,6 +4976,7 @@ return {
 	[4104] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 4104,
 		talk_content = "这么重要的消息本大人可第一时间就过来告诉你了哦~如果想要了解更多刻印重构相关的内容，就打开这里的说明手册吧。",
@@ -4782,6 +4995,7 @@ return {
 	[4201] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = true,
 		id = 4201,
 		talk_content = "新人，科尔盖用于研究骸能原理搭建的高能试验场爆炸了，科尔盖正在请求各原质区修正者进行支援。",
@@ -4810,6 +5024,7 @@ return {
 	[4202] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4202,
 		talk_content = "",
@@ -4829,6 +5044,7 @@ return {
 	[4203] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4203,
 		talk_content = "由爆炸产生的空洞就像是黑洞一样不受控制，且呈现出崩溃的迹象，因此这里也被称为“失序深阱”。",
@@ -4863,6 +5079,7 @@ return {
 	[4204] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4204,
 		talk_content = "失序深阱中存在多个阶层，当一个阶层内的所有区域清理完毕后，便可解锁后续阶层。",
@@ -4884,6 +5101,7 @@ return {
 	[4205] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4205,
 		talk_content = "每个区域根据难易程度有不同的评级，如果是评级为Ω的区域则可以反复挑战积累清理进度。",
@@ -4907,6 +5125,7 @@ return {
 	[4206] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4206,
 		talk_content = "点击可以选中该区域。",
@@ -4930,6 +5149,7 @@ return {
 	[4207] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4207,
 		talk_content = "当前区域的相关信息会在这里显示，点击区域目标的头像可以查看其具体信息。",
@@ -4951,6 +5171,7 @@ return {
 	[4208] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 4208,
 		talk_content = "想要了解更多有关失序深阱相关的内容，就参考这里的说明手册吧。",
@@ -4969,6 +5190,7 @@ return {
 	[4301] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4301,
 		talk_content = "经过隐科组最终的调试，修正者与权钥「同调」装置现已正式启用。",
@@ -4990,6 +5212,7 @@ return {
 	[4302] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4302,
 		talk_content = "",
@@ -5019,6 +5242,7 @@ return {
 	[4303] = {
 		talk_anchors = 0,
 		type = "ClickCToggle",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4303,
 		talk_content = "",
@@ -5037,6 +5261,7 @@ return {
 	[4304] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4304,
 		talk_content = "「同调」是指让修正者与自己的权钥进行深度力场共频，以此来提升能力增幅。",
@@ -5060,6 +5285,7 @@ return {
 	[4305] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4305,
 		talk_content = "调动起深刻的记忆及情绪对「同调」的效果有较为明显的增幅。此处摆放的是由修正者自己提供的，对自身影响较大的物品。",
@@ -5082,6 +5308,7 @@ return {
 	[4306] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4306,
 		talk_content = "点击「同调预览」可以查看权钥同调能提升的效果。",
@@ -5103,6 +5330,7 @@ return {
 	[4307] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4307,
 		talk_content = "",
@@ -5121,6 +5349,7 @@ return {
 	[4308] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4308,
 		talk_content = "此处可以查看「同调」后可获得的提升。",
@@ -5143,6 +5372,7 @@ return {
 	[4309] = {
 		talk_anchors = 2,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4309,
 		talk_content = "解锁该修正者的「同调」需要完成对应的专属任务。",
@@ -5165,6 +5395,7 @@ return {
 	[4310] = {
 		talk_anchors = 2,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4310,
 		talk_content = "同时开启「同调」需要满足一定的解锁条件。",
@@ -5187,6 +5418,7 @@ return {
 	[4311] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 4311,
 		talk_content = "若是想了解更多关于「同调」相关的信息，就点开这里的说明手册进行查看吧。",
@@ -5205,6 +5437,7 @@ return {
 	[4401] = {
 		talk_anchors = 1,
 		type = "ClickCToggle",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 4401,
 		talk_content = "新人，完成入职签到可以结识新的修正者，获取大量探测凭证哦。",
@@ -5234,6 +5467,7 @@ return {
 	[4402] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = true,
 		id = 4402,
 		talk_content = "点击此处领取今日的奖励吧！",
@@ -5278,6 +5512,7 @@ return {
 	[4403] = {
 		talk_anchors = 0,
 		type = "ClickButtonNoMask",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4403,
 		talk_content = "",
@@ -5296,6 +5531,7 @@ return {
 	[4404] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4404,
 		talk_content = "明天也有可以领取的奖励不要忘记了哦！",
@@ -5326,6 +5562,7 @@ return {
 	[4405] = {
 		talk_anchors = 1,
 		type = "ClickCToggle",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 4405,
 		talk_content = "新人课程将会引导管理员熟悉日后需要处理的事务。",
@@ -5355,6 +5592,7 @@ return {
 	[4406] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 2,
 		is_finish = false,
 		id = 4406,
 		talk_content = "完成全部课程任务，可以将修正者「潮音·波塞冬」神识超越至Ω。",
@@ -5379,6 +5617,7 @@ return {
 	[4407] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 2,
 		is_finish = false,
 		id = 4407,
 		talk_content = "课程任务每天逐步解锁。",
@@ -5403,6 +5642,7 @@ return {
 	[4408] = {
 		talk_anchors = 1,
 		type = "ClickCToggle",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 4408,
 		talk_content = "管理员达到一定等级时，可领取对应的等级奖励。",
@@ -5432,6 +5672,7 @@ return {
 	[4409] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 2,
 		is_finish = false,
 		id = 4409,
 		talk_content = "当管理员等级达到60级时，可以将「朝约·薇儿丹蒂」神识超越至SSS，并获得圣树5星通用钥从「妖精·盖拉德丽尔」。",
@@ -5456,6 +5697,7 @@ return {
 	[4410] = {
 		talk_anchors = 1,
 		type = "ClickCToggle",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 4410,
 		talk_content = "当然，作为新加入的成员，管理员也可以在日常委托中获取丰厚奖励哦。",
@@ -5485,6 +5727,7 @@ return {
 	[4411] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4411,
 		talk_content = "完成当天的委托任务后，次日05:00会解锁新的委托任务。",
@@ -5525,6 +5768,7 @@ return {
 	[4412] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4412,
 		talk_content = "完成全部委托任务后，可以将「追炎·前鬼坊天狗」神识超越至SSS，并获得专属换装「校园时光」。",
@@ -5549,6 +5793,7 @@ return {
 	[4501] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4501,
 		talk_content = "相信管理员现在已经对自己的基本职责非常熟悉了，那就让我们开启进修企划吧！",
@@ -5577,6 +5822,7 @@ return {
 	[4601] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4601,
 		talk_content = "得到大国主的最新消息，演算终端机调试完毕，多维变量模拟已启动。",
@@ -5605,6 +5851,7 @@ return {
 	[4602] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4602,
 		talk_content = "",
@@ -5624,6 +5871,7 @@ return {
 	[4603] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4603,
 		talk_content = "演算终端机是大国主为了演算盖亚世界变动率而领导研发的模拟装置，但目前只作为战术决策的训练场所而存在。",
@@ -5658,6 +5906,7 @@ return {
 	[4604] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4604,
 		talk_content = "在多维变量的挑战中可以使用「多维信标」协助探索。",
@@ -5679,6 +5928,7 @@ return {
 	[4605] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4605,
 		talk_content = "「多维信标」需要足够的数据支撑才能顺利解锁激活，获取后可以为接下来的探索带来便利。",
@@ -5715,6 +5965,7 @@ return {
 	[4606] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4606,
 		talk_content = "解锁一个「多维信标」试试吧。",
@@ -5751,6 +6002,7 @@ return {
 	[4607] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 4607,
 		talk_content = "点击返回。",
@@ -5769,6 +6021,7 @@ return {
 	[4608] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4608,
 		talk_content = "「多维终端」中记录着你探索的脚步，不断累积的经验会使你的探索更加顺遂。",
@@ -5790,6 +6043,7 @@ return {
 	[4609] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4609,
 		talk_content = "提升「多维终端」的等级，可以获得天赋点数激活加成，提供探索助力。",
@@ -5811,6 +6065,7 @@ return {
 	[4610] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4610,
 		talk_content = "为了更有效的探索多维空间，「多维终端」所选天赋每周可重置1次。",
@@ -5833,6 +6088,7 @@ return {
 	[4611] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 4611,
 		talk_content = "点击返回。",
@@ -5851,6 +6107,7 @@ return {
 	[4612] = {
 		talk_anchors = 4,
 		type = "ClickButton",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 4612,
 		talk_content = "点击此处可以选择映射出跟随你探索多维空间的修正者。",
@@ -5872,6 +6129,7 @@ return {
 	[4613] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4613,
 		talk_content = "",
@@ -5908,6 +6166,7 @@ return {
 	[4614] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 2,
 		is_finish = false,
 		id = 4614,
 		talk_content = "在多维空间映射出对应的修正者，需要消耗「映射仪」。",
@@ -5932,6 +6191,7 @@ return {
 	[4615] = {
 		talk_anchors = 2,
 		type = "HighLight",
+		talk_adapt = 2,
 		is_finish = false,
 		id = 4615,
 		talk_content = "「映射仪」每周四5:00自动生成，日常最大持有数为1。",
@@ -5960,6 +6220,7 @@ return {
 	[4616] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 4616,
 		talk_content = "点击返回。",
@@ -5978,6 +6239,7 @@ return {
 	[4617] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 4617,
 		talk_content = "通过「维度曲线」可以获取「偏移记录」。「维度曲线」会在固定周期重置，任务内容也会根据时间推移进行更迭。",
@@ -5999,6 +6261,7 @@ return {
 	[4618] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 4618,
 		talk_content = "影响「维度偏移」幅度，探索到更多不同的信息可以领取相应的奖励。",
@@ -6027,6 +6290,7 @@ return {
 	[4619] = {
 		talk_anchors = 4,
 		type = "HighLight",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 4619,
 		talk_content = "在「维度偏移」中获得的「幸运之证」，可以在「因幡万事屋」中兑换各种物品。",
@@ -6048,6 +6312,7 @@ return {
 	[4620] = {
 		talk_anchors = 1,
 		type = "ClickButton",
+		talk_adapt = 1,
 		is_finish = false,
 		id = 4620,
 		talk_content = "若是想了解更多关于「多维变量」相关的信息，就点开这里的说明手册进行查看吧。",
@@ -6066,6 +6331,7 @@ return {
 	[4701] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4701,
 		talk_content = "管理员，隐科组的心居开发企划似乎有新的进展了。",
@@ -6087,6 +6353,7 @@ return {
 	[4801] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4801,
 		talk_content = "先看看深空之眼大楼中的心居区域。",
@@ -6108,6 +6375,7 @@ return {
 	[4802] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4802,
 		talk_content = "这里是心居中的宿舍大厅，可以安排修正者来到这里休息。",
@@ -6129,6 +6397,7 @@ return {
 	[4803] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4803,
 		talk_content = "点击可以查看当前可以来到大厅休息的修正者。",
@@ -6150,6 +6419,7 @@ return {
 	[4804] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = true,
 		id = 4804,
 		talk_content = "当前修正者的信息都会在这里显示。",
@@ -6171,6 +6441,7 @@ return {
 	[4805] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4805,
 		talk_content = "选中修正者后，长按可以将修正者拖拽放入大厅中。",
@@ -6195,6 +6466,7 @@ return {
 	[4901] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4901,
 		talk_content = "大厅的仓库里有一些还未放置的家具，试着摆放看看吧。",
@@ -6216,6 +6488,7 @@ return {
 	[4902] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4902,
 		talk_content = "点击编辑按钮，可以重新布置当前场景，部分家具需要赠送后才能在编辑中摆放。",
@@ -6237,6 +6510,7 @@ return {
 	[4903] = {
 		talk_anchors = 3,
 		type = "ClickCToggle",
+		talk_adapt = 0,
 		is_finish = true,
 		id = 4903,
 		talk_content = "通过切换类型可以查看当前持有的各种家具，当然现在已经准备好一些家具了。",
@@ -6258,6 +6532,7 @@ return {
 	[4904] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 4904,
 		talk_content = "嗯…看起来大厅的门窗还得自己动手安装，通过长按的方式可以将家具拖动放入场景内。",
@@ -6282,6 +6557,7 @@ return {
 	[5001] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5001,
 		talk_content = "可以点击设置将当前房间设置为展示房间，其他管理员可以参观当前房间的布置。",
@@ -6304,6 +6580,7 @@ return {
 	[5002] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5002,
 		talk_content = "点击打开宿舍区域的视图，并且可以在视图中为修正者分配单人的宿舍房间。",
@@ -6325,6 +6602,7 @@ return {
 	[5003] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5003,
 		talk_content = "有许多宿舍房间还未开放，通过餐厅经营积累的小窝资金扩展宿舍房间。",
@@ -6349,6 +6627,7 @@ return {
 	[5004] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5004,
 		talk_content = "已经有可以入住的宿舍房间了，当修正者好感度达到5级时即可安排入住。",
@@ -6373,6 +6652,7 @@ return {
 	[5005] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5005,
 		talk_content = "当修正者入住后，可以给入住的修正者赠送家具来布置房间，并且房间将会和该修正者绑定。",
@@ -6397,6 +6677,7 @@ return {
 	[5006] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5006,
 		talk_content = "拖动或点击切换按钮可以将视图切换到其他的区域。",
@@ -6418,6 +6699,7 @@ return {
 	[5007] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = true,
 		id = 5007,
 		talk_content = "如果想查看其他管理员的房间布置，可以随时通过参观功能查看。",
@@ -6439,6 +6721,7 @@ return {
 	[5008] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5008,
 		talk_content = "点击返回可以随时退出宿舍区域视图。",
@@ -6460,6 +6743,7 @@ return {
 	[5101] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5101,
 		talk_content = "当前修正者体力详情，在大厅中恢复速度是固定的，在宿舍中会随着宿舍等级上升而加快。",
@@ -6482,6 +6766,7 @@ return {
 	[5102] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5102,
 		talk_content = "邀请修正者进餐可以增加修正者的体力，需要注意相同修正者存在每日次数限制。",
@@ -6503,6 +6788,7 @@ return {
 	[5103] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = true,
 		id = 5103,
 		talk_content = "当修正者有自己的宿舍后，可以为其赠送家具，家具赠送后可以在大厅或该修正者宿舍中摆放。",
@@ -6524,6 +6810,7 @@ return {
 	[5104] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5104,
 		talk_content = "尝试抚摸修正者或许能看到其意想不到的一面。",
@@ -6545,6 +6832,7 @@ return {
 	[5201] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5201,
 		talk_content = "游园街的餐厅也开放了，可以通过经营餐厅来赚取报酬。",
@@ -6566,6 +6854,7 @@ return {
 	[5202] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5202,
 		talk_content = "想经营好餐厅首先就要将修正者分配到合适的岗位，点击可以为每个岗位派遣修正者。",
@@ -6587,6 +6876,7 @@ return {
 	[5203] = {
 		talk_anchors = 3,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5203,
 		talk_content = "先尝试选择看看负责制作菜品的厨师吧。",
@@ -6618,6 +6908,7 @@ return {
 	[5204] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5204,
 		talk_content = "点击可以选择想要派遣的修正者，修正者头像会显示对应技能加成。",
@@ -6642,6 +6933,7 @@ return {
 	[5205] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5205,
 		talk_content = "修正者的体力以及等级信息可以通过这里查看。",
@@ -6664,6 +6956,7 @@ return {
 	[5206] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = true,
 		id = 5206,
 		talk_content = "这里会显示技能详情，技能需要达到特定等级才能解锁。",
@@ -6695,6 +6988,7 @@ return {
 	[5207] = {
 		talk_anchors = 3,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5207,
 		talk_content = "如果确认无误，可以设置当前选中的修正者，需要所有岗位都派遣完毕后才能开始经营。",
@@ -6716,6 +7010,7 @@ return {
 	[5301] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5301,
 		talk_content = "管理员，食材已经准备好了，点击菜单准备将菜品上架吧。",
@@ -6737,6 +7032,7 @@ return {
 	[5302] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5302,
 		talk_content = "这里是已经解锁的菜品，点击上架，已经上架的菜品会全天候自动售卖。",
@@ -6761,6 +7057,7 @@ return {
 	[5303] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5303,
 		talk_content = "这里是菜品消耗的食材，最大制作数量会受到可使用的食材数量的限制。",
@@ -6783,6 +7080,7 @@ return {
 	[5304] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5304,
 		talk_content = "可以设定菜品售卖的预期数量，设定后如果想重新调整数量则需要先将设定好的订单下架。",
@@ -6805,6 +7103,7 @@ return {
 	[5305] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5305,
 		talk_content = "根据设定的数量，可以看到订单完成的预计耗时与预计收益。",
@@ -6827,6 +7126,7 @@ return {
 	[5401] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5401,
 		talk_content = "菜品所需的食材可以通过完成委托任务来积累。",
@@ -6848,6 +7148,7 @@ return {
 	[5402] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5402,
 		talk_content = "这是收到的委托请求，完成这些请求可以获得由委托人送来的食材，并且随厨具等级提升后有机会接到全新的委托。",
@@ -6872,6 +7173,7 @@ return {
 	[5403] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5403,
 		talk_content = "了解完委托的信息后就可以准备派遣啦，委托完成后会立刻获得新的委托任务。",
@@ -6896,6 +7198,7 @@ return {
 	[5404] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5404,
 		talk_content = "这里可以看到修正者的信息，当修正者适合该委托时对应类型标签会亮起。",
@@ -6920,6 +7223,7 @@ return {
 	[5405] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5405,
 		talk_content = "这里可以看到本次委托需要消耗的总体力，选择的修正者的体力之和需要不小于所需总体里才能进行派遣。",
@@ -6941,6 +7245,7 @@ return {
 	[5406] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5406,
 		talk_content = "每次委托可能会有不一样的推荐类型，搭配对应的修正者时可以增加委托大成功的概率。",
@@ -6962,6 +7267,7 @@ return {
 	[5407] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5407,
 		talk_content = "当前委托的大成功完成的实时概率，如果大成功达成委托则会获得额外的奖励~",
@@ -6984,6 +7290,7 @@ return {
 	[5408] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5408,
 		talk_content = "在委托中可以快速选择当前任务最适合委派的修正者。",
@@ -7005,6 +7312,7 @@ return {
 	[5501] = {
 		talk_anchors = 0,
 		type = "ClickButton",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5501,
 		talk_content = "通过不断经营餐厅，可以提升餐厅中的设施等级。",
@@ -7026,6 +7334,7 @@ return {
 	[5502] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5502,
 		talk_content = "设施等级提升能解锁新的菜品以及提高对应菜系的收益，同时还能增加餐厅的人气值。",
@@ -7054,6 +7363,7 @@ return {
 	[5503] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5503,
 		talk_content = "设施的收益效果会在这里显示，等级上升后对应数值也会增加。",
@@ -7076,6 +7386,7 @@ return {
 	[5504] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5504,
 		talk_content = "当餐厅经营满足条件后，相应的设施才能提升等级。",
@@ -7105,6 +7416,7 @@ return {
 	[5505] = {
 		talk_anchors = 0,
 		type = "HighLight",
+		talk_adapt = 0,
 		is_finish = false,
 		id = 5505,
 		talk_content = "满足升级条件后需要消耗一定的材料才能升级。",

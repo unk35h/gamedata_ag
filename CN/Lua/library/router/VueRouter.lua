@@ -201,8 +201,8 @@ function slot1.SetActions(slot0, slot1, slot2)
 	slot0.afterStartAction_ = slot2 or uv0
 end
 
-function slot1.PlayPreExitTransition(slot0, slot1, slot2)
-	slot0.preExitAction_(slot1, slot2)
+function slot1.PlayPreExitTransition(slot0, slot1, slot2, slot3)
+	slot0.preExitAction_(slot1, slot2, slot3)
 end
 
 function slot1.PlayAfterStartTransition(slot0, slot1, slot2)
@@ -256,7 +256,7 @@ function slot1.Go(slot0, slot1, slot2, slot3, slot4, slot5)
 
 			uv0:EnterRouteOver()
 		end)
-		slot0:ExitOldRoutes(slot7, slot4, slot9)
+		slot0:ExitOldRoutes(slot7, slot4, slot9, slot6)
 	else
 		slot0.routeNumber_ = slot0.routeNumber_ + 1
 
@@ -272,7 +272,7 @@ function slot1.Go(slot0, slot1, slot2, slot3, slot4, slot5)
 		end)
 		slot0:PlayPreExitTransition(function ()
 			GlobalCall.call(uv0)
-		end, slot4)
+		end, slot4, slot6)
 	end
 end
 
@@ -287,7 +287,7 @@ function slot1.EnterRouteOver(slot0)
 	end
 end
 
-function slot1.ExitOldRoutes(slot0, slot1, slot2, slot3)
+function slot1.ExitOldRoutes(slot0, slot1, slot2, slot3, slot4)
 	slot0:PlayPreExitTransition(function ()
 		for slot3 = #uv0.oldRoutes_, uv1 + 1, -1 do
 			uv2.ExtractExit(uv0, uv0.oldRoutes_[slot3])
@@ -296,7 +296,7 @@ function slot1.ExitOldRoutes(slot0, slot1, slot2, slot3)
 		end
 
 		GlobalCall.call(uv3)
-	end, slot2)
+	end, slot2, slot4)
 end
 
 function slot1.UpdateCoincideRoutes(slot0, slot1)
@@ -414,7 +414,7 @@ function slot1.Back(slot0, slot1, slot2)
 			uv2:PlayAfterStartTransition(function ()
 			end)
 			uv2:SetReduxViewTop(uv2.recordMap_[uv2.routes_[#uv2.routes_]], slot0)
-		end)
+		end, false, false)
 	else
 		if #slot0.history_ <= 1 then
 			return

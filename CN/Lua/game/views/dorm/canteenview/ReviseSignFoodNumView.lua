@@ -117,7 +117,7 @@ end
 function slot0.RefreshSellNumAndIncome(slot0)
 	slot0.sellNumTex_.text = slot0.sellNum
 	slot0.incomeNumTex_.text = math.floor(CanteenData:GetFoodUnitCost(slot0.foodID) * slot0.sellNum)
-	slot0.costTimeTex.text = DormTools:SecondSwitchTime(math.ceil(BackHomeCanteenFoodCfg[slot0.foodID].cost_time * slot0.sellNum / ((100 + DormSkillData:GetSkillEffect(CanteenConst.HeroSkillType.FoodCostQucik, nil, , BackHomeCanteenFoodCfg[slot0.foodID].cook_type)) / 100)))
+	slot0.costTimeTex.text = DormTools:SecondSwitchTime(math.ceil(BackHomeCanteenFoodCfg[slot0.foodID].cost_time * slot0.sellNum * (100 - DormSkillData:GetSkillEffect(CanteenConst.HeroSkillType.FoodCostQucik, nil, , BackHomeCanteenFoodCfg[slot0.foodID].cook_type)) / 100))
 
 	slot0.foodMaterialScroll:Refresh()
 end

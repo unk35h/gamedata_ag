@@ -148,10 +148,6 @@ function slot0.RefreshHeroGiftList(slot0)
 		end
 	end
 
-	if not slot0.selFurID and #slot0.dataList_ > 0 then
-		slot0.selFurID = slot0.dataList_[1]
-	end
-
 	CommonTools.UniversalSortEx(slot0.dataList_, {
 		map = function (slot0)
 			if DormData:GetHeroInfo(uv0.archiveID):GetCanGiftNum(slot0) == 0 then
@@ -166,6 +162,11 @@ function slot0.RefreshHeroGiftList(slot0)
 			return slot0
 		end
 	})
+
+	if not slot0.selFurID and #slot0.dataList_ > 0 then
+		slot0.selFurID = slot0.dataList_[1]
+	end
+
 	slot0.giftScroll:StartScroll(#slot0.dataList_)
 
 	if #slot0.dataList_ == 0 then
@@ -199,7 +200,7 @@ function slot0.ResetView(slot0)
 		slot0.furNumMax = math.min(slot2, slot4)
 		slot0.progressSlr_.maxValue = slot0.furNumMax
 
-		if slot4 <= 0 then
+		if slot0.furNumMax <= 0 then
 			slot0:SetfurNum(0)
 		else
 			slot0:SetfurNum(1)

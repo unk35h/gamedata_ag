@@ -128,7 +128,7 @@ function slot0.AddUIListeners(slot0)
 			gameAppId = _G.ChannelLoginInfo.channelAppId,
 			token = _G.ChannelLoginInfo.channelToken
 		})
-		RedPointAction.HandleRedPoint(RED_POINT_ID.FORUM)
+		RedPointAction.HandleNeedRedPoint(RED_POINT_ID.FORUM)
 		SDKTools.SendMessageToSDK("direction", {
 			direction_type = 8,
 			direction_channel = 4
@@ -163,12 +163,12 @@ function slot0.AddUIListeners(slot0)
 			userId = PlayerData:GetPlayerInfo().userID,
 			signUserId = PlayerData:GetPlayerInfo().signUserId
 		})
-		RedPointAction.HandleRedPoint(RED_POINT_ID.ACTIVITY)
+		RedPointAction.HandleNeedRedPoint(RED_POINT_ID.ACTIVITY)
 		manager.redPoint:setTip(RedPointConst.OPERATION_ACTIVITY, 0)
 	end)
 	slot0:AddBtnListener(slot0.shopBtn_, nil, function ()
 		OperationAction.OpenOperationUrl("SHOPPING_URL", {})
-		RedPointAction.HandleRedPoint(RED_POINT_ID.SHOP_TAOBAO)
+		RedPointAction.HandleNeedRedPoint(RED_POINT_ID.SHOP_TAOBAO)
 		manager.redPoint:setTip(RedPointConst.SHOP_TAOBAO, 0)
 		SDKTools.SendMessageToSDK("direction", {
 			direction_type = 10,

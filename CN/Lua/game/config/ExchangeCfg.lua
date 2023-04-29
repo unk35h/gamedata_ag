@@ -21233,6 +21233,97 @@ return {
 		cheap_open_time = {},
 		cheap_close_time = {}
 	},
+	[1710710] = {
+		taken_down = 0,
+		is_limit_time_discount = 0,
+		give = 1,
+		limit_num = 10,
+		shop_id = 17,
+		give_id = 11071,
+		cost_id = 41,
+		position = 8034,
+		limit_display = 0,
+		cost = 0,
+		shop_sort = 8034,
+		cheap_cost = 8,
+		cost_type = 0,
+		goods_id = 1710710,
+		cheap_cost_id = 41,
+		discount = 40,
+		level_limit = {
+			{
+				4,
+				1071
+			}
+		},
+		pre_goods_id = {},
+		open_time = {},
+		close_time = {},
+		cheap_open_time = {},
+		cheap_close_time = {}
+	},
+	[1710711] = {
+		taken_down = 0,
+		is_limit_time_discount = 0,
+		give = 1,
+		limit_num = 10,
+		shop_id = 17,
+		give_id = 11071,
+		cost_id = 41,
+		position = 8035,
+		limit_display = 0,
+		cost = 0,
+		shop_sort = 8035,
+		cheap_cost = 15,
+		cost_type = 0,
+		goods_id = 1710711,
+		cheap_cost_id = 41,
+		discount = 75,
+		level_limit = {
+			{
+				4,
+				1071
+			}
+		},
+		pre_goods_id = {
+			1710710
+		},
+		open_time = {},
+		close_time = {},
+		cheap_open_time = {},
+		cheap_close_time = {}
+	},
+	[1710712] = {
+		taken_down = 0,
+		is_limit_time_discount = 0,
+		give = 1,
+		limit_num = 10,
+		shop_id = 17,
+		give_id = 11071,
+		cost_id = 41,
+		position = 8036,
+		limit_display = 0,
+		cost = 20,
+		shop_sort = 8036,
+		cheap_cost = 0,
+		cost_type = 0,
+		goods_id = 1710712,
+		cheap_cost_id = 0,
+		discount = 0,
+		level_limit = {
+			{
+				4,
+				1071
+			}
+		},
+		pre_goods_id = {
+			1710711
+		},
+		open_time = {},
+		close_time = {},
+		cheap_open_time = {},
+		cheap_close_time = {}
+	},
 	[1710700] = {
 		taken_down = 0,
 		is_limit_time_discount = 0,
@@ -28450,6 +28541,9 @@ return {
 			1710171,
 			1710172,
 			1710173,
+			1710710,
+			1710711,
+			1710712,
 			1710700,
 			1710701,
 			1710702,
@@ -29624,6 +29718,9 @@ return {
 			1710320,
 			1710321,
 			1710322,
+			1710710,
+			1710711,
+			1710712,
 			1710700,
 			1710701,
 			1710702,
@@ -32900,7 +32997,10 @@ return {
 			1710702
 		},
 		[11071] = {
-			1021071
+			1021071,
+			1710710,
+			1710711,
+			1710712
 		},
 		[11132] = {
 			1021132
@@ -33205,6 +33305,12 @@ return {
 		},
 		[1710700] = {
 			1710701
+		},
+		[1710711] = {
+			1710712
+		},
+		[1710710] = {
+			1710711
 		},
 		[1710172] = {
 			1710173
@@ -34314,6 +34420,9 @@ return {
 		1710171,
 		1710172,
 		1710173,
+		1710710,
+		1710711,
+		1710712,
 		1710700,
 		1710701,
 		1710702,

@@ -225,6 +225,23 @@ return {
 		},
 		drop_icon = {}
 	},
+	[11113] = {
+		not_chapter_id = false,
+		name = "廊桥话雨",
+		id = 11113,
+		chapter_paint = "bg_main_13_1",
+		extra_strory_system = "",
+		sub_plot_system = "",
+		desc = "第十三章-间章",
+		extra_story_unlock_condition = "",
+		toggle = 1,
+		level = 1,
+		chapter_list = {
+			11113,
+			12113
+		},
+		drop_icon = {}
+	},
 	[10200] = {
 		not_chapter_id = false,
 		name = "源世界",
@@ -702,7 +719,12 @@ return {
 			4010112,
 			4010113,
 			4010114,
-			4010115
+			4010115,
+			4010116,
+			4010117,
+			4010118,
+			4010119,
+			4010120
 		},
 		drop_icon = {}
 	},
@@ -1521,6 +1543,86 @@ return {
 		},
 		drop_icon = {}
 	},
+	[4010116] = {
+		not_chapter_id = false,
+		name = "历战空间NO.16",
+		id = 4010116,
+		chapter_paint = "bg_TS30323033",
+		extra_strory_system = "",
+		sub_plot_system = "",
+		desc = "历战空间NO.16",
+		extra_story_unlock_condition = "",
+		toggle = 401,
+		level = 70,
+		chapter_list = {
+			4010116
+		},
+		drop_icon = {}
+	},
+	[4010117] = {
+		not_chapter_id = false,
+		name = "历战空间NO.17",
+		id = 4010117,
+		chapter_paint = "bg_TS4028",
+		extra_strory_system = "",
+		sub_plot_system = "",
+		desc = "历战空间NO.17",
+		extra_story_unlock_condition = "",
+		toggle = 401,
+		level = 70,
+		chapter_list = {
+			4010117
+		},
+		drop_icon = {}
+	},
+	[4010118] = {
+		not_chapter_id = false,
+		name = "历战空间NO.18",
+		id = 4010118,
+		chapter_paint = "bg_TS4029",
+		extra_strory_system = "",
+		sub_plot_system = "",
+		desc = "历战空间NO.18",
+		extra_story_unlock_condition = "",
+		toggle = 401,
+		level = 70,
+		chapter_list = {
+			4010118
+		},
+		drop_icon = {}
+	},
+	[4010119] = {
+		not_chapter_id = false,
+		name = "历战空间NO.19",
+		id = 4010119,
+		chapter_paint = "bg_TS301230133019",
+		extra_strory_system = "",
+		sub_plot_system = "",
+		desc = "历战空间NO.19",
+		extra_story_unlock_condition = "",
+		toggle = 401,
+		level = 70,
+		chapter_list = {
+			4010119
+		},
+		drop_icon = {}
+	},
+	[4010120] = {
+		not_chapter_id = false,
+		name = "历战空间NO.20",
+		id = 4010120,
+		chapter_paint = "bg_TS302030213022",
+		extra_strory_system = "",
+		sub_plot_system = "",
+		desc = "历战空间NO.20",
+		extra_story_unlock_condition = "",
+		toggle = 401,
+		level = 70,
+		chapter_list = {
+			4010120
+		},
+		drop_icon = {}
+	},
 	[5040000] = {
 		not_chapter_id = false,
 		name = "神域模拟",
@@ -1634,6 +1736,7 @@ return {
 			10111,
 			10112,
 			10113,
+			11113,
 			10200,
 			10201,
 			10202,
@@ -1671,7 +1774,12 @@ return {
 			4010112,
 			4010113,
 			4010114,
-			4010115
+			4010115,
+			4010116,
+			4010117,
+			4010118,
+			4010119,
+			4010120
 		},
 		[404] = {
 			4040100,
@@ -1751,6 +1859,7 @@ return {
 		10111,
 		10112,
 		10113,
+		11113,
 		10200,
 		10201,
 		10202,
@@ -1830,6 +1939,11 @@ return {
 		4010113,
 		4010114,
 		4010115,
+		4010116,
+		4010117,
+		4010118,
+		4010119,
+		4010120,
 		5040000,
 		6010001,
 		6010004,

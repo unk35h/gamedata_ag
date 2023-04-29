@@ -39,10 +39,10 @@ function slot0.AddListeners(slot0)
 	slot4 = slot0.chipbtnBtn_
 
 	slot0:AddBtnListener(slot4, nil, function ()
-		uv0:Go("/chessChipManager", {
+		JumpTools.GoToSystem("/chessChipManager", {
 			chessTeamID = uv0.teamID_,
 			activityID = uv0.activityID_
-		})
+		}, ViewConst.SYSTEM_ID.CHIP_MANAGER)
 	end)
 
 	for slot4 = 1, 3 do

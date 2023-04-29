@@ -1064,34 +1064,39 @@ end
 
 function slot0.RefreshReceiveMessage(slot0)
 	slot0:ClearMsgTimer()
+	slot0:RefreshWorldChat()
 
 	slot0.msgTimer_ = Timer.New(function ()
-		slot0 = ChatData:GetWorldChatData()
-
-		if slot0[#slot0] then
-			slot2 = ""
-			slot3 = ""
-
-			if slot1.contentType == ChatConst.CHAT_CONTENT_TYPE.TEXT or slot1.contentType == ChatConst.CHAT_CONTENT_TYPE.STICKER then
-				slot2 = slot1.id == USER_ID and (PlayerData:GetPlayerInfo().nick or "") or slot1.nick or ""
-				slot3 = slot1.contentType == ChatConst.CHAT_CONTENT_TYPE.TEXT and (slot1.content or "") or string.format("[%s]", ChatStickerCfg[tonumber(slot1.content)].name)
-			end
-
-			slot4 = ""
-
-			if slot2 ~= "" then
-				slot4 = slot2 .. ":" .. slot3
-			end
-
-			uv0.textLimit_:SetText(slot4)
-
-			return
-		end
-
-		uv0.textLimit_:SetText("")
+		uv0:RefreshWorldChat()
 	end, 2, -1)
 
 	slot0.msgTimer_:Start()
+end
+
+function slot0.RefreshWorldChat(slot0)
+	slot1 = ChatData:GetWorldChatData()
+
+	if slot1[#slot1] then
+		slot3 = ""
+		slot4 = ""
+
+		if slot2.contentType == ChatConst.CHAT_CONTENT_TYPE.TEXT or slot2.contentType == ChatConst.CHAT_CONTENT_TYPE.STICKER then
+			slot3 = slot2.id == USER_ID and (PlayerData:GetPlayerInfo().nick or "") or slot2.nick or ""
+			slot4 = slot2.contentType == ChatConst.CHAT_CONTENT_TYPE.TEXT and (slot2.content or "") or string.format("[%s]", ChatStickerCfg[tonumber(slot2.content)].name)
+		end
+
+		slot5 = ""
+
+		if slot3 ~= "" then
+			slot5 = slot3 .. ":" .. slot4
+		end
+
+		slot0.textLimit_:SetText(slot5)
+
+		return
+	end
+
+	slot0.textLimit_:SetText("")
 end
 
 function slot0.ClearMsgTimer(slot0)

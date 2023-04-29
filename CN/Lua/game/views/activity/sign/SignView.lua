@@ -57,14 +57,15 @@ function slot0.OnEnter(slot0)
 
 		slot0.params_.check = nil
 	elseif slot0.params_.isBack then
-		slot0:SetSelectPage(slot0.historyIndex_)
+		slot0:SetSelectPage(SignData:GetHistoryIndex() or 1)
 	else
 		slot0:SetSelectPage(1)
 	end
 end
 
 function slot0.OnExit(slot0)
-	slot0.historyIndex_ = slot0.selectIndex
+	SignData:SetHistoryIndex(slot0.selectIndex)
+
 	slot0.selectIndex = -1
 
 	if slot0.curPage then
@@ -85,7 +86,7 @@ function slot0.SetSelectPage(slot0, slot1)
 		return
 	end
 
-	if PlayerData:GetPlayerInfo().userLevel < slot0.toggles[slot1]:GetLimitLevel() then
+	if PlayerData:GetPlayerInfo().userLevel < slot0.toggles[math.min(slot1, #slot0.toggles)]:GetLimitLevel() then
 		ShowTips(string.format(GetTips("PLAYER_LEVEL_UNLOCK"), slot3))
 
 		return

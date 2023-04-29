@@ -26,30 +26,57 @@ function slot0.AddUIListener(slot0)
 			return
 		end
 
-		slot1 = ""
-		slot6 = GetCfgDescription(WeaponEffectCfg[WeaponServantCfg[uv0.servantId].effect[1]].description[1], uv0.servant_level)
+		slot1 = ItemCfg[uv0.servant_id].name
+		slot5 = WeaponEffectCfg[WeaponServantCfg[uv0.servant_id].effect[1]].simple_description
 
 		if uv0.clickFunc then
-			uv0.clickFunc(slot1, slot6, slot0)
+			uv0.clickFunc(slot1, slot5, Vector3(0, slot0.y + 0.1, slot0.z))
 		end
 	end)
 	slot0:AddBtnListener(slot0.m_astrolabeBtn1, nil, function ()
 		slot0 = uv0.m_astrolabeGo1.transform.position
+		slot3 = uv0.using_astrolabe[1]
+
+		uv0.clickFunc(HeroAstrolabeCfg[slot3].name, GetCfgDescription(AstrolabeEffectCfg[slot3].desc[1], 1), Vector3(0, slot0.y, slot0.z))
 	end)
 	slot0:AddBtnListener(slot0.m_astrolabeBtn2, nil, function ()
 		slot0 = uv0.m_astrolabeGo2.transform.position
+		slot3 = uv0.using_astrolabe[2]
+
+		uv0.clickFunc(HeroAstrolabeCfg[slot3].name, GetCfgDescription(AstrolabeEffectCfg[slot3].desc[1], 1), Vector3(0, slot0.y, slot0.z))
 	end)
 	slot0:AddBtnListener(slot0.m_astrolabeBtn3, nil, function ()
 		slot0 = uv0.m_astrolabeGo3.transform.position
+		slot3 = uv0.using_astrolabe[3]
+
+		uv0.clickFunc(HeroAstrolabeCfg[slot3].name, GetCfgDescription(AstrolabeEffectCfg[slot3].desc[1], 1), Vector3(0, slot0.y, slot0.z))
 	end)
 	slot0:AddBtnListener(slot0.m_equipBtn1, nil, function ()
 		slot0 = uv0.m_equipGo1.transform.position
+
+		if uv0.suitList[1] then
+			slot2 = EquipSuitCfg[uv0.suitList[1].id]
+
+			uv0.clickFunc(slot2.name, EquipTools.GetEffectDesc(slot2.suit_effect[1]), Vector3(0, slot0.y, slot0.z))
+		end
 	end)
 	slot0:AddBtnListener(slot0.m_equipBtn2, nil, function ()
 		slot0 = uv0.m_equipGo2.transform.position
+
+		if uv0.suitList[2] then
+			slot2 = EquipSuitCfg[uv0.suitList[2].id]
+
+			uv0.clickFunc(slot2.name, EquipTools.GetEffectDesc(slot2.suit_effect[1]), Vector3(0, slot0.y, slot0.z))
+		end
 	end)
 	slot0:AddBtnListener(slot0.m_equipBtn3, nil, function ()
 		slot0 = uv0.m_equipGo3.transform.position
+
+		if uv0.suitList[3] then
+			slot2 = EquipSuitCfg[uv0.suitList[3].id]
+
+			uv0.clickFunc(slot2.name, EquipTools.GetEffectDesc(slot2.suit_effect[1]), Vector3(0, slot0.y, slot0.z))
+		end
 	end)
 end
 
@@ -151,6 +178,10 @@ end
 
 function slot0.Dispose(slot0)
 	uv0.super.Dispose(slot0)
+end
+
+function slot0.RegistCallBack(slot0, slot1)
+	slot0.clickFunc = slot1
 end
 
 return slot0

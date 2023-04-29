@@ -38,6 +38,31 @@ end
 
 function slot0.OnEnter(slot0)
 	slot0:RefreshUI()
+	slot0:CheckTeamRedPoint()
+end
+
+function slot0.CheckTeamRedPoint(slot0)
+	slot2 = slot0.polyhedronInfo:GetHeroList()
+	slot3 = #slot0.polyhedronInfo:GetFightHeroList() < 3
+	slot4 = false
+
+	for slot8, slot9 in ipairs(slot2) do
+		slot10 = slot0.polyhedronInfo:GetHeroPolyData(slot9)
+
+		if table.indexof(slot1, slot9) then
+			if slot10:IsDead() then
+				slot3 = true
+			end
+		elseif not slot10:IsDead() then
+			slot4 = true
+		end
+	end
+
+	if slot3 and slot4 then
+		manager.redPoint:SetRedPointIndependent(slot0.m_teamBtn.transform, true)
+	else
+		manager.redPoint:SetRedPointIndependent(slot0.m_teamBtn.transform, false)
+	end
 end
 
 function slot0.RefreshUI(slot0)
@@ -59,6 +84,8 @@ end
 
 function slot0.OnUpdate(slot0)
 	slot0.m_coinLab.text = slot0.polyhedronInfo:GetCoinCount()
+
+	slot0:CheckTeamRedPoint()
 end
 
 function slot0.OnExit(slot0)

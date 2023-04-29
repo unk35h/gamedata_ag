@@ -174,7 +174,7 @@ function slot0.Dispose(slot0)
 
 	slot0.tree:Dispose()
 
-	for slot4, slot5 in ipairs(slot0.pages) do
+	for slot4, slot5 in pairs(slot0.pages) do
 		slot5:Dispose()
 	end
 

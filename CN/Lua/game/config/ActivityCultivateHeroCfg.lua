@@ -12,7 +12,7 @@ return {
 		daily_reward = {
 			{
 				54015,
-				4
+				6
 			}
 		},
 		task_list = {

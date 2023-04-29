@@ -3020,7 +3020,7 @@ return {
 				end
 			end
 
-			if 2 < uv0.time_ and uv0.time_ <= slot3 + slot0 then
+			if 0 < uv0.time_ and uv0.time_ <= slot3 + slot0 then
 				uv0.mask_.enabled = true
 				uv0.mask_.raycastTarget = true
 
@@ -3031,18 +3031,17 @@ return {
 
 			if slot3 <= uv0.time_ and uv0.time_ < slot3 + slot4 then
 				slot6 = Color.New(0, 0, 0)
-				slot6.a = Mathf.Lerp(1, 0, (uv0.time_ - slot3) / slot4)
+				slot6.a = Mathf.Lerp(0, 1, (uv0.time_ - slot3) / slot4)
 				uv0.mask_.color = slot6
 			end
 
 			if uv0.time_ >= slot3 + slot4 and uv0.time_ < slot3 + slot4 + slot0 then
 				slot5 = Color.New(0, 0, 0)
-				uv0.mask_.enabled = false
-				slot5.a = 0
+				slot5.a = 1
 				uv0.mask_.color = slot5
 			end
 
-			if 0 < uv0.time_ and uv0.time_ <= slot5 + slot0 then
+			if 2 < uv0.time_ and uv0.time_ <= slot5 + slot0 then
 				uv0.mask_.enabled = true
 				uv0.mask_.raycastTarget = true
 
@@ -3053,13 +3052,14 @@ return {
 
 			if slot5 <= uv0.time_ and uv0.time_ < slot5 + slot6 then
 				slot8 = Color.New(0, 0, 0)
-				slot8.a = Mathf.Lerp(0, 1, (uv0.time_ - slot5) / slot6)
+				slot8.a = Mathf.Lerp(1, 0, (uv0.time_ - slot5) / slot6)
 				uv0.mask_.color = slot8
 			end
 
 			if uv0.time_ >= slot5 + slot6 and uv0.time_ < slot5 + slot6 + slot0 then
 				slot7 = Color.New(0, 0, 0)
-				slot7.a = 1
+				uv0.mask_.enabled = false
+				slot7.a = 0
 				uv0.mask_.color = slot7
 			end
 
@@ -4692,7 +4692,7 @@ return {
 		end
 
 		function slot1.onSingleLineUpdate_(slot0)
-			if uv0.bgs_.SK0202_blur == nil then
+			if uv0.bgs_.SK0202 == nil then
 				slot2 = Object.Instantiate(uv0.paintGo_)
 				slot2:GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas("Textures/Story/Background/" .. slot1)
 				slot2.name = slot1
@@ -4703,7 +4703,7 @@ return {
 
 			if 0 < uv0.time_ and uv0.time_ <= slot2 + slot0 then
 				slot3 = manager.ui.mainCamera.transform.localPosition
-				slot5 = uv0.bgs_.SK0202_blur
+				slot5 = uv0.bgs_.SK0202
 				slot5.transform.localPosition = Vector3.New(0, 0, 10) + Vector3.New(slot3.x, slot3.y, 0)
 				slot5.transform.localEulerAngles = Vector3(0, 0, 0)
 
@@ -4715,7 +4715,7 @@ return {
 				end
 
 				for slot10, slot11 in pairs(uv0.bgs_) do
-					if slot10 ~= "SK0202_blur" then
+					if slot10 ~= "SK0202" then
 						slot11.transform.localPosition = Vector3.New(0, 100, 0)
 					end
 				end
@@ -4767,7 +4767,7 @@ return {
 				end
 			end
 
-			slot8 = 2
+			slot8 = 1
 
 			if slot6 <= uv0.time_ and uv0.time_ < slot6 + slot8 then
 				slot10 = Color.New(1, 1, 1)
@@ -4857,7 +4857,7 @@ return {
 		end
 
 		function slot1.onSingleLineUpdate_(slot0)
-			if uv0.bgs_.SK0205_blur == nil then
+			if uv0.bgs_.SK0205 == nil then
 				slot2 = Object.Instantiate(uv0.paintGo_)
 				slot2:GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas("Textures/Story/Background/" .. slot1)
 				slot2.name = slot1
@@ -4868,7 +4868,7 @@ return {
 
 			if 0 < uv0.time_ and uv0.time_ <= slot2 + slot0 then
 				slot3 = manager.ui.mainCamera.transform.localPosition
-				slot5 = uv0.bgs_.SK0205_blur
+				slot5 = uv0.bgs_.SK0205
 				slot5.transform.localPosition = Vector3.New(0, 0, 10) + Vector3.New(slot3.x, slot3.y, 0)
 				slot5.transform.localEulerAngles = Vector3(0, 0, 0)
 
@@ -4880,7 +4880,7 @@ return {
 				end
 
 				for slot10, slot11 in pairs(uv0.bgs_) do
-					if slot10 ~= "SK0205_blur" then
+					if slot10 ~= "SK0205" then
 						slot11.transform.localPosition = Vector3.New(0, 100, 0)
 					end
 				end
@@ -4932,7 +4932,7 @@ return {
 				end
 			end
 
-			slot8 = 2
+			slot8 = 1
 
 			if slot6 <= uv0.time_ and uv0.time_ < slot6 + slot8 then
 				slot10 = Color.New(1, 1, 1)
@@ -5022,7 +5022,7 @@ return {
 		end
 
 		function slot1.onSingleLineUpdate_(slot0)
-			if uv0.bgs_.SK0106_blur == nil then
+			if uv0.bgs_.SK0106 == nil then
 				slot2 = Object.Instantiate(uv0.paintGo_)
 				slot2:GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas("Textures/Story/Background/" .. slot1)
 				slot2.name = slot1
@@ -5033,7 +5033,7 @@ return {
 
 			if 0 < uv0.time_ and uv0.time_ <= slot2 + slot0 then
 				slot3 = manager.ui.mainCamera.transform.localPosition
-				slot5 = uv0.bgs_.SK0106_blur
+				slot5 = uv0.bgs_.SK0106
 				slot5.transform.localPosition = Vector3.New(0, 0, 10) + Vector3.New(slot3.x, slot3.y, 0)
 				slot5.transform.localEulerAngles = Vector3(0, 0, 0)
 
@@ -5045,7 +5045,7 @@ return {
 				end
 
 				for slot10, slot11 in pairs(uv0.bgs_) do
-					if slot10 ~= "SK0106_blur" then
+					if slot10 ~= "SK0106" then
 						slot11.transform.localPosition = Vector3.New(0, 100, 0)
 					end
 				end
@@ -5097,7 +5097,7 @@ return {
 				end
 			end
 
-			slot8 = 2
+			slot8 = 1
 
 			if slot6 <= uv0.time_ and uv0.time_ < slot6 + slot8 then
 				slot10 = Color.New(1, 1, 1)
@@ -5187,7 +5187,7 @@ return {
 		end
 
 		function slot1.onSingleLineUpdate_(slot0)
-			if uv0.bgs_.SK0206_blur == nil then
+			if uv0.bgs_.SK0206 == nil then
 				slot2 = Object.Instantiate(uv0.paintGo_)
 				slot2:GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas("Textures/Story/Background/" .. slot1)
 				slot2.name = slot1
@@ -5198,7 +5198,7 @@ return {
 
 			if 0 < uv0.time_ and uv0.time_ <= slot2 + slot0 then
 				slot3 = manager.ui.mainCamera.transform.localPosition
-				slot5 = uv0.bgs_.SK0206_blur
+				slot5 = uv0.bgs_.SK0206
 				slot5.transform.localPosition = Vector3.New(0, 0, 10) + Vector3.New(slot3.x, slot3.y, 0)
 				slot5.transform.localEulerAngles = Vector3(0, 0, 0)
 
@@ -5210,7 +5210,7 @@ return {
 				end
 
 				for slot10, slot11 in pairs(uv0.bgs_) do
-					if slot10 ~= "SK0206_blur" then
+					if slot10 ~= "SK0206" then
 						slot11.transform.localPosition = Vector3.New(0, 100, 0)
 					end
 				end
@@ -5262,7 +5262,7 @@ return {
 				end
 			end
 
-			slot8 = 2
+			slot8 = 1
 
 			if slot6 <= uv0.time_ and uv0.time_ < slot6 + slot8 then
 				slot10 = Color.New(1, 1, 1)
@@ -5352,7 +5352,7 @@ return {
 		end
 
 		function slot1.onSingleLineUpdate_(slot0)
-			if uv0.bgs_.I05e_blur == nil then
+			if uv0.bgs_.I05e == nil then
 				slot2 = Object.Instantiate(uv0.paintGo_)
 				slot2:GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas("Textures/Story/Background/" .. slot1)
 				slot2.name = slot1
@@ -5363,7 +5363,7 @@ return {
 
 			if 0 < uv0.time_ and uv0.time_ <= slot2 + slot0 then
 				slot3 = manager.ui.mainCamera.transform.localPosition
-				slot5 = uv0.bgs_.I05e_blur
+				slot5 = uv0.bgs_.I05e
 				slot5.transform.localPosition = Vector3.New(0, 0, 10) + Vector3.New(slot3.x, slot3.y, 0)
 				slot5.transform.localEulerAngles = Vector3(0, 0, 0)
 
@@ -5375,7 +5375,7 @@ return {
 				end
 
 				for slot10, slot11 in pairs(uv0.bgs_) do
-					if slot10 ~= "I05e_blur" then
+					if slot10 ~= "I05e" then
 						slot11.transform.localPosition = Vector3.New(0, 100, 0)
 					end
 				end
@@ -5423,7 +5423,7 @@ return {
 
 			slot6 = uv0.actors_["10025ui_story"].transform
 
-			if 2 < uv0.time_ and uv0.time_ <= slot7 + slot0 then
+			if 0.7 < uv0.time_ and uv0.time_ <= slot7 + slot0 then
 				uv0.var_.moveOldPos10025ui_story = slot6.localPosition
 			end
 
@@ -5451,7 +5451,7 @@ return {
 
 			slot9 = uv0.actors_["10025ui_story"]
 
-			if 2 < uv0.time_ and uv0.time_ <= slot10 + slot0 and uv0.var_.characterEffect10025ui_story == nil then
+			if 0.7 < uv0.time_ and uv0.time_ <= slot10 + slot0 and uv0.var_.characterEffect10025ui_story == nil then
 				uv0.var_.characterEffect10025ui_story = slot9.GetComponentInChildren(slot9, typeof(CharacterEffect))
 			end
 
@@ -5469,11 +5469,11 @@ return {
 				uv0.var_.characterEffect10025ui_story.fillFlat = false
 			end
 
-			if 2 < uv0.time_ and uv0.time_ <= slot12 + slot0 then
+			if 0.7 < uv0.time_ and uv0.time_ <= slot12 + slot0 then
 				uv0:PlayTimeline("10025ui_story", "StoryTimeline/CharAction/story10025/story10025action/10025action7_1")
 			end
 
-			if 2 < uv0.time_ and uv0.time_ <= slot13 + slot0 then
+			if 0.7 < uv0.time_ and uv0.time_ <= slot13 + slot0 then
 				uv0:PlayTimeline("10025ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface2103cva")
 			end
 
@@ -5488,7 +5488,7 @@ return {
 
 			slot16 = uv0.bgs_[slot14]
 
-			if 0 < uv0.time_ and uv0.time_ <= slot15 + slot0 then
+			if 0.7 < uv0.time_ and uv0.time_ <= slot15 + slot0 then
 				slot17 = manager.ui.mainCamera.transform.localPosition
 				slot16.transform.localPosition = Vector3.New(0, 0, 10) + Vector3.New(slot17.x, slot17.y, 0)
 				slot16.transform.localEulerAngles = Vector3(0, 0, 0)
@@ -5804,7 +5804,7 @@ return {
 				end
 			end
 
-			if 2 < uv0.time_ and uv0.time_ <= slot3 + slot0 then
+			if 0 < uv0.time_ and uv0.time_ <= slot3 + slot0 then
 				uv0.mask_.enabled = true
 				uv0.mask_.raycastTarget = true
 
@@ -5815,18 +5815,17 @@ return {
 
 			if slot3 <= uv0.time_ and uv0.time_ < slot3 + slot4 then
 				slot6 = Color.New(0, 0, 0)
-				slot6.a = Mathf.Lerp(1, 0, (uv0.time_ - slot3) / slot4)
+				slot6.a = Mathf.Lerp(0, 1, (uv0.time_ - slot3) / slot4)
 				uv0.mask_.color = slot6
 			end
 
 			if uv0.time_ >= slot3 + slot4 and uv0.time_ < slot3 + slot4 + slot0 then
 				slot5 = Color.New(0, 0, 0)
-				uv0.mask_.enabled = false
-				slot5.a = 0
+				slot5.a = 1
 				uv0.mask_.color = slot5
 			end
 
-			if 0 < uv0.time_ and uv0.time_ <= slot5 + slot0 then
+			if 2 < uv0.time_ and uv0.time_ <= slot5 + slot0 then
 				uv0.mask_.enabled = true
 				uv0.mask_.raycastTarget = true
 
@@ -5837,13 +5836,14 @@ return {
 
 			if slot5 <= uv0.time_ and uv0.time_ < slot5 + slot6 then
 				slot8 = Color.New(0, 0, 0)
-				slot8.a = Mathf.Lerp(0, 1, (uv0.time_ - slot5) / slot6)
+				slot8.a = Mathf.Lerp(1, 0, (uv0.time_ - slot5) / slot6)
 				uv0.mask_.color = slot8
 			end
 
 			if uv0.time_ >= slot5 + slot6 and uv0.time_ < slot5 + slot6 + slot0 then
 				slot7 = Color.New(0, 0, 0)
-				slot7.a = 1
+				uv0.mask_.enabled = false
+				slot7.a = 0
 				uv0.mask_.color = slot7
 			end
 
@@ -11790,102 +11790,93 @@ return {
 		end
 
 		function slot1.onSingleLineUpdate_(slot0)
-			if uv0.bgs_.I05e == nil then
-				slot2 = Object.Instantiate(uv0.paintGo_)
-				slot2:GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas("Textures/Story/Background/" .. slot1)
-				slot2.name = slot1
-				slot2.transform.parent = uv0.stage_.transform
-				slot2.transform.localPosition = Vector3.New(0, 100, 0)
-				uv0.bgs_[slot1] = slot2
-			end
+			if 0 < uv0.time_ and uv0.time_ <= slot1 + slot0 then
+				slot2 = manager.ui.mainCamera.transform.localPosition
+				slot4 = uv0.bgs_.I05e
+				slot4.transform.localPosition = Vector3.New(0, 0, 10) + Vector3.New(slot2.x, slot2.y, 0)
+				slot4.transform.localEulerAngles = Vector3(0, 0, 0)
 
-			if 0 < uv0.time_ and uv0.time_ <= slot2 + slot0 then
-				slot3 = manager.ui.mainCamera.transform.localPosition
-				slot5 = uv0.bgs_.I05e
-				slot5.transform.localPosition = Vector3.New(0, 0, 10) + Vector3.New(slot3.x, slot3.y, 0)
-				slot5.transform.localEulerAngles = Vector3(0, 0, 0)
-
-				if slot5:GetComponent("SpriteRenderer") and slot6.sprite then
-					slot9 = manager.ui.mainCameraCom_
-					slot10 = 2 * (slot5.transform.localPosition - slot3).z * Mathf.Tan(slot9.fieldOfView * 0.5 * Mathf.Deg2Rad)
-					slot16 = slot10 * slot9.aspect / slot6.sprite.bounds.size.x > slot10 / slot6.sprite.bounds.size.y and slot14 or slot15
-					slot5.transform.localScale = Vector3.New(slot16, slot16, 0)
+				if slot4:GetComponent("SpriteRenderer") and slot5.sprite then
+					slot8 = manager.ui.mainCameraCom_
+					slot9 = 2 * (slot4.transform.localPosition - slot2).z * Mathf.Tan(slot8.fieldOfView * 0.5 * Mathf.Deg2Rad)
+					slot15 = slot9 * slot8.aspect / slot5.sprite.bounds.size.x > slot9 / slot5.sprite.bounds.size.y and slot13 or slot14
+					slot4.transform.localScale = Vector3.New(slot15, slot15, 0)
 				end
 
-				for slot10, slot11 in pairs(uv0.bgs_) do
-					if slot10 ~= "I05e" then
-						slot11.transform.localPosition = Vector3.New(0, 100, 0)
+				for slot9, slot10 in pairs(uv0.bgs_) do
+					if slot9 ~= "I05e" then
+						slot10.transform.localPosition = Vector3.New(0, 100, 0)
 					end
 				end
 			end
 
-			if 0 < uv0.time_ and uv0.time_ <= slot3 + slot0 then
+			if 0 < uv0.time_ and uv0.time_ <= slot2 + slot0 then
 				uv0.mask_.enabled = true
 				uv0.mask_.raycastTarget = true
 
 				uv0:SetGaussion(false)
 			end
 
-			slot4 = 2
+			slot3 = 2
 
-			if slot3 <= uv0.time_ and uv0.time_ < slot3 + slot4 then
-				slot6 = Color.New(0, 0, 0)
-				slot6.a = Mathf.Lerp(1, 0, (uv0.time_ - slot3) / slot4)
-				uv0.mask_.color = slot6
-			end
-
-			if uv0.time_ >= slot3 + slot4 and uv0.time_ < slot3 + slot4 + slot0 then
+			if slot2 <= uv0.time_ and uv0.time_ < slot2 + slot3 then
 				slot5 = Color.New(0, 0, 0)
-				uv0.mask_.enabled = false
-				slot5.a = 0
+				slot5.a = Mathf.Lerp(1, 0, (uv0.time_ - slot2) / slot3)
 				uv0.mask_.color = slot5
 			end
 
-			slot6 = 1
+			if uv0.time_ >= slot2 + slot3 and uv0.time_ < slot2 + slot3 + slot0 then
+				slot4 = Color.New(0, 0, 0)
+				uv0.mask_.enabled = false
+				slot4.a = 0
+				uv0.mask_.color = slot4
+			end
 
-			if 0 < uv0.time_ and uv0.time_ <= slot5 + slot0 then
+			slot5 = 1
+
+			if 0 < uv0.time_ and uv0.time_ <= slot4 + slot0 then
 				uv0:AudioAction("play", "effect", "se_story_16", "se_story_16_thunder02", "")
 			end
 
-			slot8 = 1
+			slot7 = 1
 
-			if 0 < uv0.time_ and uv0.time_ <= slot7 + slot0 then
+			if 0 < uv0.time_ and uv0.time_ <= slot6 + slot0 then
 				uv0:AudioAction("play", "effect", "se_story_16", "se_story_16_rain01_loop", "")
 			end
 
-			slot9 = manager.ui.mainCamera.transform
+			slot8 = manager.ui.mainCamera.transform
 
-			if 0.999999999999999 < uv0.time_ and uv0.time_ <= slot10 + slot0 then
+			if 0.999999999999999 < uv0.time_ and uv0.time_ <= slot9 + slot0 then
 				if not uv0.var_.effectI05exiayula1 then
-					slot11 = Object.Instantiate(Asset.Load("Effect/Scene/fx_raindrop"))
-					slot11.name = "xiayula1"
-					uv0.var_.effectI05exiayula1 = slot11
+					slot10 = Object.Instantiate(Asset.Load("Effect/Scene/fx_raindrop"))
+					slot10.name = "xiayula1"
+					uv0.var_.effectI05exiayula1 = slot10
 				end
 
-				if slot9.Find(slot9, "") then
-					slot11.transform.parent = slot12
+				if slot8.Find(slot8, "") then
+					slot10.transform.parent = slot11
 				else
-					slot11.transform.parent = slot9
+					slot10.transform.parent = slot8
 				end
 
-				slot11.transform.localPosition = Vector3.New(0, 0, 0)
-				slot11.transform.localRotation = Quaternion.Euler(0, 0, 0)
+				slot10.transform.localPosition = Vector3.New(0, 0, 0)
+				slot10.transform.localRotation = Quaternion.Euler(0, 0, 0)
 			end
 
-			if 0 < uv0.time_ and uv0.time_ <= slot11 + slot0 then
+			if 0 < uv0.time_ and uv0.time_ <= slot10 + slot0 then
 				SetActive(uv0.dialog_, false)
 				SetActive(uv0.allBtn_.gameObject, true)
 				SetActive(uv0.btns_, true)
 				manager.video:Dispose()
 			end
 
-			slot12 = 0.0166666666666667
+			slot11 = 0.0166666666666667
 
-			if slot11 <= uv0.time_ and uv0.time_ < slot11 + slot12 then
+			if slot10 <= uv0.time_ and uv0.time_ < slot10 + slot11 then
 				-- Nothing
 			end
 
-			if uv0.time_ >= slot11 + slot12 and uv0.time_ < slot11 + slot12 + slot0 then
+			if uv0.time_ >= slot10 + slot11 and uv0.time_ < slot10 + slot11 + slot0 then
 				-- Nothing
 			end
 
@@ -11893,21 +11884,21 @@ return {
 				uv0.dialog_:SetActive(false)
 			end
 
-			slot14 = 1.3
+			slot13 = 1.3
 
-			if 2 < uv0.time_ and uv0.time_ <= slot13 + slot0 then
+			if 2 < uv0.time_ and uv0.time_ <= slot12 + slot0 then
 				uv0.dialog_:SetActive(true)
 
 				uv0.dialog_.transform.localScale = Vector3(0.8, 0.95, 1)
 
 				LeanTween.scale(uv0.dialog_, Vector3.one, 0.2)
 
-				slot15 = LeanTween.value(uv0.dialog_, 0, 1, 0.3)
+				slot14 = LeanTween.value(uv0.dialog_, 0, 1, 0.3)
 
-				slot15:setOnUpdate(LuaHelper.FloatAction(function (slot0)
+				slot14:setOnUpdate(LuaHelper.FloatAction(function (slot0)
 					uv0.dialogCg_.alpha = slot0
 				end))
-				slot15:setOnComplete(System.Action(function ()
+				slot14:setOnComplete(System.Action(function ()
 					LeanTween.cancel(uv0.dialog_)
 					uv1:setOnUpdate(nil):setOnComplete(nil)
 				end))
@@ -11930,21 +11921,21 @@ return {
 				uv0:RecordContent(uv0.text_.text)
 			end
 
-			slot13 = slot13 + 0.3
-			slot16 = uv0:FormatText(StoryWordCfg[116431117].content)
-			slot18 = string.split(slot16, ".")
+			slot12 = slot12 + 0.3
+			slot15 = uv0:FormatText(StoryWordCfg[116431117].content)
+			slot17 = string.split(slot15, ".")
 
-			if #string.split(slot16, "\n") >= 4 or #slot18 >= 4 then
-				slot14 = slot14 * 3
+			if #string.split(slot15, "\n") >= 4 or #slot17 >= 4 then
+				slot13 = slot13 * 3
 			end
 
-			if slot13 <= uv0.time_ and uv0.time_ < slot13 + slot14 then
-				uv0.typewritter.percent = (uv0.time_ - slot13) / slot14
+			if slot12 <= uv0.time_ and uv0.time_ < slot12 + slot13 then
+				uv0.typewritter.percent = (uv0.time_ - slot12) / slot13
 
 				uv0.typewritter:SetDirty()
 			end
 
-			if uv0.time_ >= slot13 + slot14 and uv0.time_ < slot13 + slot14 + slot0 then
+			if uv0.time_ >= slot12 + slot13 and uv0.time_ < slot12 + slot13 + slot0 then
 				uv0.typewritter.percent = 1
 
 				uv0.typewritter:SetDirty()

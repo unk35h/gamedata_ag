@@ -78,8 +78,8 @@ function slot0.LaunchBattle(slot0, slot1, slot2)
 		battle_vs = LuaForUtil.GetBattleVersion(),
 		mimir_info = {
 			{
-				mimir_id = ChipData:GetCurEnabledChipManagerID(),
-				chip_list = ChipData:GetCurChipManagerList(ChipData:GetCurEnabledChipManagerID())
+				mimir_id = slot1:GetChipManagerID(),
+				chip_list = slot1:GetChipList()
 			}
 		}
 	}, 54031, function (slot0)

@@ -4718,6 +4718,1569 @@ return {
 			}
 		}
 	},
+	[4010151] = {
+		ai_level = 4,
+		name = "轮回节点-1",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010085",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010151,
+		id = 4010151,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			40365
+		},
+		affix_type = {
+			{
+				366,
+				1,
+				0
+			},
+			{
+				167,
+				1,
+				0
+			}
+		}
+	},
+	[4010152] = {
+		ai_level = 4,
+		name = "轮回节点-2",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010081",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010152,
+		id = 4010152,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			41174
+		},
+		affix_type = {
+			{
+				365,
+				2,
+				0
+			},
+			{
+				167,
+				1,
+				0
+			}
+		}
+	},
+	[4010153] = {
+		ai_level = 4,
+		name = "轮回节点-3",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010082",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010153,
+		id = 4010153,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			41996
+		},
+		affix_type = {
+			{
+				367,
+				2,
+				0
+			},
+			{
+				153,
+				1,
+				0
+			}
+		}
+	},
+	[4010154] = {
+		ai_level = 4,
+		name = "轮回节点-4",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010083",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010154,
+		id = 4010154,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			42836
+		},
+		affix_type = {
+			{
+				368,
+				2,
+				0
+			},
+			{
+				154,
+				1,
+				0
+			}
+		}
+	},
+	[4010155] = {
+		ai_level = 1,
+		name = "轮回节点-5",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4011016",
+		background_1 = "difficult_2",
+		affix_type_in_map = "",
+		tips = "历战数据推演进程正常，开始投放精英敌方目标。",
+		drop_lib_id = 4010155,
+		id = 4010155,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			28158
+		},
+		affix_type = {
+			{
+				122,
+				3,
+				0
+			},
+			{
+				164,
+				2,
+				0
+			},
+			{
+				125,
+				1,
+				0
+			}
+		}
+	},
+	[4010156] = {
+		ai_level = 4,
+		name = "轮回节点-6",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010084",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010156,
+		id = 4010156,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			43694
+		},
+		affix_type = {
+			{
+				369,
+				2,
+				0
+			},
+			{
+				164,
+				1,
+				0
+			}
+		}
+	},
+	[4010157] = {
+		ai_level = 4,
+		name = "轮回节点-7",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010085",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010157,
+		id = 4010157,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			44565
+		},
+		affix_type = {
+			{
+				370,
+				2,
+				0
+			},
+			{
+				164,
+				1,
+				0
+			}
+		}
+	},
+	[4010158] = {
+		ai_level = 4,
+		name = "轮回节点-8",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010086",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010158,
+		id = 4010158,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			45458
+		},
+		affix_type = {
+			{
+				371,
+				2,
+				0
+			},
+			{
+				141,
+				1,
+				0
+			}
+		}
+	},
+	[4010159] = {
+		ai_level = 4,
+		name = "轮回节点-9",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010087",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010159,
+		id = 4010159,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			46368
+		},
+		affix_type = {
+			{
+				372,
+				2,
+				0
+			},
+			{
+				122,
+				1,
+				0
+			}
+		}
+	},
+	[4010160] = {
+		ai_level = 1,
+		name = "轮回节点-10",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4012016",
+		background_1 = "difficult_3",
+		affix_type_in_map = "",
+		tips = "警告！历战空间承载能力接近峰值，最高优先级敌方目标即将出现！",
+		drop_lib_id = 4010160,
+		id = 4010160,
+		level = 80,
+		attribute_factor = {
+			1200,
+			1000,
+			29960
+		},
+		affix_type = {
+			{
+				147,
+				1,
+				0
+			},
+			{
+				150,
+				1,
+				0
+			},
+			{
+				153,
+				1,
+				0
+			}
+		}
+	},
+	[4010161] = {
+		ai_level = 4,
+		name = "轮回节点-1",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010088",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010161,
+		id = 4010161,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			46132
+		},
+		affix_type = {
+			{
+				366,
+				1,
+				0
+			},
+			{
+				167,
+				1,
+				0
+			}
+		}
+	},
+	[4010162] = {
+		ai_level = 4,
+		name = "轮回节点-2",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010089",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010162,
+		id = 4010162,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			47056
+		},
+		affix_type = {
+			{
+				365,
+				2,
+				0
+			},
+			{
+				167,
+				1,
+				0
+			}
+		}
+	},
+	[4010163] = {
+		ai_level = 4,
+		name = "轮回节点-3",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010090",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010163,
+		id = 4010163,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			47996
+		},
+		affix_type = {
+			{
+				367,
+				2,
+				0
+			},
+			{
+				153,
+				1,
+				0
+			}
+		}
+	},
+	[4010164] = {
+		ai_level = 4,
+		name = "轮回节点-4",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010091",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010164,
+		id = 4010164,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			48956
+		},
+		affix_type = {
+			{
+				368,
+				2,
+				0
+			},
+			{
+				154,
+				1,
+				0
+			}
+		}
+	},
+	[4010165] = {
+		ai_level = 1,
+		name = "轮回节点-5",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4011017",
+		background_1 = "difficult_2",
+		affix_type_in_map = "",
+		tips = "历战数据推演进程正常，开始投放精英敌方目标。",
+		drop_lib_id = 4010165,
+		id = 4010165,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			32381
+		},
+		affix_type = {
+			{
+				141,
+				4,
+				0
+			},
+			{
+				123,
+				1,
+				0
+			},
+			{
+				143,
+				1,
+				0
+			}
+		}
+	},
+	[4010166] = {
+		ai_level = 4,
+		name = "轮回节点-6",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010092",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010166,
+		id = 4010166,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			49936
+		},
+		affix_type = {
+			{
+				369,
+				2,
+				0
+			},
+			{
+				164,
+				1,
+				0
+			}
+		}
+	},
+	[4010167] = {
+		ai_level = 4,
+		name = "轮回节点-7",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010093",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010167,
+		id = 4010167,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			50932
+		},
+		affix_type = {
+			{
+				370,
+				2,
+				0
+			},
+			{
+				164,
+				1,
+				0
+			}
+		}
+	},
+	[4010168] = {
+		ai_level = 4,
+		name = "轮回节点-8",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010094",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010168,
+		id = 4010168,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			51952
+		},
+		affix_type = {
+			{
+				371,
+				2,
+				0
+			},
+			{
+				141,
+				1,
+				0
+			}
+		}
+	},
+	[4010169] = {
+		ai_level = 4,
+		name = "轮回节点-9",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010095",
+		background_1 = "difficult_1",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010169,
+		id = 4010169,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			52992
+		},
+		affix_type = {
+			{
+				372,
+				2,
+				0
+			},
+			{
+				122,
+				1,
+				0
+			}
+		},
+		affix_type_in_map = {
+			{
+				146,
+				1,
+				0
+			}
+		}
+	},
+	[4010170] = {
+		ai_level = 1,
+		name = "轮回节点-10",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4012017",
+		background_1 = "difficult_3",
+		affix_type_in_map = "",
+		tips = "警告！历战空间承载能力接近峰值，最高优先级敌方目标即将出现！",
+		drop_lib_id = 4010170,
+		id = 4010170,
+		level = 80,
+		attribute_factor = {
+			1200,
+			1000,
+			31920
+		},
+		affix_type = {
+			{
+				215,
+				1,
+				0
+			},
+			{
+				281,
+				1,
+				0
+			},
+			{
+				145,
+				1,
+				0
+			}
+		}
+	},
+	[4010171] = {
+		ai_level = 4,
+		name = "轮回节点-1",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010087",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010171,
+		id = 4010171,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			50745
+		},
+		affix_type = {
+			{
+				366,
+				1,
+				0
+			},
+			{
+				167,
+				1,
+				0
+			}
+		}
+	},
+	[4010172] = {
+		ai_level = 4,
+		name = "轮回节点-2",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010085",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010172,
+		id = 4010172,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			51761
+		},
+		affix_type = {
+			{
+				365,
+				2,
+				0
+			},
+			{
+				167,
+				1,
+				0
+			}
+		}
+	},
+	[4010173] = {
+		ai_level = 4,
+		name = "轮回节点-3",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010083",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010173,
+		id = 4010173,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			52795
+		},
+		affix_type = {
+			{
+				367,
+				2,
+				0
+			},
+			{
+				153,
+				1,
+				0
+			}
+		}
+	},
+	[4010174] = {
+		ai_level = 4,
+		name = "轮回节点-4",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010081",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010174,
+		id = 4010174,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			53851
+		},
+		affix_type = {
+			{
+				368,
+				2,
+				0
+			},
+			{
+				154,
+				1,
+				0
+			}
+		}
+	},
+	[4010175] = {
+		ai_level = 1,
+		name = "轮回节点-5",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4011018",
+		background_1 = "difficult_2",
+		affix_type_in_map = "",
+		tips = "历战数据推演进程正常，开始投放精英敌方目标。",
+		drop_lib_id = 4010175,
+		id = 4010175,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			36605
+		},
+		affix_type = {
+			{
+				139,
+				1,
+				0
+			},
+			{
+				149,
+				1,
+				0
+			},
+			{
+				145,
+				1,
+				0
+			}
+		}
+	},
+	[4010176] = {
+		ai_level = 4,
+		name = "轮回节点-6",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010086",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010176,
+		id = 4010176,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			54929
+		},
+		affix_type = {
+			{
+				369,
+				2,
+				0
+			},
+			{
+				164,
+				1,
+				0
+			}
+		}
+	},
+	[4010177] = {
+		ai_level = 4,
+		name = "轮回节点-7",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010084",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010177,
+		id = 4010177,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			56025
+		},
+		affix_type = {
+			{
+				370,
+				2,
+				0
+			},
+			{
+				164,
+				1,
+				0
+			}
+		}
+	},
+	[4010178] = {
+		ai_level = 4,
+		name = "轮回节点-8",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010082",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010178,
+		id = 4010178,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			57147
+		},
+		affix_type = {
+			{
+				371,
+				2,
+				0
+			},
+			{
+				141,
+				1,
+				0
+			}
+		}
+	},
+	[4010179] = {
+		ai_level = 4,
+		name = "轮回节点-9",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010081",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010179,
+		id = 4010179,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			58291
+		},
+		affix_type = {
+			{
+				372,
+				2,
+				0
+			},
+			{
+				122,
+				1,
+				0
+			}
+		}
+	},
+	[4010180] = {
+		ai_level = 1,
+		name = "轮回节点-10",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4012018",
+		background_1 = "difficult_3",
+		affix_type_in_map = "",
+		tips = "警告！历战空间承载能力接近峰值，最高优先级敌方目标即将出现！",
+		drop_lib_id = 4010180,
+		id = 4010180,
+		level = 80,
+		attribute_factor = {
+			1200,
+			1000,
+			33880
+		},
+		affix_type = {
+			{
+				140,
+				1,
+				0
+			},
+			{
+				127,
+				1,
+				0
+			},
+			{
+				284,
+				1,
+				0
+			}
+		}
+	},
+	[4010181] = {
+		ai_level = 4,
+		name = "轮回节点-1",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010089",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010181,
+		id = 4010181,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			55358
+		},
+		affix_type = {
+			{
+				366,
+				1,
+				0
+			},
+			{
+				167,
+				1,
+				0
+			}
+		}
+	},
+	[4010182] = {
+		ai_level = 4,
+		name = "轮回节点-2",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010088",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010182,
+		id = 4010182,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			56467
+		},
+		affix_type = {
+			{
+				365,
+				2,
+				0
+			},
+			{
+				167,
+				1,
+				0
+			}
+		}
+	},
+	[4010183] = {
+		ai_level = 4,
+		name = "轮回节点-3",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010091",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010183,
+		id = 4010183,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			58595
+		},
+		affix_type = {
+			{
+				367,
+				2,
+				0
+			},
+			{
+				153,
+				1,
+				0
+			}
+		}
+	},
+	[4010184] = {
+		ai_level = 4,
+		name = "轮回节点-4",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010093",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010184,
+		id = 4010184,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			60747
+		},
+		affix_type = {
+			{
+				368,
+				2,
+				0
+			},
+			{
+				154,
+				1,
+				0
+			}
+		}
+	},
+	[4010185] = {
+		ai_level = 1,
+		name = "轮回节点-5",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4011019",
+		background_1 = "difficult_2",
+		tips = "历战数据推演进程正常，开始投放精英敌方目标。",
+		drop_lib_id = 4010185,
+		id = 4010185,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			41829
+		},
+		affix_type = {
+			{
+				208,
+				1,
+				0
+			}
+		},
+		affix_type_in_map = {
+			{
+				132,
+				1,
+				0
+			},
+			{
+				120,
+				1,
+				0
+			}
+		}
+	},
+	[4010186] = {
+		ai_level = 4,
+		name = "轮回节点-6",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010095",
+		background_1 = "difficult_1",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010186,
+		id = 4010186,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			52923
+		},
+		affix_type = {
+			{
+				369,
+				2,
+				0
+			},
+			{
+				164,
+				1,
+				0
+			}
+		},
+		affix_type_in_map = {
+			{
+				146,
+				1,
+				0
+			}
+		}
+	},
+	[4010187] = {
+		ai_level = 4,
+		name = "轮回节点-7",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010094",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010187,
+		id = 4010187,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			63118
+		},
+		affix_type = {
+			{
+				370,
+				2,
+				0
+			},
+			{
+				164,
+				1,
+				0
+			}
+		}
+	},
+	[4010188] = {
+		ai_level = 4,
+		name = "轮回节点-8",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010092",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010188,
+		id = 4010188,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			64342
+		},
+		affix_type = {
+			{
+				371,
+				2,
+				0
+			},
+			{
+				141,
+				1,
+				0
+			}
+		}
+	},
+	[4010189] = {
+		ai_level = 4,
+		name = "轮回节点-9",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010090",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010189,
+		id = 4010189,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			65590
+		},
+		affix_type = {
+			{
+				372,
+				2,
+				0
+			},
+			{
+				122,
+				1,
+				0
+			}
+		}
+	},
+	[4010190] = {
+		ai_level = 1,
+		name = "轮回节点-10",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4012019",
+		background_1 = "difficult_3",
+		affix_type_in_map = "",
+		tips = "警告！历战空间承载能力接近峰值，最高优先级敌方目标即将出现！",
+		drop_lib_id = 4010190,
+		id = 4010190,
+		level = 80,
+		attribute_factor = {
+			1200,
+			1000,
+			37574
+		},
+		affix_type = {
+			{
+				214,
+				1,
+				0
+			},
+			{
+				140,
+				1,
+				0
+			},
+			{
+				209,
+				1,
+				0
+			}
+		}
+	},
+	[4010191] = {
+		ai_level = 4,
+		name = "轮回节点-1",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010085",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010191,
+		id = 4010191,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			70198
+		},
+		affix_type = {
+			{
+				366,
+				1,
+				0
+			},
+			{
+				167,
+				1,
+				0
+			}
+		}
+	},
+	[4010192] = {
+		ai_level = 4,
+		name = "轮回节点-2",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010081",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010192,
+		id = 4010192,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			76584
+		},
+		affix_type = {
+			{
+				365,
+				2,
+				0
+			},
+			{
+				167,
+				1,
+				0
+			}
+		}
+	},
+	[4010193] = {
+		ai_level = 4,
+		name = "轮回节点-3",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010082",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010193,
+		id = 4010193,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			78994
+		},
+		affix_type = {
+			{
+				367,
+				2,
+				0
+			},
+			{
+				153,
+				1,
+				0
+			}
+		}
+	},
+	[4010194] = {
+		ai_level = 4,
+		name = "轮回节点-4",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010083",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010194,
+		id = 4010194,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			80434
+		},
+		affix_type = {
+			{
+				368,
+				2,
+				0
+			},
+			{
+				154,
+				1,
+				0
+			}
+		}
+	},
+	[4010195] = {
+		ai_level = 1,
+		name = "轮回节点-5",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4011020",
+		background_1 = "difficult_2",
+		tips = "历战数据推演进程正常，开始投放精英敌方目标。",
+		affix_type = "",
+		drop_lib_id = 4010195,
+		id = 4010195,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			82460
+		},
+		affix_type_in_map = {
+			{
+				147,
+				1,
+				0
+			},
+			{
+				150,
+				1,
+				0
+			},
+			{
+				153,
+				1,
+				0
+			}
+		}
+	},
+	[4010196] = {
+		ai_level = 4,
+		name = "轮回节点-6",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010088",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010196,
+		id = 4010196,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			85904
+		},
+		affix_type = {
+			{
+				369,
+				2,
+				0
+			},
+			{
+				164,
+				1,
+				0
+			}
+		}
+	},
+	[4010197] = {
+		ai_level = 4,
+		name = "轮回节点-7",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010087",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010197,
+		id = 4010197,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			90398
+		},
+		affix_type = {
+			{
+				370,
+				2,
+				0
+			},
+			{
+				164,
+				1,
+				0
+			}
+		}
+	},
+	[4010198] = {
+		ai_level = 4,
+		name = "轮回节点-8",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010086",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010198,
+		id = 4010198,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			93928
+		},
+		affix_type = {
+			{
+				371,
+				2,
+				0
+			},
+			{
+				141,
+				1,
+				0
+			}
+		}
+	},
+	[4010199] = {
+		ai_level = 4,
+		name = "轮回节点-9",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4010085",
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		tips = "历战空间基础环境构筑完成，开始投放普通敌方目标。",
+		drop_lib_id = 4010199,
+		id = 4010199,
+		level = 80,
+		attribute_factor = {
+			1000,
+			1000,
+			95488
+		},
+		affix_type = {
+			{
+				372,
+				2,
+				0
+			},
+			{
+				122,
+				1,
+				0
+			}
+		}
+	},
+	[4010200] = {
+		ai_level = 1,
+		name = "轮回节点-10",
+		recommend_level = 0,
+		monster_level = 80,
+		map = "4012020",
+		background_1 = "difficult_3",
+		affix_type_in_map = "",
+		tips = "警告！历战空间承载能力接近峰值，最高优先级敌方目标即将出现！",
+		drop_lib_id = 4010200,
+		id = 4010200,
+		level = 80,
+		attribute_factor = {
+			1200,
+			1000,
+			41268
+		},
+		affix_type = {
+			{
+				167,
+				4,
+				0
+			},
+			{
+				164,
+				2,
+				0
+			},
+			{
+				149,
+				1,
+				0
+			}
+		}
+	},
 	all = {
 		4010001,
 		4010002,
@@ -4868,6 +6431,56 @@ return {
 		4010147,
 		4010148,
 		4010149,
-		4010150
+		4010150,
+		4010151,
+		4010152,
+		4010153,
+		4010154,
+		4010155,
+		4010156,
+		4010157,
+		4010158,
+		4010159,
+		4010160,
+		4010161,
+		4010162,
+		4010163,
+		4010164,
+		4010165,
+		4010166,
+		4010167,
+		4010168,
+		4010169,
+		4010170,
+		4010171,
+		4010172,
+		4010173,
+		4010174,
+		4010175,
+		4010176,
+		4010177,
+		4010178,
+		4010179,
+		4010180,
+		4010181,
+		4010182,
+		4010183,
+		4010184,
+		4010185,
+		4010186,
+		4010187,
+		4010188,
+		4010189,
+		4010190,
+		4010191,
+		4010192,
+		4010193,
+		4010194,
+		4010195,
+		4010196,
+		4010197,
+		4010198,
+		4010199,
+		4010200
 	}
 }

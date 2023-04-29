@@ -138,37 +138,5 @@ return {
 	["PGT-AN10"] = {
 		is_support = 1,
 		name = "PGT-AN10"
-	},
-	["iPhone15,3"] = {
-		is_support = 1,
-		name = "iPhone15,3"
-	},
-	["iPhone15,2"] = {
-		is_support = 1,
-		name = "iPhone15,2"
-	},
-	["iPhone14,8"] = {
-		is_support = 1,
-		name = "iPhone14,8"
-	},
-	["iPhone14,7"] = {
-		is_support = 1,
-		name = "iPhone14,7"
-	},
-	["iPhone14,3"] = {
-		is_support = 1,
-		name = "iPhone14,3"
-	},
-	["iPhone14,2"] = {
-		is_support = 1,
-		name = "iPhone14,2"
-	},
-	["iPhone14,5"] = {
-		is_support = 1,
-		name = "iPhone14,5"
-	},
-	["iPhone14,4"] = {
-		is_support = 1,
-		name = "iPhone14,4"
 	}
 }

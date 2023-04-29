@@ -37,7 +37,7 @@ function slot0.AddUIListeners(slot0)
 		if #MythicData:GetCurLevelIdList() > 1 then
 			gameContext:Go("/mythicFinalTeamView")
 		else
-			uv0:Go("/sectionSelectHero", {
+			uv0:Go("/sectionSelectHeroMythicFinalView", {
 				section = slot0[1],
 				sectionType = BattleConst.STAGE_TYPE_NEW.MYTHIC_FINAL
 			})

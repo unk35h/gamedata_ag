@@ -26,6 +26,7 @@ function slot0.InitUI(slot0)
 	slot0:BindCfgUI()
 
 	slot0.clickhandler = handler(slot0, slot0.PopInfo)
+	slot0.clickLefthandler = handler(slot0, slot0.PopInfoLeft)
 end
 
 function slot0.AddUIListener(slot0)
@@ -160,6 +161,7 @@ end
 
 function slot0.IndexHeroItem(slot0, slot1, slot2)
 	slot2:SetData(slot0.polyhedronInfo, slot0.fight_hero_id_list[slot1])
+	slot2:RegistCallBack(slot0.clickLefthandler)
 end
 
 function slot0.IndexDifficultyItem(slot0, slot1, slot2)
@@ -181,7 +183,7 @@ function slot0.PopInfo(slot0, slot1, slot2, slot3, slot4)
 	slot0.m_desc.text = GetI18NText(slot2)
 
 	if slot4 then
-		slot0.m_levelText.text = slot4
+		slot0.m_levelText.text = "Lv" .. slot4
 	else
 		slot0.m_levelText.text = ""
 	end
@@ -189,7 +191,7 @@ function slot0.PopInfo(slot0, slot1, slot2, slot3, slot4)
 	LayoutRebuilder.ForceRebuildLayoutImmediate(slot0.m_textTrs)
 	LayoutRebuilder.ForceRebuildLayoutImmediate(slot0.m_contentTrs)
 
-	slot0.m_infoTrans.localPosition = slot0.m_infoParent:InverseTransformPoint(slot0.m_rightAdaptTrans_:TransformPoint(Vector3(-slot0.m_rightAdaptTrans_.rect.width, slot0.m_rightAdaptTrans_:InverseTransformPoint(slot3).y, 0)))
+	slot9 = slot0.m_infoParent:InverseTransformPoint(slot0.m_rightAdaptTrans_:TransformPoint(Vector3(-slot0.m_rightAdaptTrans_.rect.width, slot0.m_rightAdaptTrans_:InverseTransformPoint(slot3).y, 0)))
 	slot13 = 0
 
 	if slot0.m_infoParent.rect.height / 2 < -slot0.m_infoParent:InverseTransformPoint(slot0.m_bottom:TransformPoint(Vector3(0, 0, 0))).y then
@@ -197,6 +199,31 @@ function slot0.PopInfo(slot0, slot1, slot2, slot3, slot4)
 	end
 
 	slot0.m_infoTrans.localPosition = Vector3(slot9.x, slot9.y + slot13, slot9.z)
+end
+
+function slot0.PopInfoLeft(slot0, slot1, slot2, slot3, slot4)
+	SetActive(slot0.m_infoGo, true)
+
+	slot0.m_name.text = GetI18NText(slot1)
+	slot0.m_desc.text = GetI18NText(slot2)
+
+	if slot4 then
+		slot0.m_levelText.text = "Lv" .. slot4
+	else
+		slot0.m_levelText.text = ""
+	end
+
+	LayoutRebuilder.ForceRebuildLayoutImmediate(slot0.m_textTrs)
+	LayoutRebuilder.ForceRebuildLayoutImmediate(slot0.m_contentTrs)
+
+	slot0.m_infoTrans.localPosition = slot0.m_infoParent:InverseTransformPoint(slot0.m_leftTrans:TransformPoint(Vector3(slot0.m_leftTrans.rect.width + slot0.m_infoTrans.rect.width, slot0.m_leftTrans:InverseTransformPoint(slot3).y, 0)))
+	slot14 = 0
+
+	if slot0.m_infoParent.rect.height / 2 < -slot0.m_infoParent:InverseTransformPoint(slot0.m_bottom:TransformPoint(Vector3(0, 0, 0))).y then
+		slot14 = -slot12.y - slot13
+	end
+
+	slot0.m_infoTrans.localPosition = Vector3(slot10.x, slot10.y + slot14, slot10.z)
 end
 
 return slot0

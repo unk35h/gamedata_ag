@@ -177,7 +177,7 @@ function slot0.RefreshUI(slot0)
 	slot0.gridScroll_:StartScroll(#slot0.sortedList_)
 	slot0:RefreshRight(1)
 
-	slot0.curproposalText_.text = #slot0.sortedList_ .. "<color=#686868>/" .. GameSetting.equip_proposal_num_max.value[1] .. "</color>"
+	slot0.curproposalText_.text = #slot0.sortedList_ - (slot0.heroEquipProposal_ == 0 and 1 or 0) .. "<color=#686868>/" .. GameSetting.equip_proposal_num_max.value[1] .. "</color>"
 end
 
 function slot0.UpdateData(slot0)

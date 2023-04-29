@@ -126,6 +126,7 @@ function slot1.OnExit(slot0)
 
 	if slot0.curPage and slot0.curPage.OnExit then
 		slot0.curPage:OnExit()
+		slot0.curPage:SetActive(false)
 	end
 
 	slot0.lastPlayType_ = -1

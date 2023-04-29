@@ -24,6 +24,10 @@ function slot0.InitUI(slot0)
 
 	slot0.foreignEquipInfoView_ = ForeignEquipInfoView.New(slot0.foreignEquipInfoGo_)
 	slot0.infoViewCon_ = ControllerUtil.GetController(slot0.gameObject_.transform, "info")
+
+	if slot0.popPanelTrs_ ~= nil and slot0.handler_ and slot0.handler_.GetPopContainer then
+		slot0.popPanelTrs_.parent = slot0.handler_:GetPopContainer()
+	end
 end
 
 function slot0.AddUIListener(slot0)

@@ -346,7 +346,7 @@ return {
 		remark = "活动-奥西里斯每日任务",
 		unlock_condition = "",
 		activity_theme = 5,
-		activity_template = 5,
+		activity_template = 4,
 		sub_activity_list = {}
 	},
 	[514] = {
@@ -6809,11 +6809,11 @@ return {
 			141001
 		},
 		[5] = {
-			301,
-			513
+			301
 		},
 		[4] = {
 			300,
+			513,
 			514,
 			515,
 			61158,

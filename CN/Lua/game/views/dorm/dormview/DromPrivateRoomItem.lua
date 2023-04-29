@@ -225,6 +225,7 @@ function slot0.InitRoomPos(slot0, slot1)
 		for slot5 = 1, DormConst.DORM_FLOOR_ROOM_NUM do
 			slot0.item[slot5].oriIndex = slot5
 			slot0.item[slot5].index = slot5
+			slot0.item[slot5].roomID = DormitoryData:GetRoomIDByPosID(slot5 + DormConst.DORM_POS_ID_OFFSET + (slot0.floor - 1) * DormConst.DORM_FLOOR_ROOM_NUM)
 		end
 
 		slot0:AddUIListener()
@@ -248,8 +249,6 @@ function slot0.RefreshUI(slot0, slot1)
 	slot0:InitRoomPos(slot5)
 
 	for slot5 = 1, DormConst.DORM_FLOOR_ROOM_NUM do
-		slot0.item[slot5].roomID = DormitoryData:GetRoomIDByPosID(slot5 + DormConst.DORM_POS_ID_OFFSET + (slot0.floor - 1) * DormConst.DORM_FLOOR_ROOM_NUM)
-
 		slot0:RefreshRoomState(slot5)
 	end
 

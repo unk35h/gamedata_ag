@@ -142,6 +142,10 @@ function slot0.AddUIListeners(slot0)
 	slot0:AddBtnListener(slot0.userCenterBtn_, nil, function ()
 		NeedGameUserInfo()
 		GameToSDK.GoUserCenter()
+		SDKTools.SendMessageToSDK("direction", {
+			direction_type = 2,
+			direction_channel = 4
+		})
 	end)
 	slot0:AddBtnListener(slot0.illustratedhandbookBtn_, nil, function ()
 		JumpTools.GoToSystem("/illustratedMain", nil, ViewConst.SYSTEM_ID.ILLUSTRATION)

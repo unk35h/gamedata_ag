@@ -168,7 +168,7 @@ function slot1.InitCanteenMapData(slot0, slot1)
 
 	uv6 = manager.time:GetServerTime()
 
-	SendMessageManagerToSDK("backhome_dorm_opt", {
+	SDKTools.SendMessageToSDK("backhome_dorm_opt", {
 		backhome_type = 1,
 		opt_time = -1
 	})
@@ -905,7 +905,7 @@ function slot1.UpdataEntrustData(slot0)
 
 	for slot5, slot6 in pairs(uv0) do
 		if slot6.hero_list and #slot6.hero_list > 0 then
-			slot6.lastTime = slot0:GetEntrustLastTime(slot5)
+			slot0:GetEntrustLastTime(slot5)
 
 			if slot6.lastTime == 0 then
 				slot1 = true
@@ -1326,7 +1326,7 @@ function slot1.RefreshCanOrderFoodList(slot0)
 end
 
 function slot1.GetSignFoodTime(slot0, slot1)
-	return math.ceil(BackHomeCanteenFoodCfg[slot1].cost_time * (uv0[uv1][slot1].sellNum - uv0[uv1][slot1].soldNum) / ((100 + DormSkillData:GetSkillEffect(CanteenConst.HeroSkillType.FoodCostQucik, nil, , BackHomeCanteenFoodCfg[slot1].cook_type)) / 100))
+	return math.ceil(BackHomeCanteenFoodCfg[slot1].cost_time * (uv0[uv1][slot1].sellNum - uv0[uv1][slot1].soldNum) * (100 - DormSkillData:GetSkillEffect(CanteenConst.HeroSkillType.FoodCostQucik, nil, , BackHomeCanteenFoodCfg[slot1].cook_type)) / 100)
 end
 
 function slot1.GetFoodUnitCost(slot0, slot1)
@@ -1558,7 +1558,7 @@ function slot1.Dispose(slot0)
 
 	uv6 = manager.time:GetServerTime()
 
-	SendMessageManagerToSDK("backhome_dorm_opt", {
+	SDKTools.SendMessageToSDK("backhome_dorm_opt", {
 		backhome_type = 1,
 		opt_time = uv6 - uv7
 	})

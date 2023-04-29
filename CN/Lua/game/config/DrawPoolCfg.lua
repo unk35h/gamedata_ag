@@ -1376,8 +1376,7 @@ UP修正者的变更不会影响修正者探测的保底。
 		optional_lists = "",
 		optional_detail = "",
 		detail_note = [[
-「玉龙吟风」活动探测开启。活动期间，<color=#FF9500>精准扩充</color>S级修正者<color=#FF9500>「青君·孟章」</color>以及A级修正者<color=#B67FE3>「沐风·恩利尔」</color>、<color=#B67FE3>「风行·赫尔墨斯」</color>、<color=#B67FE3>「荒獠·金固」</color>的探测获取概率<color=#FF9500>大幅提升</color>！
-精准扩充修正者始终可以在精准扩充探测中获取，但不会进入「修正者共鸣」常规探测。
+「玉龙吟风」活动探测开启。活动期间，S级修正者<color=#FF9500>「青君·孟章」</color>以及A级修正者<color=#B67FE3>「沐风·恩利尔」</color>、<color=#B67FE3>「风行·赫尔墨斯」</color>、<color=#B67FE3>「荒獠·金固」</color>的探测获取概率<color=#FF9500>大幅提升</color>！
 
 在「玉龙吟风」活动探测中，每<color=#FF9500>10</color>次探测必出<color=#FF9500>A</color>级或以上品质修正者，最多<color=#FF9500>70</color>次探测必出<color=#FF9500>S</color>级修正者。获得S级修正者时，已探测的次数将重置为0，并重新开始计算。当探测获得S级修正者时，有<color=#FF9500>50%</color>的概率为本期UP修正者<color=#FF9500>「青君·孟章」</color>。如果本次探测获得的S级修正者非本期UP的S级修正者，下次最多70次探测<color=#FF9500>必定</color>获得本期UP的S级修正者。
 当探测获得A级修正者时，有<color=#FF9500>90%</color>的概率为本期UP修正者<color=#B67FE3>「沐风·恩利尔」</color>、<color=#B67FE3>「风行·赫尔墨斯」</color>、<color=#B67FE3>「荒獠·金固」</color>中的一个（概率均等）。如果本次探测获得的A级修正者非本期UP的A级修正者，下次探测获得的A级修正者<color=#FF9500>必定</color>为本期UP的A级修正者。

@@ -51,4 +51,14 @@ function slot0.GetSevenDaySignInfo(slot0, slot1)
 	return uv0[slot1]
 end
 
+slot3 = 1
+
+function slot0.GetHistoryIndex(slot0)
+	return uv0
+end
+
+function slot0.SetHistoryIndex(slot0, slot1)
+	uv0 = slot1
+end
+
 return slot0

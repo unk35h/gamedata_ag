@@ -11674,7 +11674,7 @@ return {
 		}
 	},
 	[1011316] = {
-		monster_level = 0,
+		monster_level = 80,
 		name = "「游客」",
 		ai_level = 3,
 		hero_list = "",
@@ -11721,7 +11721,7 @@ return {
 		ai_level = 3,
 		hero_list = "",
 		map = "1011317",
-		background_1 = "J03",
+		background_1 = "J13",
 		line_text = "",
 		custom_lock_line = "",
 		drop_lib_id = 1011300,
@@ -11746,20 +11746,21 @@ return {
 			1011318
 		},
 		attribute_factor = {
-			600,
 			1000,
-			1600
+			1000,
+			19000
 		},
 		three_star_need = {
 			{
 				8
 			},
 			{
-				13
-			},
-			{
 				14,
 				1
+			},
+			{
+				4,
+				180
 			}
 		},
 		position = {
@@ -11772,7 +11773,7 @@ return {
 		}
 	},
 	[1011318] = {
-		monster_level = 0,
+		monster_level = 80,
 		name = "幻梦与苏醒",
 		ai_level = 3,
 		hero_list = "",
@@ -11819,7 +11820,7 @@ return {
 		ai_level = 3,
 		hero_list = "",
 		map = "1011319",
-		background_1 = "J03",
+		background_1 = "J16",
 		line_text = "",
 		custom_lock_line = "",
 		drop_lib_id = 1011300,
@@ -11844,20 +11845,21 @@ return {
 			1011320
 		},
 		attribute_factor = {
-			600,
 			1000,
-			1600
+			1000,
+			18000
 		},
 		three_star_need = {
 			{
 				8
 			},
 			{
-				13
-			},
-			{
 				14,
 				1
+			},
+			{
+				4,
+				180
 			}
 		},
 		position = {
@@ -11870,7 +11872,7 @@ return {
 		}
 	},
 	[1011320] = {
-		monster_level = 0,
+		monster_level = 80,
 		name = "话语",
 		ai_level = 3,
 		hero_list = "",
@@ -11941,20 +11943,21 @@ return {
 			1011322
 		},
 		attribute_factor = {
-			600,
+			500,
 			1000,
-			1600
+			1000
 		},
 		three_star_need = {
 			{
 				8
 			},
 			{
-				13
-			},
-			{
 				14,
 				1
+			},
+			{
+				4,
+				180
 			}
 		},
 		position = {
@@ -11981,7 +11984,7 @@ return {
 		}
 	},
 	[1011322] = {
-		monster_level = 0,
+		monster_level = 80,
 		name = "玉京闲游",
 		ai_level = 3,
 		hero_list = "",
@@ -12053,20 +12056,21 @@ return {
 			1011324
 		},
 		attribute_factor = {
-			600,
+			1300,
 			1000,
-			1600
+			42000
 		},
 		three_star_need = {
 			{
 				8
 			},
 			{
-				13
-			},
-			{
 				14,
 				1
+			},
+			{
+				4,
+				180
 			}
 		},
 		position = {
@@ -12108,20 +12112,21 @@ return {
 			1011325
 		},
 		attribute_factor = {
-			600,
 			1000,
-			1600
+			1000,
+			3750
 		},
 		three_star_need = {
 			{
 				8
 			},
 			{
-				13
-			},
-			{
 				14,
 				1
+			},
+			{
+				4,
+				180
 			}
 		},
 		position = {
@@ -12153,7 +12158,7 @@ return {
 		ai_level = 3,
 		hero_list = "",
 		map = "",
-		background_1 = "ST29a",
+		background_1 = "ST31a",
 		line_text = "",
 		is_revive = "",
 		custom_lock_line = "",

@@ -124,7 +124,10 @@ function slot0.OnEnter(slot0)
 
 	slot0.initCache = {}
 	slot0.heroCache = {}
-	slot0.heroIDList_ = nil
+
+	if slot0.params_.subType ~= PolyhedronConst.RANK_SUB_TYPE.HERO then
+		slot0.heroIDList_ = nil
+	end
 
 	slot0:RefreshGuildRankGo()
 	slot0:OnUpdate()

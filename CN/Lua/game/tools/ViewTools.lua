@@ -4,7 +4,8 @@ slot2 = {
 	"settlement",
 	"battlefailed",
 	"battleBossChallengeResult",
-	"battleMultipleResult"
+	"battleMultipleResult",
+	"battleChapterResult"
 }
 
 return {

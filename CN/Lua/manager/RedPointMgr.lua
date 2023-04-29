@@ -132,26 +132,29 @@ function slot0.Init(slot0)
 
 	for slot8, slot9 in pairs(HeroCfg.get_id_list_by_private[0]) do
 		table.insert(slot4, RedPointConst.HERO_ID .. slot9)
+		slot0:addGroup(RedPointConst.HERO_WEAPON .. slot9, {
+			RedPointConst.HERO_WEAPON_BREAK_ID .. slot9,
+			RedPointConst.WEAPON_MODULE_UNLOCK .. "_" .. slot9
+		})
 
-		slot11 = RedPointConst.HERO_WEAPON_BREAK_ID .. slot9
-		slot12 = RedPointConst.HERO_UNLOCK_ID .. slot9
-		slot13 = RedPointConst.HERO_PROPERTY_PAGE .. slot9
-		slot14 = RedPointConst.HERO_STAR_ID .. slot9
-		slot15 = RedPointConst.HERO_SKIN_ID .. slot9
-		slot16 = {}
+		slot14 = RedPointConst.HERO_UNLOCK_ID .. slot9
+		slot15 = RedPointConst.HERO_PROPERTY_PAGE .. slot9
+		slot16 = RedPointConst.HERO_STAR_ID .. slot9
+		slot17 = RedPointConst.HERO_SKIN_ID .. slot9
+		slot18 = {}
 
-		for slot20, slot21 in pairs(SkinCfg.get_id_list_by_hero[slot9]) do
-			table.insert(slot16, RedPointConst.HERO_SKIN_ID_EXTEND .. slot21)
+		for slot22, slot23 in pairs(SkinCfg.get_id_list_by_hero[slot9]) do
+			table.insert(slot18, RedPointConst.HERO_SKIN_ID_EXTEND .. slot23)
 		end
 
-		slot0:addGroup(slot15, slot16)
-		slot0:addGroup(slot13, {
+		slot0:addGroup(slot17, slot18)
+		slot0:addGroup(slot15, {
 			heroBreakKey,
-			slot14,
-			slot15
+			slot16,
+			slot17
 		})
 		slot0:addGroup(slot10, {
-			slot13
+			slot15
 		})
 	end
 

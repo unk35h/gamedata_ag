@@ -42,6 +42,10 @@ function slot0.OnEnter(slot0)
 	slot0:RegisterEvents()
 	slot0:UpdateView()
 	slot0:UpdateFoodScroll()
+
+	slot0.canJump = true
+
+	slot0.moneyAnimator:Update(0)
 end
 
 function slot0.UpdateFoodScroll(slot0)
@@ -274,37 +278,47 @@ function slot0.AddUIListener(slot0)
 		})
 	end)
 	slot0:AddBtnListenerScale(slot0.shopbtnBtn_, nil, function ()
-		JumpTools.GoToSystem("/shop", {
-			shopId = 35,
-			hideHomeBtn = 1,
-			showShops = {
-				35
-			}
-		}, ViewConst.SYSTEM_ID.SHOP)
+		if uv0.canJump then
+			JumpTools.GoToSystem("/shop", {
+				shopId = 35,
+				hideHomeBtn = 1,
+				showShops = {
+					35
+				}
+			}, ViewConst.SYSTEM_ID.SHOP)
+		end
 	end)
 	slot0:AddBtnListenerScale(slot0.taskbtnBtn_, nil, function ()
-		if #CanteenData:CheckHasTimeOverEntrust() <= 0 then
-			CanteenData:ConsumeNotification(RedPointConst.CANTEEN_DISPATCH_NONE, CanteenData.RedPointType.Session)
-		end
+		if uv0.canJump then
+			if #CanteenData:CheckHasTimeOverEntrust() <= 0 then
+				CanteenData:ConsumeNotification(RedPointConst.CANTEEN_DISPATCH_NONE, CanteenData.RedPointType.Session)
+			end
 
-		JumpTools.OpenPageByJump("/dormTaskDispatchView")
+			JumpTools.OpenPageByJump("/dormTaskDispatchView")
+		end
 	end)
 	slot0:AddBtnListenerScale(slot0.signfoodBtn_, nil, function ()
-		if CanteenData:GetCanteenState() == DormEnum.RestaurantMode.RestaurantManual then
-			return
-		end
+		if uv0.canJump then
+			if CanteenData:GetCanteenState() == DormEnum.RestaurantMode.RestaurantManual then
+				return
+			end
 
-		JumpTools.OpenPageByJump("/chooseSignFoodView")
+			JumpTools.OpenPageByJump("/chooseSignFoodView")
+		end
 	end)
 	slot0:AddBtnListenerScale(slot0.recipebtnBtn_, nil, function ()
-		JumpTools.OpenPageByJump("/restaurantFoodMenuView", {
-			state = DormEnum.MenuType.foodMenu
-		})
+		if uv0.canJump then
+			JumpTools.OpenPageByJump("/restaurantFoodMenuView", {
+				state = DormEnum.MenuType.foodMenu
+			})
+		end
 	end)
 	slot0:AddBtnListenerScale(slot0.warehousebtnBtn_, nil, function ()
-		JumpTools.OpenPageByJump("/restaurantFoodMenuView", {
-			state = DormEnum.MenuType.bag
-		})
+		if uv0.canJump then
+			JumpTools.OpenPageByJump("/restaurantFoodMenuView", {
+				state = DormEnum.MenuType.bag
+			})
+		end
 	end)
 	slot0:AddBtnListenerScale(slot0.hidebtnBtn_, nil, function ()
 		if uv0.hideButtonController:GetSelectedState() == "false" then
@@ -326,15 +340,35 @@ function slot0.AddUIListener(slot0)
 			end
 
 			CanteenData:ReceiveCurPenEar()
+			uv0.moneyAnimator:Play("GetMoney", 0, 0)
+			manager.audio:PlayEffect("minigame_activity_spring_festival", "minigame_activity_spring_festival_coin", "")
+
+			uv0.canJump = false
+
+			if uv0.canJumpTimer then
+				uv0.canJumpTimer:Stop()
+
+				uv0.canJumpTimer = nil
+			end
+
+			uv0.canJumpTimer = Timer.New(function ()
+				uv0.canJump = true
+			end, 0.3, 1)
+
+			uv0.canJumpTimer:Start()
 		end
 	end)
 	slot0:AddBtnListenerScale(slot0.jobSetBtn_, nil, function ()
-		JumpTools.OpenPageByJump("/restaurantJobView")
-		CanteenData:ConsumeNotification(RedPointConst.CANTEEN_JOB_AVAILABLE, CanteenData.RedPointType.Session)
+		if uv0.canJump then
+			JumpTools.OpenPageByJump("/restaurantJobView")
+			CanteenData:ConsumeNotification(RedPointConst.CANTEEN_JOB_AVAILABLE, CanteenData.RedPointType.Session)
+		end
 	end)
 	slot0:AddBtnListenerScale(slot0.cookBtn_, nil, function ()
-		JumpTools.OpenPageByJump("/restaurantCookUpView")
-		CanteenData:ConsumeNotification(RedPointConst.CANTEEN_UPGRADE_AVAILABLE, CanteenData.RedPointType.Session)
+		if uv0.canJump then
+			JumpTools.OpenPageByJump("/restaurantCookUpView")
+			CanteenData:ConsumeNotification(RedPointConst.CANTEEN_UPGRADE_AVAILABLE, CanteenData.RedPointType.Session)
+		end
 	end)
 end
 
@@ -360,14 +394,14 @@ function slot0.RegisterEvents(slot0)
 		uv0:UpdataPopularity()
 	end)
 	slot0:RegistEventListener(CANTEEN_AUTO_GET_AWARD_SUCCESS, function ()
-		uv0.moneyAnimator:Play("GetMoney")
-		manager.audio:PlayEffect("minigame_activity_spring_festival", "minigame_activity_spring_festival_coin", "")
 	end)
 	slot0:RegistEventListener(CANTEEN_FUR_LEVEL, function (slot0)
-		JumpTools.OpenPageByJump("/restaurantCookUpView", {
-			type = BackHomeCanteenFurnitureCfg[BackHomeCanteenFurnitureIDCfg[slot0].type_id].type,
-			furEID = slot0
-		})
+		if uv0.canJump then
+			JumpTools.OpenPageByJump("/restaurantCookUpView", {
+				type = BackHomeCanteenFurnitureCfg[BackHomeCanteenFurnitureIDCfg[slot0].type_id].type,
+				furEID = slot0
+			})
+		end
 	end)
 end
 
@@ -505,6 +539,12 @@ function slot0.Dispose(slot0)
 		slot0.atuoAwardTrsTimer:Stop()
 
 		slot0.atuoAwardTrsTimer = nil
+	end
+
+	if slot0.canJumpTimer then
+		slot0.canJumpTimer:Stop()
+
+		slot0.canJumpTimer = nil
 	end
 
 	slot0.moneyAnimator = nil

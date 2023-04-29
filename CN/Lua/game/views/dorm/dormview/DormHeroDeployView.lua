@@ -22,6 +22,14 @@ function slot0.InitUI(slot0)
 	slot0.characterScroll = LuaList.New(handler(slot0, slot0.indexItem), slot0.uilistGo_, DormCharacterItem)
 end
 
+function slot1()
+	return Dorm.storage:GetData(DormCharacterManager.curGrabbingInfoNamespace, "eid")
+end
+
+function slot2(slot0)
+	return Dorm.storage:GetData(DormEnum.Namespace.EntityData, slot0).cfgID
+end
+
 function slot0.OnEnter(slot0)
 	slot0.roomID = DormData:GetCurrectSceneID()
 
@@ -36,20 +44,45 @@ function slot0.OnEnter(slot0)
 	slot0:RefreshDormHeroList()
 	slot0:RegisterEvents()
 	slot0:RefreshPlaceHeroNum()
+
+	slot0.postStartHandle = FrameTimer.New(function ()
+		uv0.curGrabbing = uv1()
+
+		if uv0.curGrabbing then
+			uv0.selHeroID = uv2(uv0.curGrabbing)
+
+			if table.indexof(uv0.dataList_, uv0.curGrabbing) then
+				uv0.characterScroll:ScrollToIndex(slot0, false, true, 0.2)
+			end
+
+			uv0.uilistGo_:GetComponent("ScrollRectEx").horizontal = false
+		else
+			uv0.selHeroID = nil
+			uv0.uilistGo_:GetComponent("ScrollRectEx").horizontal = true
+		end
+
+		uv0.characterScroll:Refresh()
+
+		uv0.postStartHandle = nil
+	end, 1, false)
+
+	slot0.postStartHandle:Start()
 end
 
 function slot0.OnExit(slot0)
 	slot0:RemoveAllEventListener()
+
+	if slot0.postStartHandle then
+		slot0.postStartHandle:Stop()
+
+		slot0.postStartHandle = nil
+	end
 end
 
 function slot0.indexItem(slot0, slot1, slot2)
 	slot2:RefreshUI(slot0.dataList_[slot1], slot0.selHeroID, slot1)
 	slot2:OnPointerDown(function (slot0)
-		if uv0.duringGrab then
-			uv0.selHeroID = nil
-		else
-			uv0.selHeroID = slot0
-		end
+		uv0.selHeroID = uv0.curGrabbing and uv1(uv0.curGrabbing) or slot0
 
 		uv0.characterScroll:Refresh()
 	end)
@@ -76,22 +109,22 @@ function slot0.RegisterEvents(slot0)
 		uv0.characterScroll:Refresh()
 		uv0:RefreshPlaceHeroNum()
 	end)
-	slot0:RegistEventListener(ON_DORM_CHARACTER_GRAB_RELEASED, function ()
-		uv0.uilistGo_:GetComponent("ScrollRectEx").horizontal = true
+	slot0:RegistEventListener(DORM_CUR_GRABBING_CHARACTER_CHANGE, function ()
+		uv0.curGrabbing = uv1()
 
-		DormTools:PlayDormAudioEffect(DormConst.DORM_AUDIO_EFFECT.DownCharacter)
+		if uv0.curGrabbing then
+			DormTools:PlayDormAudioEffect(DormConst.DORM_AUDIO_EFFECT.UpCharacter)
 
-		uv0.duringGrab = false
-	end)
-	slot0:RegistEventListener(DORM_DRAG_HERO_SUCCESS, function ()
+			uv0.selHeroID = uv2(uv0.curGrabbing)
+			uv0.uilistGo_:GetComponent("ScrollRectEx").horizontal = false
+		else
+			DormTools:PlayDormAudioEffect(DormConst.DORM_AUDIO_EFFECT.DownCharacter)
+
+			uv0.uilistGo_:GetComponent("ScrollRectEx").horizontal = true
+			uv0.curGrabbing = nil
+		end
+
 		uv0.characterScroll:Refresh()
-
-		uv0.uilistGo_:GetComponent("ScrollRectEx").horizontal = false
-		uv0.selHeroID = nil
-		uv0.duringGrab = true
-	end)
-	slot0:RegistEventListener(ON_DORM_CHARACTER_GRAB_STARTED, function ()
-		DormTools:PlayDormAudioEffect(DormConst.DORM_AUDIO_EFFECT.UpCharacter)
 	end)
 end
 
@@ -99,7 +132,7 @@ function slot0.AddUIListener(slot0)
 	slot1 = slot0.uilistSrex_.ExitScrollArea
 
 	slot1:AddListener(function ()
-		if uv0.duringGrab then
+		if uv0.curGrabbing then
 			return
 		end
 

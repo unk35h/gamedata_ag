@@ -10,12 +10,11 @@ end
 
 function slot0.Init(slot0)
 	slot0:InitUI()
-	slot0:AddUIListener()
 
 	slot0.giftList_ = LuaList.New(handler(slot0, slot0.IndexItem), slot0.listGo_, RechargeGiftItem)
 end
 
-function slot0.AddUIListener(slot0)
+function slot0.AddEventListeners(slot0)
 	slot0:RegistEventListener(SHOP_LIST_UPDATE, function (slot0)
 		if slot0 > 0 and slot0 == uv0.curShopId_ then
 			uv0:RefreshList()
@@ -31,6 +30,25 @@ end
 
 function slot0.InitUI(slot0)
 	slot0:BindCfgUI()
+end
+
+function slot0.SetActive(slot0, slot1)
+	SetActive(slot0.gameObject_, slot1)
+
+	if slot1 == true then
+		slot0:AddEventListeners()
+	else
+		slot0:RemoveAllEventListener()
+	end
+end
+
+function slot0.UpdateBar(slot0)
+	manager.windowBar:SwitchBar({
+		BACK_BAR,
+		HOME_BAR,
+		CurrencyConst.GetPlatformDiamondId()
+	})
+	manager.windowBar:SetBarCanAdd(CurrencyConst.GetPlatformDiamondId(), true)
 end
 
 function slot0.Dispose(slot0)
@@ -149,19 +167,6 @@ function slot0.OnShopBuyResult(slot0, slot1, slot2, slot3, slot4)
 	if slot1 == 0 then
 		slot0:RefreshList()
 	end
-end
-
-function slot0.SetActive(slot0, slot1)
-	SetActive(slot0.gameObject_, slot1)
-end
-
-function slot0.UpdateBar(slot0)
-	manager.windowBar:SwitchBar({
-		BACK_BAR,
-		HOME_BAR,
-		CurrencyConst.GetPlatformDiamondId()
-	})
-	manager.windowBar:SetBarCanAdd(CurrencyConst.GetPlatformDiamondId(), true)
 end
 
 return slot0

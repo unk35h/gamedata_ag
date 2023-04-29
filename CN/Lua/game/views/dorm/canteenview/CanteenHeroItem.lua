@@ -15,10 +15,13 @@ function slot0.InitUI(slot0)
 	slot0.selController = ControllerUtil.GetController(slot0.transform_, "state")
 	slot0.jobController = ControllerUtil.GetController(slot0.transform_, "work")
 	slot0.skillController = ControllerUtil.GetController(slot0.transform_, "skill")
+	slot0.onClickCom_ = slot0:FindCom("OnClickDownListener")
 end
 
 function slot0.AddUIListener(slot0)
-	slot0:AddBtnListenerScale(slot0.heroitemBtn_, nil, function ()
+	slot1 = slot0.onClickCom_.onValueChanged
+
+	slot1:AddListener(function ()
 		if uv0.selFunc then
 			uv0.selFunc(uv0.heroID)
 		end
@@ -111,6 +114,7 @@ end
 
 function slot0.Dispose(slot0)
 	uv0.super.Dispose(slot0)
+	slot0.onClickCom_.onValueChanged:RemoveAllListeners()
 end
 
 return slot0

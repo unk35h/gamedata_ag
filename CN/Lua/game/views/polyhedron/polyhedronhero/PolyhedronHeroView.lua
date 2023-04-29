@@ -61,11 +61,15 @@ function slot0.InitUI(slot0)
 	slot0.curScrollHelper_ = slot0.shortScrollHelper_
 	slot0.heroInfoView_ = PolyhedronHeroInfoView.New(slot0, slot0.infoViewGo_)
 	slot0.heroAvatarView_ = HeroAvatarView.New(slot0, slot0.displayGo_)
-	slot1 = slot0.heroAvatarView_
 
-	slot1:SetShowInteractive(true)
+	slot0.heroAvatarView_:SetShowInteractive(true)
 
 	slot0.weaponAvatarView_ = WeaponAvatarView.New(slot0, slot0.displayGo_)
+
+	if slot0.pageContainerPop_ ~= nil then
+		slot0.pageContainerPop_.parent = slot0.pageContainer_.parent
+	end
+
 	slot0.toggles_ = {
 		slot0.toggle1_,
 		slot0.toggle3_,
@@ -123,7 +127,6 @@ function slot0.UpdateHeroView(slot0)
 	SetActive(slot0.redPoint4Go_, false)
 	SetActive(slot0.propertyNoticePos_.gameObject, false)
 	SetActive(slot0.toggle4_.transform:Find("notice_img").gameObject, false)
-	SetActive(slot0.moduleRedpointTrans_.gameObject, false)
 end
 
 function slot0.GetCurHeroInfo(slot0, slot1)

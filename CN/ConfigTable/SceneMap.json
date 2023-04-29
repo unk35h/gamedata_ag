@@ -2564,26 +2564,26 @@
       "ID": 1011314,
       "MapDataPath": "Map/PlotNormal/Chapter13/1011314_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_activity_2_0_battle_jingdu",
-      "CueName": "bgm_activity_2_0_battle_jingdu",
-      "CueAwb": "bgm_activity_2_0_battle_jingdu.awb",
+      "CueSheet": "bgm_activity_2_0_battle_jingdu_boss",
+      "CueName": "bgm_activity_2_0_battle_jingdu_boss",
+      "CueAwb": "bgm_activity_2_0_battle_jingdu_boss.awb",
       "SkipWinAction": 1
     },
     {
       "ID": 1011317,
       "MapDataPath": "Map/PlotNormal/Chapter13/1011317_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_normal_battle",
-      "CueName": "bgm_normal_battle",
-      "CueAwb": "bgm_normal_battle.awb"
+      "CueSheet": "bgm_activity_2_0_battle_jingdu",
+      "CueName": "bgm_activity_2_0_battle_jingdu",
+      "CueAwb": "bgm_activity_2_0_battle_jingdu.awb"
     },
     {
       "ID": 1011319,
       "MapDataPath": "Map/PlotNormal/Chapter13/1011319_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_normal_battle",
-      "CueName": "bgm_normal_battle",
-      "CueAwb": "bgm_normal_battle.awb"
+      "CueSheet": "bgm_activity_2_0_battle_jingdu",
+      "CueName": "bgm_activity_2_0_battle_jingdu",
+      "CueAwb": "bgm_activity_2_0_battle_jingdu.awb"
     },
     {
       "ID": 1011321,
@@ -2597,17 +2597,17 @@
       "ID": 1011323,
       "MapDataPath": "Map/PlotNormal/Chapter13/1011323_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_normal_battle",
-      "CueName": "bgm_normal_battle",
-      "CueAwb": "bgm_normal_battle.awb"
+      "CueSheet": "bgm_activity_2_0_battle_oldtown",
+      "CueName": "bgm_activity_2_0_battle_oldtown",
+      "CueAwb": "bgm_activity_2_0_battle_oldtown.awb"
     },
     {
       "ID": 1011324,
       "MapDataPath": "Map/PlotNormal/Chapter13/1011324_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_normal_battle",
-      "CueName": "bgm_normal_battle",
-      "CueAwb": "bgm_normal_battle.awb"
+      "CueSheet": "bgm_activity_2_0_battle_tianlu",
+      "CueName": "bgm_activity_2_0_battle_tianlu",
+      "CueAwb": "bgm_activity_2_0_battle_tianlu.awb"
     },
     {
       "ID": 1011326,
@@ -6354,6 +6354,46 @@
       "CueName": "ui_battle_stopbgm"
     },
     {
+      "ID": 4012016,
+      "MapDataPath": "Map/Tower/Boss/4012016_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_5_battle_1",
+      "CueName": "bgm_activity_1_5_battle_1",
+      "CueAwb": "bgm_activity_1_5_battle_1.awb"
+    },
+    {
+      "ID": 4012017,
+      "MapDataPath": "Map/Tower/Boss/4012017_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_5_battle_2",
+      "CueName": "bgm_activity_1_5_battle_2",
+      "CueAwb": "bgm_activity_1_5_battle_2.awb"
+    },
+    {
+      "ID": 4012018,
+      "MapDataPath": "Map/Tower/Boss/4012018_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_5_battle_1",
+      "CueName": "bgm_activity_1_5_battle_1",
+      "CueAwb": "bgm_activity_1_5_battle_1.awb"
+    },
+    {
+      "ID": 4012019,
+      "MapDataPath": "Map/Tower/Boss/4012019_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
+    },
+    {
+      "ID": 4012020,
+      "MapDataPath": "Map/Tower/Boss/4012020_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_4_battle_source1",
+      "CueName": "bgm_activity_1_4_battle_source1",
+      "CueAwb": "bgm_activity_1_4_battle_source1.awb"
+    },
+    {
       "ID": 4011001,
       "MapDataPath": "Map/Tower/Elite/4011001_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
@@ -6472,6 +6512,46 @@
       "CueSheet": "bgm_normal_battle",
       "CueName": "bgm_normal_battle",
       "CueAwb": "bgm_normal_battle.awb"
+    },
+    {
+      "ID": 4011016,
+      "MapDataPath": "Map/Tower/Elite/4011016_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_5_battle_2",
+      "CueName": "bgm_activity_1_5_battle_2",
+      "CueAwb": "bgm_activity_1_5_battle_2.awb"
+    },
+    {
+      "ID": 4011017,
+      "MapDataPath": "Map/Tower/Elite/4011017_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_5_battle_1",
+      "CueName": "bgm_activity_1_5_battle_1",
+      "CueAwb": "bgm_activity_1_5_battle_1.awb"
+    },
+    {
+      "ID": 4011018,
+      "MapDataPath": "Map/Tower/Elite/4011018_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
+    },
+    {
+      "ID": 4011019,
+      "MapDataPath": "Map/Tower/Elite/4011019_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
+    },
+    {
+      "ID": 4011020,
+      "MapDataPath": "Map/Tower/Elite/4011020_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
     },
     {
       "ID": 4010001,
@@ -7112,6 +7192,126 @@
       "CueSheet": "bgm_activity_1_4_battle_source1",
       "CueName": "bgm_activity_1_4_battle_source1",
       "CueAwb": "bgm_activity_1_4_battle_source1.awb"
+    },
+    {
+      "ID": 4010081,
+      "MapDataPath": "Map/Tower/Normal/4010081_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_5_battle_2",
+      "CueName": "bgm_activity_1_5_battle_2",
+      "CueAwb": "bgm_activity_1_5_battle_2.awb"
+    },
+    {
+      "ID": 4010082,
+      "MapDataPath": "Map/Tower/Normal/4010082_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_5_battle_1",
+      "CueName": "bgm_activity_1_5_battle_1",
+      "CueAwb": "bgm_activity_1_5_battle_1.awb"
+    },
+    {
+      "ID": 4010083,
+      "MapDataPath": "Map/Tower/Normal/4010083_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_5_battle_2",
+      "CueName": "bgm_activity_1_5_battle_2",
+      "CueAwb": "bgm_activity_1_5_battle_2.awb"
+    },
+    {
+      "ID": 4010084,
+      "MapDataPath": "Map/Tower/Normal/4010084_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_5_battle_1",
+      "CueName": "bgm_activity_1_5_battle_1",
+      "CueAwb": "bgm_activity_1_5_battle_1.awb"
+    },
+    {
+      "ID": 4010085,
+      "MapDataPath": "Map/Tower/Normal/4010085_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_5_battle_1",
+      "CueName": "bgm_activity_1_5_battle_1",
+      "CueAwb": "bgm_activity_1_5_battle_1.awb"
+    },
+    {
+      "ID": 4010086,
+      "MapDataPath": "Map/Tower/Normal/4010086_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_6_battle_skzy",
+      "CueName": "bgm_activity_1_6_battle_skzy",
+      "CueAwb": "bgm_activity_1_6_battle_skzy.awb"
+    },
+    {
+      "ID": 4010087,
+      "MapDataPath": "Map/Tower/Normal/4010087_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_6_battle_skzy",
+      "CueName": "bgm_activity_1_6_battle_skzy",
+      "CueAwb": "bgm_activity_1_6_battle_skzy.awb"
+    },
+    {
+      "ID": 4010088,
+      "MapDataPath": "Map/Tower/Normal/4010088_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
+    },
+    {
+      "ID": 4010089,
+      "MapDataPath": "Map/Tower/Normal/4010089_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_battle_yujing_01",
+      "CueName": "bgm_battle_yujing_01",
+      "CueAwb": "bgm_battle_yujing_01.awb"
+    },
+    {
+      "ID": 4010090,
+      "MapDataPath": "Map/Tower/Normal/4010090_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_battle_yujing_02",
+      "CueName": "bgm_battle_yujing_02",
+      "CueAwb": "bgm_battle_yujing_02.awb"
+    },
+    {
+      "ID": 4010091,
+      "MapDataPath": "Map/Tower/Normal/4010091_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_battle_yujing_01",
+      "CueName": "bgm_battle_yujing_01",
+      "CueAwb": "bgm_battle_yujing_01.awb"
+    },
+    {
+      "ID": 4010092,
+      "MapDataPath": "Map/Tower/Normal/4010092_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
+    },
+    {
+      "ID": 4010093,
+      "MapDataPath": "Map/Tower/Normal/4010093_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
+    },
+    {
+      "ID": 4010094,
+      "MapDataPath": "Map/Tower/Normal/4010094_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
+    },
+    {
+      "ID": 4010095,
+      "MapDataPath": "Map/Tower/Normal/4010095_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
     },
     {
       "ID": 3031101,
@@ -9095,17 +9295,15 @@
       "ID": 3035301,
       "MapDataPath": "Map/MatrixNew/group1/Boss/3035301_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "ui_battle",
+      "CueName": "ui_battle_stopbgm"
     },
     {
       "ID": 3035302,
       "MapDataPath": "Map/MatrixNew/group1/Boss/3035302_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "ui_battle",
+      "CueName": "ui_battle_stopbgm"
     },
     {
       "ID": 3035401,
@@ -9119,93 +9317,157 @@
       "ID": 3035501,
       "MapDataPath": "Map/MatrixNew/group1/ExtraChallenge/3035501_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_yujing_02",
+      "CueName": "bgm_battle_yujing_02",
+      "CueAwb": "bgm_battle_yujing_02.awb"
     },
     {
       "ID": 3035502,
       "MapDataPath": "Map/MatrixNew/group1/ExtraChallenge/3035502_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_yujing_02",
+      "CueName": "bgm_battle_yujing_02",
+      "CueAwb": "bgm_battle_yujing_02.awb"
     },
     {
       "ID": 3035503,
       "MapDataPath": "Map/MatrixNew/group1/ExtraChallenge/3035503_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_yujing_02",
+      "CueName": "bgm_battle_yujing_02",
+      "CueAwb": "bgm_battle_yujing_02.awb"
     },
     {
       "ID": 3035504,
       "MapDataPath": "Map/MatrixNew/group1/ExtraChallenge/3035504_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_yujing_02",
+      "CueName": "bgm_battle_yujing_02",
+      "CueAwb": "bgm_battle_yujing_02.awb"
     },
     {
       "ID": 3035505,
       "MapDataPath": "Map/MatrixNew/group1/ExtraChallenge/3035505_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_yujing_02",
+      "CueName": "bgm_battle_yujing_02",
+      "CueAwb": "bgm_battle_yujing_02.awb"
     },
     {
       "ID": 3035506,
       "MapDataPath": "Map/MatrixNew/group1/ExtraChallenge/3035506_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_yujing_02",
+      "CueName": "bgm_battle_yujing_02",
+      "CueAwb": "bgm_battle_yujing_02.awb"
     },
     {
       "ID": 3035507,
       "MapDataPath": "Map/MatrixNew/group1/ExtraChallenge/3035507_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_yujing_02",
+      "CueName": "bgm_battle_yujing_02",
+      "CueAwb": "bgm_battle_yujing_02.awb"
     },
     {
       "ID": 3035508,
       "MapDataPath": "Map/MatrixNew/group1/ExtraChallenge/3035508_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_yujing_02",
+      "CueName": "bgm_battle_yujing_02",
+      "CueAwb": "bgm_battle_yujing_02.awb"
     },
     {
       "ID": 3035509,
       "MapDataPath": "Map/MatrixNew/group1/ExtraChallenge/3035509_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_yujing_02",
+      "CueName": "bgm_battle_yujing_02",
+      "CueAwb": "bgm_battle_yujing_02.awb"
     },
     {
       "ID": 3035510,
       "MapDataPath": "Map/MatrixNew/group1/ExtraChallenge/3035510_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_yujing_02",
+      "CueName": "bgm_battle_yujing_02",
+      "CueAwb": "bgm_battle_yujing_02.awb"
     },
     {
       "ID": 3035511,
       "MapDataPath": "Map/MatrixNew/group1/ExtraChallenge/3035511_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_battle_yujing_02",
+      "CueName": "bgm_battle_yujing_02",
+      "CueAwb": "bgm_battle_yujing_02.awb"
+    },
+    {
+      "ID": 3035512,
+      "MapDataPath": "Map/MatrixNew/group1/ExtraChallenge/3035512_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_battle_yujing_02",
+      "CueName": "bgm_battle_yujing_02",
+      "CueAwb": "bgm_battle_yujing_02.awb"
+    },
+    {
+      "ID": 3035521,
+      "MapDataPath": "Map/MatrixNew/group1/ExtraChallenge/3035521_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
       "CueSheet": "bgm_battle_yujing_01",
       "CueName": "bgm_battle_yujing_01",
       "CueAwb": "bgm_battle_yujing_01.awb"
     },
     {
-      "ID": 3035512,
-      "MapDataPath": "Map/MatrixNew/group1/ExtraChallenge/3035512_Trigger",
+      "ID": 3035522,
+      "MapDataPath": "Map/MatrixNew/group1/ExtraChallenge/3035522_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_battle_yujing_01",
+      "CueName": "bgm_battle_yujing_01",
+      "CueAwb": "bgm_battle_yujing_01.awb"
+    },
+    {
+      "ID": 3035523,
+      "MapDataPath": "Map/MatrixNew/group1/ExtraChallenge/3035523_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_battle_yujing_01",
+      "CueName": "bgm_battle_yujing_01",
+      "CueAwb": "bgm_battle_yujing_01.awb"
+    },
+    {
+      "ID": 3035524,
+      "MapDataPath": "Map/MatrixNew/group1/ExtraChallenge/3035524_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_battle_yujing_01",
+      "CueName": "bgm_battle_yujing_01",
+      "CueAwb": "bgm_battle_yujing_01.awb"
+    },
+    {
+      "ID": 3035541,
+      "MapDataPath": "Map/MatrixNew/group1/ExtraChallenge/3035541_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_battle_yujing_01",
+      "CueName": "bgm_battle_yujing_01",
+      "CueAwb": "bgm_battle_yujing_01.awb"
+    },
+    {
+      "ID": 3035542,
+      "MapDataPath": "Map/MatrixNew/group1/ExtraChallenge/3035542_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_battle_yujing_01",
+      "CueName": "bgm_battle_yujing_01",
+      "CueAwb": "bgm_battle_yujing_01.awb"
+    },
+    {
+      "ID": 3035561,
+      "MapDataPath": "Map/MatrixNew/group1/ExtraChallenge/3035561_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_battle_yujing_01",
+      "CueName": "bgm_battle_yujing_01",
+      "CueAwb": "bgm_battle_yujing_01.awb"
+    },
+    {
+      "ID": 3035562,
+      "MapDataPath": "Map/MatrixNew/group1/ExtraChallenge/3035562_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
       "CueSheet": "bgm_battle_yujing_01",
       "CueName": "bgm_battle_yujing_01",
@@ -9215,521 +9477,661 @@
       "ID": 3035601,
       "MapDataPath": "Map/MatrixNew/group1/Shop/3035601_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_2_0_battle_jingdu",
+      "CueName": "bgm_activity_2_0_battle_jingdu",
+      "CueAwb": "bgm_activity_2_0_battle_jingdu.awb"
     },
     {
       "ID": 3036101,
       "MapDataPath": "Map/MatrixNew/group2/Normal/3036101_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
     },
     {
       "ID": 3036102,
       "MapDataPath": "Map/MatrixNew/group2/Normal/3036102_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
     },
     {
       "ID": 3036103,
       "MapDataPath": "Map/MatrixNew/group2/Normal/3036103_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
     },
     {
       "ID": 3036104,
       "MapDataPath": "Map/MatrixNew/group2/Normal/3036104_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
     },
     {
       "ID": 3036105,
       "MapDataPath": "Map/MatrixNew/group2/Normal/3036105_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
     },
     {
       "ID": 3036106,
       "MapDataPath": "Map/MatrixNew/group2/Normal/3036106_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
     },
     {
       "ID": 3036107,
       "MapDataPath": "Map/MatrixNew/group2/Normal/3036107_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
     },
     {
       "ID": 3036108,
       "MapDataPath": "Map/MatrixNew/group2/Normal/3036108_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
     },
     {
       "ID": 3036109,
       "MapDataPath": "Map/MatrixNew/group2/Normal/3036109_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
     },
     {
       "ID": 3036110,
       "MapDataPath": "Map/MatrixNew/group2/Normal/3036110_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
     },
     {
       "ID": 3036111,
       "MapDataPath": "Map/MatrixNew/group2/Normal/3036111_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
     },
     {
       "ID": 3036112,
       "MapDataPath": "Map/MatrixNew/group2/Normal/3036112_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
     },
     {
       "ID": 3036201,
       "MapDataPath": "Map/MatrixNew/group2/Elite/3036201_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
     },
     {
       "ID": 3036202,
       "MapDataPath": "Map/MatrixNew/group2/Elite/3036202_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
     },
     {
       "ID": 3036203,
       "MapDataPath": "Map/MatrixNew/group2/Elite/3036203_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
     },
     {
       "ID": 3036204,
       "MapDataPath": "Map/MatrixNew/group2/Elite/3036204_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
     },
     {
       "ID": 3036205,
       "MapDataPath": "Map/MatrixNew/group2/Elite/3036205_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
     },
     {
       "ID": 3036206,
       "MapDataPath": "Map/MatrixNew/group2/Elite/3036206_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
     },
     {
       "ID": 3036207,
       "MapDataPath": "Map/MatrixNew/group2/Elite/3036207_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
     },
     {
       "ID": 3036208,
       "MapDataPath": "Map/MatrixNew/group2/Elite/3036208_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
     },
     {
       "ID": 3036301,
       "MapDataPath": "Map/MatrixNew/group2/Boss/3036301_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "ui_battle",
+      "CueName": "ui_battle_stopbgm"
     },
     {
       "ID": 3036302,
       "MapDataPath": "Map/MatrixNew/group2/Boss/3036302_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "ui_battle",
+      "CueName": "ui_battle_stopbgm"
     },
     {
       "ID": 3036401,
       "MapDataPath": "Map/MatrixNew/group2/Employee/3036401_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_6_battle_skzy",
+      "CueName": "bgm_activity_1_6_battle_skzy",
+      "CueAwb": "bgm_activity_1_6_battle_skzy.awb"
     },
     {
       "ID": 3036501,
       "MapDataPath": "Map/MatrixNew/group2/ExtraChallenge/3036501_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
     },
     {
       "ID": 3036502,
       "MapDataPath": "Map/MatrixNew/group2/ExtraChallenge/3036502_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
     },
     {
       "ID": 3036505,
       "MapDataPath": "Map/MatrixNew/group2/ExtraChallenge/3036505_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_4_battle_source2",
+      "CueName": "bgm_activity_1_4_battle_source2",
+      "CueAwb": "bgm_activity_1_4_battle_source2.awb"
     },
     {
       "ID": 3036506,
       "MapDataPath": "Map/MatrixNew/group2/ExtraChallenge/3036506_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
     },
     {
       "ID": 3036507,
       "MapDataPath": "Map/MatrixNew/group2/ExtraChallenge/3036507_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_4_battle_source2",
+      "CueName": "bgm_activity_1_4_battle_source2",
+      "CueAwb": "bgm_activity_1_4_battle_source2.awb"
     },
     {
       "ID": 3036508,
       "MapDataPath": "Map/MatrixNew/group2/ExtraChallenge/3036508_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
     },
     {
       "ID": 3036509,
       "MapDataPath": "Map/MatrixNew/group2/ExtraChallenge/3036509_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
     },
     {
       "ID": 3036510,
       "MapDataPath": "Map/MatrixNew/group2/ExtraChallenge/3036510_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
+    },
+    {
+      "ID": 3036521,
+      "MapDataPath": "Map/MatrixNew/group2/ExtraChallenge/3036521_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_4_battle_source2",
+      "CueName": "bgm_activity_1_4_battle_source2",
+      "CueAwb": "bgm_activity_1_4_battle_source2.awb"
+    },
+    {
+      "ID": 3036522,
+      "MapDataPath": "Map/MatrixNew/group2/ExtraChallenge/3036522_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
+    },
+    {
+      "ID": 3036523,
+      "MapDataPath": "Map/MatrixNew/group2/ExtraChallenge/3036523_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
+    },
+    {
+      "ID": 3036524,
+      "MapDataPath": "Map/MatrixNew/group2/ExtraChallenge/3036524_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
+    },
+    {
+      "ID": 3036541,
+      "MapDataPath": "Map/MatrixNew/group2/ExtraChallenge/3036541_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
+    },
+    {
+      "ID": 3036542,
+      "MapDataPath": "Map/MatrixNew/group2/ExtraChallenge/3036542_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
+    },
+    {
+      "ID": 3036543,
+      "MapDataPath": "Map/MatrixNew/group2/ExtraChallenge/3036543_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
+    },
+    {
+      "ID": 3036561,
+      "MapDataPath": "Map/MatrixNew/group2/ExtraChallenge/3036561_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_4_battle_source2",
+      "CueName": "bgm_activity_1_4_battle_source2",
+      "CueAwb": "bgm_activity_1_4_battle_source2.awb"
+    },
+    {
+      "ID": 3036562,
+      "MapDataPath": "Map/MatrixNew/group2/ExtraChallenge/3036562_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
     },
     {
       "ID": 3036601,
       "MapDataPath": "Map/MatrixNew/group2/Shop/3036601_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_2_0_battle_jingdu",
+      "CueName": "bgm_activity_2_0_battle_jingdu",
+      "CueAwb": "bgm_activity_2_0_battle_jingdu.awb"
     },
     {
       "ID": 3037101,
       "MapDataPath": "Map/MatrixNew/group3/Normal/3037101_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
     },
     {
       "ID": 3037102,
       "MapDataPath": "Map/MatrixNew/group3/Normal/3037102_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
     },
     {
       "ID": 3037103,
       "MapDataPath": "Map/MatrixNew/group3/Normal/3037103_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
     },
     {
       "ID": 3037104,
       "MapDataPath": "Map/MatrixNew/group3/Normal/3037104_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
     },
     {
       "ID": 3037105,
       "MapDataPath": "Map/MatrixNew/group3/Normal/3037105_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
     },
     {
       "ID": 3037106,
       "MapDataPath": "Map/MatrixNew/group3/Normal/3037106_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
     },
     {
       "ID": 3037107,
       "MapDataPath": "Map/MatrixNew/group3/Normal/3037107_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
     },
     {
       "ID": 3037108,
       "MapDataPath": "Map/MatrixNew/group3/Normal/3037108_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
     },
     {
       "ID": 3037109,
       "MapDataPath": "Map/MatrixNew/group3/Normal/3037109_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
     },
     {
       "ID": 3037110,
       "MapDataPath": "Map/MatrixNew/group3/Normal/3037110_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
     },
     {
       "ID": 3037111,
       "MapDataPath": "Map/MatrixNew/group3/Normal/3037111_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_4_battle_source1",
+      "CueName": "bgm_activity_1_4_battle_source1",
+      "CueAwb": "bgm_activity_1_4_battle_source1.awb"
     },
     {
       "ID": 3037112,
       "MapDataPath": "Map/MatrixNew/group3/Normal/3037112_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_4_battle_source1",
+      "CueName": "bgm_activity_1_4_battle_source1",
+      "CueAwb": "bgm_activity_1_4_battle_source1.awb"
     },
     {
       "ID": 3037201,
       "MapDataPath": "Map/MatrixNew/group3/Elite/3037201_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
     },
     {
       "ID": 3037202,
       "MapDataPath": "Map/MatrixNew/group3/Elite/3037202_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
     },
     {
       "ID": 3037203,
       "MapDataPath": "Map/MatrixNew/group3/Elite/3037203_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
     },
     {
       "ID": 3037204,
       "MapDataPath": "Map/MatrixNew/group3/Elite/3037204_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
     },
     {
       "ID": 3037205,
       "MapDataPath": "Map/MatrixNew/group3/Elite/3037205_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
     },
     {
       "ID": 3037206,
       "MapDataPath": "Map/MatrixNew/group3/Elite/3037206_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_4_battle_source1",
+      "CueName": "bgm_activity_1_4_battle_source1",
+      "CueAwb": "bgm_activity_1_4_battle_source1.awb"
     },
     {
       "ID": 3037207,
       "MapDataPath": "Map/MatrixNew/group3/Elite/3037207_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
     },
     {
       "ID": 3037208,
       "MapDataPath": "Map/MatrixNew/group3/Elite/3037208_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_4_battle_source1",
+      "CueName": "bgm_activity_1_4_battle_source1",
+      "CueAwb": "bgm_activity_1_4_battle_source1.awb"
     },
     {
       "ID": 3037301,
       "MapDataPath": "Map/MatrixNew/group3/Boss/3037301_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "ui_battle",
+      "CueName": "ui_battle_stopbgm"
     },
     {
       "ID": 3037302,
       "MapDataPath": "Map/MatrixNew/group3/Boss/3037302_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "ui_battle",
+      "CueName": "ui_battle_stopbgm"
     },
     {
       "ID": 3037401,
       "MapDataPath": "Map/MatrixNew/group3/Employee/3037401_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_6_battle_park_plaza",
+      "CueName": "bgm_activity_1_6_battle_park_plaza",
+      "CueAwb": "bgm_activity_1_6_battle_park_plaza.awb"
     },
     {
       "ID": 3037501,
       "MapDataPath": "Map/MatrixNew/group3/ExtraChallenge/3037501_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
     },
     {
       "ID": 3037502,
       "MapDataPath": "Map/MatrixNew/group3/ExtraChallenge/3037502_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_battle_sipierte_01",
+      "CueName": "bgm_battle_sipierte_01",
+      "CueAwb": "bgm_battle_sipierte_01.awb"
     },
     {
       "ID": 3037505,
       "MapDataPath": "Map/MatrixNew/group3/ExtraChallenge/3037505_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
     },
     {
       "ID": 3037506,
       "MapDataPath": "Map/MatrixNew/group3/ExtraChallenge/3037506_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
     },
     {
       "ID": 3037507,
       "MapDataPath": "Map/MatrixNew/group3/ExtraChallenge/3037507_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
     },
     {
       "ID": 3037508,
       "MapDataPath": "Map/MatrixNew/group3/ExtraChallenge/3037508_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
     },
     {
       "ID": 3037509,
       "MapDataPath": "Map/MatrixNew/group3/ExtraChallenge/3037509_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
     },
     {
       "ID": 3037510,
       "MapDataPath": "Map/MatrixNew/group3/ExtraChallenge/3037510_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
     },
     {
       "ID": 3037601,
       "MapDataPath": "Map/MatrixNew/group3/Shop/3037601_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_battle_yujing_01",
-      "CueName": "bgm_battle_yujing_01",
-      "CueAwb": "bgm_battle_yujing_01.awb"
+      "CueSheet": "bgm_activity_2_0_battle_jingdu",
+      "CueName": "bgm_activity_2_0_battle_jingdu",
+      "CueAwb": "bgm_activity_2_0_battle_jingdu.awb"
+    },
+    {
+      "ID": 3037521,
+      "MapDataPath": "Map/MatrixNew/group3/ExtraChallenge/3037521_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
+    },
+    {
+      "ID": 3037522,
+      "MapDataPath": "Map/MatrixNew/group3/ExtraChallenge/3037522_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
+    },
+    {
+      "ID": 3037523,
+      "MapDataPath": "Map/MatrixNew/group3/ExtraChallenge/3037523_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
+    },
+    {
+      "ID": 3037524,
+      "MapDataPath": "Map/MatrixNew/group3/ExtraChallenge/3037524_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
+    },
+    {
+      "ID": 3037525,
+      "MapDataPath": "Map/MatrixNew/group3/ExtraChallenge/3037525_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
+    },
+    {
+      "ID": 3037541,
+      "MapDataPath": "Map/MatrixNew/group3/ExtraChallenge/3037541_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
+    },
+    {
+      "ID": 3037542,
+      "MapDataPath": "Map/MatrixNew/group3/ExtraChallenge/3037542_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_4_battle_source1",
+      "CueName": "bgm_activity_1_4_battle_source1",
+      "CueAwb": "bgm_activity_1_4_battle_source1.awb"
+    },
+    {
+      "ID": 3037561,
+      "MapDataPath": "Map/MatrixNew/group3/ExtraChallenge/3037561_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
+    },
+    {
+      "ID": 3037562,
+      "MapDataPath": "Map/MatrixNew/group3/ExtraChallenge/3037562_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_3_battle1",
+      "CueName": "bgm_activity_1_3_battle1",
+      "CueAwb": "bgm_activity_1_3_battle1.awb"
     },
     {
       "ID": 3040101,
@@ -12225,9 +12627,9 @@
       "ID": 40406102,
       "MapDataPath": "Map/Warchess/Warchess061/40406102_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_activity_2_0_battle_jingdu",
-      "CueName": "bgm_activity_2_0_battle_jingdu",
-      "CueAwb": "bgm_activity_2_0_battle_jingdu.awb"
+      "CueSheet": "bgm_activity_2_0_battle_oldtown",
+      "CueName": "bgm_activity_2_0_battle_oldtown",
+      "CueAwb": "bgm_activity_2_0_battle_oldtown.awb"
     },
     {
       "ID": 40406103,
@@ -12249,9 +12651,9 @@
       "ID": 40406202,
       "MapDataPath": "Map/Warchess/Warchess062/40406202_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_activity_2_0_battle_jingdu",
-      "CueName": "bgm_activity_2_0_battle_jingdu",
-      "CueAwb": "bgm_activity_2_0_battle_jingdu.awb"
+      "CueSheet": "bgm_activity_2_0_battle_oldtown",
+      "CueName": "bgm_activity_2_0_battle_oldtown",
+      "CueAwb": "bgm_activity_2_0_battle_oldtown.awb"
     },
     {
       "ID": 40406203,
@@ -12281,9 +12683,9 @@
       "ID": 40406302,
       "MapDataPath": "Map/Warchess/Warchess063/40406302_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_activity_2_0_battle_jingdu",
-      "CueName": "bgm_activity_2_0_battle_jingdu",
-      "CueAwb": "bgm_activity_2_0_battle_jingdu.awb"
+      "CueSheet": "bgm_activity_2_0_battle_oldtown",
+      "CueName": "bgm_activity_2_0_battle_oldtown",
+      "CueAwb": "bgm_activity_2_0_battle_oldtown.awb"
     },
     {
       "ID": 40406303,
@@ -12305,9 +12707,9 @@
       "ID": 40406402,
       "MapDataPath": "Map/Warchess/Warchess064/40406402_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_activity_2_0_battle_jingdu",
-      "CueName": "bgm_activity_2_0_battle_jingdu",
-      "CueAwb": "bgm_activity_2_0_battle_jingdu.awb"
+      "CueSheet": "bgm_activity_2_0_battle_oldtown",
+      "CueName": "bgm_activity_2_0_battle_oldtown",
+      "CueAwb": "bgm_activity_2_0_battle_oldtown.awb"
     },
     {
       "ID": 40406403,
@@ -12329,9 +12731,9 @@
       "ID": 40406502,
       "MapDataPath": "Map/Warchess/Warchess065/40406502_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_activity_2_0_battle_jingdu",
-      "CueName": "bgm_activity_2_0_battle_jingdu",
-      "CueAwb": "bgm_activity_2_0_battle_jingdu.awb"
+      "CueSheet": "bgm_activity_2_0_battle_oldtown",
+      "CueName": "bgm_activity_2_0_battle_oldtown",
+      "CueAwb": "bgm_activity_2_0_battle_oldtown.awb"
     },
     {
       "ID": 40406503,
@@ -12345,9 +12747,9 @@
       "ID": 40406504,
       "MapDataPath": "Map/Warchess/Warchess065/40406504_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_activity_2_0_battle_jingdu",
-      "CueName": "bgm_activity_2_0_battle_jingdu",
-      "CueAwb": "bgm_activity_2_0_battle_jingdu.awb"
+      "CueSheet": "bgm_activity_2_0_battle_oldtown",
+      "CueName": "bgm_activity_2_0_battle_oldtown",
+      "CueAwb": "bgm_activity_2_0_battle_oldtown.awb"
     },
     {
       "ID": 40406505,
@@ -12433,53 +12835,133 @@
       "ID": 3060104,
       "MapDataPath": "Map/Abyss/First/3060104_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_normal_battle",
-      "CueName": "bgm_normal_battle",
-      "CueAwb": "bgm_normal_battle.awb"
+      "CueSheet": "bgm_battle_yujing_01",
+      "CueName": "bgm_battle_yujing_01",
+      "CueAwb": "bgm_battle_yujing_01.awb"
     },
     {
       "ID": 3060105,
       "MapDataPath": "Map/Abyss/First/3060105_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_normal_battle",
-      "CueName": "bgm_normal_battle",
-      "CueAwb": "bgm_normal_battle.awb"
+      "CueSheet": "bgm_battle_yujing_01",
+      "CueName": "bgm_battle_yujing_01",
+      "CueAwb": "bgm_battle_yujing_01.awb"
     },
     {
       "ID": 3060106,
       "MapDataPath": "Map/Abyss/First/3060106_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_normal_battle",
-      "CueName": "bgm_normal_battle",
-      "CueAwb": "bgm_normal_battle.awb"
+      "CueSheet": "bgm_battle_yujing_01",
+      "CueName": "bgm_battle_yujing_01",
+      "CueAwb": "bgm_battle_yujing_01.awb"
     },
     {
       "ID": 3060107,
       "MapDataPath": "Map/Abyss/First/3060107_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_normal_battle",
-      "CueName": "bgm_normal_battle",
-      "CueAwb": "bgm_normal_battle.awb"
+      "CueSheet": "bgm_activity_1_5_battle_1",
+      "CueName": "bgm_activity_1_5_battle_1",
+      "CueAwb": "bgm_activity_1_5_battle_1.awb"
     },
     {
       "ID": 3060108,
       "MapDataPath": "Map/Abyss/First/3060108_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
-      "CueSheet": "bgm_normal_battle",
-      "CueName": "bgm_normal_battle",
-      "CueAwb": "bgm_normal_battle.awb"
+      "CueSheet": "bgm_activity_1_5_battle_1",
+      "CueName": "bgm_activity_1_5_battle_1",
+      "CueAwb": "bgm_activity_1_5_battle_1.awb"
     },
     {
       "ID": 3060109,
       "MapDataPath": "Map/Abyss/First/3060109_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_5_battle_1",
+      "CueName": "bgm_activity_1_5_battle_1",
+      "CueAwb": "bgm_activity_1_5_battle_1.awb"
+    },
+    {
+      "ID": 3060110,
+      "MapDataPath": "Map/Abyss/First/3060110_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_activity_1_5_battle_1",
+      "CueName": "bgm_activity_1_5_battle_1",
+      "CueAwb": "bgm_activity_1_5_battle_1.awb"
+    },
+    {
+      "ID": 3060201,
+      "MapDataPath": "Map/Abyss/Second/3060201_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
       "CueSheet": "bgm_normal_battle",
       "CueName": "bgm_normal_battle",
       "CueAwb": "bgm_normal_battle.awb"
     },
     {
-      "ID": 3060110,
-      "MapDataPath": "Map/Abyss/First/3060110_Trigger",
+      "ID": 3060202,
+      "MapDataPath": "Map/Abyss/Second/3060202_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
+    },
+    {
+      "ID": 3060203,
+      "MapDataPath": "Map/Abyss/Second/3060203_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
+    },
+    {
+      "ID": 3060204,
+      "MapDataPath": "Map/Abyss/Second/3060204_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
+    },
+    {
+      "ID": 3060205,
+      "MapDataPath": "Map/Abyss/Second/3060205_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
+    },
+    {
+      "ID": 3060206,
+      "MapDataPath": "Map/Abyss/Second/3060206_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
+    },
+    {
+      "ID": 3060207,
+      "MapDataPath": "Map/Abyss/Second/3060207_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
+    },
+    {
+      "ID": 3060208,
+      "MapDataPath": "Map/Abyss/Second/3060208_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
+    },
+    {
+      "ID": 3060209,
+      "MapDataPath": "Map/Abyss/Second/3060209_Trigger",
+      "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
+      "CueSheet": "bgm_normal_battle",
+      "CueName": "bgm_normal_battle",
+      "CueAwb": "bgm_normal_battle.awb"
+    },
+    {
+      "ID": 3060210,
+      "MapDataPath": "Map/Abyss/Second/3060210_Trigger",
       "ExternalParam": "Effect/AirWall/fx_geliqu_jianceng_B01",
       "CueSheet": "bgm_normal_battle",
       "CueName": "bgm_normal_battle",
